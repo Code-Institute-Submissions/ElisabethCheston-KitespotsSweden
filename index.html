@@ -31,13 +31,15 @@
 
         <!--GeoJson data-->
     <script src="/js/kitespots.js"></script>
+    <script src="/js/cities.js"></script>
     <script src="/json/kitespots.json"></script>
+    <script src="/json/cities.json"></script>
+
 
 
     <script>
- 
-        // - Create an on load ESRI basemap - //
 
+        // - Create an on load ESRI basemap - //
         var map = L.map('map', {
             center: [62.45,17.45],
             zoom: 5
@@ -49,20 +51,30 @@
         // - Clustering markers reference: https://github.com/Leaflet/Leaflet.markercluster - //
         // - Leaflet reference; https://leafletjs.com/reference-1.7.1.html#geojson - //
         var clusterGroup = new L.markerClusterGroup();
-        var points = L.geoJson(kitespots, {
+        var kiteSpots = L.geoJson(kitespots, {
             pointToLayer: function (feature, latlng) {
             return L.marker(latlng)
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
             }
         });
-        clusterGroup.addLayer(points);
+        clusterGroup.addLayer(kiteSpots);
         map.addLayer(clusterGroup);
 
 
+        // - Control layers, reference; https://esri.github.io/esri-leaflet/examples/layers-control.html - //
+        var baseLayers = {
+            "Hybrid": hybrid,
+            "Topographic": topographic,
+            "Streets": streets
+        };
+
+        var overLays = {
+            'Kitespots': kiteSpots
+        };
+
+        L.control.layers(baseLayers, overLays).addTo(map);
 
 
-
-        
 /*
         // - Kitespots from geojson made in GeoJson.io - //
         var allKitespotsGeoJson = kitespots
