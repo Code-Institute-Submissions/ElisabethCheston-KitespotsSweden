@@ -38,7 +38,7 @@
 
 
     <script>
-
+        
         // - Base maps variables - //
         var hybrid = L.esri.basemapLayer('ImageryClarity');
         var topographic = L.esri.basemapLayer('Topographic');
@@ -68,31 +68,17 @@
 
 
         // - Control layers, reference; https://esri.github.io/esri-leaflet/examples/layers-control.html - //
-        var baseLayers = [
-                {
-                group: "Maps",
-                layers: [
-                    {
-                        hybrid: "Hybrid"
-                    },
-                    {
-                        topographic: "Topographic"
-                    },
-                    {
-                        streets: "Streets"
-                    }
-                ]
-            }
-        ];
-        
+        var baseLayers = {
+            "Hybrid": hybrid,
+            "Topographic": topographic,
+            "Streets": streets
+        };
 
         var overLays = {
             'Kitespots': clusterGroup
         };
 
-        var panLayers = L.control.layers(baseLayers, overLays);
-
-        map.addControl(panLayers);
+        L.control.layers(baseLayers, overLays).addTo(map);
 
 
 /*
