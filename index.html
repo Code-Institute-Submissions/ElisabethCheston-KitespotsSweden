@@ -41,8 +41,14 @@
 
         // - Kitespots from geojson made in GeoJson.io - //
         
-        var spotGeoJSON = kitespots
-        L.geoJSON(spotGeoJSON).addTo(map)
+        var allKitespotspotGeoJSON = kitespots
+
+        // - Leaflet reference; https://leafletjs.com/reference-1.7.1.html#geojson - //
+        L.geoJSON(allKitespotspotGeoJSON).bindPopup(function (kitespots) {
+            return kitespots.feature.properties.name;
+        }).addTo(map);
+
+   
 
     </script>
 </body>
