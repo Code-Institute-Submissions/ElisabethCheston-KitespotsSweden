@@ -68,17 +68,31 @@
 
 
         // - Control layers, reference; https://esri.github.io/esri-leaflet/examples/layers-control.html - //
-        var baseLayers = {
-            "Hybrid": hybrid,
-            "Topographic": topographic,
-            "Streets": streets
-        };
+        var baseLayers = [
+                {
+                group: "Maps",
+                layers: [
+                    {
+                        hybrid: "Hybrid"
+                    },
+                    {
+                        topographic: "Topographic"
+                    },
+                    {
+                        streets: "Streets"
+                    }
+                ]
+            }
+        ];
+        
 
         var overLays = {
             'Kitespots': clusterGroup
         };
 
-        L.control.layers(baseLayers, overLays).addTo(map);
+        var panLayers = L.control.layers(baseLayers, overLays);
+
+        
 
 
 /*
