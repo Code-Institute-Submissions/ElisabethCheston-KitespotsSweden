@@ -1,36 +1,5 @@
-Skip to content
-Search or jump to…
 
-Pulls
-Issues
-Marketplace
-Explore
- 
-@ElisabethCheston 
-ElisabethCheston
-/
-NewLeafletMap
-generated from Code-Institute-Org/gitpod-full-template
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-More
-NewLeafletMap/js/kitespots.js /
-@ElisabethCheston
-ElisabethCheston style layerpanel with popups.
-Latest commit b73aba0 4 days ago
- History
- 1 contributor
-4431 lines (4429 sloc)  104 KB
-  
-var kitespots = {
+var spots = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -4321,5 +4290,3 @@ var kitespots = {
     }
   ]
 }
-
-

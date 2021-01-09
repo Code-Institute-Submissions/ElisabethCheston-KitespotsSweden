@@ -21,8 +21,14 @@
 </head>
 <body>
     <div id="map"></div>
-    <script>
 
+        <!--GeoJson data-->
+    <script src="/js/kitespots.js"></script>
+    <script src="/json/kitespots.json"></script>
+
+
+    <script>
+ 
         // - Create an on load ESRI basemap - //
 
         var map = L.map('map', {
@@ -31,6 +37,12 @@
         }),
         baseImagery = L.layerGroup();
         L.esri.basemapLayer('ImageryClarity').addTo(map);
+
+
+        // - Kitespots from geojson made in GeoJson.io - //
+        
+        var spotGeoJSON = kitespots
+        L.geoJSON(spotGeoJSON).addTo(map)
 
     </script>
 </body>
