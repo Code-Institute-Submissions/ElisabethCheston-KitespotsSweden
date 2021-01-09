@@ -1,3 +1,5 @@
+        // - Kitespots from geojson made in GeoJson.io - //
+
 var kitespots = {
   "type": "FeatureCollection",
   "features": [
