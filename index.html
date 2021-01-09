@@ -38,7 +38,7 @@
 
 
     <script>
-        
+
         // - Base maps variables - //
         var hybrid = L.esri.basemapLayer('ImageryClarity');
         var topographic = L.esri.basemapLayer('Topographic');
@@ -75,7 +75,7 @@
         };
 
         var overLays = {
-            'Kitespots': kiteSpots
+            'Kitespots': clusterGroup
         };
 
         L.control.layers(baseLayers, overLays).addTo(map);
