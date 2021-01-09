@@ -38,6 +38,12 @@
 
 
     <script>
+        
+        // - Base maps variables - //
+        var hybrid = L.esri.basemapLayer('ImageryClarity');
+        var topographic = L.esri.basemapLayer('Topographic');
+        var streets = L.esri.basemapLayer('Streets');
+
 
         // - Create an on load ESRI basemap - //
         var map = L.map('map', {
