@@ -10,10 +10,28 @@
      <!-- Esri Leaflet from CDN -->
     <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js" integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ==" crossorigin=""></script>
      
-    
     <title>KitespotsSweden</title>
+    <style>
+        html, body, #map {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="map"></div>
+    <script>
+
+        // - Create an on load ESRI basemap - //
+
+        var map = L.map('map', {
+            center: [62.45,17.45],
+            zoom: 5
+        }),
+        baseImagery = L.layerGroup();
+        L.esri.basemapLayer('ImageryClarity').addTo(map);
+
+    </script>
 </body>
 </html>
