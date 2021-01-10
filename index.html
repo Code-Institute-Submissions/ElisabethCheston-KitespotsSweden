@@ -56,21 +56,25 @@
         // - Clustering markers reference: https://github.com/Leaflet/Leaflet.markercluster - //
         // - Leaflet reference; https://leafletjs.com/reference-1.7.1.html#geojson - //
         var allSpotsCluster = new L.markerClusterGroup();
-        var kiteSpots = L.geoJson(kitespots, {
+        var allKitespots = L.geoJson(kitespots, {
             pointToLayer: function (feature, latlng) {
             return L.marker(latlng)
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
             }
         });
-        allSpotsCluster.addLayer(kiteSpots);
+        allSpotsCluster.addLayer(allKitespots);
         //map.addLayer(allSpotsCluster);
 
-
-        // - Select all kitespots facing south - //
+        // - Select all kitespots facing south,  west, north, east - //
         var southSpotCluster = new L.markerClusterGroup();
-        var windDirectionS = L.geoJson(kitespots,{windDirection: "S"});
-        southSpotCluster.addLayer(windDirectionS);
-        //map.addLayer(southSpotCluster);
+        var kitespotS = L.geoJson(kitespots, {
+            pointToLayer: function (feature, latlng) {
+            return L.marker(latlng)
+            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+            }
+        });
+        southSpotCluster.addLayer(kitespotS);
+
 
 
         // - Control layers, reference; https://esri.github.io/esri-leaflet/examples/layers-control.html - //
@@ -81,8 +85,11 @@
         };
 
         var overLays = {
-            'Kitespots': allSpotsCluster,
-            'Kitespots S': southSpotCluster
+            'All Kitespots': allSpotsCluster,
+            'Kitespots S': southSpotCluster,
+            'Kitespots W': westSpotCluster,
+            'Kitespots N': northSpotCluster,
+            'Kitespots E': eastSpotCluster
         };
 
         L.control.layers(baseLayers, overLays).addTo(map);
