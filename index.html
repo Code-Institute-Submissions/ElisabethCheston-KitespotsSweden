@@ -84,6 +84,15 @@
         });
         westSpotCluster.addLayer(kitespotW);
 
+        var northSpotCluster = new L.markerClusterGroup();
+        var kitespotN = L.geoJson(kitespots, {
+            pointToLayer: function (feature, latlng) {
+            return L.marker(latlng)
+            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+            }
+        });        
+        northSpotCluster.addLayer(kitespotN);
+
 
 
         var filterKitespots = L.geoJson(null, {
