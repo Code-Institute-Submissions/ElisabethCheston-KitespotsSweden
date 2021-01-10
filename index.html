@@ -75,6 +75,29 @@
         });
         southSpotCluster.addLayer(kitespotS);
 
+        var westSpotCluster = new L.markerClusterGroup();
+        var kitespotW = L.geoJson(kitespots, {
+            pointToLayer: function (feature, latlng) {
+            return L.marker(latlng)
+            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+            }
+        });
+        westSpotCluster.addLayer(kitespotW);
+
+
+
+        var filterKitespots = L.geoJson(null, {
+        onEachFeature: function(feature, layer) {
+        
+            var allSpotsCluster = feature.properties();
+                if      ( windDirection == 'S' ) layer.addTo(southSpotCluster);
+                else if ( windDirection == 'W' ) layer.addTo(westSpotCluster);
+                else if ( windDirection == 'N' ) layer.addTo(northSpotCluster);
+                else if ( windDirection == 'E' ) layer.addTo(eastSpotCluster);
+                else 
+                layer.addTo(statusUnsure);
+        }
+    });        
 
 
         // - Control layers, reference; https://esri.github.io/esri-leaflet/examples/layers-control.html - //
