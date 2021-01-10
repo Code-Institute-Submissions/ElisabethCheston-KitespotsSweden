@@ -30,11 +30,9 @@
     <div id="map"></div>
 
         <!--GeoJson data-->
-    <script src="/js/kitespots.js"></script>
-    <script src="/js/cities.js"></script>
+
     <script src="/json/kitespots.json"></script>
     <script src="/json/cities.json"></script>
-
 
 
     <script>
@@ -54,17 +52,25 @@
         L.esri.basemapLayer('ImageryClarity').addTo(map);
 
 
+
         // - Clustering markers reference: https://github.com/Leaflet/Leaflet.markercluster - //
         // - Leaflet reference; https://leafletjs.com/reference-1.7.1.html#geojson - //
-        var clusterGroup = new L.markerClusterGroup();
+        var allSpotsCluster = new L.markerClusterGroup();
         var kiteSpots = L.geoJson(kitespots, {
             pointToLayer: function (feature, latlng) {
             return L.marker(latlng)
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
             }
         });
-        clusterGroup.addLayer(kiteSpots);
-        map.addLayer(clusterGroup);
+        allSpotsCluster.addLayer(kiteSpots);
+        //map.addLayer(allSpotsCluster);
+
+
+        // - Select all kitespots facing south - //
+        var southSpotCluster = new L.markerClusterGroup();
+        var windDirectionS = L.geoJson(kitespots,{windDirection: "S"});
+        southSpotCluster.addLayer(windDirectionS);
+        //map.addLayer(southSpotCluster);
 
 
         // - Control layers, reference; https://esri.github.io/esri-leaflet/examples/layers-control.html - //
@@ -75,7 +81,8 @@
         };
 
         var overLays = {
-            'Kitespots': clusterGroup
+            'Kitespots': allSpotsCluster,
+            'Kitespots S': southSpotCluster
         };
 
         L.control.layers(baseLayers, overLays).addTo(map);
@@ -92,8 +99,15 @@
         }).bindPopup(function (layer) {
             return layer.feature.properties.name;
         }).addTo(map);
+
+        select values;
+        https://stackoverflow.com/questions/26128274/converting-geojson-object-to-javascript-array
 */
 
     </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
