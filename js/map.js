@@ -60,10 +60,20 @@ var filtered_geojson = geojson_filter(kitespots, filter);
     var southSpotCluster = new L.markerClusterGroup();
     var kitespotS = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
-            return L.marker(latlng)
-            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
-        }
-    });
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"pink"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["windDirection"] == "S"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.windDirection == "S"
+            );
+        }       
+    });  
     southSpotCluster.addLayer(kitespotS);
 
         // - Cluster and popups to kitespots facing WEST - //
@@ -72,7 +82,7 @@ var filtered_geojson = geojson_filter(kitespots, filter);
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .7,
+                opacity: .8,
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
@@ -92,7 +102,7 @@ var filtered_geojson = geojson_filter(kitespots, filter);
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .7,
+                opacity: .8,
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
@@ -112,7 +122,7 @@ var filtered_geojson = geojson_filter(kitespots, filter);
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .7,
+                opacity: .8,
                 color:"red"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
