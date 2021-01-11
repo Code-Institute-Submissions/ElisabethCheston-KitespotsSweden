@@ -70,10 +70,20 @@ var filtered_geojson = geojson_filter(kitespots, filter);
     var westSpotCluster = new L.markerClusterGroup();
     var kitespotW = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
-            return L.marker(latlng)
-            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
-        }
-    });
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .7,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["windDirection"] == "W"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.windDirection == "W"
+            );
+        }       
+    });       
     westSpotCluster.addLayer(kitespotW);
 
         // - Cluster and popups to kitespots facing NORTH - //
@@ -87,10 +97,10 @@ var filtered_geojson = geojson_filter(kitespots, filter);
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["windDirection"] == "N/W"
+                feature["properties"]["windDirection"] == "N"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.windDirection == "N/W"
+                return (feature.properties.windDirection == "N"
             );
         }       
     });       
