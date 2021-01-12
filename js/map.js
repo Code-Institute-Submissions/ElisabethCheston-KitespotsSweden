@@ -143,6 +143,9 @@
     };
     spotSelector.addTo(map);
 
+        // - Create the spotSelect variable for the DomEvent listener. - //
+    var spotSelect = L.DomUtil.get("spotSelect");
+
     map.addLayer(searchSpots);
 
 
