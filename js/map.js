@@ -129,6 +129,20 @@
 		    layer.bindPopup(popup);
         }
     });
+        // - Create the search engine and place it on the map - //
+    var spotSelector = L.control({
+        position: 'topleft',
+        opacity: 0.8,
+        size: 12
+    });
+
+    spotSelector.onAdd = function(map) {
+        var div = L.DomUtil.create('div'); // make a 'div' for lable
+        div.innerHTML = '<select id = "spotSelect"><option value = "init">KITESPOTS</option></select>';
+        return div;
+    };
+    spotSelector.addTo(map);
+
     map.addLayer(searchSpots);
 
 
