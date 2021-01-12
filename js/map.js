@@ -118,8 +118,9 @@
     eastSpotCluster.addLayer(kitespotE);
 
 
+                // - SEARCH ENGINE - //
 
-        // Create variable for search source(kitespots) //
+        // - Variable for search source(kitespots) - //
     var searchSpots = L.geoJson(kitespots, {
         onEachFeature: function(feature, layer) {
             var popup = "<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>";
@@ -129,7 +130,7 @@
 		    layer.bindPopup(popup);
         }
     });
-        // - Create the search engine and place it on the map - //
+        // - The search engine and place it on the map - //
     var spotSelector = L.control({
         position: 'topleft',
         opacity: 0.8,
@@ -143,9 +144,17 @@
     };
     spotSelector.addTo(map);
 
-        // - Create the spotSelect variable for the DomEvent listener. - //
+        // - The spotSelect variable for the DomEvent listener. - //
     var spotSelect = L.DomUtil.get("spotSelect");
-
+    
+        // - Function to browse and choose spots - //
+    searchSpots.eachLayer(function(layer) {
+        var spotChoice = document.createElement("option");
+        spotChoice.innerHTML = layer.feature.properties.name;
+        spotChoice.value = layer._leaflet_id;
+        L.DomUtil.get("spotSelect").appendChild(spotChoice);
+    });
+ 
     map.addLayer(searchSpots);
 
 
