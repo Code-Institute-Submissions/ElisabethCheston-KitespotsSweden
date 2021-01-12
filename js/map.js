@@ -1,23 +1,4 @@
 
-//mapboxgl.accessToken = "pk.eyJ1IjoibGlhaGNoZXN0b24iLCJhIjoiY2tpbG5seXE5MGxhYzJ6bXd4Y2xvN2xwMiJ9.efl4PsN0s5YHbu22oEqrlg"
-//import createFilter from "feature-filter-geojson";
-/*
-function geojson_filter(geojson, filter_exp) {
-  var features = geojson.features;
-  geojson.features = [];
-  var geojson_clon = Object.assign({}, geojson);
-  geojson.features = features;
-
-  var filter = createFilter(filter_exp);
-  geojson_clon .features = filter(geojson.features, filter);    
-  return geojson_clon;
-}
-
-var filter = ["all",["==", "windDirection", "S"],];
-
-var filtered_geojson = geojson_filter(kitespots, filter);
-*/
-
 
         // - Basemaps variables - //
     var hybrid = L.esri.basemapLayer('ImageryClarity');
@@ -67,10 +48,10 @@ var filtered_geojson = geojson_filter(kitespots, filter);
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["windDirection"] == "S"
+                feature["properties"]["windDirection"] == "S" || "SW/S" || "S/SE" || "SW/S/SE"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.windDirection == "S"
+                return (feature.properties.windDirection == "S" || "SW/S" || "S/SE" || "SW/S/SE"
             );
         }       
     });  
@@ -137,21 +118,35 @@ var filtered_geojson = geojson_filter(kitespots, filter);
     eastSpotCluster.addLayer(kitespotE);
 
 
-        // - Control layers - //
-        var baseLayers = {
-            "Hybrid": hybrid,
-            "Topographic": topographic,
-            "Streets": streets
-        };
-        var overLays = {
-            'All Kitespots': allSpotsCluster,
-            'Kitespots S': southSpotCluster,
-            'Kitespots W': westSpotCluster,
-            'Kitespots N': northSpotCluster,
-            'Kitespots E': eastSpotCluster
+
+        // Create variable for search source(kitespots) //
+    var searchSpots = L.geoJson(kitespots, {
+        onEachFeature: function(feature, layer) {
+            var popup = "<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>";
+            if (feature.properties && feature.properties.popupContent) {
+			    popupContent += feature.properties.popupContent;
+		    }
+		    layer.bindPopup(popup);
         }
+    });
+    map.addLayer(searchSpots);
+
+
+        // - Control layers - //
+    var baseLayers = {
+        "Hybrid": hybrid,
+        "Topographic": topographic,
+        "Streets": streets
+    };
+    var overLays = {
+        'All Kitespots': allSpotsCluster,
+        'Kitespots S': southSpotCluster,
+        'Kitespots W': westSpotCluster,
+        'Kitespots N': northSpotCluster,
+        'Kitespots E': eastSpotCluster
+    }
         
-        L.control.layers(baseLayers, overLays).addTo(map);
+    L.control.layers(baseLayers, overLays).addTo(map);
 
 /*
         // - Kitespots from geojson made in GeoJson.io - //
