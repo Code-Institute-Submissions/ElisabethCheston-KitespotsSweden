@@ -9,6 +9,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BREDVIKEN",
+        "label": "NORTHEAST",
         "windDirection": "S"
       },
       "geometry": {
@@ -26,6 +27,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BODÖN",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -43,6 +45,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORSAND",
+        "label": "NORTHEAST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -60,6 +63,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LULVIKSBADET",
+        "label": "NORTHEAST",
         "windDirection": "NW/N"
       },
       "geometry": {
@@ -77,6 +81,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LULHÄLLAN",
+        "label": "NORTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -94,6 +99,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KLUBBVIKEN",
+        "label": "NORTHEAST",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -111,6 +117,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORSNÄCK",
+        "label": "NORTHEAST",
         "windDirection": "W/NW/N"
       },
       "geometry": {
@@ -128,6 +135,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SILLSKATAN",
+        "label": "NORTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -145,6 +153,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJURÖKLUBB E",
+        "label": "NORTHEAST",
         "windDirection": "SW/S/SE/E"
       },
       "geometry": {
@@ -162,6 +171,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJURÖKLUBB W",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -179,6 +189,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LILLIS",
+        "label": "NORTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -196,6 +207,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LÄNKEBOO",
+        "label": "NORTHEAST",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -213,6 +225,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORÄNGET",
+        "label": "NORTHEAST",
         "windDirection": "NW"
       },
       "geometry": {
@@ -230,6 +243,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SALUSAND",
+        "label": "NORTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -247,6 +261,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STUBBSAND",
+        "label": "NORTHEAST",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -264,6 +279,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GULLVIK",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -281,6 +297,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VANNVIKEN",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -298,6 +315,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NYÄNGET",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -315,6 +333,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORSANDEN",
+        "label": "NORTHEAST",
         "windDirection": "N/NW"
       },
       "geometry": {
@@ -332,6 +351,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SÄLSTEN",
+        "label": "NORTHEAST",
         "windDirection": "NW/NE"
       },
       "geometry": {
@@ -349,6 +369,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SMITINGE",
+        "label": "NORTHEAST",
         "windDirection": "SE/S"
       },
       "geometry": {
@@ -366,6 +387,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SVARTVIK",
+        "label": "NORTHEAST",
         "windDirection": "SE"
       },
       "geometry": {
@@ -383,6 +405,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "YTTERFÄLLE",
+        "label": "NORTHEAST",
         "windDirection": "SE"
       },
       "geometry": {
@@ -400,6 +423,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MYCKELÄNG",
+        "label": "NORTHEAST",
         "windDirection": "NW/SW/W"
       },
       "geometry": {
@@ -417,6 +441,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GULLFIBER",
+        "label": "NORTHEAST",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -434,6 +459,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SMACKEN",
+        "label": "NORTHEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -451,6 +477,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORNÄSET",
+        "label": "NORTHEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -468,6 +495,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "DYRÅSAND",
+        "label": "NORTHEAST",
         "windDirection": "E/SE/NE"
       },
       "geometry": {
@@ -485,6 +513,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SÖRFJÄRDEN",
+        "label": "NORTHEAST",
         "windDirection": "E/SE"
       },
       "geometry": {
@@ -502,6 +531,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VARPSAND",
+        "label": "NORTHEAST",
         "windDirection": "NE/E"
       },
       "geometry": {
@@ -519,6 +549,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÅRTE",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -536,6 +567,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HALLSBO",
+        "label": "NORTHEAST",
         "windDirection": "NW"
       },
       "geometry": {
@@ -553,6 +585,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FÖNEBO",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -570,6 +603,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MALNBADEN",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -587,6 +621,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÖLICK V",
+        "label": "NORTHEAST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -604,6 +639,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÖLICK S",
+        "label": "NORTHEAST",
         "windDirection": "SE/S"
       },
       "geometry": {
@@ -621,6 +657,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TÅNGVIK",
+        "label": "NORTHEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -638,6 +675,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SÖRSUNDET",
+        "label": "NORTHEAST",
         "windDirection": "N/NW"
       },
       "geometry": {
@@ -655,6 +693,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SNÄCKEN",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -672,6 +711,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KRÅKNÄS",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -689,6 +729,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STENÖ HAVSBAD",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -707,6 +748,7 @@ var kitespots = {
         "marker-symbol": "",
         "name": "ORSUNNDET",
         "SW/windDirection/NW": "",
+        "label": "NORTHEAST",
         "windDirection": "S/SW/W/NW"
       },
       "geometry": {
@@ -724,6 +766,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ENSKÄR",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -741,6 +784,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "UTVALNÄS UDDE",
+        "label": "NORTHEAST",
         "windDirection": "S/SE/E"
       },
       "geometry": {
@@ -758,6 +802,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HOLMUDDEN",
+        "label": "NORTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -775,6 +820,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BRÄDVIKEN",
+        "id": "uppereast",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -792,6 +838,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KLÄCKEN",
+        "label": "NORTHEAST",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -809,6 +856,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RULLSAND",
+        "label": "NORTHEAST",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -826,6 +874,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SALNÖ",
+        "label": "MIDEAST",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -843,6 +892,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KAPELLSKÄR",
+        "label": "MIDEAST",
         "windDirection": "SW/S/SE"
       },
       "geometry": {
@@ -860,6 +910,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BROMSKÄR",
+        "label": "MIDEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -877,6 +928,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "DEGERSAND",
+        "label": "ÅLAND",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -894,6 +946,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SANDMO",
+        "label": "ÅLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -911,6 +964,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKJULET",
+        "label": "ÅLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -928,6 +982,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LUMPARN",
+        "label": "ÅLAND",
         "windDirection": "N/NW/NE"
       },
       "geometry": {
@@ -945,6 +1000,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "PRÄSTÖ",
+        "label": "ÅLAND",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -962,6 +1018,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÄGERNÄSBADET",
+        "label": "MIDEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -979,6 +1036,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NÄSAÄNG",
+        "label": "MIDEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -996,6 +1054,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STICKLINGE",
+        "label": "MIDEAST",
         "windDirection": "NW/W"
       },
       "geometry": {
@@ -1013,6 +1072,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FÅGELÖUDDE",
+        "label": "MIDEAST",
         "windDirection": "NE/N"
       },
       "geometry": {
@@ -1030,6 +1090,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SÄTRASTRAND",
+        "label": "MIDEAST",
         "windDirection": "W"
       },
       "geometry": {
@@ -1047,6 +1108,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MJÖLKUDDEN",
+        "label": "MIDEAST",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -1064,6 +1126,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ERSTAVIK",
+        "label": "MIDEAST",
         "windDirection": "SE"
       },
       "geometry": {
@@ -1081,6 +1144,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TRINNTORP",
+        "label": "MIDEAST",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -1097,7 +1161,8 @@ var kitespots = {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "name": "SANDHLMEN",
+        "name": "SANDHOLMEN",
+        "label": "MIDEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -1115,6 +1180,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GRÖNSKAN",
+        "label": "MIDEAST",
         "windDirection": "SW/S"
       },
       "geometry": {
@@ -1132,6 +1198,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LILLA SAND",
+        "label": "MIDEAST",
         "windDirection": "S/EW/SE"
       },
       "geometry": {
@@ -1149,6 +1216,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJÖRKVIK",
+        "label": "MIDEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -1166,6 +1234,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TORPESAND",
+        "label": "MIDEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -1183,6 +1252,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "DALARÖ",
+        "label": "MIDEAST",
         "windDirection": "SW/S"
       },
       "geometry": {
@@ -1200,6 +1270,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GÅLÖ",
+        "label": "MIDEAST",
         "windDirection": "E"
       },
       "geometry": {
@@ -1217,6 +1288,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÖRUDDEN N",
+        "label": "MIDEAST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -1234,6 +1306,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÖRUDDEN V",
+        "label": "MIDEAST",
         "windDirection": "W/SW/S"
       },
       "geometry": {
@@ -1251,6 +1324,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÖRUDDEN S",
+        "label": "MIDEAST",
         "windDirection": "S/SW/SE"
       },
       "geometry": {
@@ -1268,6 +1342,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VARPET",
+        "label": "GOTLAND",
         "windDirection": "NE/E"
       },
       "geometry": {
@@ -1285,6 +1360,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "EKEVIKEN",
+        "label": "GOTLAND",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -1302,6 +1378,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKÄR",
+        "label": "GOTLAND",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -1319,6 +1396,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKALASAND",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1336,6 +1414,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SUDERSAND",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1353,6 +1432,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SAXRIV",
+        "label": "GOTLAND",
         "windDirection": "W/NW/N"
       },
       "geometry": {
@@ -1370,6 +1450,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SJÖKRGEN",
+        "label": "GOTLAND",
         "windDirection": "SE"
       },
       "geometry": {
@@ -1387,6 +1468,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ST OLOFSHOLM",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1404,6 +1486,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HIDEVIKEN",
+        "label": "GOTLAND",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -1421,6 +1504,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SLITE",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1438,6 +1522,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "IREVIKEN",
+        "label": "GOTLAND",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -1455,6 +1540,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NORDENSTRAND",
+        "label": "GOTLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -1472,6 +1558,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VISBY KALLIS",
+        "label": "GOTLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -1489,6 +1576,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FRIDHEM",
+        "label": "GOTLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -1506,6 +1594,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÅMINNE",
+        "label": "GOTLAND",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -1523,6 +1612,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KATTVIK",
+        "label": "GOTLAND",
         "windDirection": "N/NW"
       },
       "geometry": {
@@ -1540,6 +1630,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GROGARN",
+        "label": "GOTLAND",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -1557,6 +1648,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NATVIKSUDD",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1574,6 +1666,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SANDVIKEN",
+        "label": "GOTLAND",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -1591,6 +1684,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄSTERVIKEN",
+        "label": "GOTLAND",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -1608,6 +1702,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "JRP",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1625,6 +1720,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SJAUSTRU",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1642,6 +1738,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ARDREVIKEN",
+        "label": "GOTLAND",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1659,6 +1756,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LJUGARN",
+        "label": "GOTLAND",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -1676,6 +1774,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LAUSVIKEN",
+        "label": "GOTLAND",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -1693,6 +1792,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GANSVIKEN",
+        "label": "GOTLAND",
         "windDirection": "N/NE"
       },
       "geometry": {
@@ -1710,6 +1810,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FALUDDEN N",
+        "label": "GOTLAND",
         "windDirection": "N/NE"
       },
       "geometry": {
@@ -1727,6 +1828,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FALUDDEN S",
+        "label": "GOTLAND",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -1744,6 +1846,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HOLMHÄLLAR",
+        "label": "GOTLAND",
         "windDirection": "S/SE/E"
       },
       "geometry": {
@@ -1761,6 +1864,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VALAR",
+        "label": "GOTLAND",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -1778,6 +1882,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NISSESVIKEN",
+        "label": "GOTLAND",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -1795,6 +1900,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TJURUDDEN",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1812,6 +1918,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KOVIK",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1829,6 +1936,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄSTERGARN N",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1846,6 +1954,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TOFTA S",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1863,6 +1972,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STRANDPANGET",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1880,6 +1990,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GNISVÄRD",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1897,6 +2008,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FURILLEN",
+        "label": "GOTLAND",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -1914,6 +2026,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄSTERGARN S",
+        "label": "GOTLAND",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -1931,6 +2044,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HALLMARE",
+        "label": "SOUTHEAST",
         "windDirection": "SW/S"
       },
       "geometry": {
@@ -1948,6 +2062,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GRÄNSÖ",
+        "label": "SOUTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -1965,6 +2080,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HORNSUDDE",
+        "label": "SOUTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -1982,6 +2098,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÄNGJARN",
+        "label": "ÖLAND",
         "windDirection": "S/SE/NE"
       },
       "geometry": {
@@ -1999,6 +2116,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TROLLSKOGEN",
+        "label": "ÖLAND",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -2016,6 +2134,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BÖDA",
+        "label": "ÖLAND",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -2033,6 +2152,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BYRUM",
+        "label": "ÖLAND",
         "windDirection": "W/SW/NW"
       },
       "geometry": {
@@ -2050,6 +2170,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÖGBY",
+        "label": "ÖLAND",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -2067,6 +2188,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ALVEDSJÖ",
+        "label": "ÖLAND",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -2084,6 +2206,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SANDVIK",
+        "label": "ÖLAND",
         "windDirection": "SW/S/NW"
       },
       "geometry": {
@@ -2101,6 +2224,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KÅREHAMN",
+        "label": "ÖLAND",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -2118,6 +2242,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÄLEKLINTA",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2135,6 +2260,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KÖPINGSVIK",
+        "label": "ÖLAND",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -2152,6 +2278,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJÄRBYBADET",
+        "label": "ÖLAND",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -2169,6 +2296,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BLÄSINGE",
+        "label": "ÖLAND",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -2186,6 +2314,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SAXNÄS",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2203,6 +2332,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TALLUDDEN",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2220,6 +2350,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HAGA PARK",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2237,6 +2368,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SANDBERGEN",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2254,6 +2386,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KLEVA",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2271,6 +2404,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GRÖNHÖGEN",
+        "label": "ÖLAND",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2288,6 +2422,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BERGAVIKEN",
+        "label": "SOUTHEAST",
         "windDirection": "E"
       },
       "geometry": {
@@ -2305,6 +2440,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LÅNGVIKEN",
+        "label": "SOUTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2323,6 +2459,7 @@ var kitespots = {
         "marker-symbol": "",
         "name": "BERGKVARA UDDE",
         "windDirectioon": "",
+        "label": "SOUTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2340,6 +2477,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKÄPPEVIK",
+        "label": "SOUTHEAST",
         "windDirection": "NE"
       },
       "geometry": {
@@ -2357,6 +2495,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KRISTIANOPEL",
+        "label": "SOUTHEAST",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2374,6 +2513,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TORHAMN",
+        "label": "SOUTHEAST",
         "windDirection": "SW"
       },
       "geometry": {
@@ -2391,6 +2531,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GISSELVIK",
+        "label": "SOUTHEAST",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -2408,6 +2549,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STUMHOLMEN",
+        "label": "SOUTHEAST",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -2425,6 +2567,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LINDÖ",
+        "label": "SOUTHEAST",
         "windDirection": "SW/S/SE"
       },
       "geometry": {
@@ -2442,6 +2585,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NABBEN",
+        "label": "SOUTH",
         "windDirection": "SW/S"
       },
       "geometry": {
@@ -2459,6 +2603,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NORJE",
+        "label": "SOUTH",
         "windDirection": "N/NE"
       },
       "geometry": {
@@ -2476,6 +2621,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NOGERSUND",
+        "label": "SOUTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2493,6 +2639,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TORSÖ",
+        "label": "SOUTH",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -2510,6 +2657,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SANDVIKEN",
+        "label": "SOUTH",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -2527,6 +2675,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RINKABY",
+        "label": "SOUTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2544,6 +2693,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÅHUS ÅWC",
+        "label": "SOUTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2561,6 +2711,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÄSPET",
+        "label": "SOUTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -2578,6 +2729,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VIK",
+        "label": "SOUTH",
         "windDirection": "E/NE"
       },
       "geometry": {
@@ -2595,6 +2747,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VITEMÖLLA",
+        "label": "SOUTH",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -2612,6 +2765,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BORRBY",
+        "label": "SOUTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2629,6 +2783,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LÖDERUP",
+        "label": "SOUTH",
         "windDirection": "SW/S/SE"
       },
       "geometry": {
@@ -2646,6 +2801,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SANDHAM",
+        "label": "SOUTH",
         "windDirection": "S/SE/E"
       },
       "geometry": {
@@ -2663,6 +2819,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KÅSEBERGA",
+        "label": "SOUTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -2680,6 +2837,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SALTAN",
+        "label": "SOUTH",
         "windDirection": "S/SE/E"
       },
       "geometry": {
@@ -2697,6 +2855,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "YSTAD YWC",
+        "label": "SOUTH",
         "windDirection": "SW/S"
       },
       "geometry": {
@@ -2714,6 +2873,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MOSSBYSTRAND",
+        "label": "SOUTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -2731,6 +2891,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FRANKS UDDE",
+        "label": "SOUTH",
         "windDirection": "SW/S/SE"
       },
       "geometry": {
@@ -2748,6 +2909,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BEDDINGE",
+        "label": "SOUTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -2765,6 +2927,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BÖSTE",
+        "label": "SOUTH",
         "windDirection": "SW/S/SE"
       },
       "geometry": {
@@ -2782,6 +2945,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KÄMINGE",
+        "label": "SOUTH",
         "windDirection": "SW/S/SE/E"
       },
       "geometry": {
@@ -2799,6 +2963,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LJUNGHUSEN",
+        "label": "SOUTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -2816,6 +2981,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÖLLVIKEN",
+        "label": "SOUTH",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -2833,6 +2999,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FALSTERBO",
+        "label": "SOUTH",
         "windDirection": "S/SE/E"
       },
       "geometry": {
@@ -2850,6 +3017,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKANÖR SÖDRA",
+        "label": "SOUTH",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -2867,6 +3035,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KLAGSHAMN",
+        "label": "SOUTH",
         "windDirection": "SW/S"
       },
       "geometry": {
@@ -2884,6 +3053,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RIBERSBRG",
+        "label": "SOUTH",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -2901,6 +3071,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄSTRA HAMNEN",
+        "label": "SOUTH",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2918,6 +3089,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LOMMA",
+        "label": "SOUTH",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2935,6 +3107,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HL KITE BEACH",
+        "label": "SOUTH",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -2952,6 +3125,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SAXTORP",
+        "label": "SOUTH",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -2969,6 +3143,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LUNDÅKRA",
+        "label": "SOUTH",
         "windDirection": "E/S/SW"
       },
       "geometry": {
@@ -2986,6 +3161,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BORSTAHUSEN",
+        "label": "SOUTH",
         "windDirection": "S/SW/NW"
       },
       "geometry": {
@@ -3003,6 +3179,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FORTUNA",
+        "label": "SOUTH",
         "windDirection": "S/SW/NW"
       },
       "geometry": {
@@ -3020,6 +3197,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RÅÅ HAMN",
+        "label": "SOUTH",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -3037,6 +3215,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "DOMSTEN",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/MW"
       },
       "geometry": {
@@ -3054,6 +3233,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HÖGANÄS",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3071,6 +3251,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LERHAMN",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3088,6 +3269,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FARHULT",
+        "label": "SOUTHWEST",
         "windDirection": "NW/N"
       },
       "geometry": {
@@ -3105,6 +3287,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KLITTERHUS",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3122,6 +3305,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VEJBYSTRAND S",
+        "label": "SOUTHWEST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -3139,6 +3323,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MALENS HAVSBAD",
+        "label": "SOUTHWEST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -3156,6 +3341,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MELLBY S",
+        "label": "SOUTHWEST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -3173,6 +3359,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MELLBY N",
+        "label": "SOUTHWEST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -3190,6 +3377,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LAGAOSET",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3207,6 +3395,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HALMSTAD E",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3224,6 +3413,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "DOGSHIT BAY",
+        "label": "SOUTHWEST",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -3241,6 +3431,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RINGENÄS",
+        "label": "SOUTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3258,6 +3449,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name ": "VILSHÄRAD",
+        "label": "SOUTHWEST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -3275,6 +3467,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RINGSEGÅRD",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3292,6 +3485,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKREA",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3309,6 +3503,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "OLOFSBO",
+        "label": "SOUTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3326,6 +3521,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJÖRKÄNG",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3343,6 +3539,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LÄJET",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3360,6 +3557,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "APELVIKEN",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3377,6 +3575,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GETTERÖN N",
+        "label": "SOUTHWEST",
         "windDirection": "W/NW/N"
       },
       "geometry": {
@@ -3394,6 +3593,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GETTERÖN S",
+        "label": "SOUTHWEST",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -3411,6 +3611,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NORRA NÄS",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3428,6 +3629,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KÄRRADAL",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3445,6 +3647,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RINGHALS",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3462,6 +3665,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STRÅVALLA",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3479,6 +3683,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RÅGELUND",
+        "label": "SOUTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3496,6 +3701,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RÖDA HOLMEN",
+        "label": "SOUTHWEST",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -3513,6 +3719,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GOTTKÄR",
+        "label": "SOUTHWEST",
         "windDirection": "N/NE/E"
       },
       "geometry": {
@@ -3530,6 +3737,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STENUDDEN",
+        "label": "SOUTHWEST",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -3547,6 +3755,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TORKELSTORP",
+        "label": "SOUTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3564,6 +3773,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ASKIMBADET",
+        "label": "NORTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3581,6 +3791,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ARENDAL",
+        "label": "NORTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3598,6 +3809,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LAPPESAND",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3615,6 +3827,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HUMMERVIKEN",
+        "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3632,6 +3845,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SILLVIK",
+        "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3649,6 +3863,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJÖRKLANDA",
+        "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -3666,6 +3881,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GLÖSKÄR",
+        "label": "NORTHWEST",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -3683,6 +3899,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LYCKE",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3700,6 +3917,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TJUVKIL",
+        "label": "NORTHWEST",
         "windDirection": "W/NW/N"
       },
       "geometry": {
@@ -3717,6 +3935,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ARÖD",
+        "label": "NORTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3734,6 +3953,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TRLLENÄS",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3751,6 +3971,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "TRÄTTE",
+        "label": "NORTHWEST",
         "windDirection": "E/SE/S"
       },
       "geometry": {
@@ -3768,6 +3989,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GRENGÅRD",
+        "label": "NORTHWEST",
         "windDirection": "E/SE/S"
       },
       "geometry": {
@@ -3785,6 +4007,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LAGMANSHOLMEN",
+        "label": "NORTHWEST",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -3802,6 +4025,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SOLLID",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3819,6 +4043,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FISKEBÄCKSVIK",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3836,6 +4061,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HABYBUKTEN",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3853,6 +4079,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BOVALLSTRAND",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3870,6 +4097,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SKEPPSTAD",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3887,6 +4115,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RAFTÖTÅNGEN N",
+        "label": "NORTHWEST",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -3904,6 +4133,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "RSSÖ KITE",
+        "label": "NORTHWEST",
         "windDirection": "S//S/SW"
       },
       "geometry": {
@@ -3921,6 +4151,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ROSSÖ",
+        "label": "NORTHWEST",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -3938,6 +4169,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STENVIK",
+        "label": "NORTHWEST",
         "windDirection": "SE/S"
       },
       "geometry": {
@@ -3955,6 +4187,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÖREKROKEN",
+        "label": "NORTHWEST",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -3971,7 +4204,8 @@ var kitespots = {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "name": "RINGsHAUG",
+        "name": "RINGSHAUG",
+        "label": "NORTHWEST",
         "windDirection": "E/SE"
       },
       "geometry": {
@@ -3989,6 +4223,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LARKOLLEN",
+        "label": "NORTHWEST",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4006,6 +4241,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "FRAMNES",
+        "label": "NORTHWEST",
         "windDirection": "E/SE/S"
       },
       "geometry": {
@@ -4023,6 +4259,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "REFSNES",
+        "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -4040,6 +4277,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄNERSNÄS",
+        "label": "VÄRNEN",
         "windDirection": "N/NE"
       },
       "geometry": {
@@ -4057,6 +4295,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SIKHALL",
+        "label": "VÄRNEN",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4074,6 +4313,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VITA SANDAR",
+        "label": "VÄRNEN",
         "windDirection": "NE/E/SE"
       },
       "geometry": {
@@ -4091,6 +4331,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SVALNÄS",
+        "label": "VÄRNEN",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -4108,6 +4349,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SVANVIK",
+        "label": "VÄRNEN",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -4125,6 +4367,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJÖRNRUKAN",
+        "label": "VÄRNEN",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4142,6 +4385,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BOMSTAD",
+        "label": "VÄRNEN",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4159,6 +4403,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BREDSANDEN",
+        "label": "VÄRNEN",
         "windDirection": "NE/E/SE"
       },
       "geometry": {
@@ -4176,6 +4421,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄTTERSTRAND",
+        "label": "VÄTTERN",
         "windDirection": "NE/N/NW"
       },
       "geometry": {
@@ -4193,6 +4439,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NORDVIKEN",
+        "label": "VÄTTERN",
         "windDirection": "NE/E/SE"
       },
       "geometry": {
@@ -4210,6 +4457,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄTTERVIK",
+        "label": "VÄTTERN",
         "windDirection": "W/NW/N"
       },
       "geometry": {
@@ -4227,6 +4475,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VARAMON",
+        "label": "VÄTTERN",
         "windDirection": "W/NW"
       },
       "geometry": {
@@ -4244,6 +4493,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "MARICON",
+        "label": "VÄTTERN",
         "windDirection": "S/SW/W"
       },
       "geometry": {
@@ -4261,6 +4511,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "ÄSPENÄSET",
+        "label": "VÄTTERN",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -4278,6 +4529,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "HARGEBADEN",
+        "label": "VÄTTERN",
         "windDirection": "S/SW"
       },
       "geometry": {

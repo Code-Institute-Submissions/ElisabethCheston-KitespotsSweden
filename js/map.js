@@ -68,10 +68,10 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["windDirection"] == "W"
+                feature["properties"]["windDirection"] == "gotland"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.windDirection == "W"
+                return (feature.properties.windDirection == "gotland"
             );
         }       
     });       
@@ -98,8 +98,8 @@
     northSpotCluster.addLayer(kitespotN);
 
         // - Cluster and popups to kitespots facing EAST - //
-    var eastSpotCluster = new L.markerClusterGroup();
-    var kitespotE = L.geoJson(kitespots, {
+    var northCluster = new L.markerClusterGroup();
+    var northSpots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
@@ -108,18 +108,19 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["windDirection"] == "E"
+                feature["properties"]["id"] == "north"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.windDirection == "E"
+                return (feature.properties.id == "north"
             );
         }       
     });
-    eastSpotCluster.addLayer(kitespotE);
+    northCluster.addLayer(northSpots);
 
 
                 // - SEARCH ENGINE - //
 
+        // - Reference; https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list - //                        
  var clusterSpots = L.markerClusterGroup();                
         // - Variable for search source(kitespots) - //
         var searchSpots = L.geoJson(kitespots, {
@@ -186,7 +187,7 @@
         'Kitespots S': southSpotCluster,
         'Kitespots W': westSpotCluster,
         'Kitespots N': northSpotCluster,
-        'Kitespots E': eastSpotCluster
+        'NORTH': northCluster
     }
         
     L.control.layers(baseLayers, overLays).addTo(map);
