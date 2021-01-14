@@ -107,7 +107,25 @@
     northCluster.addLayer(north);
     
     
-
+        // - Cluster and popups to kitespots North East - //
+    var northeastCluster = new L.markerClusterGroup();
+    var northeast = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "NORTH EAST"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "NORTH EAST"
+            );
+        }       
+    });       
+    northeastCluster.addLayer(northeast);
 
 
         // - Control layers - //
