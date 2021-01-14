@@ -352,21 +352,29 @@
             ]
         }
     ];
-    var overLays = {
-        'All': clusterSpots,
-        'North': northCluster,
-        'North East': northeastCluster,
-        'Mid East': mideastCluster,
-        'Åland': alandCluster,
-        'Gotland': gotlandCluster,
-        'Öland': olandCluster,
-        'South East': southeastCluster,
-        'South': southCluster,
-        'South West': southwestCluster,
-        'North West': northwestCluster,
-        'Vänern': vanernCluster,
-        'Vättern': vatternCluster
-    }
+    var overLays = [
+        {
+        group: "Maps",
+        collapsed: true,
+        layers: [
+            {
+                'All': clusterSpots,
+                'North': northCluster,
+                'North East': northeastCluster,
+                'Mid East': mideastCluster,
+                'Åland': alandCluster,
+                'Gotland': gotlandCluster,
+                'Öland': olandCluster,
+                'South East': southeastCluster,
+                'South': southCluster,
+                'South West': southwestCluster,
+                'North West': northwestCluster,
+                'Vänern': vanernCluster,
+                'Vättern': vatternCluster
+                }
+            ]
+        }
+    ];
         
     L.control.layers(baseLayers, overLays).addTo(map);
 
