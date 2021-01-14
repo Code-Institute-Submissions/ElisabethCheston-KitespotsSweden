@@ -86,6 +86,27 @@
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
         */
 
+        // - Cluster and popups to kitespots North   - //
+    var northCluster = new L.markerClusterGroup();
+    var north = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"pink"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "NORTH EAST"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "NORTH EAST"
+            );
+        }       
+    });  
+    northCluster.addLayer(north);
+    
+    
 
 
 
@@ -97,7 +118,7 @@
     };
     var overLays = {
         'All': clusterSpots,
-        //'North': northCluster,
+        'North': northCluster,
         //'North East': northeastCluster,
         //'Mid East': mideastCluster,
         //'Åland': alandCluster,
