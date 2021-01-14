@@ -336,7 +336,14 @@
         }       
     });       
     vatternCluster.addLayer(vattern);      
+
     
+    /*var svgCounties =  document.createElementNS("https://upload.wikimedia.org/wikipedia/commons/d/df/Sweden_location_map.svg", "svg", );
+    // svgElement.setAttribute('NordNordWest, CC BY-SA 3.0', "https://creativecommons.org/licenses/by-sa/3.0", 'via Wikimedia Commons');
+    // svgElement.setAttribute('viewBox', "0 0 200 200");
+    svgElement.innerHTML = ('rect width="200" height="200"'); // <rect x="75" y="23" width="50" height="50" style="fill:red"/><rect x="75" y="123" width="50" height="50" style="fill:#0013ff"/>';
+    var svgElementBounds = [ [ 52.500440,2.250475 ], [ 70.742227,37.934697 ] ];
+    L.svgOverlay(svgElement, svgElementBounds).addTo(map); */
 
         // - Control layers - //
     var baseLayers = {
@@ -358,8 +365,12 @@
         'South West': southwestCluster,
         'North West': northwestCluster,
         'Vänern': vanernCluster,
-        'Vättern': vatternCluster
+        'Vättern': vatternCluster,
+        //'Counties': simplemapsCountrymapdata
     }
+    /*var optionLayers = {
+        'Counties': simplemaps_countrymap_mapdata
+    } */
         
         // - Add it all to the map - //
     L.control.layers(baseLayers, overLays).addTo(map);
