@@ -9,7 +9,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BREDVIKEN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S"
       },
       "geometry": {
@@ -27,7 +27,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BODÖN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -45,7 +45,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORSAND",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SW/W"
       },
       "geometry": {
@@ -63,7 +63,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LULVIKSBADET",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "NW/N"
       },
       "geometry": {
@@ -81,7 +81,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LULHÄLLAN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -99,7 +99,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "KLUBBVIKEN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -117,7 +117,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORSNÄCK",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "W/NW/N"
       },
       "geometry": {
@@ -135,7 +135,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SILLSKATAN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -153,7 +153,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJURÖKLUBB E",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SW/S/SE/E"
       },
       "geometry": {
@@ -171,7 +171,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJURÖKLUBB W",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -189,7 +189,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LILLIS",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -207,7 +207,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "LÄNKEBOO",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SE/E/NE"
       },
       "geometry": {
@@ -225,7 +225,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORÄNGET",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "NW"
       },
       "geometry": {
@@ -243,7 +243,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SALUSAND",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "SE/E"
       },
       "geometry": {
@@ -261,7 +261,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STUBBSAND",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S/SW"
       },
       "geometry": {
@@ -279,7 +279,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "GULLVIK",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -297,7 +297,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VANNVIKEN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -315,7 +315,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "NYÄNGET",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "S/SE"
       },
       "geometry": {
@@ -333,7 +333,7 @@ var spots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "STORSANDEN",
-        "label": "NORTHEAST",
+        "label": "NORTH",
         "windDirection": "N/NW"
       },
       "geometry": {

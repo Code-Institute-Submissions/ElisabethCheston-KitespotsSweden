@@ -16,38 +16,35 @@
     <script src="https://unpkg.com/esri-leaflet-cluster@2.1.0/dist/esri-leaflet-cluster.js" integrity="sha512-fEdNFHisleVtEYdLhW4Z2RsR7TN6hLutE/+O4D+skfTNY2rlHm8HOZARPWkdrFFy/+i2KjFxcZAKTUWaVfbV0g==" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.0.0/dist/geosearch.css"/>
-    <!-- Mapbox GL -->
-    <!--<link  href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet" />
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script> -->
-    <!--GeoJson data-->
+        <!-- CSS files -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- GeoJson data -->
     <script src="/json/kitespots.json"></script>
-    <script src="/json/cities.json"></script>
+    <script src="/json/stations.json"></script>
 
-
-    <!--CSS files
-    <script src="/css/style.css"></script> -->
 
     <title>KitespotsSweden</title>
-<style>
-        
-html, body, #map {
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
 
-}
-</style>
+    <style>
+            
+    html, body, #map {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    </style>
 </head>
 <body>
+
     <div id="map"></div>
 
 
 
-    <!--JavaScript files-->
-    <script src="/js/map.js"></script>
-    <!--<script src="/js/mapboxFilterLayer.js" type="module"></script>  -->  
     <!--jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
+    <!--JavaScript files-->
+    <script src="/js/map.js"></script>
+    <script src="/js/weatherWarning.js"></script>
 </body>
 </html>
