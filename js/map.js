@@ -383,18 +383,6 @@
             }
         ]
     };
-    /*var optionLayers = {
-        'Counties': simplemaps_countrymap_mapdata
-    } */
-        
+  
         // - Add it all to the map - //
-    L.control.layers(baseTree, overLays).addTo(map);
-/*
-    var overLays = {
-        'All Kitespots': allSpotsCluster,
-        'NORTHEAST': southSpotCluster,
-        'GOTLAND': westSpotCluster,
-        'ÖLAND': northSpotCluster,
-        'SOUTH': northCluster
-    }
-    */
+    L.control.layers.tree(baseTree, overalysTree).addTo(map);
