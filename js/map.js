@@ -346,11 +346,19 @@
     L.svgOverlay(svgElement, svgElementBounds).addTo(map); */
 
         // - Control layers - //
-    var baseLayers = {
-        "Hybrid": hybrid,
-        "Topographic": topographic,
-        "Streets": streets
-    }
+    var baseTree = {
+        label: 'MAPS',
+        children: [
+            {
+                label: 'ESRI &#x1f5fa;',
+                children: [
+                    { label: "Hybrid", hybrid},
+                    { label: "Topographic", topographic},
+                    { label: "Streets", streets},
+                ]
+            }
+        ]
+    };
 
     var overLays = {
         'All': clusterSpots,
@@ -373,7 +381,7 @@
     } */
         
         // - Add it all to the map - //
-    L.control.layers(baseLayers, overLays).addTo(map);
+    L.control.layers(baseTree, overLays).addTo(map);
 /*
     var overLays = {
         'All Kitespots': allSpotsCluster,
