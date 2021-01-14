@@ -314,7 +314,28 @@
             );
         }       
     });       
-    vanenCluster.addLayer(vanen);    
+    vanenCluster.addLayer(vanen);
+
+
+            // - Cluster and popups to kitespots Vätten - //
+    var vattenCluster = new L.markerClusterGroup();
+    var vatten = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "VÄTTEN"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "VÄTTEN"
+            );
+        }       
+    });       
+    vattenCluster.addLayer(vatten);      
     
 
         // - Control layers - //
