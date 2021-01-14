@@ -376,7 +376,15 @@
         }
     ];
         
-    L.control.layers(baseLayers, overLays).addTo(map);
+            // - Add it all to the map - //
+        var panelLayers = new L.Control.PanelLayers(baseLayers, overLays, {
+            collapsibleGroups: true,
+            collapsed: true
+        });
+
+                    // - Features and Functions  - //       
+
+        map.addControl(panelLayers);
 
 /*
     var overLays = {
