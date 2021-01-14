@@ -254,7 +254,7 @@
     southCluster.addLayer(south);
     
     
-            // - Cluster and popups to kitespots south west - //
+        // - Cluster and popups to kitespots south west - //
     var southwestCluster = new L.markerClusterGroup();
     var southwest = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
@@ -275,7 +275,7 @@
     southwestCluster.addLayer(southwest);
     
     
-            // - Cluster and popups to kitespots north west - //
+        // - Cluster and popups to kitespots north west - //
     var northwestCluster = new L.markerClusterGroup();
     var northwest = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
@@ -296,7 +296,7 @@
     northwestCluster.addLayer(northwest);
     
     
-            // - Cluster and popups to kitespots Vänern - //
+        // - Cluster and popups to kitespots Vänern - //
     var vanernCluster = new L.markerClusterGroup();
     var vanern = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
@@ -317,7 +317,7 @@
     vanernCluster.addLayer(vanern);
 
 
-            // - Cluster and popups to kitespots Vättern - //
+        // - Cluster and popups to kitespots Vättern - //
     var vatternCluster = new L.markerClusterGroup();
     var vattern = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
