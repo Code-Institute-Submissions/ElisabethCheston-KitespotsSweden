@@ -4276,7 +4276,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VÄNERSNÄS",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "N/NE"
       },
       "geometry": {
@@ -4294,7 +4294,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SIKHALL",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4312,7 +4312,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "VITA SANDAR",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "NE/E/SE"
       },
       "geometry": {
@@ -4330,7 +4330,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SVALNÄS",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "SW/W/NW"
       },
       "geometry": {
@@ -4348,7 +4348,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "SVANVIK",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "NW/N/NE"
       },
       "geometry": {
@@ -4366,7 +4366,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BJÖRNRUKAN",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4384,7 +4384,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BOMSTAD",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "SE/S/SW"
       },
       "geometry": {
@@ -4402,7 +4402,7 @@ var kitespots = {
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "BREDSANDEN",
-        "label": "VÄRNEN",
+        "label": "VÄNERN",
         "windDirection": "NE/E/SE"
       },
       "geometry": {

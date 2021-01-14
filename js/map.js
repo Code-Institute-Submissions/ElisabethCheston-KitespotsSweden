@@ -97,10 +97,10 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "NORTH EAST"
+                feature["properties"]["label"] == "NORTH"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "NORTH EAST"
+                return (feature.properties.label == "NORTH"
             );
         }       
     });  
@@ -108,7 +108,7 @@
     
     
         // - Cluster and popups to kitespots North East - //
-    var northEastCluster = new L.markerClusterGroup();
+    var northeastCluster = new L.markerClusterGroup();
     var northeast = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
@@ -117,11 +117,11 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "NORTH EAST"
+            onEachFeature: function (feature) {
+                feature["properties"]["label"] == "NORTHEAST"
             },
-            filter: function(feature, layer) {   
-                return (feature.properties.label == "NORTH EAST"
+            filter: function(feature) {   
+                return (feature.properties.label == "NORTHEAST"
             );
         }       
     });       
@@ -139,10 +139,10 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "MID EAST"
+                feature["properties"]["label"] == "MIDEAST"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "MID EAST"
+                return (feature.properties.label == "MIDEAST"
             );
         }       
     });       
@@ -223,10 +223,10 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "SOUTH EAST"
+                feature["properties"]["label"] == "SOUTHEAST"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "SOUTH EAST"
+                return (feature.properties.label == "SOUTHEAST"
             );
         }       
     });       
@@ -265,10 +265,10 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "SOUTH WEST"
+                feature["properties"]["label"] == "SOUTHWEST"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "SOUTH WEST"
+                return (feature.properties.label == "SOUTHWEST"
             );
         }       
     });       
@@ -286,19 +286,19 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "NORTH WEST"
+                feature["properties"]["label"] == "NORTHWEST"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "NORTH WEST"
+                return (feature.properties.label == "NORTHWEST"
             );
         }       
     });       
     northwestCluster.addLayer(northwest);
     
     
-            // - Cluster and popups to kitespots Vänen - //
-    var vanenCluster = new L.markerClusterGroup();
-    var vanen = L.geoJson(kitespots, {
+            // - Cluster and popups to kitespots Vänern - //
+    var vanernCluster = new L.markerClusterGroup();
+    var vanern = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
@@ -307,19 +307,19 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "VÄNEN"
+                feature["properties"]["label"] == "VÄNERN"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "VÄNEN"
+                return (feature.properties.label == "VÄNERN"
             );
         }       
     });       
-    vanenCluster.addLayer(vanen);
+    vanernCluster.addLayer(vanern);
 
 
-            // - Cluster and popups to kitespots Vätten - //
-    var vattenCluster = new L.markerClusterGroup();
-    var vatten = L.geoJson(kitespots, {
+            // - Cluster and popups to kitespots Vättern - //
+    var vatternCluster = new L.markerClusterGroup();
+    var vattern = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
@@ -328,14 +328,14 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
-                feature["properties"]["label"] == "VÄTTEN"
+                feature["properties"]["label"] == "VÄTTERN"
             },
             filter: function(feature, layer) {   
-                return (feature.properties.label == "VÄTTEN"
+                return (feature.properties.label == "VÄTTERN"
             );
         }       
     });       
-    vattenCluster.addLayer(vatten);      
+    vatternCluster.addLayer(vattern);      
     
 
         // - Control layers - //
@@ -353,11 +353,11 @@
         'Gotland': gotlandCluster,
         'Öland': olandCluster,
         'South East': southeastCluster,
-        //'South': southCluster,
-        //'South West': southwestCluster,
-        //'North West': southeastCluster,
-        //'Vänen': vanenCluster,
-        //'Vätten': vattenCluster
+        'South': southCluster,
+        'South West': southwestCluster,
+        'North West': northwestCluster,
+        'Vänern': vanernCluster,
+        'Vättern': vatternCluster
     }
         
     L.control.layers(baseLayers, overLays).addTo(map);
