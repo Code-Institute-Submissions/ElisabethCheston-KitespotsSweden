@@ -339,11 +339,19 @@
     
 
         // - Control layers - //
-    var baseLayers = {
-        "Hybrid": hybrid,
-        "Topographic": topographic,
-        "Streets": streets
-    };
+    var baseLayers = [
+        {
+        group: "Maps",
+        collapsed: true,
+        layers: [
+            {
+                "Hybrid": hybrid,
+                "Topographic": topographic,
+                "Streets": streets
+                }
+            ]
+        }
+    ];
     var overLays = {
         'All': clusterSpots,
         'North': northCluster,
