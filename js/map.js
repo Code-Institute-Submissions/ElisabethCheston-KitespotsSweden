@@ -128,6 +128,26 @@
     northeastCluster.addLayer(northeast);
 
 
+        // - Cluster and popups to kitespots Åland - //
+    var alandCluster = new L.markerClusterGroup();
+    var aland = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "ÅLAND"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "ÅLAND"
+            );
+        }       
+    });       
+    alandCluster.addLayer(aland);      
+
         // - Control layers - //
     var baseLayers = {
         "Hybrid": hybrid,
@@ -137,9 +157,9 @@
     var overLays = {
         'All': clusterSpots,
         'North': northCluster,
-        //'North East': northeastCluster,
-        //'Mid East': mideastCluster,
-        //'Åland': alandCluster,
+        'North East': northeastCluster,
+        'Mid East': mideastCluster,
+        'Åland': alandCluster,
         //'Gotland': gotlandCluster,
         //'Öland': olandCluster,
         //'South East': southeastCluster,
