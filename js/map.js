@@ -72,7 +72,7 @@
     map.addLayer(clusterSpots);
 
 
-            /* 
+    /* 
         Url references for clustering and adding geoJson to markers in control layer; 
 
         - Clustering markers:       https://github.com/Leaflet/Leaflet.markercluster
@@ -84,9 +84,9 @@
                                     https://esri.github.io/esri-leaflet/examples/layers-control.html
 
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
-        */
+    */
 
-        // - Cluster and popups to kitespots North   - //
+        // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
     var north = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
@@ -339,53 +339,30 @@
     
 
         // - Control layers - //
-    var baseLayers = [
-        {
-        group: "Maps",
-        collapsed: true,
-        layers: [
-            {
-                "Hybrid": hybrid,
-                "Topographic": topographic,
-                "Streets": streets
-                }
-            ]
-        }
-    ];
-    var overLays = [
-        {
-        group: "Maps",
-        collapsed: true,
-        layers: [
-            {
-                'All': clusterSpots,
-                'North': northCluster,
-                'North East': northeastCluster,
-                'Mid East': mideastCluster,
-                'Åland': alandCluster,
-                'Gotland': gotlandCluster,
-                'Öland': olandCluster,
-                'South East': southeastCluster,
-                'South': southCluster,
-                'South West': southwestCluster,
-                'North West': northwestCluster,
-                'Vänern': vanernCluster,
-                'Vättern': vatternCluster
-                }
-            ]
-        }
-    ];
+    var baseLayers = {
+        "Hybrid": hybrid,
+        "Topographic": topographic,
+        "Streets": streets
+    }
+
+    var overLays = {
+        'All': clusterSpots,
+        'North': northCluster,
+        'North East': northeastCluster,
+        'Mid East': mideastCluster,
+        'Åland': alandCluster,
+        'Gotland': gotlandCluster,
+        'Öland': olandCluster,
+        'South East': southeastCluster,
+        'South': southCluster,
+        'South West': southwestCluster,
+        'North West': northwestCluster,
+        'Vänern': vanernCluster,
+        'Vättern': vatternCluster
+    }
         
-            // - Add it all to the map - //
-        var panelLayers = new L.Control.PanelLayers(baseLayers, overLays, {
-            collapsibleGroups: true,
-            collapsed: true
-        });
-
-                    // - Features and Functions  - //       
-
-        map.addControl(panelLayers);
-
+        // - Add it all to the map - //
+    L.control.layers(baseLayers, overLays).addTo(map);
 /*
     var overLays = {
         'All Kitespots': allSpotsCluster,
