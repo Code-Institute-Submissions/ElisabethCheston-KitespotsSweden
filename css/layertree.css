@@ -6,6 +6,7 @@
 }
 
 .leaflet-layerstree-node {
+    display: none;
 }
 
 .leaflet-layerstree-header input{
@@ -14,6 +15,7 @@
 
 
 .leaflet-layerstree-header {
+    font-style: bold;
 }
 
 .leaflet-layerstree-header-pointer {
@@ -26,12 +28,15 @@
 }
 
 .leaflet-layerstree-header-label {
+    color: rgba(rgb(92, 89, 89), 0.9);
 }
 
 .leaflet-layerstree-header-name {
+    color: rgba(rgb(92, 89, 89), 0.9);
 }
 
 .leaflet-layerstree-header-space {
+    display: none;
 }
 
 .leaflet-layerstree-children {
@@ -43,9 +48,11 @@
 }
 
 .leaflet-layerstree-closed {
+    display: true;
 }
 
 .leaflet-layerstree-opened {
+    display: false;
 }
 
 .leaflet-layerstree-hide {
