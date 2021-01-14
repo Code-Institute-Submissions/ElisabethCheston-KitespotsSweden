@@ -251,7 +251,28 @@
             );
         }       
     });       
-    southCluster.addLayer(south);     
+    southCluster.addLayer(south);
+    
+    
+            // - Cluster and popups to kitespots south west - //
+    var southwestCluster = new L.markerClusterGroup();
+    var southwest = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "SOUTH WEST"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "SOUTH WEST"
+            );
+        }       
+    });       
+    southwestCluster.addLayer(southwest);    
     
 
         // - Control layers - //
