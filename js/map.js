@@ -360,22 +360,29 @@
         ]
     };
 
-    var overLays = {
-        'All': clusterSpots,
-        'North': northCluster,
-        'North East': northeastCluster,
-        'Mid East': mideastCluster,
-        'Åland': alandCluster,
-        'Gotland': gotlandCluster,
-        'Öland': olandCluster,
-        'South East': southeastCluster,
-        'South': southCluster,
-        'South West': southwestCluster,
-        'North West': northwestCluster,
-        'Vänern': vanernCluster,
-        'Vättern': vatternCluster,
-        //'Counties': simplemapsCountrymapdata
-    }
+    var overalysTree = {
+        label: 'LAYERS',
+        children: [
+            {
+                label: 'KITESPOTS &#x1f5fa;',
+                children: [        
+                    { label: 'All', clusterSpots},
+                    { label: 'North', northCluster},
+                    { label: 'North East', northeastCluster},
+                    { label: 'Mid East', mideastCluster},
+                    { label: 'Åland', alandCluster},
+                    { label: 'Gotland', gotlandCluster},
+                    { label: 'Öland', olandCluster},
+                    { label: 'South East', southeastCluster},
+                    { label: 'South', southCluster},
+                    { label: 'South West', southwestCluster},
+                    { label: 'North West', northwestCluster},
+                    { label: 'Vänern', vanernCluster},
+                    { label: 'Vättern', vatternCluster}
+                ]
+            }
+        ]
+    };
     /*var optionLayers = {
         'Counties': simplemaps_countrymap_mapdata
     } */
