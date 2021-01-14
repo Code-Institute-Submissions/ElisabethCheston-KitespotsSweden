@@ -293,7 +293,28 @@
             );
         }       
     });       
-    northwestCluster.addLayer(northwest);    
+    northwestCluster.addLayer(northwest);
+    
+    
+            // - Cluster and popups to kitespots Vänen - //
+    var vanenCluster = new L.markerClusterGroup();
+    var vanen = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "VÄNEN"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "VÄNEN"
+            );
+        }       
+    });       
+    vanenCluster.addLayer(vanen);    
     
 
         // - Control layers - //
