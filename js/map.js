@@ -147,7 +147,7 @@
         }       
     });       
     mideastCluster.addLayer(mideast);
-    
+
 
         // - Cluster and popups to kitespots Åland - //
     var alandCluster = new L.markerClusterGroup();
@@ -167,7 +167,29 @@
             );
         }       
     });       
-    alandCluster.addLayer(aland);      
+    alandCluster.addLayer(aland); 
+    
+
+        // - Cluster and popups to kitespots Gotland - //
+    var gotlandCluster = new L.markerClusterGroup();
+    var gotland = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "GOTLAND"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "GOTLAND"
+            );
+        }       
+    });       
+    gotlandCluster.addLayer(gotland);     
+    
 
         // - Control layers - //
     var baseLayers = {
