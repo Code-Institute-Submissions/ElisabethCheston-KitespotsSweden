@@ -108,7 +108,7 @@
     
     
         // - Cluster and popups to kitespots North East - //
-    var northeastCluster = new L.markerClusterGroup();
+    var northEastCluster = new L.markerClusterGroup();
     var northeast = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
@@ -209,7 +209,49 @@
             );
         }       
     });       
-    olandCluster.addLayer(oland);    
+    olandCluster.addLayer(oland);
+    
+    
+        // - Cluster and popups to kitespots South East - //
+    var southeastCluster = new L.markerClusterGroup();
+    var southeast = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "SOUTH EAST"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "SOUTH EAST"
+            );
+        }       
+    });       
+    southeastCluster.addLayer(southeast);
+    
+    
+        // - Cluster and popups to kitespots South - //
+    var southCluster = new L.markerClusterGroup();
+    var south = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8,
+                color:"green"
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+        },
+            onEachFeature: function (feature, layer) {
+                feature["properties"]["label"] == "SOUTH"
+            },
+            filter: function(feature, layer) {   
+                return (feature.properties.label == "SOUTH"
+            );
+        }       
+    });       
+    southCluster.addLayer(south);     
     
 
         // - Control layers - //
@@ -226,7 +268,7 @@
         'Åland': alandCluster,
         'Gotland': gotlandCluster,
         'Öland': olandCluster,
-        //'South East': southeastCluster,
+        'South East': southeastCluster,
         //'South': southCluster,
         //'South West': southwestCluster,
         //'North West': southeastCluster,
