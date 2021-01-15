@@ -96,7 +96,7 @@
             return L.marker(latlng, {
                 radius:6,
                 opacity: .8,
-                color: pink
+                color:"pink"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
@@ -343,16 +343,12 @@
     
         // - Control layers - //
     var baseLayers = {
-
             "Hybrid": hybrid,
             "Topographic": topographic,
             "Streets": streets
-    
     };
 
-    var overlays = {
-        
-        //KITESPOTS: {       
+    var overlays = {       
             'Kitespots': clusterSpots,
             'North': northCluster,
             'North East': northeastCluster,
@@ -366,9 +362,14 @@
             'North West': northwestCluster,
             'Vänern': vanernCluster,
             'Vättern': vatternCluster
-
     };
   
         // - Add it all to the map - //
-
     L.control.layers(baseLayers, overlays).addTo(map)
+
+    L.Routing.control({
+    waypoints: [
+        L.latLng(52.500440,2.250475),
+        L.latLng(70.742227,37.93469)
+    ]
+}).addTo(map);
