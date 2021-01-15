@@ -367,6 +367,8 @@
         // - Add it all to the map - //
     L.control.layers(baseLayers, overlays).addTo(map)
 
+
+        // - Add routing control - //
     L.Routing.control({
     waypoints: [
         L.latLng(52.500440,2.250475),
