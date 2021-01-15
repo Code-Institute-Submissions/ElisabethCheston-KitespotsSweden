@@ -19,6 +19,7 @@
         // - References; - //
         // - https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list - //
         // - https://www.codota.com/code/javascript/functions/leaflet/DomUtil - //
+    
     var clusterSpots = L.markerClusterGroup();                
         // - Variable for search source(kitespots) - //
     var searchSpots = L.geoJson(kitespots, {
@@ -86,6 +87,8 @@
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
     */
 
+
+    
         // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
     var north = L.geoJson(kitespots, {
@@ -93,7 +96,7 @@
             return L.marker(latlng, {
                 radius:6,
                 opacity: .8,
-                color:"pink"
+                color: pink
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature, layer) {
@@ -338,51 +341,34 @@
     vatternCluster.addLayer(vattern);      
 
     
-    /*var svgCounties =  document.createElementNS("https://upload.wikimedia.org/wikipedia/commons/d/df/Sweden_location_map.svg", "svg", );
-    // svgElement.setAttribute('NordNordWest, CC BY-SA 3.0', "https://creativecommons.org/licenses/by-sa/3.0", 'via Wikimedia Commons');
-    // svgElement.setAttribute('viewBox', "0 0 200 200");
-    svgElement.innerHTML = ('rect width="200" height="200"'); // <rect x="75" y="23" width="50" height="50" style="fill:red"/><rect x="75" y="123" width="50" height="50" style="fill:#0013ff"/>';
-    var svgElementBounds = [ [ 52.500440,2.250475 ], [ 70.742227,37.934697 ] ];
-    L.svgOverlay(svgElement, svgElementBounds).addTo(map); */
-
         // - Control layers - //
-    var baseTree = {
-        label: 'MAPS',
-        children: [
-            {
-                label: 'ESRI &#x1f5fa;',
-                children: [
-                    { label: "Hybrid", hybrid},
-                    { label: "Topographic", topographic},
-                    { label: "Streets", streets},
-                ]
-            }
-        ]
+    var baseLayers = {
+
+            "Hybrid": hybrid,
+            "Topographic": topographic,
+            "Streets": streets
+    
     };
 
-    var overalysTree = {
-        label: 'LAYERS',
-        children: [
-            {
-                label: 'KITESPOTS &#x1f5fa;',
-                children: [        
-                    { label: 'All', clusterSpots},
-                    { label: 'North', northCluster},
-                    { label: 'North East', northeastCluster},
-                    { label: 'Mid East', mideastCluster},
-                    { label: 'Åland', alandCluster},
-                    { label: 'Gotland', gotlandCluster},
-                    { label: 'Öland', olandCluster},
-                    { label: 'South East', southeastCluster},
-                    { label: 'South', southCluster},
-                    { label: 'South West', southwestCluster},
-                    { label: 'North West', northwestCluster},
-                    { label: 'Vänern', vanernCluster},
-                    { label: 'Vättern', vatternCluster}
-                ]
-            }
-        ]
+    var overlays = {
+        
+        //KITESPOTS: {       
+            'Kitespots': clusterSpots,
+            'North': northCluster,
+            'North East': northeastCluster,
+            'Mid East': mideastCluster,
+            'Åland': alandCluster,
+            'Gotland': gotlandCluster,
+            'Öland': olandCluster,
+            'South East': southeastCluster,
+            'South': southCluster,
+            'South West': southwestCluster,
+            'North West': northwestCluster,
+            'Vänern': vanernCluster,
+            'Vättern': vatternCluster
+
     };
   
         // - Add it all to the map - //
-    L.control.layers.tree(baseTree, overalysTree).addTo(map);
+
+    L.control.layers(baseLayers, overlays).addTo(map)
