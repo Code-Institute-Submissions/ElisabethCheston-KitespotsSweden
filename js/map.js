@@ -31,8 +31,8 @@
         } else {
             console.log("Geolocation missing"); // geolocation is not available
         }
-        
     });
+
 
                 // - SEARCH ENGINE - //
         // - References; - //
@@ -45,7 +45,7 @@
     onEachFeature: function(feature, layer) {
     var popup = '';
     if (feature.properties.name) {
-        popup += "<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>";
+        popup += "<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a><b></b>GET HERE</b></a>";
         }
     layer.bindPopup(popup);
         }
@@ -62,6 +62,7 @@
         return div;
     };
     selector.addTo(map);
+
         // - Function to browse and choose spots - //
     searchSpots.eachLayer(function(layer) {
         var spotChoice = document.createElement("option");
@@ -391,3 +392,4 @@
 // Google direction api key: AIzaSyBkrAJhwaHyBY6oDjbXUyyjyFGC9LKD1-w  
 // MapQuest: MQrjrLdOafjjaodqEX3LQ_P6lRlBsMDC0ZDN_YBYBB7Nl2PZDO_Z1IPmz00grZUntqKYe_NDsJGaqvM6El1IsXsRz_EEWU1eRWgOfDT4tpaH6bUiX39utrbVxoiH54EN65QT6fs33utWEGZ9Px3qMgl5YtiXCr4DcDUbLAE2HNdqkx-e9xcw0tI509U6hMMqLfpdzsMd4pds-iDeN_Q3DsiTAqbF0FforkhJ4g6tM78.
 */
+
