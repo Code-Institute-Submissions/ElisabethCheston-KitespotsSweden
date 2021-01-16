@@ -13,7 +13,10 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
+        // - Geolocator - //
+    $(document).ready(function() {
 
+    });
 
                 // - SEARCH ENGINE - //
         // - References; - //
@@ -88,7 +91,6 @@
     */
 
 
-    
         // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
     var north = L.geoJson(kitespots, {
@@ -340,6 +342,7 @@
     });       
     vatternCluster.addLayer(vattern);      
 
+
     
         // - Control layers - //
     var baseLayers = {
@@ -349,7 +352,7 @@
     };
 
     var overlays = {       
-            'Kitespots': clusterSpots,
+            'All Kitespots': clusterSpots,
             'North': northCluster,
             'North East': northeastCluster,
             'Mid East': mideastCluster,
