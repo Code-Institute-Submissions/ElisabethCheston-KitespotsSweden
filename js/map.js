@@ -21,7 +21,12 @@
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 console.log();
-                L.circle([62.4054024, 17.518379799999998], {radius: 200}).addTo(map);
+                L.circle([62.4054024, 17.518379799999998], {
+                    radius: 10000,
+                    weight: 1,
+                    fillColor: 'green',
+                    fillOpacity: 0.7
+                }).addTo(map);
             });
         } else {
             console.log("Geolocation missing"); // geolocation is not available
