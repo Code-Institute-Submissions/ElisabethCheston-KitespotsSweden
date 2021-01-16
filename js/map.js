@@ -99,10 +99,10 @@
                 color:"pink"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "NORTH"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "NORTH"
             );
         }       
@@ -141,10 +141,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "MIDEAST"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "MIDEAST"
             );
         }       
@@ -162,10 +162,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "ÅLAND"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "ÅLAND"
             );
         }       
@@ -183,10 +183,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "GOTLAND"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "GOTLAND"
             );
         }       
@@ -204,10 +204,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "ÖLAND"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "ÖLAND"
             );
         }       
@@ -225,10 +225,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "SOUTHEAST"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "SOUTHEAST"
             );
         }       
@@ -246,10 +246,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "SOUTH"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "SOUTH"
             );
         }       
@@ -267,10 +267,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "SOUTHWEST"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "SOUTHWEST"
             );
         }       
@@ -288,10 +288,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "NORTHWEST"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "NORTHWEST"
             );
         }       
@@ -309,10 +309,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "VÄNERN"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "VÄNERN"
             );
         }       
@@ -330,10 +330,10 @@
                 color:"green"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
-            onEachFeature: function (feature, layer) {
+            onEachFeature: function (feature) {
                 feature["properties"]["label"] == "VÄTTERN"
             },
-            filter: function(feature, layer) {   
+            filter: function(feature) {   
                 return (feature.properties.label == "VÄTTERN"
             );
         }       
@@ -367,3 +367,8 @@
         // - Add it all to the map - //
     L.control.layers(baseLayers, overlays).addTo(map)
 
+/* 
+// Mapbox api; pk.eyJ1IjoibGlhaGNoZXN0b24iLCJhIjoiY2tpbG5seXE5MGxhYzJ6bXd4Y2xvN2xwMiJ9.efl4PsN0s5YHbu22oEqrlg 
+// Google direction api key: AIzaSyBkrAJhwaHyBY6oDjbXUyyjyFGC9LKD1-w  
+// MapQuest: MQrjrLdOafjjaodqEX3LQ_P6lRlBsMDC0ZDN_YBYBB7Nl2PZDO_Z1IPmz00grZUntqKYe_NDsJGaqvM6El1IsXsRz_EEWU1eRWgOfDT4tpaH6bUiX39utrbVxoiH54EN65QT6fs33utWEGZ9Px3qMgl5YtiXCr4DcDUbLAE2HNdqkx-e9xcw0tI509U6hMMqLfpdzsMd4pds-iDeN_Q3DsiTAqbF0FforkhJ4g6tM78.
+*/

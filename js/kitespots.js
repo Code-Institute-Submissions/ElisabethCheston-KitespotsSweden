@@ -1,5 +1,5 @@
 
-var spots = {
+var kitespots = {
   "type": "FeatureCollection",
   "features": [
     {
