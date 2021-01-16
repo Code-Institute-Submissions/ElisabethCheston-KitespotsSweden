@@ -13,12 +13,17 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
-        // - Geolocator: - //
+        // - Geolocator: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API - //
     $(document).ready(function() {
         
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
+        if ("geolocation" in navigator) {
+            /* geolocation is available */
+        } else {
+            /* geolocation IS NOT available */
+        }
     });
 
                 // - SEARCH ENGINE - //
