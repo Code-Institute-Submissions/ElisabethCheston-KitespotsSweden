@@ -18,12 +18,15 @@
         
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
-
         if ("geolocation" in navigator) {
-            /* geolocation is available */
+            navigator.geolocation.getCurrentPosition(function(position) {
+                console.log();
+                L.circle([62.4054024, 17.518379799999998], {radius: 200}).addTo(map);
+            });
         } else {
-            /* geolocation IS NOT available */
+            // geolocation is not available
         }
+        
     });
 
                 // - SEARCH ENGINE - //
