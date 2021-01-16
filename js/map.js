@@ -13,8 +13,11 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
-        // - Geolocator - //
+        // - Geolocator: - //
     $(document).ready(function() {
+        
+    baseImagery = L.layerGroup();
+    L.esri.basemapLayer('ImageryClarity').addTo(map);
 
     });
 
