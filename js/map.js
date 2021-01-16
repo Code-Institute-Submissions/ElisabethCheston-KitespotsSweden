@@ -24,7 +24,7 @@
                 L.circle([62.4054024, 17.518379799999998], {radius: 200}).addTo(map);
             });
         } else {
-            // geolocation is not available
+            console.log("Geolocation missing"); // geolocation is not available
         }
         
     });
