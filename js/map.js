@@ -1,5 +1,4 @@
 
-
         // - Basemaps variables - //
     var hybrid = L.esri.basemapLayer('ImageryClarity');
     var topographic = L.esri.basemapLayer('Topographic');
@@ -13,7 +12,11 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
-        // - Geolocator: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API - //
+            // - GEOLOCATOR - //
+    /*
+    Reference;
+    https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+    */
     $(document).ready(function() {
         
     baseImagery = L.layerGroup();
@@ -22,7 +25,7 @@
             navigator.geolocation.getCurrentPosition(function(position) {
                 console.log();
                 L.circle([position.coords.latitude, position.coords.longitude], {
-                    radius: 10000,
+                    radius: 1000,
                     weight: 1,
                     fillColor: 'green',
                     fillOpacity: 0.7
@@ -34,11 +37,13 @@
     });
 
 
-                // - SEARCH ENGINE - //
-        // - References; - //
-        // - https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list - //
-        // - https://www.codota.com/code/javascript/functions/leaflet/DomUtil - //
-    
+            // - SEARCH ENGINE - //
+    /*
+    References;
+    https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list
+    https://www.codota.com/code/javascript/functions/leaflet/DomUtil
+    */
+
     var clusterSpots = L.markerClusterGroup();                
         // - Variable for search source(kitespots) - //
     var searchSpots = L.geoJson(kitespots, {
@@ -92,21 +97,16 @@
     clusterSpots.addLayer(searchSpots);
     map.addLayer(clusterSpots);
 
-
+    
+            // - GEOJSON GROUPS WITH POPUPS IN CONTROL BOX - //
     /* 
-        Url references for clustering and adding geoJson to markers in control layer; 
-
         - Clustering markers:       https://github.com/Leaflet/Leaflet.markercluster
-
         - Add geoJson to Leaflet;   https://leafletjs.com/reference-1.7.1.html#geojson
                                     https://leafletjs.com/examples/geojson/
-
         - Add markers to control:   https://leafletjs.com/examples/layers-control/
                                     https://esri.github.io/esri-leaflet/examples/layers-control.html
-
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
     */
-
 
         // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
@@ -359,7 +359,7 @@
     });       
     vatternCluster.addLayer(vattern);      
 
-
+  
     
         // - Control layers - //
     var baseLayers = {
@@ -367,7 +367,6 @@
             "Topographic": topographic,
             "Streets": streets
     };
-
     var overlays = {       
             'All Kitespots': clusterSpots,
             'North': northCluster,
@@ -388,8 +387,6 @@
     L.control.layers(baseLayers, overlays).addTo(map)
 
 /* 
-// Mapbox api; pk.eyJ1IjoibGlhaGNoZXN0b24iLCJhIjoiY2tpbG5seXE5MGxhYzJ6bXd4Y2xvN2xwMiJ9.efl4PsN0s5YHbu22oEqrlg 
 // Google direction api key: AIzaSyBkrAJhwaHyBY6oDjbXUyyjyFGC9LKD1-w  
-// MapQuest: MQrjrLdOafjjaodqEX3LQ_P6lRlBsMDC0ZDN_YBYBB7Nl2PZDO_Z1IPmz00grZUntqKYe_NDsJGaqvM6El1IsXsRz_EEWU1eRWgOfDT4tpaH6bUiX39utrbVxoiH54EN65QT6fs33utWEGZ9Px3qMgl5YtiXCr4DcDUbLAE2HNdqkx-e9xcw0tI509U6hMMqLfpdzsMd4pds-iDeN_Q3DsiTAqbF0FforkhJ4g6tM78.
+// MapBox api: pk.eyJ1IjoibGlhaGNoZXN0b24iLCJhIjoiY2trMDRyaDJ5MGU2MzJ2bW51d3J2enhmNyJ9.2JTF2IL2y0lF-lcUtNQM9g
 */
-
