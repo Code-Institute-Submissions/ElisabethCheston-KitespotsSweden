@@ -1,3 +1,11 @@
+    // - FIX THIS -//
+/*
+    // Snap geolocation to "start" in directionForm
+    // - Snap link from popups to "spotDirections" in directionForm
+    // - Define "start"
+    // - Define "spotDirections"
+    // - Define "link"
+*/
 
         // - Basemaps variables - //
     var hybrid = L.esri.basemapLayer('ImageryClarity');
@@ -35,7 +43,6 @@
             console.log("Geolocation missing"); // geolocation is not available
         }
     });
-
 
             // - SEARCH ENGINE - //
     /*
