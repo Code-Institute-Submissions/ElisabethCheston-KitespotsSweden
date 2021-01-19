@@ -5,6 +5,7 @@
     // - Define "start"
     // - Define "spotDirections"
     // - Define "link"
+    // - If any of the kitespots layers are clicked in the control, remove the spots on the loadmap.
 */
 
         // - Basemaps variables - //
@@ -20,6 +21,9 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
+            //function to call searchspots and fetch all north spots
+
+
             // - GEOLOCATOR - //
     /*
     Reference;
@@ -33,7 +37,7 @@
             navigator.geolocation.getCurrentPosition(function(position) {
                 console.log();
                 L.circle([position.coords.latitude, position.coords.longitude], {
-                    radius: 1000,
+                    radius: 10000,
                     weight: 1,
                     fillColor: 'green',
                     fillOpacity: 0.7
@@ -44,6 +48,7 @@
         }
     });
 
+
             // - SEARCH ENGINE - //
     /*
     References;
@@ -51,7 +56,7 @@
     https://www.codota.com/code/javascript/functions/leaflet/DomUtil
     */
 
-    var clusterSpots = L.markerClusterGroup();                
+    var clusterSpots = L.markerClusterGroup();
         // - Variable for search source(kitespots) - //
     var searchSpots = L.geoJson(kitespots, {
         onEachFeature: function(feature, layer) {
@@ -59,23 +64,26 @@
             if (feature.properties.name) {
                 popup += "<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + link; // "<a><b></b>GET HERE</b></a>";
+                + "</p>" + "<a><b></b>GET HERE</b></a>"; //link;
             }
             layer.bindPopup(popup);
         }
     });
-        // - The search engine and place it on the map - //
+
+        // - Create search engine and place it on the map - //
     var selector = L.control({
         position: 'topright',
         opacity: 0.8,
         size: 12
     });
+
     selector.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'list-group-item');
         div.innerHTML = '<select id = "selectSpot"><option value = "init">KITESPOTS</option></select>';
         return div;
     };
     selector.addTo(map);
+
 
         // - Function to browse and choose spots - //
     searchSpots.eachLayer(function(layer) {
@@ -102,10 +110,20 @@
                 selected.openPopup();
             })
         }
+        
     }
-    clusterSpots.addLayer(searchSpots);
-    map.addLayer(clusterSpots);
+    // -- -- -- -- -- --  Call tutor  -- -- -- -- -- -- -- -- //
+    /*
+    L.DomEvent.addListener(selector, 'click', function(e) {
+        onclick.selector(select.allspotsCluster);
+        //L.DomEvent.selectLayer(allspotsCluster);
+    })*/
+    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
+    clusterSpots.addLayer(searchSpots);
+    // map.addLayer(clusterSpots);
+
+    //var searchLink = ("<a href =spotDestination'><b>' GET HERE '</b></a>");
     
             // - GEOJSON GROUPS WITH POPUPS IN CONTROL BOX - //
     /* 
@@ -116,6 +134,21 @@
                                     https://esri.github.io/esri-leaflet/examples/layers-control.html
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
     */
+              // - Cluster and popups to kitespots North - //
+    var allspotsCluster = new L.markerClusterGroup();
+    var allspots = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .8
+            })
+            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" 
+                + "Wind Direction: " + feature.properties.windDirection 
+                + "</p>" + searchLink);
+        }     
+    });
+        allspotsCluster.addLayer(allspots);
+  
 
         // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
@@ -368,8 +401,8 @@
     });       
     vatternCluster.addLayer(vattern);      
 
-  
-    
+
+ 
         // - Control layers - //
     var baseLayers = {
             "Hybrid": hybrid,
@@ -377,7 +410,7 @@
             "Streets": streets
     };
     var overlays = {       
-            'All Kitespots': clusterSpots,
+            'All Kitespots': allspotsCluster,
             'North': northCluster,
             'North East': northeastCluster,
             'Mid East': mideastCluster,
@@ -393,7 +426,7 @@
     };
   
         // - Add it all to the map - //
-    L.control.layers(baseLayers, overlays).addTo(map)
+    L.control.layers(baseLayers, overlays).addTo(map);
 
 /* 
 // Google direction api key: AIzaSyBkrAJhwaHyBY6oDjbXUyyjyFGC9LKD1-w  
