@@ -134,8 +134,13 @@
                                     https://esri.github.io/esri-leaflet/examples/layers-control.html
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
     */
+
               // - Cluster and popups to kitespots North - //
-    var allspotsCluster = new L.markerClusterGroup();
+    var clusterSpots = new L.markerClusterGroup();
+    var checks = document.querySelectorAll('[type = "checkbox"]'), i;
+function disCheck() {
+    for (i = 0; i < checks.length; ++i) {
+        checks[i].disabled = true; }
     var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
@@ -144,8 +149,9 @@
             })
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + "<a href =spotDestination'><b>' GET HERE '</b></a>");
+                + "</p>" + "<a href =spotDestination'><b>' GET HERE '</b></a>"); 
         },
+        
     });
         allspotsCluster.addLayer(allspots);
   

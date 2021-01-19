@@ -1,4 +1,4 @@
-var weatherstations = {
+const weatherstations = {
   "type": "FeatureCollection",
   "features": [
   {
