@@ -144,8 +144,8 @@
             })
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + searchLink);
-        }     
+                + "</p>" + "<a href =spotDestination'><b>' GET HERE '</b></a>");
+        },
     });
         allspotsCluster.addLayer(allspots);
   
