@@ -121,7 +121,7 @@
     // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
     clusterSpots.addLayer(searchSpots);
-    // map.addLayer(clusterSpots);
+     map.addLayer(clusterSpots);
 
     //var searchLink = ("<a href =spotDestination'><b>' GET HERE '</b></a>");
     
@@ -410,7 +410,7 @@
             "Streets": streets
     };
     var overlays = {       
-            'All Kitespots': allspotsCluster,
+            'All Kitespots': clusterSpots,
             'North': northCluster,
             'North East': northeastCluster,
             'Mid East': mideastCluster,
