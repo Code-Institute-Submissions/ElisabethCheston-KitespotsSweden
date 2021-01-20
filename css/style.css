@@ -49,3 +49,7 @@ button {
 }
 
 /* Direction button in popup */
+
+div {
+    display: hidden;
+}

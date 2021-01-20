@@ -102,29 +102,30 @@
         // - ChangeHandler zooms in on choosen spot with popup.""
     L.DomEvent.addListener(selectSpot, 'change', changeHandler);
     function changeHandler(e) {
-        if (e.target.value == "init") {
-            map.closePopup();
-        } else {
-            var selected = searchSpots.getLayer(e.target.value);
+        var selected = searchSpots.getLayer(e.target.value);
             clusterSpots.zoomToShowLayer(selected, function() {
-                selected.openPopup();
+                selected;
+                //enable.allspotsCluster();
             })
         }
-        
-    }
     // -- -- -- -- -- --  Call tutor  -- -- -- -- -- -- -- -- //
-    /*
-    L.DomEvent.addListener(selector, 'click', function(e) {
-        onclick.selector(select.allspotsCluster);
-        //L.DomEvent.selectLayer(allspotsCluster);
-    })*/
     // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
+/*
+         var clusterSpots = false;
+    map.eachLayer(function(layer) {
+        if clusterSpots
+        //var otherlayers = northCluster, northeastCluster, mideastCluster, alandCluster, gotlandCluster, olandCluster, southeastCluster, southCluster, southwestCluster, northwestCluster, vatternCluster, vanernCluster        if (onclick.otherlayers) {
+            allspotsCluster = false
+        } else {
 
-    //var searchLink = ("<a href =spotDestination'><b>' GET HERE '</b></a>");
-    
+            map.removeLayer(layer);
+        }
+        //console.log(layer);
+    });
+    */
             // - GEOJSON GROUPS WITH POPUPS IN CONTROL BOX - //
     /* 
         - Clustering markers:       https://github.com/Leaflet/Leaflet.markercluster
@@ -135,12 +136,11 @@
         - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
     */
 
-              // - Cluster and popups to kitespots North - //
-    var clusterSpots = new L.markerClusterGroup();
-    var checks = document.querySelectorAll('[type = "checkbox"]'), i;
-function disCheck() {
-    for (i = 0; i < checks.length; ++i) {
-        checks[i].disabled = true; }
+        //var searchLink = ("<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
+
+
+        // - Cluster and popups to kitespots North - //
+    var allspotsCluster = new L.markerClusterGroup();
     var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
@@ -149,9 +149,8 @@ function disCheck() {
             })
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + "<a href =spotDestination'><b>' GET HERE '</b></a>"); 
+                + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
         },
-        
     });
         allspotsCluster.addLayer(allspots);
   
@@ -164,19 +163,21 @@ function disCheck() {
                 radius:6,
                 opacity: .8,
                 color:"pink"
-            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'>GET HERE</a>");
         },
-            onEachFeature: function (feature) {
-                feature["properties"]["label"] == "NORTH"
-            },
-            filter: function(feature) {   
-                return (feature.properties.label == "NORTH"
-            );
+        onEachFeature: function (feature) {
+            feature["properties"]["label"] == "NORTH"
+        },
+        filter: function(feature) {   
+            return (feature.properties.label == "NORTH");
         }       
-    });  
+    });
+    //(map.fitBounds(north.getBounds());
+    //var bounds = L.latLngBounds(kitespots);
+    //map.fitBounds(bounds);
     northCluster.addLayer(north);
     
-    
+
         // - Cluster and popups to kitespots North East - //
     var northeastCluster = new L.markerClusterGroup();
     var northeast = L.geoJson(kitespots, {
@@ -197,7 +198,7 @@ function disCheck() {
     });       
     northeastCluster.addLayer(northeast);
 
-
+    
         // - Cluster and popups to kitespots Mid East - //
     var mideastCluster = new L.markerClusterGroup();
     var mideast = L.geoJson(kitespots, {
@@ -382,10 +383,11 @@ function disCheck() {
             filter: function(feature) {   
                 return (feature.properties.label == "VÄNERN"
             );
-        }       
+        },
+              
     });       
     vanernCluster.addLayer(vanern);
-
+    
 
         // - Cluster and popups to kitespots Vättern - //
     var vatternCluster = new L.markerClusterGroup();
@@ -405,10 +407,31 @@ function disCheck() {
             );
         }       
     });       
-    vatternCluster.addLayer(vattern);      
-
-
+    vatternCluster.addLayer(vattern);
+    
  
+
+    // -- -- -- -- -- -- -- CHECK WITH TUTOR -- -- -- -- -- -- -- //
+/*
+    var regionLayers = northCluster || northeastCluster || mideastCluster || alandCluster || gotlandCluster || olandCluster || southeastCluster || southCluster || southwestCluster || northwestCluster || vatternCluster || vanernCluster
+
+    document.getElementsByName(northCluster).addEventListener("select", click() {
+        var regionLayers = document.getElementsByName("checked");
+        if (regionLayers.checked.display =="true") 
+        {
+            clusterSpots.checked.display = "false";
+            //checks.disable = false
+        } 
+        else
+        {
+            clusterSpots.checked.display = "true"
+            //checks.disable = true
+        }
+    }) 
+    */
+    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+ 
+
         // - Control layers - //
     var baseLayers = {
             "Hybrid": hybrid,
