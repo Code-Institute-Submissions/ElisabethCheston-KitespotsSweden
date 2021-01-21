@@ -1,17 +1,16 @@
     // - FIX THIS -//
 /*
-    // Snap geolocation to "start" in directionForm
-    // - Snap link from popups to "spotDirections" in directionForm
-    // - Define "start"
-    // - Define "spotDirections"
+    // - Snap geolocation to "start" in directionForm
+    // Then any click after search engine zoom, zoom out
     // - Define "link"
     // - If any of the kitespots layers are clicked in the control, remove the spots on the loadmap.
 */
-
         // - Basemaps variables - //
     var hybrid = L.esri.basemapLayer('ImageryClarity');
     var topographic = L.esri.basemapLayer('Topographic');
     var streets = L.esri.basemapLayer('Streets');
+    var nationalGeographic = L.esri.basemapLayer('NationalGeographic');
+
 
         // - Create an on load ESRI basemap - //
     var map = L.map('map', {
@@ -21,10 +20,8 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
-            //function to call searchspots and fetch all north spots
-
-
-            // - GEOLOCATOR - //
+L.control.scale().addTo(map);
+                        // - GEOLOCATOR - //
     /*
     Reference;
     https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
@@ -49,7 +46,7 @@
     });
 
 
-            // - SEARCH ENGINE - //
+                        // - SEARCH ENGINE - //
     /*
     References;
     https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list
@@ -74,7 +71,7 @@
     var selector = L.control({
         position: 'topright',
         opacity: 0.8,
-        size: 12
+        size: 10
     });
 
     selector.onAdd = function(map) {
@@ -83,7 +80,6 @@
         return div;
     };
     selector.addTo(map);
-
 
         // - Function to browse and choose spots - //
     searchSpots.eachLayer(function(layer) {
@@ -113,19 +109,8 @@
 
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
-/*
-         var clusterSpots = false;
-    map.eachLayer(function(layer) {
-        if clusterSpots
-        //var otherlayers = northCluster, northeastCluster, mideastCluster, alandCluster, gotlandCluster, olandCluster, southeastCluster, southCluster, southwestCluster, northwestCluster, vatternCluster, vanernCluster        if (onclick.otherlayers) {
-            allspotsCluster = false
-        } else {
 
-            map.removeLayer(layer);
-        }
-        //console.log(layer);
-    });
-    */
+
             // - GEOJSON GROUPS WITH POPUPS IN CONTROL BOX - //
     /* 
         - Clustering markers:       https://github.com/Leaflet/Leaflet.markercluster
@@ -162,7 +147,7 @@
             return L.marker(latlng, {
                 radius:6,
                 opacity: .8,
-                color:"pink"
+                icon:"pink"
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'>GET HERE</a>");
         },
         onEachFeature: function (feature) {
@@ -400,16 +385,17 @@
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature) {
-                feature["properties"]["label"] == "VÄTTERN"
+                feature["properties"]["windDirection"] == "SW/S" && "SW/S" && "S" && "SW/S/SE"
+                //feature["properties"]["windDirection"] == "S/SW"
             },
             filter: function(feature) {   
-                return (feature.properties.label == "VÄTTERN"
+                return (feature.properties.windDirection == "SW/S" && "SW/S" && "S" && "SW/S/SE"
             );
         }       
     });       
     vatternCluster.addLayer(vattern);
+  
     
- 
 
     // -- -- -- -- -- -- -- CHECK WITH TUTOR -- -- -- -- -- -- -- //
 /*
@@ -428,7 +414,7 @@
             //checks.disable = true
         }
     }) 
-    */
+*/
     // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
  
 
@@ -436,7 +422,8 @@
     var baseLayers = {
             "Hybrid": hybrid,
             "Topographic": topographic,
-            "Streets": streets
+            "Streets": streets,
+            "National Geographic":  nationalGeographic
     };
     var overlays = {       
             'All Kitespots': clusterSpots,
@@ -456,6 +443,7 @@
   
         // - Add it all to the map - //
     L.control.layers(baseLayers, overlays).addTo(map);
+
 
 /* 
 // Google direction api key: AIzaSyBkrAJhwaHyBY6oDjbXUyyjyFGC9LKD1-w  

@@ -48,8 +48,9 @@ button {
     border-radius: 3px;
 }
 
-/* Direction button in popup */
 
-div {
-    display: hidden;
+.leaflet-control-scale {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.8);
+    bottom: 16px;
 }
