@@ -1,10 +1,4 @@
-    // - FIX THIS -//
-/*
-    // - Snap geolocation to "start" in directionForm
-    // Then any click after search engine zoom, zoom out
-    // - Define "link"
-    // - If any of the kitespots layers are clicked in the control, remove the spots on the loadmap.
-*/
+
         // - Basemaps variables - //
     var hybrid = L.esri.basemapLayer('ImageryClarity');
     var topographic = L.esri.basemapLayer('Topographic');
@@ -20,12 +14,11 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
-L.control.scale().addTo(map);
+    L.control.scale().addTo(map);
+
+
                         // - GEOLOCATOR - //
-    /*
-    Reference;
-    https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
-    */
+
     $(document).ready(function() {
         
     baseImagery = L.layerGroup();
@@ -47,11 +40,6 @@ L.control.scale().addTo(map);
 
 
                         // - SEARCH ENGINE - //
-    /*
-    References;
-    https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list
-    https://www.codota.com/code/javascript/functions/leaflet/DomUtil
-    */
 
     var clusterSpots = L.markerClusterGroup();
         // - Variable for search source(kitespots) - //
@@ -61,7 +49,7 @@ L.control.scale().addTo(map);
             if (feature.properties.name) {
                 popup += "<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + "<a><b></b>GET HERE</b></a>"; //link;
+                + "</p>";
             }
             layer.bindPopup(popup);
         }
@@ -104,27 +92,18 @@ L.control.scale().addTo(map);
                 //enable.allspotsCluster();
             })
         }
-    // -- -- -- -- -- --  Call tutor  -- -- -- -- -- -- -- -- //
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
-
     clusterSpots.addLayer(searchSpots);
-     map.addLayer(clusterSpots);
+    map.addLayer(clusterSpots);
 
 
-            // - GEOJSON GROUPS WITH POPUPS IN CONTROL BOX - //
-    /* 
-        - Clustering markers:       https://github.com/Leaflet/Leaflet.markercluster
-        - Add geoJson to Leaflet;   https://leafletjs.com/reference-1.7.1.html#geojson
-                                    https://leafletjs.com/examples/geojson/
-        - Add markers to control:   https://leafletjs.com/examples/layers-control/
-                                    https://esri.github.io/esri-leaflet/examples/layers-control.html
-        - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
-    */
+                    // - OVERLAYERS - //
+/*
+    (map.fitBounds(north.getBounds());
+    var bounds = L.latLngBounds(kitespots);
+    map.fitBounds(bounds);                    
+*/
 
-        //var searchLink = ("<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
-
-
-        // - Cluster and popups to kitespots North - //
+        // - Cluster and popups to all kitespots - //
     var allspotsCluster = new L.markerClusterGroup();
     var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
@@ -134,7 +113,7 @@ L.control.scale().addTo(map);
             })
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
+                + "</p>"); 
         },
     });
         allspotsCluster.addLayer(allspots);
@@ -148,7 +127,7 @@ L.control.scale().addTo(map);
                 radius:6,
                 opacity: .8,
                 icon:"pink"
-            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'>GET HERE</a>");
+            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
         onEachFeature: function (feature) {
             feature["properties"]["label"] == "NORTH"
@@ -157,9 +136,6 @@ L.control.scale().addTo(map);
             return (feature.properties.label == "NORTH");
         }       
     });
-    //(map.fitBounds(north.getBounds());
-    //var bounds = L.latLngBounds(kitespots);
-    //map.fitBounds(bounds);
     northCluster.addLayer(north);
     
 
@@ -385,11 +361,11 @@ L.control.scale().addTo(map);
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature) {
-                feature["properties"]["windDirection"] == "SW/S" && "SW/S" && "S" && "SW/S/SE"
+                feature["properties"]["windDirection"] == "VÄTTERN"
                 //feature["properties"]["windDirection"] == "S/SW"
             },
             filter: function(feature) {   
-                return (feature.properties.windDirection == "SW/S" && "SW/S" && "S" && "SW/S/SE"
+                return (feature.properties.windDirection == "VÄTTERN"
             );
         }       
     });       
@@ -418,7 +394,8 @@ L.control.scale().addTo(map);
     // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
  
 
-        // - Control layers - //
+        // - CONTROL LAYERS - //
+
     var baseLayers = {
             "Hybrid": hybrid,
             "Topographic": topographic,
@@ -443,9 +420,3 @@ L.control.scale().addTo(map);
   
         // - Add it all to the map - //
     L.control.layers(baseLayers, overlays).addTo(map);
-
-
-/* 
-// Google direction api key: AIzaSyBkrAJhwaHyBY6oDjbXUyyjyFGC9LKD1-w  
-// MapBox api: pk.eyJ1IjoibGlhaGNoZXN0b24iLCJhIjoiY2trMDRyaDJ5MGU2MzJ2bW51d3J2enhmNyJ9.2JTF2IL2y0lF-lcUtNQM9g
-*/
