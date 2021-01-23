@@ -38,7 +38,7 @@
         }
     });
 
-/*
+
                 // - SEARCH ENGINE - //
 
     var clusterSpots = L.markerClusterGroup();
@@ -48,8 +48,7 @@
             var popup = '';
             if (feature.properties.name) {
                 popup += "<p><b> "+feature.properties.name + "</b><br/>" 
-                + "Wind Direction: " + feature.properties.windDirection 
-                + "</p>" + "<a><b></b>GET HERE</b></a>"; //link;
+                + "Wind Direction: " + feature.properties.windDirection;
             }
             layer.bindPopup(popup);
         }
@@ -92,34 +91,35 @@
         }
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
-*/
 
-var swed = [[68.4,25], [55,10]];
+/*
+var swed = [[68.4,25], [55,10]]; //create variable with SRC coordinate scale
 
 
                 // - ZOOM FUNCTION FOR OVERLAYS - //
+                //Refrence: https://stackoverflow.com/questions/45286918/leafletjs-dynamically-bound-map-to-visible-overlays
     map.on('layeradd layerremove', function () {
         // Create new empty bounds
-        var bounds = new L.LatLngBounds();
+        var regionBounds = new L.LatLngBounds();
         // Iterate the map's layers
         map.eachLayer(function (layer) {
             // Check if layer is a featuregroup
             if (layer instanceof L.FeatureGroup) {
                 // Extend bounds with group's bounds
-                bounds.extend(layer.getBounds());
+                regionBounds.extend(layer.getBounds());
             }
         });
         // Check if bounds are valid (could be empty)
-        if (bounds.isValid()) {
+        if (regionBounds.isValid()) {
             // Valid, fit bounds
-            map.fitBounds(bounds);
+            map.fitBounds(regionBounds);
         } else {
             // Invalid, fit world
             map.fitBounds(swed);
         }
     });
 
-
+*/
                // - KITESPOT LAYERS - //
 /*
         // - Cluster and popups to kitespots All kitespots - //
@@ -353,8 +353,7 @@ var swed = [[68.4,25], [55,10]];
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .8,
-                color:"green"
+                opacity: .8
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature) {
@@ -368,27 +367,26 @@ var swed = [[68.4,25], [55,10]];
     });       
     vanernCluster.addLayer(vanern);
     
-
         // - Cluster and popups to kitespots Vättern - //
     var vatternCluster = new L.markerClusterGroup();
     var vattern = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .8,
-                color:"green"
+                opacity: .8
             }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>");
         },
             onEachFeature: function (feature) {
-                feature["properties"]["windDirection"] == "SW/S" && "SW/S" && "S" && "SW/S/SE"
-                //feature["properties"]["windDirection"] == "S/SW"
+                feature["properties"]["label"] == "VÄTTERN"
             },
             filter: function(feature) {   
-                return (feature.properties.windDirection == "SW/S" && "SW/S" && "S" && "SW/S/SE"
+                return (feature.properties.label == "VÄTTERN"
             );
-        }       
+        },
+              
     });       
-    vatternCluster.addLayer(vattern);
+    vatternCluster.addLayer(vattern);    
+
 
         // - Control layers - //
     var baseLayers = {
