@@ -1,16 +1,11 @@
-    // - FIX THIS -//
-/*
-    // - Snap geolocation to "start" in directionForm
-    // Then any click after search engine zoom, zoom out
-    // - Define "link"
-    // - If any of the kitespots layers are clicked in the control, remove the spots on the loadmap.
-*/
+
+                // - MAPS - //
+
         // - Basemaps variables - //
     var hybrid = L.esri.basemapLayer('ImageryClarity');
     var topographic = L.esri.basemapLayer('Topographic');
     var streets = L.esri.basemapLayer('Streets');
     var nationalGeographic = L.esri.basemapLayer('NationalGeographic');
-
 
         // - Create an on load ESRI basemap - //
     var map = L.map('map', {
@@ -20,16 +15,14 @@
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('Topographic').addTo(map);
 
-L.control.scale().addTo(map);
-                        // - GEOLOCATOR - //
-    /*
-    Reference;
-    https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
-    */
+
+                // - SCALE - //
+    L.control.scale().addTo(map);
+
+
+                // - GEOLOCATOR - //
+
     $(document).ready(function() {
-        
-    //baseImagery = L.layerGroup();
-    //L.esri.basemapLayer('ImageryClarity').addTo(map);
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 console.log();
@@ -46,12 +39,7 @@ L.control.scale().addTo(map);
     });
 
 
-                        // - SEARCH ENGINE - //
-    /*
-    References;
-    https://stackoverflow.com/questions/35772717/searching-markers-with-leaflet-control-search-from-drop-down-list
-    https://www.codota.com/code/javascript/functions/leaflet/DomUtil
-    */
+                // - SEARCH ENGINE - //
 
     var clusterSpots = L.markerClusterGroup();
         // - Variable for search source(kitespots) - //
@@ -66,14 +54,12 @@ L.control.scale().addTo(map);
             layer.bindPopup(popup);
         }
     });
-
         // - Create search engine and place it on the map - //
     var selector = L.control({
         position: 'topright',
         opacity: 0.8,
         size: 10
     });
-
     selector.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'list-group-item');
         div.innerHTML = '<select id = "selectSpot"><option value = "init">KITESPOTS</option></select>';
@@ -104,27 +90,35 @@ L.control.scale().addTo(map);
                 //enable.allspotsCluster();
             })
         }
-    // -- -- -- -- -- --  Call tutor  -- -- -- -- -- -- -- -- //
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
-
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
 
 
-            // - GEOJSON GROUPS WITH POPUPS IN CONTROL BOX - //
-    /* 
-        - Clustering markers:       https://github.com/Leaflet/Leaflet.markercluster
-        - Add geoJson to Leaflet;   https://leafletjs.com/reference-1.7.1.html#geojson
-                                    https://leafletjs.com/examples/geojson/
-        - Add markers to control:   https://leafletjs.com/examples/layers-control/
-                                    https://esri.github.io/esri-leaflet/examples/layers-control.html
-        - Add custom markers:       https://leafletjs.com/examples/custom-icons/                                                                                
-    */
+                // - ZOOM FUNCTION FOR OVERLAYS - //
+    map.on('layeradd layerremove', function () {
+        // Create new empty bounds
+        var bounds = new L.LatLngBounds();
+        // Iterate the map's layers
+        map.eachLayer(function (layer) {
+            // Check if layer is a featuregroup
+            if (layer instanceof L.FeatureGroup) {
+                // Extend bounds with group's bounds
+                bounds.extend(layer.getBounds());
+            }
+        });
+        // Check if bounds are valid (could be empty)
+        if (bounds.isValid()) {
+            // Valid, fit bounds
+            map.fitBounds(bounds);
+        } else {
+            // Invalid, fit world
+            map.allspotsCluster();
+        }
+    });
 
-        //var searchLink = ("<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
+                // - KITESPOT LAYERS - //
 
-
-        // - Cluster and popups to kitespots North - //
+        // - Cluster and popups to kitespots All kitespots - //
     var allspotsCluster = new L.markerClusterGroup();
     var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
@@ -157,11 +151,8 @@ L.control.scale().addTo(map);
             return (feature.properties.label == "NORTH");
         }       
     });
-    //(map.fitBounds(north.getBounds());
-    //var bounds = L.latLngBounds(kitespots);
-    //map.fitBounds(bounds);
     northCluster.addLayer(north);
-    
+
 
         // - Cluster and popups to kitespots North East - //
     var northeastCluster = new L.markerClusterGroup();
@@ -394,29 +385,6 @@ L.control.scale().addTo(map);
         }       
     });       
     vatternCluster.addLayer(vattern);
-  
-    
-
-    // -- -- -- -- -- -- -- CHECK WITH TUTOR -- -- -- -- -- -- -- //
-/*
-    var regionLayers = northCluster || northeastCluster || mideastCluster || alandCluster || gotlandCluster || olandCluster || southeastCluster || southCluster || southwestCluster || northwestCluster || vatternCluster || vanernCluster
-
-    document.getElementsByName(northCluster).addEventListener("select", click() {
-        var regionLayers = document.getElementsByName("checked");
-        if (regionLayers.checked.display =="true") 
-        {
-            clusterSpots.checked.display = "false";
-            //checks.disable = false
-        } 
-        else
-        {
-            clusterSpots.checked.display = "true"
-            //checks.disable = true
-        }
-    }) 
-*/
-    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
- 
 
         // - Control layers - //
     var baseLayers = {
