@@ -18,7 +18,7 @@
         zoom: 5
     }),
     baseImagery = L.layerGroup();
-    L.esri.basemapLayer('ImageryClarity').addTo(map);
+    L.esri.basemapLayer('Topographic').addTo(map);
 
 L.control.scale().addTo(map);
                         // - GEOLOCATOR - //
@@ -28,8 +28,8 @@ L.control.scale().addTo(map);
     */
     $(document).ready(function() {
         
-    baseImagery = L.layerGroup();
-    L.esri.basemapLayer('ImageryClarity').addTo(map);
+    //baseImagery = L.layerGroup();
+    //L.esri.basemapLayer('ImageryClarity').addTo(map);
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 console.log();
