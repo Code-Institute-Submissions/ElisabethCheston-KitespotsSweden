@@ -38,7 +38,7 @@
         }
     });
 
-
+/*
                 // - SEARCH ENGINE - //
 
     var clusterSpots = L.markerClusterGroup();
@@ -92,6 +92,9 @@
         }
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
+*/
+
+var swed = [[68.4,25], [55,10]];
 
 
                 // - ZOOM FUNCTION FOR OVERLAYS - //
@@ -112,19 +115,20 @@
             map.fitBounds(bounds);
         } else {
             // Invalid, fit world
-            map.allspotsCluster();
+            map.fitBounds(swed);
         }
     });
 
-                // - KITESPOT LAYERS - //
 
+               // - KITESPOT LAYERS - //
+/*
         // - Cluster and popups to kitespots All kitespots - //
     var allspotsCluster = new L.markerClusterGroup();
     var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .8
+                opacity: .1
             })
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" 
                 + "Wind Direction: " + feature.properties.windDirection 
@@ -132,7 +136,7 @@
         },
     });
         allspotsCluster.addLayer(allspots);
-  
+  */
 
         // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
@@ -394,7 +398,7 @@
             "National Geographic":  nationalGeographic
     };
     var overlays = {       
-            'All Kitespots': clusterSpots,
+         /*   'All Kitespots': clusterSpots,*/
             'North': northCluster,
             'North East': northeastCluster,
             'Mid East': mideastCluster,
