@@ -8,28 +8,118 @@
     var nationalGeographic = L.esri.basemapLayer('NationalGeographic');
 
         // - Create an on load ESRI basemap - //
-    var map = L.map('map', {
+    var map = new L.map('map', {
         center: [62.45,17.45],
-        zoom: 5,
-        minZoom: 1,
-        maxZoom: 16,
-        bounceAtZoomLimits: false
+        zoom: 5
     }),
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('Topographic').addTo(map);
 
 
 
+    
+/*
+                // - SEARCH ENGINE - //
 
+    var clusterSpots = L.markerClusterGroup();
+        // - Variable for search source(kitespots) - //
+
+    var searchSpots = L.geoJson(kitespots, {
+        onEachFeature: function(feature, layer) {
+            var popup = L.circleMarker({
+                    radius: 300,
+                    color: 'black',
+                    opacity: 0.7
+            })
+            
+            if (feature.properties.name) {
+                popup += "<p><b> "+feature.properties.name + "</b><br/>" 
+                + "Wind Direction: " + feature.properties.windDirection;
+            }
+            layer.bindPopup(popup);
+        }
+    });
+        // - Create search engine and place it on the map - //
+    var selector = L.control({
+        position: 'topright',
+        opacity: 0.8,
+        size: 10
+    });
+    selector.onAdd = function(map) {
+        var div = L.DomUtil.create('div', 'list-group-item');
+        div.innerHTML = '<select id = "selectSpot"><option value = "init">KITESPOTS</option></select>';
+        return div;
+    };
+    selector.addTo(map);
+
+        // - Function to browse and choose spots - //
+    searchSpots.eachLayer(function(layer) {
+        var spotChoice = document.createElement("option");
+        spotChoice.innerHTML = layer.feature.properties.name;
+        spotChoice.value = layer._leaflet_id;
+        L.DomUtil.get("selectSpot").appendChild(spotChoice);
+    });
+        // - The selectSpot variable for the DomEvent listener. - //
+    var selectSpot = L.DomUtil.get("selectSpot");
+
+        // - Select kitespot on click - //
+    L.DomEvent.addListener(selectSpot, 'click', function(e) {
+        L.DomEvent.stopPropagation(e);
+    });
+        // - ChangeHandler zooms in on choosen spot with popup.""
+    L.DomEvent.addListener(selectSpot, 'change', changeHandler);
+    function changeHandler(e) {
+        var selected = searchSpots.getLayer(e.target.value);
+            clusterSpots.zoomToShowLayer(selected, function() {
+                selected;
+            })
+        }
+    clusterSpots.addLayer(searchSpots);
+     map.addLayer(clusterSpots);
+
+
+               // - KITESPOT LAYERS - //
+/*
+        // - Cluster and popups to kitespots All kitespots - //
+    var allspotsCluster = new L.markerClusterGroup();
+    var allspots = L.geoJson(kitespots, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .1
+            })
+            .bindPopup("<p><b> "+feature.properties.name 
+            + "</b><br/>" + "Wind Direction: " 
+            + feature.properties.windDirection + "</p>" 
+            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
+        },
+    });
+        allspotsCluster.addLayer(allspots);
+  
+        north.on('data: loaded', function () {
+            map.fitBounds(north.getBounds())
+        });
+
+
+    function returnMarker(kitespot, latlng) {
+    return L.circleMarker(latlng, {
+        radius: 10,
+        color: 'pink'
+    })
+}
+*/
         // - Cluster and popups to kitespots North - //
     var northCluster = new L.markerClusterGroup();
     var north = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {
-                radius:6,
-                opacity: .8,
-                icon:"pink"
-            }).bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'>GET HERE</a>");
+            return L.circleMarker(latlng, {
+        radius: 10,
+        opacity: 0.6,
+        color: 'pink',
+            }).bindPopup("<p><b> "+feature.properties.name 
+            + "</b><br/>" + "Wind Direction: " 
+            + feature.properties.windDirection 
+            + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'>GET HERE</a>");
         },
         onEachFeature: function (feature) {
             feature["properties"]["label"] == "NORTH"
@@ -38,7 +128,9 @@
             return (feature.properties.label == "NORTH");
         }       
     });
-    northCluster.addLayer(north);
+        northCluster.addLayer(north);
+
+
 
 
         // - Cluster and popups to kitespots North East - //
@@ -274,6 +366,8 @@
     vatternCluster.addLayer(vattern);    
 
 
+
+
         // - CONTROL LAYERS - //
 
     var baseLayers = {
@@ -300,6 +394,17 @@
   
         // - Add it all to the map - //
     L.control.layers(baseLayers, overlays).addTo(map);
+
+    // Have the map adjust view anytime the user uses the Layers Control overlays.
+map.on('overlaysadd overlaysremove', function () {
+  var bounds = parentGroup.getBounds();
+
+  // Fit bounds only if the Parent Group actually has some markers,
+  // i.e. it returns valid bounds.
+  if (bounds.isValid()) {
+    map.fitBounds(bounds);
+  }
+});
 
 
 /* 

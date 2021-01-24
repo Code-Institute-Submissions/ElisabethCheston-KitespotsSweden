@@ -1,3 +1,4 @@
+/*
                 // - SEARCH ENGINE - //
 
     var clusterSpots = L.markerClusterGroup();
@@ -50,3 +51,5 @@
         }
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
+
+     */
