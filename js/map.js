@@ -19,8 +19,6 @@
     L.esri.basemapLayer('Topographic').addTo(map);
 
 
-                // - SCALE - //
-    L.control.scale().addTo(map);
 
 
 

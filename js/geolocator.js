@@ -1,14 +1,14 @@
-                // - GEOLOCATOR - //
+        // - GEOLOCATOR - //
 
     $(document).ready(function() {
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 console.log();
                 L.circle([position.coords.latitude, position.coords.longitude], {
-                    radius: 10000,
-                    weight: 1,
-                    fillColor: 'green',
-                    fillOpacity: 0.7
+                    fillColor: 'red',
+                    fillOpacity: 0.7,
+                    radius: 6500,
+                    weight: 1
                 }).addTo(map);
             });
         } else {
