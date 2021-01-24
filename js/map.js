@@ -10,7 +10,10 @@
         // - Create an on load ESRI basemap - //
     var map = L.map('map', {
         center: [62.45,17.45],
-        zoom: 5
+        zoom: 5,
+        minZoom: 1,
+        maxZoom: 16,
+        bounceAtZoomLimits: false
     }),
     baseImagery = L.layerGroup();
     L.esri.basemapLayer('Topographic').addTo(map);
@@ -20,24 +23,8 @@
     L.control.scale().addTo(map);
 
 
-                // - GEOLOCATOR - //
 
-    $(document).ready(function() {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                console.log();
-                L.circle([position.coords.latitude, position.coords.longitude], {
-                    radius: 10000,
-                    weight: 1,
-                    fillColor: 'green',
-                    fillOpacity: 0.7
-                }).addTo(map);
-            });
-        } else {
-            console.log("Geolocation missing"); // geolocation is not available
-        }
-    });
-
+/*
 
                 // - SEARCH ENGINE - //
 
@@ -91,13 +78,12 @@
         }
     clusterSpots.addLayer(searchSpots);
      map.addLayer(clusterSpots);
-
-/*
-var swed = [[68.4,25], [55,10]]; //create variable with SRC coordinate scale
+*/
 
 
                 // - ZOOM FUNCTION FOR OVERLAYS - //
-                //Refrence: https://stackoverflow.com/questions/45286918/leafletjs-dynamically-bound-map-to-visible-overlays
+            //Refrence: https://stackoverflow.com/questions/45286918/leafletjs-dynamically-bound-map-to-visible-overlays
+    var swed = [[68.4,25], [55,10]]; //create variable with SRC coordinate scale
     map.on('layeradd layerremove', function () {
         // Create new empty bounds
         var regionBounds = new L.LatLngBounds();
@@ -111,15 +97,20 @@ var swed = [[68.4,25], [55,10]]; //create variable with SRC coordinate scale
         });
         // Check if bounds are valid (could be empty)
         if (regionBounds.isValid()) {
+            
+            //function onClick(event) {
+            //    map.zoom([event.latlng])
+           // }
             // Valid, fit bounds
             map.fitBounds(regionBounds);
+
         } else {
             // Invalid, fit world
             map.fitBounds(swed);
         }
     });
 
-*/
+
                // - KITESPOT LAYERS - //
 /*
         // - Cluster and popups to kitespots All kitespots - //
@@ -163,6 +154,7 @@ var swed = [[68.4,25], [55,10]]; //create variable with SRC coordinate scale
     var northeast = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
+                //icon: greenflag.png,
                 radius:6,
                 opacity: .8,
                 color:"green"
