@@ -8,4 +8,8 @@ html, body, #map {
     margin: 0px;
 }
 
+leaflet-markers {
+    color: green;
+}
+
 

@@ -1,4 +1,4 @@
-const kitespots = {
+{
 "type": "FeatureCollection",
   "features": [
     {

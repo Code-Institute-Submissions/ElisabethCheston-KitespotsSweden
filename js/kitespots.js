@@ -1,4 +1,4 @@
-const spots = {
+const kitespots = {
 "type": "FeatureCollection",
   "features": [
     {
