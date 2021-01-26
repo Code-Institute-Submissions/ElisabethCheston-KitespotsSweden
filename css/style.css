@@ -1,69 +1,11 @@
 /* Map */
   
 html, body, #map {
-    height: vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     padding: 0px;
     margin: 0px;
 }
 
-/* Control Panel */
-.directionForm {
-    max-width: 200px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(221, 221, 221, 0.12);
-    position: absolute;
-    bottom: 25px;
-    right: 12px;
-    padding: 10px;
-    z-index: 440;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.45);
-    border-radius: 3px;
-    width: 100%;
-}
-
-.input {
-    padding: 5px;
-    width: 95%;
-    border: 1px solid #ddd;
-    font-size: 12px;
-    border-radius: 3px;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.65);
-}
-#form {
-    padding: 4;
-    margin: 4;
-}
-input:nth-child(1) {
-    margin-bottom: 6px;
-}
-button {
-    font-size: 12px;
-    background-color: rgba(202, 202, 202, 0.89);
-    border: 10px;
-    padding: 4px;
-    margin-top: 5px;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.65);
-    border-radius: 3px;
-}
-
-
-.leaflet-control-scale {
-    box-sizing: border-box;
-    color: rgba(255, 255, 255, 0.8);
-    bottom: 16px;
-}
-/*
-.leaflet-marker-icon {
-	color: #fff;
-	font-size: 16px;
-	line-height: 16px;	
-	text-align: center;
-	vertical-align: middle;
-	box-shadow: 2px 1px 4px rgba(0,0,0,0.3);
-	border-radius: 8px;
-	border:1px solid #fff;
-}
-*/
 

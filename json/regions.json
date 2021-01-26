@@ -1,0 +1,161 @@
+{
+"type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "NORTH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.357421875,
+          66.10716955858042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "NORTHEAST"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.60009765625,
+          63.430860212678105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "MIDEAST"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.14990234375,
+          59.734253447591364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "ÅLAND"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.88525390625,
+          60.22890276751329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "GOTLAND"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.52294921875,
+          57.52762173837744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "ÖLAND"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.63330078125,
+          56.76476752576022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "SOUTHEAST"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.01806640625,
+          56.64414704199467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "SOUTH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.128417968749998,
+          55.7642131648377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "SOUTHWEST"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.963867187499998,
+          56.46249048388979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "NORTHWEST"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6015625,
+          58.50517468678928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "VÄNERN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.24951171875,
+          58.802361927759456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      "region": "VÄTTERN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4580078125,
+          58.205449994019915
+        ]
+      }
+    }
+  ]
+}
