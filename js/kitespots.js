@@ -6,7 +6,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BREDVIKEN",
         "label": "NORTH",
         "windDirection": "S"
@@ -24,7 +25,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BODÖN",
         "label": "NORTH",
         "windDirection": "S/SE"
@@ -42,7 +44,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STORSAND",
         "label": "NORTH",
         "windDirection": "SW/W"
@@ -60,7 +63,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LULVIKSBADET",
         "label": "NORTH",
         "windDirection": "NW/N"
@@ -78,7 +82,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LULHÄLLAN",
         "label": "NORTH",
         "windDirection": "SE/E"
@@ -96,7 +101,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KLUBBVIKEN",
         "label": "NORTH",
         "windDirection": "SE/E/NE"
@@ -114,7 +120,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STORSNÄCK",
         "label": "NORTH",
         "windDirection": "W/NW/N"
@@ -132,7 +139,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SILLSKATAN",
         "label": "NORTH",
         "windDirection": "SE/E"
@@ -150,7 +158,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJURÖKLUBB E",
         "label": "NORTH",
         "windDirection": "SW/S/SE/E"
@@ -168,7 +177,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJURÖKLUBB W",
         "label": "NORTH",
         "windDirection": "S/SE"
@@ -186,7 +196,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LILLIS",
         "label": "NORTH",
         "windDirection": "SE/E"
@@ -204,7 +215,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LÄNKEBOO",
         "label": "NORTH",
         "windDirection": "SE/E/NE"
@@ -222,7 +234,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STORÄNGET",
         "label": "NORTH",
         "windDirection": "NW"
@@ -240,7 +253,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SALUSAND",
         "label": "NORTH",
         "windDirection": "SE/E"
@@ -258,7 +272,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STUBBSAND",
         "label": "NORTH",
         "windDirection": "S/SW"
@@ -276,7 +291,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GULLVIK",
         "label": "NORTH",
         "windDirection": "S/SE"
@@ -294,7 +310,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VANNVIKEN",
         "label": "NORTH",
         "windDirection": "S/SE"
@@ -312,7 +329,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NYÄNGET",
         "label": "NORTH",
         "windDirection": "S/SE"
@@ -330,7 +348,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STORSANDEN",
         "label": "NORTH",
         "windDirection": "N/NW"
@@ -348,7 +367,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SÄLSTEN",
         "label": "NORTHEAST",
         "windDirection": "NW/NE"
@@ -366,7 +386,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SMITINGE",
         "label": "NORTHEAST",
         "windDirection": "SE/S"
@@ -384,7 +405,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SVARTVIK",
         "label": "NORTHEAST",
         "windDirection": "SE"
@@ -402,7 +424,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "YTTERFÄLLE",
         "label": "NORTHEAST",
         "windDirection": "SE"
@@ -420,7 +443,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MYCKELÄNG",
         "label": "NORTHEAST",
         "windDirection": "NW/SW/W"
@@ -438,7 +462,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GULLFIBER",
         "label": "NORTHEAST",
         "windDirection": "S/SW"
@@ -456,7 +481,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SMACKEN",
         "label": "NORTHEAST",
         "windDirection": "S/SW/SE"
@@ -474,7 +500,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STORNÄSET",
         "label": "NORTHEAST",
         "windDirection": "S/SW/SE"
@@ -492,7 +519,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "DYRÅSAND",
         "label": "NORTHEAST",
         "windDirection": "E/SE/NE"
@@ -510,7 +538,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SÖRFJÄRDEN",
         "label": "NORTHEAST",
         "windDirection": "E/SE"
@@ -528,7 +557,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VARPSAND",
         "label": "NORTHEAST",
         "windDirection": "NE/E"
@@ -546,7 +576,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÅRTE",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -564,7 +595,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HALLSBO",
         "label": "NORTHEAST",
         "windDirection": "NW"
@@ -582,7 +614,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FÖNEBO",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -600,7 +633,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MALNBADEN",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -618,7 +652,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÖLICK V",
         "label": "NORTHEAST",
         "windDirection": "S/SW/W"
@@ -636,7 +671,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÖLICK S",
         "label": "NORTHEAST",
         "windDirection": "SE/S"
@@ -654,7 +690,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TÅNGVIK",
         "label": "NORTHEAST",
         "windDirection": "S/SW/SE"
@@ -672,7 +709,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SÖRSUNDET",
         "label": "NORTHEAST",
         "windDirection": "N/NW"
@@ -690,7 +728,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SNÄCKEN",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -708,7 +747,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KRÅKNÄS",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -726,7 +766,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STENÖ HAVSBAD",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -744,7 +785,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ORSUNNDET",
         "SW/windDirection/NW": "",
         "label": "NORTHEAST",
@@ -763,7 +805,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ENSKÄR",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -781,7 +824,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "UTVALNÄS UDDE",
         "label": "NORTHEAST",
         "windDirection": "S/SE/E"
@@ -799,7 +843,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HOLMUDDEN",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -817,7 +862,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BRÄDVIKEN",
         "label": "NORTHEAST",
         "windDirection": "S/SE"
@@ -835,7 +881,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KLÄCKEN",
         "label": "NORTHEAST",
         "windDirection": "NW/N/NE"
@@ -853,7 +900,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RULLSAND",
         "label": "NORTHEAST",
         "windDirection": "NW/N/NE"
@@ -871,7 +919,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SALNÖ",
         "label": "MIDEAST",
         "windDirection": "E/NE"
@@ -889,7 +938,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KAPELLSKÄR",
         "label": "MIDEAST",
         "windDirection": "SW/S/SE"
@@ -907,7 +957,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BROMSKÄR",
         "label": "MIDEAST",
         "windDirection": "S/SW/SE"
@@ -925,7 +976,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "DEGERSAND",
         "label": "ÅLAND",
         "windDirection": "S/SE"
@@ -943,7 +995,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDMO",
         "label": "ÅLAND",
         "windDirection": "SW/W"
@@ -961,7 +1014,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKJULET",
         "label": "ÅLAND",
         "windDirection": "SE/E"
@@ -979,7 +1033,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LUMPARN",
         "label": "ÅLAND",
         "windDirection": "N/NW/NE"
@@ -997,7 +1052,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "PRÄSTÖ",
         "label": "ÅLAND",
         "windDirection": "S/SW/SE"
@@ -1015,7 +1071,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÄGERNÄSBADET",
         "label": "MIDEAST",
         "windDirection": "S/SE"
@@ -1033,7 +1090,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NÄSAÄNG",
         "label": "MIDEAST",
         "windDirection": "SE/E"
@@ -1051,7 +1109,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STICKLINGE",
         "label": "MIDEAST",
         "windDirection": "NW/W"
@@ -1069,7 +1128,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FÅGELÖUDDE",
         "label": "MIDEAST",
         "windDirection": "NE/N"
@@ -1087,7 +1147,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SÄTRASTRAND",
         "label": "MIDEAST",
         "windDirection": "W"
@@ -1105,7 +1166,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MJÖLKUDDEN",
         "label": "MIDEAST",
         "windDirection": "SE/E/NE"
@@ -1123,7 +1185,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ERSTAVIK",
         "label": "MIDEAST",
         "windDirection": "SE"
@@ -1141,7 +1204,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TRINNTORP",
         "label": "MIDEAST",
         "windDirection": "E/NE"
@@ -1159,7 +1223,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDHOLMEN",
         "label": "MIDEAST",
         "windDirection": "S/SE"
@@ -1177,7 +1242,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GRÖNSKAN",
         "label": "MIDEAST",
         "windDirection": "SW/S"
@@ -1195,7 +1261,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LILLA SAND",
         "label": "MIDEAST",
         "windDirection": "S/EW/SE"
@@ -1213,7 +1280,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJÖRKVIK",
         "label": "MIDEAST",
         "windDirection": "S/SW/SE"
@@ -1231,7 +1299,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TORPESAND",
         "label": "MIDEAST",
         "windDirection": "S/SW/SE"
@@ -1249,7 +1318,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "DALARÖ",
         "label": "MIDEAST",
         "windDirection": "SW/S"
@@ -1267,7 +1337,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GÅLÖ",
         "label": "MIDEAST",
         "windDirection": "E"
@@ -1285,7 +1356,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÖRUDDEN N",
         "label": "MIDEAST",
         "windDirection": "W/NW"
@@ -1303,7 +1375,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÖRUDDEN V",
         "label": "MIDEAST",
         "windDirection": "W/SW/S"
@@ -1321,7 +1394,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÖRUDDEN S",
         "label": "MIDEAST",
         "windDirection": "S/SW/SE"
@@ -1339,7 +1413,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VARPET",
         "label": "GOTLAND",
         "windDirection": "NE/E"
@@ -1357,7 +1432,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "EKEVIKEN",
         "label": "GOTLAND",
         "windDirection": "NW/N/NE"
@@ -1375,7 +1451,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKÄR",
         "label": "GOTLAND",
         "windDirection": "NW/N/NE"
@@ -1393,7 +1470,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKALASAND",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1411,7 +1489,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SUDERSAND",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1429,7 +1508,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SAXRIV",
         "label": "GOTLAND",
         "windDirection": "W/NW/N"
@@ -1447,7 +1527,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SJÖKRGEN",
         "label": "GOTLAND",
         "windDirection": "SE"
@@ -1465,7 +1546,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ST OLOFSHOLM",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1483,7 +1565,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HIDEVIKEN",
         "label": "GOTLAND",
         "windDirection": "S/SE"
@@ -1501,7 +1584,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SLITE",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1519,7 +1603,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "IREVIKEN",
         "label": "GOTLAND",
         "windDirection": "W/NW"
@@ -1537,7 +1622,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NORDENSTRAND",
         "label": "GOTLAND",
         "windDirection": "SW/W/NW"
@@ -1555,7 +1641,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VISBY KALLIS",
         "label": "GOTLAND",
         "windDirection": "SW/W/NW"
@@ -1573,7 +1660,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FRIDHEM",
         "label": "GOTLAND",
         "windDirection": "SW/W/NW"
@@ -1591,7 +1679,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÅMINNE",
         "label": "GOTLAND",
         "windDirection": "E/NE"
@@ -1609,7 +1698,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KATTVIK",
         "label": "GOTLAND",
         "windDirection": "N/NW"
@@ -1627,7 +1717,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GROGARN",
         "label": "GOTLAND",
         "windDirection": "E/NE"
@@ -1645,7 +1736,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NATVIKSUDD",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1663,7 +1755,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDVIKEN",
         "label": "GOTLAND",
         "windDirection": "S/SW"
@@ -1681,7 +1774,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄSTERVIKEN",
         "label": "GOTLAND",
         "windDirection": "S/SE"
@@ -1699,7 +1793,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "JRP",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1717,7 +1812,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SJAUSTRU",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1735,7 +1831,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ARDREVIKEN",
         "label": "GOTLAND",
         "windDirection": "SE/E"
@@ -1753,7 +1850,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LJUGARN",
         "label": "GOTLAND",
         "windDirection": "SE/E/NE"
@@ -1771,7 +1869,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LAUSVIKEN",
         "label": "GOTLAND",
         "windDirection": "W/NW"
@@ -1789,7 +1888,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GANSVIKEN",
         "label": "GOTLAND",
         "windDirection": "N/NE"
@@ -1807,7 +1907,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FALUDDEN N",
         "label": "GOTLAND",
         "windDirection": "N/NE"
@@ -1825,7 +1926,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FALUDDEN S",
         "label": "GOTLAND",
         "windDirection": "S/SE"
@@ -1843,7 +1945,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HOLMHÄLLAR",
         "label": "GOTLAND",
         "windDirection": "S/SE/E"
@@ -1861,7 +1964,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VALAR",
         "label": "GOTLAND",
         "windDirection": "W/NW"
@@ -1879,7 +1983,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NISSESVIKEN",
         "label": "GOTLAND",
         "windDirection": "S/SW"
@@ -1897,7 +2002,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TJURUDDEN",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -1915,7 +2021,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KOVIK",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -1933,7 +2040,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄSTERGARN N",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -1951,7 +2059,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TOFTA S",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -1969,7 +2078,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STRANDPANGET",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -1987,7 +2097,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GNISVÄRD",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -2005,7 +2116,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FURILLEN",
         "label": "GOTLAND",
         "windDirection": "S/SW"
@@ -2023,7 +2135,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄSTERGARN S",
         "label": "GOTLAND",
         "windDirection": "SW/W"
@@ -2041,7 +2154,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HALLMARE",
         "label": "SOUTHEAST",
         "windDirection": "SW/S"
@@ -2059,7 +2173,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GRÄNSÖ",
         "label": "SOUTHEAST",
         "windDirection": "SE/E"
@@ -2077,7 +2192,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HORNSUDDE",
         "label": "SOUTHEAST",
         "windDirection": "S/SE"
@@ -2095,7 +2211,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÄNGJARN",
         "label": "ÖLAND",
         "windDirection": "S/SE/NE"
@@ -2113,7 +2230,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TROLLSKOGEN",
         "label": "ÖLAND",
         "windDirection": "E/NE"
@@ -2131,7 +2249,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BÖDA",
         "label": "ÖLAND",
         "windDirection": "E/NE"
@@ -2149,7 +2268,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BYRUM",
         "label": "ÖLAND",
         "windDirection": "W/SW/NW"
@@ -2167,7 +2287,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÖGBY",
         "label": "ÖLAND",
         "windDirection": "S/SE"
@@ -2185,7 +2306,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ALVEDSJÖ",
         "label": "ÖLAND",
         "windDirection": "S/SW"
@@ -2203,7 +2325,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDVIK",
         "label": "ÖLAND",
         "windDirection": "SW/S/NW"
@@ -2221,7 +2344,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KÅREHAMN",
         "label": "ÖLAND",
         "windDirection": "SE/E/NE"
@@ -2239,7 +2363,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÄLEKLINTA",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2257,7 +2382,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KÖPINGSVIK",
         "label": "ÖLAND",
         "windDirection": "W/NW"
@@ -2275,7 +2401,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJÄRBYBADET",
         "label": "ÖLAND",
         "windDirection": "SE/E/NE"
@@ -2293,7 +2420,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BLÄSINGE",
         "label": "ÖLAND",
         "windDirection": "E/NE"
@@ -2311,7 +2439,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SAXNÄS",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2329,7 +2458,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TALLUDDEN",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2347,7 +2477,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HAGA PARK",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2365,7 +2496,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDBERGEN",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2383,7 +2515,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KLEVA",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2401,7 +2534,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GRÖNHÖGEN",
         "label": "ÖLAND",
         "windDirection": "SW/W/NW"
@@ -2419,7 +2553,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BERGAVIKEN",
         "label": "SOUTHEAST",
         "windDirection": "E"
@@ -2437,7 +2572,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LÅNGVIKEN",
         "label": "SOUTHEAST",
         "windDirection": "SE/E"
@@ -2455,7 +2591,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BERGKVARA UDDE",
         "windDirectioon": "",
         "label": "SOUTHEAST",
@@ -2474,7 +2611,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKÄPPEVIK",
         "label": "SOUTHEAST",
         "windDirection": "NE"
@@ -2492,7 +2630,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KRISTIANOPEL",
         "label": "SOUTHEAST",
         "windDirection": "SE/E"
@@ -2510,7 +2649,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TORHAMN",
         "label": "SOUTHEAST",
         "windDirection": "SW"
@@ -2528,7 +2668,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GISSELVIK",
         "label": "SOUTHEAST",
         "windDirection": "S/SW"
@@ -2546,7 +2687,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STUMHOLMEN",
         "label": "SOUTHEAST",
         "windDirection": "S/SE"
@@ -2564,7 +2706,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LINDÖ",
         "label": "SOUTHEAST",
         "windDirection": "SW/S/SE"
@@ -2582,7 +2725,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NABBEN",
         "label": "SOUTH",
         "windDirection": "SW/S"
@@ -2600,7 +2744,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NORJE",
         "label": "SOUTH",
         "windDirection": "N/NE"
@@ -2618,7 +2763,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NOGERSUND",
         "label": "SOUTH",
         "windDirection": "SE/E"
@@ -2636,7 +2782,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TORSÖ",
         "label": "SOUTH",
         "windDirection": "S/SW"
@@ -2654,7 +2801,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDVIKEN",
         "label": "SOUTH",
         "windDirection": "S/SW"
@@ -2672,7 +2820,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RINKABY",
         "label": "SOUTH",
         "windDirection": "SE/E"
@@ -2690,7 +2839,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÅHUS ÅWC",
         "label": "SOUTH",
         "windDirection": "SE/E"
@@ -2708,7 +2858,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÄSPET",
         "label": "SOUTH",
         "windDirection": "S/SE"
@@ -2726,7 +2877,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VIK",
         "label": "SOUTH",
         "windDirection": "E/NE"
@@ -2744,7 +2896,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VITEMÖLLA",
         "label": "SOUTH",
         "windDirection": "SE/E/NE"
@@ -2762,7 +2915,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BORRBY",
         "label": "SOUTH",
         "windDirection": "SE/E"
@@ -2780,7 +2934,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LÖDERUP",
         "label": "SOUTH",
         "windDirection": "SW/S/SE"
@@ -2798,7 +2953,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SANDHAM",
         "label": "SOUTH",
         "windDirection": "S/SE/E"
@@ -2816,7 +2972,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KÅSEBERGA",
         "label": "SOUTH",
         "windDirection": "S/SE"
@@ -2834,7 +2991,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SALTAN",
         "label": "SOUTH",
         "windDirection": "S/SE/E"
@@ -2852,7 +3010,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "YSTAD YWC",
         "label": "SOUTH",
         "windDirection": "SW/S"
@@ -2870,7 +3029,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MOSSBYSTRAND",
         "label": "SOUTH",
         "windDirection": "S/SE"
@@ -2888,7 +3048,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FRANKS UDDE",
         "label": "SOUTH",
         "windDirection": "SW/S/SE"
@@ -2906,7 +3067,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BEDDINGE",
         "label": "SOUTH",
         "windDirection": "S/SE"
@@ -2924,7 +3086,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BÖSTE",
         "label": "SOUTH",
         "windDirection": "SW/S/SE"
@@ -2942,7 +3105,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KÄMINGE",
         "label": "SOUTH",
         "windDirection": "SW/S/SE/E"
@@ -2960,7 +3124,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LJUNGHUSEN",
         "label": "SOUTH",
         "windDirection": "SE/E"
@@ -2978,7 +3143,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÖLLVIKEN",
         "label": "SOUTH",
         "windDirection": "W/NW"
@@ -2996,7 +3162,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FALSTERBO",
         "label": "SOUTH",
         "windDirection": "S/SE/E"
@@ -3014,7 +3181,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKANÖR SÖDRA",
         "label": "SOUTH",
         "windDirection": "S/SW/W"
@@ -3032,7 +3200,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KLAGSHAMN",
         "label": "SOUTH",
         "windDirection": "SW/S"
@@ -3050,7 +3219,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RIBERSBRG",
         "label": "SOUTH",
         "windDirection": "W/NW"
@@ -3068,7 +3238,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄSTRA HAMNEN",
         "label": "SOUTH",
         "windDirection": "SW/W/NW"
@@ -3086,7 +3257,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LOMMA",
         "label": "SOUTH",
         "windDirection": "SW/W/NW"
@@ -3104,7 +3276,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HL KITE BEACH",
         "label": "SOUTH",
         "windDirection": "S/SW/W"
@@ -3122,7 +3295,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SAXTORP",
         "label": "SOUTH",
         "windDirection": "SW/W/NW"
@@ -3140,7 +3314,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LUNDÅKRA",
         "label": "SOUTH",
         "windDirection": "E/S/SW"
@@ -3158,7 +3333,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BORSTAHUSEN",
         "label": "SOUTH",
         "windDirection": "S/SW/NW"
@@ -3176,7 +3352,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FORTUNA",
         "label": "SOUTH",
         "windDirection": "S/SW/NW"
@@ -3194,7 +3371,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RÅÅ HAMN",
         "label": "SOUTH",
         "windDirection": "S/SW"
@@ -3212,7 +3390,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "DOMSTEN",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/MW"
@@ -3230,7 +3409,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HÖGANÄS",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3248,7 +3428,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LERHAMN",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3266,7 +3447,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FARHULT",
         "label": "SOUTHWEST",
         "windDirection": "NW/N"
@@ -3284,7 +3466,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KLITTERHUS",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3302,7 +3485,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VEJBYSTRAND S",
         "label": "SOUTHWEST",
         "windDirection": "W/NW"
@@ -3320,7 +3504,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MALENS HAVSBAD",
         "label": "SOUTHWEST",
         "windDirection": "W/NW"
@@ -3338,7 +3523,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MELLBY S",
         "label": "SOUTHWEST",
         "windDirection": "W/NW"
@@ -3356,7 +3542,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MELLBY N",
         "label": "SOUTHWEST",
         "windDirection": "W/NW"
@@ -3374,7 +3561,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LAGAOSET",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3392,7 +3580,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HALMSTAD E",
         "label": "SOUTHWEST",
         "windDirection": "SW/W"
@@ -3410,7 +3599,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "DOGSHIT BAY",
         "label": "SOUTHWEST",
         "windDirection": "S/SW"
@@ -3428,7 +3618,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RINGENÄS",
         "label": "SOUTHWEST",
         "windDirection": "S/SW/W"
@@ -3446,7 +3637,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name ": "VILSHÄRAD",
         "label": "SOUTHWEST",
         "windDirection": "W/NW"
@@ -3464,7 +3656,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RINGSEGÅRD",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3482,7 +3675,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKREA",
         "label": "SOUTHWEST",
         "windDirection": "SW/W"
@@ -3500,7 +3694,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "OLOFSBO",
         "label": "SOUTHWEST",
         "windDirection": "S/SW/W"
@@ -3518,7 +3713,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJÖRKÄNG",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3536,7 +3732,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LÄJET",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3554,7 +3751,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "APELVIKEN",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3572,7 +3770,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GETTERÖN N",
         "label": "SOUTHWEST",
         "windDirection": "W/NW/N"
@@ -3590,7 +3789,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GETTERÖN S",
         "label": "SOUTHWEST",
         "windDirection": "SE/S/SW"
@@ -3608,7 +3808,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NORRA NÄS",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3626,7 +3827,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "KÄRRADAL",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3644,7 +3846,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RINGHALS",
         "label": "SOUTHWEST",
         "windDirection": "SW/W"
@@ -3662,7 +3865,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STRÅVALLA",
         "label": "SOUTHWEST",
         "windDirection": "SW/W/NW"
@@ -3680,7 +3884,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RÅGELUND",
         "label": "SOUTHWEST",
         "windDirection": "SW/W"
@@ -3698,7 +3903,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RÖDA HOLMEN",
         "label": "SOUTHWEST",
         "windDirection": "S/SW"
@@ -3716,7 +3922,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GOTTKÄR",
         "label": "SOUTHWEST",
         "windDirection": "N/NE/E"
@@ -3734,7 +3941,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STENUDDEN",
         "label": "SOUTHWEST",
         "windDirection": "SE/S/SW"
@@ -3752,7 +3960,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TORKELSTORP",
         "label": "SOUTHWEST",
         "windDirection": "S/SW/W"
@@ -3770,7 +3979,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ASKIMBADET",
         "label": "NORTHWEST",
         "windDirection": "S/SW/W"
@@ -3788,7 +3998,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ARENDAL",
         "label": "NORTHWEST",
         "windDirection": "S/SW/W"
@@ -3806,7 +4017,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LAPPESAND",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -3824,7 +4036,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HUMMERVIKEN",
         "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
@@ -3842,7 +4055,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SILLVIK",
         "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
@@ -3860,7 +4074,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJÖRKLANDA",
         "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
@@ -3878,7 +4093,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GLÖSKÄR",
         "label": "NORTHWEST",
         "windDirection": "S/SW"
@@ -3896,7 +4112,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LYCKE",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -3914,7 +4131,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TJUVKIL",
         "label": "NORTHWEST",
         "windDirection": "W/NW/N"
@@ -3932,7 +4150,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ARÖD",
         "label": "NORTHWEST",
         "windDirection": "S/SW/W"
@@ -3950,7 +4169,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TRLLENÄS",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -3968,7 +4188,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "TRÄTTE",
         "label": "NORTHWEST",
         "windDirection": "E/SE/S"
@@ -3986,7 +4207,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "GRENGÅRD",
         "label": "NORTHWEST",
         "windDirection": "E/SE/S"
@@ -4004,7 +4226,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LAGMANSHOLMEN",
         "label": "NORTHWEST",
         "windDirection": "S/SW/W"
@@ -4022,7 +4245,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SOLLID",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -4040,7 +4264,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FISKEBÄCKSVIK",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -4058,7 +4283,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HABYBUKTEN",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -4076,7 +4302,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BOVALLSTRAND",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -4094,7 +4321,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SKEPPSTAD",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -4112,7 +4340,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RAFTÖTÅNGEN N",
         "label": "NORTHWEST",
         "windDirection": "NW/N/NE"
@@ -4130,7 +4359,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ROSSÖ KITE",
         "label": "NORTHWEST",
         "windDirection": "S//S/SW"
@@ -4148,7 +4378,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ROSSÖ",
         "label": "NORTHWEST",
         "windDirection": "W/NW"
@@ -4166,7 +4397,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "STENVIK",
         "label": "NORTHWEST",
         "windDirection": "SE/S"
@@ -4184,7 +4416,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÖREKROKEN",
         "label": "NORTHWEST",
         "windDirection": "SW/W"
@@ -4202,7 +4435,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "RINGSHAUG",
         "label": "NORTHWEST",
         "windDirection": "E/SE"
@@ -4220,7 +4454,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "LARKOLLEN",
         "label": "NORTHWEST",
         "windDirection": "SE/S/SW"
@@ -4238,7 +4473,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "FRAMNES",
         "label": "NORTHWEST",
         "windDirection": "E/SE/S"
@@ -4256,7 +4492,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "REFSNES",
         "label": "NORTHWEST",
         "windDirection": "SW/W/NW"
@@ -4274,7 +4511,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄNERSNÄS",
         "label": "VÄNERN",
         "windDirection": "N/NE"
@@ -4292,7 +4530,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SIKHALL",
         "label": "VÄNERN",
         "windDirection": "SE/S/SW"
@@ -4310,7 +4549,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VITA SANDAR",
         "label": "VÄNERN",
         "windDirection": "NE/E/SE"
@@ -4328,7 +4568,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SVALNÄS",
         "label": "VÄNERN",
         "windDirection": "SW/W/NW"
@@ -4346,7 +4587,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "SVANVIK",
         "label": "VÄNERN",
         "windDirection": "NW/N/NE"
@@ -4364,7 +4606,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BJÖRNRUKAN",
         "label": "VÄNERN",
         "windDirection": "SE/S/SW"
@@ -4382,7 +4625,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BOMSTAD",
         "label": "VÄNERN",
         "windDirection": "SE/S/SW"
@@ -4400,7 +4644,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "BREDSANDEN",
         "label": "VÄNERN",
         "windDirection": "NE/E/SE"
@@ -4418,7 +4663,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄTTERSTRAND",
         "label": "VÄTTERN",
         "windDirection": "NE/N/NW"
@@ -4436,7 +4682,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "NORDVIKEN",
         "label": "VÄTTERN",
         "windDirection": "NE/E/SE"
@@ -4454,7 +4701,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VÄTTERVIK",
         "label": "VÄTTERN",
         "windDirection": "W/NW/N"
@@ -4472,7 +4720,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "VARAMON",
         "label": "VÄTTERN",
         "windDirection": "W/NW"
@@ -4490,7 +4739,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "MARICON",
         "label": "VÄTTERN",
         "windDirection": "S/SW/W"
@@ -4508,7 +4758,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "ÄSPENÄSET",
         "label": "VÄTTERN",
         "windDirection": "SE/E"
@@ -4526,7 +4777,8 @@ const kitespots = {
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
+        "marker-symbol": "./images/flag.png",
+        "icon": "./images/blueKite.jpg",
         "name": "HARGEBADEN",
         "label": "VÄTTERN",
         "windDirection": "S/SW"

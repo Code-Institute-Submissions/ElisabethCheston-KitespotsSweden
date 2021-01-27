@@ -22,15 +22,17 @@
     var clusterSpots = L.markerClusterGroup();
         // - Variable for search source(kitespots) - //
     var searchSpots = L.geoJson(kitespots, {
+        
         onEachFeature: function(feature, layer) {
             var popup = '';
             
             if (feature.properties.name) {
-                popup += "<p><b> "+feature.properties.name + "</b><br/>" 
+                popup += '<img src="images/kitesurf1.png" style="width:70px;height:70px;"> <p><b> '+feature.properties.name + '</b><br/>' 
                 + "Wind Direction: " + feature.properties.windDirection;
             }
             layer.bindPopup(popup);
         }
+
     });
         // - Create search engine and place it on the map - //
     var selector = L.control({
@@ -70,8 +72,6 @@ function changeHandler(e) {
      map.addLayer(clusterSpots);
 
      
-
-
 
         // - CONTROL LAYERS - //
 
