@@ -68,6 +68,23 @@ function changeHandler(e) {
      map.addLayer(clusterSpots);
 
   
+               // - CITIES LAYER - //
+
+        // - Cluster and popups for cities - //
+    var citiesCluster = new L.markerClusterGroup();
+    var cities = L.geoJson(cities, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
+                radius:6,
+                opacity: .7
+            })
+            .bindPopup("<p><b> "+feature.properties.city 
+            + "</b></p>" 
+            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
+        },
+    });
+        citiesCluster.addLayer(cities);     
+
 
         // - CONTROL LAYERS - //
 
@@ -78,9 +95,9 @@ function changeHandler(e) {
             "National Geographic":  nationalGeographic
     };
     var overlays = {
-        'Cities': cities
+        'Cities': citiesCluster
     };
   
         // - Add it all to the map - //
-    L.control.layers(basemapLayers).addTo(map);
+    L.control.layers(basemapLayers, overlays).addTo(map);
 
