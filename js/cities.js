@@ -4,7 +4,7 @@ const cities = {
     {
       "type": "Feature",
       "properties": {
-        "country": "Sweden",
+            "country": "Sweden",
             "iso2": "SE",
             "iso3": "SWE",
             "admin_name": "Stockholm",
@@ -14,11 +14,8 @@ const cities = {
             "id": "1752425602"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                18.0686,
-                59.3294
-            ]
+            "type": "Point",
+            "coordinates": [18.0686, 59.32]
         }
     },
         {
@@ -34,11 +31,8 @@ const cities = {
             "id": "1752059374"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                11.981,
-                57.6717 
-                ]
+            "type": "Point",
+            "coordinates": [11.981, 57.6717]
         }
     },
         {
@@ -54,11 +48,8 @@ const cities = {
             "id": "1752705818"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                13.0214,
-                55.5932 
-                ]
+            "type": "Point",
+            "coordinates": [13.0214, 55.5932]
         }
     },
         {
@@ -74,11 +65,8 @@ const cities = {
             "id": "1752953686"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                17.6389,
-                59.8498 
-                ]
+            "type": "Point",
+            "coordinates": [17.6389, 59.8498]
         }
     },
         {
@@ -93,11 +81,8 @@ const cities = {
             "id": "1752330831"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                17.64,
-                59.
-                ]
+            "type": "Point",
+            "coordinates": [17.6389, 59.858]
         }
     },
         {
@@ -113,11 +98,8 @@ const cities = {
             "id": "1752826955"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                16.5422,
-                59.6173 
-                ]
+            "type": "Point",
+            "coordinates": [16.5422, 59.6173]
         }
     },
         {
@@ -133,11 +115,8 @@ const cities = {
             "id": "1752223019"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                15.1965,
-                59.2669 
-                ]
+            "type": "Point",
+            "coordinates": [15.1965, 59.2669]
         }
     },
         {
@@ -153,11 +132,8 @@ const cities = {
             "id": "1752963378"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                15.6257,
-                58.4094 
-                ]
+            "type": "Point",
+            "coordinates": [15.6257, 58.4094]
         }
     },
         {
@@ -173,11 +149,8 @@ const cities = {
             "id": "1752789933"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.721,
-                56.0424 
-                ]
+            "type": "Point",
+            "coordinates": [12.721, 56.0424]
         }
     },
         {
@@ -193,11 +166,8 @@ const cities = {
             "id": "1752079041"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.165,
-                57.7713 
-                ]
+            "type": "Point",
+            "coordinates": [14.165, 57.7713]
         }
     },
         {
@@ -213,11 +183,8 @@ const cities = {
             "id": "1752273881"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                20.2706,
-                63.8285 
-                ]
+            "type": "Point",
+            "coordinates": [20.2706, 63.8285]
         }
     },
         {
@@ -233,11 +200,8 @@ const cities = {
             "id": "1752502445"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                13.4999,
-                59.3671 
-                ]
+            "type": "Point",
+            "coordinates": [13.4999, 59.3671]
         }
     },
         {
@@ -253,11 +217,8 @@ const cities = {
             "id": "1752586931"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                17.1666,
-                60.667 
-                ]
+            "type": "Point",
+            "coordinates": [17.1666, 60.667]
         }
     },
         {
@@ -273,11 +234,8 @@ const cities = {
             "id": "1752263370"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.8167,
-                56.8837 
-                ]
+            "type": "Point",
+            "coordinates": [14.8167, 56.8837]
         }
     },
         {
@@ -293,11 +251,8 @@ const cities = {
             "id": "1752392511"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.8556,
-                56.6718 
-                ]
+            "type": "Point",
+            "coordinates": [12.8556, 56.6718]
         }
     },
         {
@@ -313,11 +268,8 @@ const cities = {
             "id": "1752765449"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                22.1915,
-                65.5838 
-                ]
+            "type": "Point",
+            "coordinates": [22.1915, 65.5838]
         }
     },
         {
@@ -333,11 +285,8 @@ const cities = {
             "id": "1752026711"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.65,
-                63.1833 
-                ]
+            "type": "Point",
+            "coordinates": [14.65, 63.1833]
         }
     },
         {
@@ -353,11 +302,8 @@ const cities = {
             "id": "1752863731"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.3,
-                58.2671 
-                ]
+            "type": "Point",
+            "coordinates": [12.3, 58.2671]
         }
     },
         {
@@ -373,11 +319,8 @@ const cities = {
             "id": "1752640618"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                16.3218,
-                56.6694 
-                ]
+            "type": "Point",
+            "coordinates": [16.3218, 56.6694]
         }
     },
         {
@@ -393,11 +336,8 @@ const cities = {
             "id": "1752939220"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                15.647,
-                60.613 
-                ]
+            "type": "Point",
+            "coordinates": [15.647, 60.613]
         }
     },
         {
@@ -413,11 +353,8 @@ const cities = {
             "id": "1752316086"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                15.296,
-                56.203 
-                ]
+            "type": "Point",
+            "coordinates": [15.296, 56.203]
         }
     },
         {
@@ -433,11 +370,8 @@ const cities = {
             "id": "1752377083"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                17.0185,
-                58.7582 
-                ]
+            "type": "Point",
+            "coordinates": [17.0185, 58.7582]
         }
     },
         {
@@ -453,11 +387,8 @@ const cities = {
             "id": "1752027172"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                18.3071,
-                57.629 
-                ]
+            "type": "Point",
+            "coordinates": [18.3071, 57.629]
         }
     },
         {
@@ -472,11 +403,8 @@ const cities = {
             "id": "1752552539"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.2756,
-                57.
-                ]
+            "type": "Point",
+            "coordinates": [14.2756, 57.782]
         }
     },
         {
@@ -492,11 +420,8 @@ const cities = {
             "id": "1752644953"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                17.9379,
-                62.6323 
-                ]
+            "type": "Point",
+            "coordinates": [17.9379, 62.6323]
         }
     },
         {
@@ -512,11 +437,8 @@ const cities = {
             "id": "1752803583"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                16.1787,
-                58.5954 
-                ]
+            "type": "Point",
+            "coordinates": [16.1787, 58.5954]
         }
     },
         {
@@ -532,11 +454,8 @@ const cities = {
             "id": "1752024232"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                17.3167,
-                62.4001 
-                ]
+            "type": "Point",
+            "coordinates": [17.3167, 62.4001]
         }
     },
         {
@@ -552,11 +471,8 @@ const cities = {
             "id": "1752555835"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.92,
-                57.7304 
-                ]
+            "type": "Point",
+            "coordinates": [12.92, 57.7304]
         }
     },
         {
@@ -572,11 +488,8 @@ const cities = {
             "id": "1752944924"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                15.4167,
-                60.4833 
-                ]
+            "type": "Point",
+            "coordinates": [15.4167, 60.4833]
         }
     },
         {
@@ -592,11 +505,8 @@ const cities = {
             "id": "1752307790"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.0139,
-                57.6542 
-                ]
+            "type": "Point",
+            "coordinates": [12.0139, 57.6542]
         }
     },
         {
@@ -612,11 +522,8 @@ const cities = {
             "id": "1752606470"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.1333,
-                56.0337 
-                ]
+            "type": "Point",
+            "coordinates": [14.1333, 56.0337]
         }
     },
         {
@@ -632,11 +539,8 @@ const cities = {
             "id": "1752233025"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                20.95,
-                64.7721 
-                ]
+            "type": "Point",
+            "coordinates": [20.95, 64.7721]
         }
     },
         {
@@ -652,11 +556,8 @@ const cities = {
             "id": "1752250773"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                18.7167,
-                63.318 
-                ]
+            "type": "Point",
+            "coordinates": [18.7167, 63.318]
         }
     },
         {
@@ -672,11 +573,8 @@ const cities = {
             "id": "1752467593"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.33,
-                58.363 
-                ]
+            "type": "Point",
+            "coordinates": [12.33, 58.363]
         }
     },
         {
@@ -692,11 +590,8 @@ const cities = {
             "id": "1752001526"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                20.2166,
-                67.85 
-                ]
+            "type": "Point",
+            "coordinates": [20.2166, 67.85]
         }
     },
         {
@@ -712,11 +607,8 @@ const cities = {
             "id": "1752137413"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.5769,
-                56.196 
-                ]
+            "type": "Point",
+            "coordinates": [12.5769, 56.196]
         }
     },
         {
@@ -732,11 +624,8 @@ const cities = {
             "id": "1752953604"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.6805,
-                57.4954 
-                ]
+            "type": "Point",
+            "coordinates": [12.6805, 57.4954]
         }
     },
         {
@@ -752,11 +641,8 @@ const cities = {
             "id": "1752879298"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                13.828,
-                58.705 
-                ]
+            "type": "Point",
+            "coordinates": [13.828, 58.705]
         }
     },
         {
@@ -772,11 +658,8 @@ const cities = {
             "id": "1752185099"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                15.1312,
-                58.3321 
-                ]
+            "type": "Point",
+            "coordinates": [15.1312, 58.3321]
         }
     },
         {
@@ -792,11 +675,8 @@ const cities = {
             "id": "1752287863"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                16.3666,
-                61.352 
-                ]
+            "type": "Point",
+            "coordinates": [16.3666, 61.352]
         }
     },
         {
@@ -812,11 +692,8 @@ const cities = {
             "id": "1752665392"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.5635,
-                61.0096 
-                ]
+            "type": "Point",
+            "coordinates": [14.5635, 61.0096]
         }
     },
         {
@@ -832,11 +709,8 @@ const cities = {
             "id": "1752323454"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                13.4186,
-                57.7917 
-                ]
+            "type": "Point",
+            "coordinates": [13.4186, 57.7917]
         }
     },
         {
@@ -852,11 +726,8 @@ const cities = {
             "id": "1752652082"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.158,
-                58.419 
-                ]
+            "type": "Point",
+            "coordinates": [14.158, 58.419]
         }
     },
         {
@@ -872,11 +743,8 @@ const cities = {
             "id": "1752321919"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.0856,
-                57.9066 
-                ]
+            "type": "Point",
+            "coordinates": [14.0856, 57.9066]
         }
     },
         {
@@ -892,11 +760,8 @@ const cities = {
             "id": "1752287671"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                13.9599,
-                58.1794 
-                ]
+            "type": "Point",
+            "coordinates": [13.9599, 58.1794]
         }
     },
         {
@@ -912,11 +777,8 @@ const cities = {
             "id": "1752574047"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                11.1864,
-                58.9441 
-                ]
+            "type": "Point",
+            "coordinates": [11.1864, 58.9441]
         }
     },
         {
@@ -932,11 +794,8 @@ const cities = {
             "id": "1752528595"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                24.117,
-                65.8342 
-                ]
+            "type": "Point",
+            "coordinates": [24.117, 65.8342]
         }
     },
         {
@@ -952,11 +811,8 @@ const cities = {
             "id": "1752355806"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                14.2786,
-                58.3044 
-                ]
+            "type": "Point",
+            "coordinates": [14.2786, 58.3044]
         }
     },
         {
@@ -972,11 +828,8 @@ const cities = {
             "id": "1752957577"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                16.1059,
-                59.4227 
-                ]
+            "type": "Point",
+            "coordinates": [16.1059, 59.4227]
         }
     },
         {
@@ -992,11 +845,8 @@ const cities = {
             "id": "1752801056"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                12.8083,
-                58.0341 
-                ]
+            "type": "Point",
+            "coordinates": [12.8083, 58.0341]
         }
     },
         {
@@ -1011,11 +861,8 @@ const cities = {
             "id": "1752111742"
         },
         "geometry": {
-            "type": "point",
-            "coordinates": [
-                13.141,
-                55.6707
-        ]
+            "type": "Point",
+            "coordinates": [13.141, 55.6707]
       }
     }
   ]

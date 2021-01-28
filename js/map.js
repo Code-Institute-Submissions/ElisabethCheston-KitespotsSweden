@@ -5,7 +5,6 @@
     var hybrid = L.esri.basemapLayer('ImageryClarity');
     var topographic = L.esri.basemapLayer('Topographic');
     var streets = L.esri.basemapLayer('Streets');
-    var nationalGeographic = L.esri.basemapLayer('NationalGeographic');
     
         // - Create an on load ESRI basemap - //
     var map = new L.map('map', {
@@ -58,32 +57,45 @@
     });
         // - ChangeHandler zooms in on choosen spot with popup.""
     L.DomEvent.addListener(selectSpot, 'change', changeHandler);
-function changeHandler(e) {
-  var selected = searchSpots.getLayer(e.target.value);
-  clusterSpots.zoomToShowLayer(selected, function() {
-    selected.openPopup();       
-  });
-}
+        function changeHandler(e) {
+        var selected = searchSpots.getLayer(e.target.value);
+        clusterSpots.zoomToShowLayer(selected, function() {
+            selected.openPopup();       
+        });
+        }
     clusterSpots.addLayer(searchSpots);
-     map.addLayer(clusterSpots);
+    map.addLayer(clusterSpots);
 
-  
-               // - CITIES LAYER - //
 
-        // - Cluster and popups for cities - //
-    var citiesCluster = new L.markerClusterGroup();
-    var cities = L.geoJson(cities, {
+                   // - KITESPOT LAYERS - //
+
+        // - Cluster and popups to kitespots All kitespots - //
+    var allspotsCluster = new L.markerClusterGroup();
+    var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .7
+                opacity: .1
             })
-            .bindPopup("<p><b> "+feature.properties.city 
-            + "</b></p>" 
+            .bindPopup("<p><b> "+feature.properties.name 
+            + "</b><br/>" + "Wind Direction: " 
+            + feature.properties.windDirection + "</p>" 
             + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
         },
     });
-        citiesCluster.addLayer(cities);     
+        allspotsCluster.addLayer(allspots);        
+
+
+            // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
+
+    // Get the data
+  $.ajax({url:"https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d",
+        dataType: "json",
+        success: console.log("Data successfully loaded!"),
+        error: function (xhr) {
+            alert(xhr.statusText)
+        }
+    })
 
 
         // - CONTROL LAYERS - //
@@ -91,13 +103,12 @@ function changeHandler(e) {
     var basemapLayers = {
             "Topographic": topographic,
             "Hybrid": hybrid,
-            "Streets": streets,
-            "National Geographic":  nationalGeographic
+            "Streets": streets
     };
     var overlays = {
-        'Cities': citiesCluster
+        'Regions': regions,
+        'All': allspots
     };
   
         // - Add it all to the map - //
     L.control.layers(basemapLayers, overlays).addTo(map);
-
