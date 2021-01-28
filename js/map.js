@@ -104,8 +104,13 @@
     });
         // Put the json data to map
     var regions = L.geoJSON(null, {
-        pointToLayer: function (latlng)
-    })
+        pointToLayer: function (pointFeature, latlng) {
+            return L.circleMarker(latlng, {
+                radius:6,
+                opacity: .8
+            })            
+        }  
+    });
 
         // - CONTROL LAYERS - //
 
