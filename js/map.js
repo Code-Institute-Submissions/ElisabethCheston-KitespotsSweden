@@ -108,7 +108,8 @@
             return L.circleMarker(latlng, {
                 radius:6,
                 opacity: .8
-            })            
+            })
+        .bindPopup("<p><b> " + pointFeature.properties.lan_namn + "</b></p>");          
         }  
     });
 
