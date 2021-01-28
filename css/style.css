@@ -12,4 +12,31 @@ leaflet-markers {
     color: green;
 }
 
-
+clusterGroup {
+    color: rgba(rgb(205, 66, 218), 0.7)
+}
+.list-group-item {
+    box-shadow: rgba(rgb(54, 51, 54), 0.7);
+    border-radius: 4px;
+}
+.leaflet-bar {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    border-radius: 4px;
+    margin-top: 50px;
+}
+#selectSpot {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    border-radius: 4px;
+}
+.leaflet-control-layers-toggle {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    border-radius: 4px;
+}
+.leaflet-control-layers-separator {
+    color: grey;
+    size: 3px;
+}
+.leaflet-control-attribution, .leaflet-control, .esri-truncated-attribution:hover, esri-truncated-attribution, .esri-dynamic-attribution {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    border-radius: 4px; 
+}

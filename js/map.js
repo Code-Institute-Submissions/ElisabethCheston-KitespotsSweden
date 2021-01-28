@@ -67,12 +67,14 @@
     map.addLayer(clusterSpots);
 
 
-            // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
+                // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
+    //Reference: https://medium.com/@maptastik/loading-external-geojson-a-nother-way-to-do-it-with-jquery-c72ae3b41c01
+        
+    var regionsData = ("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&format=geojson");
 
-                
     // Get the data and turn it to geojson
     $.ajax({
-        url: "https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d&format=geojson",
+        url: regionsData,
         dataType: "json",
         success: function(data) {
             $(data.features).each(function(key, data) {
@@ -84,7 +86,6 @@
             console.log('error geojson')
         }
     });
-
     // Put it on the map
     var regions = L.geoJSON(null, {
     pointToLayer: function (features, latlng) {
@@ -96,8 +97,24 @@
     }  
     });
 
+                    // - REGION MAP - //
+   /*                   https://public.opendatasoft.com/explore/embed/dataset/sverige-lan-counties-of-sweden/map/?location=4,62.83509,16.25977&basemap=jawg.streets
+                        https://public.opendatasoft.com/explore/embed/dataset/sverige-lan-counties-of-sweden/map/?location=4,65.65827,15.9082&basemap=jawg.streets
+                        https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=
+*/                   
 
+  L.esri.Heat.featureLayer({
+    url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
+    radius: 12
+  }).addTo(map);
 
+/*
+    var polyRegions = regionsData,
+$.getJSON("polyRegions",function(data){
+// L.geoJson function is used to parse geojson file and load on to map
+L.geoJson(data).addTo(newMap);
+});
+*/
                    // - KITESPOT LAYERS - //
 
         // - Cluster and popups to kitespots All kitespots - //
@@ -106,7 +123,7 @@
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
                 radius:6,
-                opacity: .1
+                opacity: .9
             })
             .bindPopup("<p><b> "+feature.properties.name 
             + "</b><br/>" + "Wind Direction: " 
@@ -116,7 +133,7 @@
     });
         allspotsCluster.addLayer(allspots);        
 
-
+/*
                    // - CITIES LAYERS - //
 
         // - Cluster and popups to kitespots All kitespots - //
@@ -133,6 +150,8 @@
         },
     });
         cities.addTo(map);         
+*/
+
 
 
         // - CONTROL LAYERS - //
@@ -141,9 +160,10 @@
         "Topographic": topographic,
         "Hybrid": hybrid,
         "Streets": streets
-    };
+    }; 
     var overlays = {
-        'Regions': regions,
+        'Counties Names': regions,
+        //'Counties': polyRegions,
         'All': allspots
     };
   
