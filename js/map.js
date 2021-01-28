@@ -98,12 +98,14 @@
             });
             regions.addTo(map);
         },
-
         error: function (err) {
             console.log('error geojson')
         }
     });
-
+        // Put the json data to map
+    var regions = L.geoJSON(null, {
+        pointToLayer: function (latlng)
+    })
 
         // - CONTROL LAYERS - //
 
