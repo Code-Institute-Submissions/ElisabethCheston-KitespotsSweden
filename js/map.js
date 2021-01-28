@@ -92,9 +92,14 @@
     $.ajax({
         url:"https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d",
         dataType: "json",
-        success: function (data){},
-        error: function (err) {
-            console.log('error geojson')
+        success: function (data) {
+            $(data.features).each(function(key, data) {
+                regioons.addData(data);
+            })
+        }
+
+        error: function (xhr) {
+            alert(xhr.statusText)
         }
     });
 
