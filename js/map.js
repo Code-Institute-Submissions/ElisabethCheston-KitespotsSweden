@@ -89,13 +89,14 @@
             // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
 
     // Get the data
-  $.ajax({url:"https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d",
+    $.ajax({
+        url:"https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d",
         dataType: "json",
-        success: console.log("Data successfully loaded!"),
-        error: function (xhr) {
-            alert(xhr.statusText)
+        success: function (data){},
+        error: function (err) {
+            console.log('error geojson')
         }
-    })
+    });
 
 
         // - CONTROL LAYERS - //
