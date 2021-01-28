@@ -94,9 +94,10 @@
         dataType: "json",
         success: function (data) {
             $(data.features).each(function(key, data) {
-                regioons.addData(data);
-            })
-        }
+                regions.addData(data);
+            });
+            regions.addTo(map);
+        },
 
         error: function (xhr) {
             alert(xhr.statusText)
