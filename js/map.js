@@ -67,6 +67,37 @@
     map.addLayer(clusterSpots);
 
 
+            // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
+
+                
+    // Get the data and turn it to geojson
+    $.ajax({
+        url: "https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d&format=geojson",
+        dataType: "json",
+        success: function(data) {
+            $(data.features).each(function(key, data) {
+                regions.addData(data);
+            });
+             regions.addTo(map);
+        },
+        error: function(error) {
+            console.log('error geojson')
+        }
+    });
+
+    // Put it on the map
+    var regions = L.geoJSON(null, {
+    pointToLayer: function (features, latlng) {
+        return L.circleMarker(latlng, {
+            radius:6,
+            opacity: .8
+        })            
+        .bindPopup("<p><b> " + features.properties.lan_namn + "</b></p>");
+    }  
+    });
+
+
+
                    // - KITESPOT LAYERS - //
 
         // - Cluster and popups to kitespots All kitespots - //
@@ -86,39 +117,30 @@
         allspotsCluster.addLayer(allspots);        
 
 
-            // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
+                   // - CITIES LAYERS - //
 
-    // Get the data
-    $.ajax({
-        url:"https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&lang=en&rows=37&start=0&facet=id&facet=lan_namn&facet=geo_point_2d",
-        dataType: "json",
-        success: function (data) {
-            $(data.features).each(function(key, data) {
-                regions.addData(data);
-            });
-            regions.addTo(map);
-        },
-        error: function (err) {
-            console.log('error geojson')
-        }
-    });
-        // Put the json data to map
-    var regions = L.geoJSON(null, {
-        pointToLayer: function (pointFeature, latlng) {
-            return L.circleMarker(latlng, {
+        // - Cluster and popups to kitespots All kitespots - //
+    var cities = L.geoJson(cities, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {
                 radius:6,
                 opacity: .8
             })
-        .bindPopup("<p><b> " + pointFeature.properties.lan_namn + "</b></p>");          
-        }  
+            .bindPopup("<p><b> "+feature.properties.city + "</b><br/>" 
+            + "County: " + feature.properties.admin_name + "</p>"
+            + "Population: " + feature.properties.population + "</p>" 
+            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
+        },
     });
+        cities.addTo(map);         
+
 
         // - CONTROL LAYERS - //
 
     var basemapLayers = {
-            "Topographic": topographic,
-            "Hybrid": hybrid,
-            "Streets": streets
+        "Topographic": topographic,
+        "Hybrid": hybrid,
+        "Streets": streets
     };
     var overlays = {
         'Regions': regions,
