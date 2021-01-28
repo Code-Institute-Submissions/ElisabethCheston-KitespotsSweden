@@ -99,8 +99,8 @@
             regions.addTo(map);
         },
 
-        error: function (xhr) {
-            alert(xhr.statusText)
+        error: function (err) {
+            console.log('error geojson')
         }
     });
 
