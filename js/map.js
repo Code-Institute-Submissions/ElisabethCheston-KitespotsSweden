@@ -105,10 +105,6 @@
                         https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=
 */                   
 
-  L.esri.Heat.featureLayer({
-    url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
-    radius: 12
-  }).addTo(map);
 
 /*
     var polyRegions = regionsData,
@@ -130,27 +126,6 @@ L.geoJson(data).addTo(newMap);
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
         },
     });
-        allspotsCluster.addLayer(allspots);        
-
-                   // - CITIES LAYERS - //
-
-        // - Cluster and popups to cities - //
-    var cities = L.geoJson(cities, {
-        pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {
-                radius:6,
-                opacity: .8
-            })
-            .bindPopup("<p><b> "+feature.properties.city + "</b><br/>" 
-            + "County: " + feature.properties.admin_name + "</p>"
-            + "Population: " + feature.properties.population + "</p>" 
-            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
-        },
-    });
-        cities.addTo(map);         
-
-
-
 
         // - CONTROL LAYERS - //
 
@@ -161,6 +136,7 @@ L.geoJson(data).addTo(newMap);
     }; 
     var overlays = {
         'Counties Names': regions,
+        'Cities': city,
         //'Counties': polyRegions,
         'All': allspots
     };
@@ -169,5 +145,5 @@ L.geoJson(data).addTo(newMap);
         // - Add it all to the map - //
     L.control.layers(basemapLayers, overlays).addTo(map);
 
-var attribution = L.control.attribution({prefix: '<span class="AttributionClass"></span>'}).addTo(map);
+    var attribution = L.control.attribution({prefix: '<span class="AttributionClass"></span>'}).addTo(map);
 
