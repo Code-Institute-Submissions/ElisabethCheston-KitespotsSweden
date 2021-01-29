@@ -99,20 +99,17 @@
     }  
     });
 
-                    // - REGION MAP - //
-   /*                   https://public.opendatasoft.com/explore/embed/dataset/sverige-lan-counties-of-sweden/map/?location=4,62.83509,16.25977&basemap=jawg.streets
-                        https://public.opendatasoft.com/explore/embed/dataset/sverige-lan-counties-of-sweden/map/?location=4,65.65827,15.9082&basemap=jawg.streets
-                        https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=
-*/                   
 
-
-/*
-    var polyRegions = regionsData,
-$.getJSON("polyRegions",function(data){
-// L.geoJson function is used to parse geojson file and load on to map
-L.geoJson(data).addTo(newMap);
-});
-*/
+                    // - STYLE MARKERS - //
+    // Refrence: https://leafletjs.com/examples/geojson/           
+    var geojsonMarkerOptions = {
+        radius: 4,
+        fillColor: "#aa7800",
+        color: "#555",
+        weight: 1,
+        opacity: .6,
+        fillOpacity: 0.5
+    };
 
                    // - CITIES LAYERS - //
 
