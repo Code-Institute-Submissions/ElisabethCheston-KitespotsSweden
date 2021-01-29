@@ -24,8 +24,10 @@
         onEachFeature: function(feature, layer) {
             var popup = '';
             if (feature.properties.name) {
-                popup += '<img src="images/kitesurf1.png" style="width:50px;height:50px;"> <p><b> '+feature.properties.name + '</b><br/>' 
-                + "Wind Direction: " + feature.properties.windDirection;
+                popup += '<img src="images/kitesurf1.png" style="width:50px;height:50px;"> <p><b> '
+                + feature.properties.name + '</b><br/>' + "Wind Direction: " 
+                + feature.properties.windDirection + '<br/>'
+                + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
             }
             layer.bindPopup(popup);
         }
@@ -71,8 +73,8 @@
     
                 // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
     //Reference: https://medium.com/@maptastik/loading-external-geojson-a-nother-way-to-do-it-with-jquery-c72ae3b41c01
-        
-    var regionsData = ("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&format=geojson");
+
+    var regionsData = ("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22&format=geojson");
 
     // Get the data and turn it to geojson
     $.ajax({
@@ -92,32 +94,35 @@
     var regions = L.geoJSON(null, {
     pointToLayer: function (features, latlng) {
         return L.circleMarker(latlng, {
-            radius:6,
-            opacity: .8
+            radius: 5,
+            color: "#446CCF",
+            opacity: .8,
+            fillColor: "#30BFBF",
+            fillOpacity: 0.6,
+            weight: 2
         })            
         .bindPopup("<p><b> " + features.properties.lan_namn + "</b></p>");
     }  
     });
 
-
                     // - STYLE MARKERS - //
-    // Refrence: https://leafletjs.com/examples/geojson/           
-    var geojsonMarkerOptions = {
-        radius: 4,
-        fillColor: "#aa7800",
-        color: "#555",
+         // Refrence: https://leafletjs.com/examples/geojson/           
+    var geojsonMarkerStyle = {
+        radius: 3,
+        fillColor: "#BA160C",
+        color: "#BA160C",
         weight: 1,
-        opacity: .6,
-        fillOpacity: 0.5
+        opacity: .9,
+        fillOpacity: 0.7
     };
 
                    // - CITIES LAYERS - //
 
     var city = L.geoJson(cities, {
     pointToLayer: function (features, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions)
+        return L.circleMarker(latlng, geojsonMarkerStyle)
                 .bindPopup("<p><b> "+features.properties.city + "</b><br/>" 
-            + "County: " + features.properties.admin_name + "</p>"
+            + "County: " + features.properties.admin_name + "<br/>"
             + "Population: " + features.properties.population + "</p>" 
             + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
 
