@@ -113,6 +113,21 @@ $.getJSON("polyRegions",function(data){
 L.geoJson(data).addTo(newMap);
 });
 */
+
+                   // - CITIES LAYERS - //
+
+    var city = L.geoJson(cities, {
+    pointToLayer: function (features, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions)
+                .bindPopup("<p><b> "+features.properties.city + "</b><br/>" 
+            + "County: " + features.properties.admin_name + "</p>"
+            + "Population: " + features.properties.population + "</p>" 
+            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
+
+        }
+    }).addTo(map);
+
+
                    // - KITESPOT LAYERS - //
 
         // - Cluster and popups to kitespots All kitespots - //
