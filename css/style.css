@@ -8,35 +8,68 @@ html, body, #map {
     margin: 0px;
 }
 
+/* MARKER & CLUSTER STYLE */
+
 leaflet-markers {
     color: green;
 }
-
 clusterGroup {
     color: rgba(rgb(205, 66, 218), 0.7)
-}
-.list-group-item {
-    box-shadow: rgba(rgb(54, 51, 54), 0.7);
-    border-radius: 4px;
-}
-.leaflet-bar {
+} 
+
+
+/* CONTROL STYLE */
+   
+.leaflet-bar, .leaflet-control{
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
     border-radius: 4px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
-#selectSpot {
+div.leaflet-control-zoom.leaflet-bar.leaflet-control{
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
     border-radius: 4px;
+    margin-top: 10px;
 }
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    display: transparent;
+}
+div.list-group-item.leaflet-control {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.select#selectSpot {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
 .leaflet-control-layers-toggle {
+    border-radius: 5px;
+    background-origin: padding-box;
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
-    border-radius: 4px;
 }
 .leaflet-control-layers-separator {
     color: grey;
     size: 3px;
 }
-.leaflet-control-attribution, .leaflet-control, .esri-truncated-attribution:hover, esri-truncated-attribution, .esri-dynamic-attribution {
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+
+div.leaflet-control-scale.leaflet-control  {
+    box-shadow: 0 3px 14px rgba(0,0,0,0.8);
     border-radius: 4px; 
+}
+
+div.leaflet-bottom.leaflet-left {
+    background-origin: padding-box;
+}
+
+div.leaflet-bottom.leaflet-right {
+    background-origin: padding-box;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.8);
+    border-radius: 4px; 
+}
+
+.leaflet-control-attribution {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }

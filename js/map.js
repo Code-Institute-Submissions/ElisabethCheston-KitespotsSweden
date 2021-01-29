@@ -1,4 +1,5 @@
 
+
                 // - MAPS - //
 
         // - Basemaps variables - //
@@ -67,6 +68,7 @@
     map.addLayer(clusterSpots);
 
 
+    
                 // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
     //Reference: https://medium.com/@maptastik/loading-external-geojson-a-nother-way-to-do-it-with-jquery-c72ae3b41c01
         
@@ -125,18 +127,14 @@ L.geoJson(data).addTo(newMap);
                 radius:6,
                 opacity: .9
             })
-            .bindPopup("<p><b> "+feature.properties.name 
-            + "</b><br/>" + "Wind Direction: " 
-            + feature.properties.windDirection + "</p>" 
-            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
+            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
         },
     });
         allspotsCluster.addLayer(allspots);        
 
-/*
                    // - CITIES LAYERS - //
 
-        // - Cluster and popups to kitespots All kitespots - //
+        // - Cluster and popups to cities - //
     var cities = L.geoJson(cities, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
@@ -150,7 +148,7 @@ L.geoJson(data).addTo(newMap);
         },
     });
         cities.addTo(map);         
-*/
+
 
 
 
@@ -167,5 +165,9 @@ L.geoJson(data).addTo(newMap);
         'All': allspots
     };
   
+    
         // - Add it all to the map - //
     L.control.layers(basemapLayers, overlays).addTo(map);
+
+var attribution = L.control.attribution({prefix: '<span class="AttributionClass"></span>'}).addTo(map);
+
