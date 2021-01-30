@@ -20,6 +20,7 @@ Since there are no updated list of all current kitespots that are functional, I�
 *	As a user, I would like to see a bar that shows distance, to determined how far it would be to get there.
 *	As a user, I would like to be able to zoom in on the spot to see the surrounding, to determine if launching area works for me.
 *	As a user, I would like to see the kitespots on different maps, to plan trip.
+*	As a user, I would like to know the nearest city, if am not from the area and need to look up commondations.
 
 
 ### Wireframes
@@ -67,10 +68,6 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 [ESRI](http://esri.com) -	Maps and map tools to work with Leaflet.
 
-[OpendataSoft](https://public.opendatasoft.com/explore/?sort=modified) -	Providing geojson data for Sweden.
-
-[SMHI](http://smhi.com) -	Providing current weather data.
-
 [GeoJson](http://geojson.io/) -	For making all kitespots in Sweden.
 
 [GeoJSONLint](https://geojsonlint.com/) -	For validation of geoJson data.
@@ -82,12 +79,6 @@ These are the different languages, frameworks, libraries, and any other tools th
 [jQuery](http://jquery.com) -	The project uses jQuery to simplify DOM manipulation. Also to make some functions easier to call.
 
 [CSS](https://sv.wikipedia.org/wiki/Cascading_Style_Sheets) -	To custom style the maps and controller’s size, fonts, color and etc.
-
-[Font Awesome](https://fontawesome.com/) -	Used for icons used for markers.
-
-[Flaticon](https://www.flaticon.com/) -	Icons used for markers.
-
-[Google Fonts](https://fonts.google.com/) -	Used for font style in project.
 
 [Balsamiq](https://balsamiq.com/) -	To structure and plan the webpage, and to present it  a wireframe for desktops and mobile devices.
 
@@ -127,13 +118,62 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 #### Describe use on different browsers
 
-<In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.>
+- Desktop
+
+| Tables                   |  Firefox  |  Explorer |  Safari  |  Chrome |
+|--------------------------|-----------|-----------|----------|---------|
+*Keeps layout proportions* |     x     |      x    |     x    |    x    |
+*Cities overlay works*     |     x     |      x    |     x    |    x    |
+*Region overlay works*     |     x     |      x    |     x    |    x    |
+*List dropdown*            |     x     |      x    |     x    |    x    |
+*Select obj. in list*      |     x     |      x    |     x    |    x    |
+*Control layers works*     |     x     |      x    |     x    |    x    |
+*Kitespots popups*         |     x     |      x    |     x    |    x    |
+*Cities popup*.            |     x     |      x    |     x    |    x    |
+*Kitespot popup & link*    |     x     |      x    |     x    |    x    |
+*Cities popup & link*      |     x     |      x    |     x    |    x    |   
+*Image display*            |     x     |      x    |     x    |    x    |
+
+- Tablet
+
+| Tables                   |  Firefox  |  Explorer |  Safari  |  Chrome |
+|--------------------------|-----------|-----------|----------|---------|
+*Keeps layout proportions* |     x     |      x    |     x    |    x    |
+*Cities overlay works*     |     x     |      x    |     x    |    x    |
+*Region overlay works*     |     x     |      x    |     x    |    x    |
+*List dropdown*            |     x     |      x    |     x    |    x    |
+*Select obj. in list*      |     x     |      x    |     x    |    x    |
+*Control layers works*     |     x     |      x    |     x    |    x    |
+*Kitespots popups*         |     x     |      x    |     x    |    x    |
+*Cities popup*.            |     x     |      x    |     x    |    x    |
+*Kitespot popup & link*    |     x     |      x    |     x    |    x    |
+*Cities popup & link*      |     x     |      x    |     x    |    x    |   
+*Image display*            |     x     |      x    |     x    |    x    |
+
+- Smartphone
+
+| Tables                   |  Firefox  |  Explorer |  Safari  |  Chrome |
+|--------------------------|-----------|-----------|----------|---------|
+*Keeps layout proportions* |     x     |      x    |     x    |    x    |
+*Cities overlay works*     |     x     |      x    |     x    |    x    |
+*Region overlay works*     |     x     |      x    |     x    |    x    |
+*List dropdown*            |     x     |      x    |     x    |    x    |
+*Select obj. in list*      |     x     |      x    |     x    |    x    |
+*Control layers works*     |     x     |      x    |     x    |    x    |
+*Kitespots popups*         |     x     |      x    |     x    |    x    |
+*Cities popup*.            |     x     |      x    |     x    |    x    |
+*Kitespot popup & link*    |     x     |      x    |     x    |    x    |
+*Cities popup & link*      |     x     |      x    |     x    |    x    |   
+*Image display*            |     x     |      x    |     x    |    x    |
 
 
 #### Bugs or problems
 
-<You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-If this section grows too long, you may want to split it off into a separate file and link to it from here.>
+* Error in console for (index):1 ;
+
+- "Unchecked runtime.lastError: The message port closed before a response was received."
+
+Apperently, as to my undersanding, its some type of bug for the <!DOCTYPE html>. I do not know hoow to solve the issue. Tutors said its a bug.
 
 
 ### Deployment
@@ -202,12 +242,125 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Example of editing](https://leafletjs.com/reference-1.7.1.html#geojson)
 - [Add markers to control](https://leafletjs.com/examples/layers-control/)
 - [Modify the markers in the layer control](https://esri.github.io/esri-leaflet/examples/layers-control.html)
-- [Add custom markers:](https://leafletjs.com/examples/custom-icons/)                                                                                
+- [Add custom markers:](https://leafletjs.com/examples/custom-icons/)
+- [Polygon overlay](https://gis.stackexchange.com/a/385670/175494) from [Falke Design](http://falke-design.bplaced.net/)
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
     
 **Media**
 - Markers from;
+
 [Font Awesome](https://fontawesome.com/) & [Flaticon](https://www.flaticon.com/)
+
+-Logo pictures:
+
+[bluekite](https://spng.subpng.com/20190120/xut/kisspng-kitesurfing-power-kite-t-shirt-kite-surfing-windsu-5c444dbfb5b2e2.6383020615479802237443.jpg)
+
+[Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
+
+
+- Picturces used for cities:
+
+[Stockholm](https://www.umultirank.org/export/sites/default/.galleries/generic-images/Others/Winter-Calendar/stockholm-3897532_1280.jpg_2040981648.jpg)
+
+[Göteborg](https://bokmassan.se/uploads/2019/03/goteborg-foto-anders-wester-1024x600-webb.jpg)
+
+[Malmö](https://www.sgbc.se/app/uploads/2020/05/V%C3%A4stra-Hamnen-Malm%C3%B6-Foto-Ossian-K-Olsson.jpg)
+[Uppsala](https://uppsalasystemvetare.se/wp-content/uploads/2017/05/53130_sweden_uppsala_sweden.jpg)
+
+[Örebro](https://www.stjarnkliniken.com/web/wp-content/uploads/2020/08/occ88rebro-1080x675.jpg")
+
+[Linköping](https://www.linkoping.se/imagevault/publishedmedia/lfuv2nqkwbhmxreq8f9n/DJI_0040_SMALL_MW.jpg)
+
+[Helsingborg](https://hallbartbyggande.com/wp-content/public_html/2018/06/Helsingborg.jpg)
+
+[Jönköping](https://www.jonkoping.se/images/18.f356a12169ec9d53d461a2/1554896047962/(2)%20(2)%20Jkpg_City_Sunset_Lusare_Kallare_300dpi.jpg)
+
+[Umeå](https://www.dagensinfrastruktur.se/wp-content/uploads/sites/3/2018/03/umeas-bild.jpg)
+
+[Karlstad](https://resources.mynewsdesk.com/image/upload/c_limit,dpr_2.625,f_auto,h_700,q_auto,w_380/lzunurrffxlrae0znft0.jpg)
+
+[Gävle](https://svenskpress.se/articles/view/wwwdocs/thumb/thumb.php?src=/wwwdocs/_common_media/article_photos/11344/40924.jpg&w=640)
+
+[Växjö](https://imengine.gota.infomaker.io/?uuid=72e85f25-9984-5d0c-9d5c-6ff2b88819c3&width=960&height=480&type=preview&source=false&q=90&z=100&x=0.000&y=0.125&crop_w=1.000&crop_h=0.750&function=cropresize)
+
+[Halmstad](https://resources.mynewsdesk.com/image/upload/c_limit,dpr_2.625,f_auto,h_700,q_auto,w_360/uc9hugazpv5pkimvvjj23g.jpg)
+
+[Luleå](https://www.christineabroad.com/images//2020/04/att-go%CC%88ra-i-lulea%CC%8A.jpg)
+
+[Östersund](https://resources.mynewsdesk.com/image/upload/c_limit,dpr_2.625,f_auto,h_700,q_auto,w_360/v3yxesvrbutxj3er3f9m.jpg)
+
+[Trollhättan](https://www.erasweden.com/media/3539/trollhattan2019.jpg?width=1364&height=1000&mode=crop&upscale=true&quality=67)
+
+[Kalmar](https://i.pinimg.com/originals/f2/5c/97/f25c9789abe7e1cf6961929eb555f99c.jpg)
+
+[Falun](https://www.grantthornton.se/globalassets/1.-member-firms/sweden/images/photos/offices/open-graph-image/falun_1200x627.jpg)
+
+[Karlskrona](https://www.karlskrona.se/globalassets/kommun-och-politik/sa-arbetar-vi-med/trygghet-och-sakerhet/karlskrona-stad.jpeg?mode=page-intro-medium)
+
+[Nyköping](https://drivkraft.ey.se/wp-content/uploads/2018/06/Nyko%CC%88ping-870x489.jpg)
+
+[Visby](https://lp-cms-production.imgix.net/features/2017/03/visby-0c2723f2c195.jpg)
+
+[Jönköping](https://media.runtvattern.se/Huskvarna-495x389.jpg)
+
+[Härnösand](https://resources.mynewsdesk.com/image/upload/ar_16:9,c_fill,dpr_auto,f_auto,g_auto,q_auto,w_864/okqex5jl534n2m6nmubn.jpg)
+
+[Norrköping](https://thumb.mp-farm.com/91674072/preview.jpg)
+
+[Sundsvall](https://blog.hotelspecials.se/wp-content/uploads/sites/8/2018/02/shutterstock_512158378-1170x632.jpg")
+
+[Borås](https://www.boras.se/images/18.77edf482158fdcbba45b9e35/1482150364114/flygvybor%C3%A5s.jpg)
+
+[Borlänge](https://www.fjellfotografen.se/photo/large/Flygfoto_%C3%B6ver_Borl%C3%A4nge_@20140425_TOJ1082.jpg)
+
+[Mölndal](https://upload.wikimedia.org/wikipedia/commons/a/a7/M%C3%B6lndal.jpg)
+
+[Kristianstad](https://www.atea.se/media/5349/9442140-kristianstad.jpg?anchor=center&mode=crop&width=800&height=600&rnd=132513050210000000)
+
+[Skellefteå](https://svv-cdn.azureedge.net/media/Default/News/Skellefte%C3%A5%20flygbild.jpg)
+
+[Örnsköldsvik](https://www.fjellfotografen.se/photo/large/Flygfoto_%C3%B6ver_%C3%96rnsk%C3%B6ldsvik_@20100906_TOJ7682.jpg)
+
+[Vänersborg](https://scanmagazine.co.uk/content/uploads/2016/01/01_TRO1.jpg)
+
+[Kiruna](https://hallbartbyggande.com/wp-content/public_html/2018/09/Kiruna_hogre_medeltemperatur.jpg)
+
+[Höganäs](https://resources.mynewsdesk.com/image/upload/ar_16:9,c_fill,dpr_auto,f_auto,g_auto,q_auto,w_864/udcno8bhfmgrr6ynnt36.jpg)
+
+[Kinna](https://upload.wikimedia.org/wikipedia/commons/f/ff/Town_of_Skene_Sweden.jpg)
+
+[Mariestad](https://static.lokalguiden.se/filter/960x540,,85,cover/uploads/articles/83/2cbdb2f6fd280e7d4b0a6f025001284d.jpg)
+
+[Mjölby](https://www.mjolby.se/images/18.2884097b148c203dedf421d/1413969404484/S%C3%B6rby%20flygbild%20beskuren.jpg)
+
+[Bollnäs](https://www.bollnas.se/images/Aktuellt/2020/Bolln%C3%A4s_framtid_%C3%A4r_din_webb.jpg)
+
+[Mora](https://www.actic.se/app/uploads/2019/02/Morastad-1080x549.jpg)
+
+[Ulricefhamn](https://www.vandrarhem.online/bilder/stad/84/vandrarhem-ulricehamn.jpg)
+
+[Tibro](https://www.fjellfotografen.se/photo/large/Flygfoto_%C3%B6ver_Tibro_@20160601_TOJ9796.jpg)
+
+[Jönköping](https://media.husmanhagberg.se/cms/2019/11/hero-kontor-mullsjo-habo.jpg)
+
+[Tidaholm](https://www.tidaholm.se/images/18.5a594813169903f99b6c4783/1553516191735/turbinhuson_och_tidan.jpg)
+
+[Strömstad](https://drivkraft.ey.se/wp-content/uploads/2018/06/Stro%CC%88mstad-870x489.jpg)
+
+[Haparanda](https://www.fjellfotografen.se/photo/large/Flygbild_%C3%B6ver_Haparanda_@20100907_TOJ8266.jpg)
+
+[Hjo](https://anhede.se/wp-content/uploads/2015/06/aerial-photo-hjo-sweden-drone-photographer.jpg)
+
+[Kungsör](https://kungsor.se/images/200.3d6b838b15b14f2118415d1d/1490776416734/20161102_Dronarperspektiv_montage_REX_master-72dpi.jpg)
+
+[Vårgårda](https://brfbjorkangen.se/wp-content/uploads/2019/09/Torget.jpg)
+
+[Hjärup](https://i.pinimg.com/originals/27/8b/97/278b97b1378e83b899716eabb12b4ce8.jpg)
+
+
+
+
+
 
 **Acknowledgements**
 Inspiration for this project from;
@@ -220,9 +373,15 @@ Inspiration for this project from;
 ### LINKS:
 
 Example of README.md	
-https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md
+https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md - As a guidline to write README file.
 
 Markdown Cheatsheet
-https://guides.github.com/features/mastering-markdown/
+https://guides.github.com/features/mastering-markdown/ For reference
+
+OpendataSoft https://public.opendatasoft.com/explore/?sort=modified - Providing geojson data for Sweden.
+
+Geographic Information Systems https://gis.stackexchange.com/ -	For tips on features.
+
+Google https://google.com/ - To search for pictures and relevante data.
 
 
