@@ -105,12 +105,21 @@
                 // ..under 'records'..
                 data.records.forEach((d)=>{
                 //... 'fields.geo_shape' where coordinate data is.
-                var geojson = d.fields.geo_shape;
+                var polyJson = d.fields.geo_shape;
                 //view data in console
-                console.log(geojson);
-                })
-    });
-    
+                console.log(polyJson);
+                var layer = L.GeoJSON.geometryToLayer(polyJson);
+                polyRegions.addLayer(layer);
+
+                //Create circleMarker for popup of region name
+                var regionPoint = L.GeoJSON.coordsToLatLng(d.geometry.coordinates);
+                var circle = L.circleMarker(regionPoint,{
+                    radius:6,
+                    opacity: 0.8
+                }).bindPopup("<p><b> " + d.fields.lan_namn + "</b></p>");
+                polyRegions.addLayer(circle);
+            });
+        })
 
                    // - KITESPOT LAYERS - //
 
