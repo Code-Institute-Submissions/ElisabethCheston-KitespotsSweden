@@ -68,6 +68,7 @@
     map.addLayer(clusterSpots);
 
 
+
                     // - STYLE MARKERS - //
          // Refrence: https://leafletjs.com/examples/geojson/           
     var markerStyle = {
@@ -93,6 +94,22 @@
                 + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
         }
     }).addTo(map);
+   
+                       // - POLYGONS LAYERS - //
+    // Reference: https://gis.stackexchange.com/a/385670/175494 - Falke Design
+    var polyRegions = L.featureGroup().addTo(map);
+                //fetch json data..
+        fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22")
+            .then(response => response.json())
+            .then(data =>{
+                // ..under 'records'..
+                data.records.forEach((d)=>{
+                //... 'fields.geo_shape' where coordinate data is.
+                var geojson = d.fields.geo_shape;
+                //view data in console
+                console.log(geojson);
+                })
+    });
     
 
                    // - KITESPOT LAYERS - //
@@ -118,7 +135,7 @@
         "DarkGray": darkGray
     }; 
     var overlays = {
-        //'Counties': polyRegions,
+        'Counties': polyRegions,
         'Cities': city,
         //'Counties': polyRegions,
         //'draw': sweMap,
