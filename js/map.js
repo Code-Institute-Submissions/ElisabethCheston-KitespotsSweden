@@ -6,6 +6,7 @@
     var hybrid = L.esri.basemapLayer('ImageryClarity');
     var topographic = L.esri.basemapLayer('Topographic');
     var streets = L.esri.basemapLayer('Streets');
+    var darkGray = L.esri.basemapLayer('DarkGray');
     
         // - Create an on load ESRI basemap - //
     var map = new L.map('map', {
@@ -13,7 +14,7 @@
         zoom: 5
     }),
     baseImagery = L.layerGroup();
-    L.esri.basemapLayer('Topographic').addTo(map);
+    L.esri.basemapLayer('ImageryClarity').addTo(map);
 
 
                 // - SEARCH ENGINE - //
@@ -24,10 +25,7 @@
         onEachFeature: function(feature, layer) {
             var popup = '';
             if (feature.properties.name) {
-                popup += '<img src="images/kitesurf1.png" style="width:50px;height:50px;"> <p><b> '
-                + feature.properties.name + '</b><br/>' + "Wind Direction: " 
-                + feature.properties.windDirection + '<br/>'
-                + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
+                popup += '<img src="images/kitesurf1.png" style="width:50px;height:50px;"> <p><b> ' + feature.properties.name + '</b><br/>' + "Wind Direction: " + feature.properties.windDirection + '<br/>' + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
             }
             layer.bindPopup(popup);
         }
@@ -70,117 +68,14 @@
     map.addLayer(clusterSpots);
 
 
-    
-                // - GET JSON DATA WITH AJAX TO OVERLAY REGION - //
-    //Reference: https://medium.com/@maptastik/loading-external-geojson-a-nother-way-to-do-it-with-jquery-c72ae3b41c01
-
-    var regionsData = ("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22&format=geojson");
-
-    // Get the data and turn it to geojson
-    $.ajax({
-        url: regionsData,
-        dataType: "json",
-        success: function(data) {
-            $(data.features).each(function(key, data) {
-                regions.addData(data);
-            });
-             regions.addTo(map);
-        },
-        error: function(error) {
-            console.log('error geojson')
-        }
-    });
-    // Put it on the map
-    var regions = L.geoJSON(null, {
-    pointToLayer: function (features, latlng) {
-        return L.circleMarker(latlng, {
-            radius: 5,
-            color: "#446CCF",
-            opacity: .8,
-            fillColor: "#30BFBF",
-            fillOpacity: 0.6,
-            weight: 2
-        })            
-        .bindPopup("<p><b> " + features.properties.lan_namn + "</b></p>");
-    }  
-    });
-    var regionsPoly = ("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22&format=geojson");
-    // Get the data and turn it to geojson
-    $.ajax({
-        url: regionsPoly,
-        dataType: "json",
-        success: function(data) {
-            $(data.features).each(function(key, data) {
-                polyRegions.addData(data);
-            });
-             polyRegions.addTo(map);
-        },
-        error: function(error) {
-            console.log('error geojson')
-        }
-    });
-        // Put it on the map
-    var polyRegions = L.geoJSON(null, {
-    pointToLayer: function (features, latlng) {
-        return L.polygon(latlng, {
-            //radius: 5,
-            color: "#446CCF",
-            opacity: .8,
-            fillColor: "#30BFBF",
-            fillOpacity: 0.6,
-            weight: 3
-        })            
-        .bindPopup("<p><b> " + features.properties + "</b></p>");
-    }  
-    });
-    
-/*
-                        // - POLYGONS REGIONS - //
-    // Set style function that sets fill color property
-    function style(feature) {
-        return {
-            fillColor: 'green', 
-            fillOpacity: 0.5,  
-            weight: 2,
-            opacity: 1,
-            color: '#ffffff',
-            dashArray: '3'
-        };
-    }
-    var highlight = {
-        'fillColor': 'yellow',
-        'weight': 2,
-        'opacity': 1
-    };
-
-    function forEachFeature(feature, layer) {
-        var popupContent = "<p><b>Code: </b>"+ feature.properties.Code +
-            "</br>Abbrev: "+ feature.properties.Abbrev +'</p>';
-        layer.bindPopup(popupContent);
-
-        layer.on("click", function (e) { 
-            polyRegions.setStyle(style); //resets layer colors
-            layer.setStyle(highlight);  //highlights selected.
-        }); 
-    }
-    // Null variable that will hold layer
-    var polyRegions = L.geoJson(null, {onEachFeature: forEachFeature, style: style});
-
-        $.getJSON(regionsData, function(data) {
-            polyRegions.addData(data);
-        });
-    polyRegions.addTo(map);
-*/
-
-
                     // - STYLE MARKERS - //
          // Refrence: https://leafletjs.com/examples/geojson/           
-    var geojsonMarkerStyle = {
+    var markerStyle = {
         radius: 3,
-        fillColor: "#BA160C",
-        color: "#BA160C",
+        fillColor: "#E4007C",
+        color: "#E2062C",
         weight: 1,
-        opacity: .9,
+        opacity: 0.9,
         fillOpacity: 0.7
     };
 
@@ -188,15 +83,17 @@
 
     var city = L.geoJson(cities, {
     pointToLayer: function (features, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerStyle)
-                .bindPopup("<center><img src='images/" + features.properties.image + "' style='width:200px;height:300x;'></center>" 
+        return L.circleMarker(latlng, markerStyle)
+                .bindPopup("<center><img src='images/cityPic/" 
+                + features.properties.cityPic 
+                + "' style='width:200px;height:300x;'></center>" 
                 + "<p><b> "+features.properties.city + "</b><br/>" 
-            + "County: " + features.properties.admin_name + "<br/>"
-            + "Population: " + features.properties.population + "</p>" 
-            + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
-
+                + "County: " + features.properties.admin_name + "<br/>" 
+                + "Population: " + features.properties.population + "</p>" 
+                + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
         }
     }).addTo(map);
+    
 
                    // - KITESPOT LAYERS - //
 
@@ -205,24 +102,26 @@
     var allspots = L.geoJson(kitespots, {
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {
-                radius:6,
-                opacity: .9
+                radius: 6,
+                opacity: 0.9
             })
             .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
         },
     });
 
-        // - CONTROL LAYERS - //
+                // - CONTROL LAYERS - //
 
     var basemapLayers = {
-        "Topographic": topographic,
         "Hybrid": hybrid,
-        "Streets": streets
+        "Topographic": topographic,
+        "Streets": streets,
+        "DarkGray": darkGray
     }; 
     var overlays = {
-        'Counties Names': regions,
+        //'Counties': polyRegions,
         'Cities': city,
-        'Counties': polyRegions,
+        //'Counties': polyRegions,
+        //'draw': sweMap,
         'All': allspots
     };
   
