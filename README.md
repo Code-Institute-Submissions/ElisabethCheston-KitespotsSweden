@@ -115,7 +115,7 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 #### Manual testing
 
-* User stories test
+[* User stories test](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
 
 [* Jigsaw](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
 
@@ -128,6 +128,7 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 #### Describe use on different browsers
 
+- Desktop
 
 
 | **Desktop**              | **Firefox** | **Explorer** | **Safari** | **Chrome** |
@@ -144,6 +145,7 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 *Cities popup & link*      |     x       |      x       |     x      |    x       |   
 *Image display*            |     x       |      x       |     x      |    x       |
 
+-Tablet
 
 
 | **Tablet**               | **Firefox** | **Explorer** | **Safari** | **Chrome** |
@@ -160,6 +162,8 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 *Cities popup & link*      |     x       |      x       |     x      |    x       |   
 *Image display*            |     x       |      x       |     x      |    x       |
 
+
+- Smartphone
 
 
 | **Smartphone**           | **Firefox** | **Explorer** | **Safari** | **Chrome** |
@@ -179,13 +183,9 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 #### Bugs or problems
 
-* Error in console for (index):1 ;
+* Error in console for (index):1 with message ("Unchecked runtime.lastError: The message port closed before a response was received.")  -In conversations with tutors, they said it's some type of bug for the <!DOCTYPE html> that can't be solved.
 
-- "Unchecked runtime.lastError: The message port closed before a response was received."
-
-Apperently, as to my undersanding, its some type of bug for the <!DOCTYPE html>. I do not know how to solve the issue. Tutors said its a bug.
-
-- Since JSHint react on => in leaflet, I get an error message "(=>) only available in ES6 (use 'esversion: 6')" So I have to add "// jshint esversion:6" in the JavaScript files.
+* Error message ( "=> only available in ES6 (use 'esversion: 6')" ) in JSHint when => is used in Leaflet, I have to add "// jshint esversion:6" in the JavaScript files for JSHint to ignore the error.
 
 - Also the letter "L" used for Leaflet, throught a warning of "undefined".
 
@@ -375,16 +375,14 @@ Inspiration for this project from;
 
 ### LINKS:
 
-Example of README.md	
-https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md - As a guidline to write README file.
+[Example of README.md](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) -As a guidline to write README file.
 
-Markdown Cheatsheet
-https://guides.github.com/features/mastering-markdown/ For reference
+[Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/) -For reference
 
-OpendataSoft https://public.opendatasoft.com/explore/?sort=modified - Providing geojson data for Sweden.
+[OpendataSoft](https://public.opendatasoft.com/explore/?sort=modified) -Providing geojson data for Sweden.
 
-Geographic Information Systems https://gis.stackexchange.com/ -	For tips on features.
+[Geographic Information Systems](https://gis.stackexchange.com/) -For tips on features.
 
-Google https://google.com/ - To search for pictures and relevante data.
+[Google](https://google.com/) -To search for pictures and relevante data.
 
 
