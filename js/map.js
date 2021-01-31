@@ -98,7 +98,7 @@
         fillOpacity: 0.7
     };
 
-                // - CITIES LAYERS - //
+                // - CITIES LAYER - //
 
     var city = L.geoJson(cities, {
     pointToLayer: function (features, latlng) {
@@ -109,7 +109,7 @@
     
 
    
-                    // - POLYGONS LAYERS - //
+                    // - POLYGONS LAYER - //
     // Reference: https://gis.stackexchange.com/a/385670/175494 - Falke Design
     var polyRegions = L.featureGroup();
                 //fetch json data..
@@ -126,7 +126,7 @@
                     radius: 6,
                     color: "#20B2AA",
                     opacity: 0.8,
-                    fillColor: "#F8DE7E",
+                    fillColor: "#AAD99F",
                     fillOpacity: 0.2,               
                     weight: 1
                 });
