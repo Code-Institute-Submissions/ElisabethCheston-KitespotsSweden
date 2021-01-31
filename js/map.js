@@ -113,7 +113,7 @@
     }).addTo(map);
 
    
-                       // - POLYGONS LAYERS - //
+                       // - POLYGONS LAYER - //
     // Reference: https://gis.stackexchange.com/a/385670/175494 - Falke Design
     var polyRegions = L.featureGroup().addTo(map);
                 //fetch json data..
