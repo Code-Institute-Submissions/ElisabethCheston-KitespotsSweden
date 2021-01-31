@@ -49,7 +49,7 @@
             layer.bindPopup(popup);
         }
     });
-        // - Create search engine and place it on the map - //
+        // - Create search engine and place it on map - //
     var selector = L.control({
         position: 'topright',
         opacity: 0.8,
