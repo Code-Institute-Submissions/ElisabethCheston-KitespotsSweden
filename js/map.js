@@ -1,5 +1,4 @@
-
-
+// jshint esversion:6
                 // - MAPS - //
 
         // - Basemaps variables - //
@@ -12,13 +11,32 @@
     var map = new L.map('map', {
         center: [62.45,17.45],
         zoom: 5
-    }),
-    baseImagery = L.layerGroup();
+    });
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
 
-                // - SEARCH ENGINE - //
+        // - GEOLOCATOR - //
+// Reference - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+    $(document).ready(function() {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                console.log();
+                L.circle([position.coords.latitude, position.coords.longitude], {
+                    fillColor: "#FDFF00",
+                    fillOpacity: 0.7,
+                    color: "#FDFF00",
+                    radius: 1100,
+                    weight: 3,
+                    opacity: 0.8
+                }).addTo(map);
+            });
+        } else {
+            console.log("Geolocation missing"); // geolocation is not available
+        }
+    });   
 
+                // - SEARCH ENGINE - //
+    // Reference - https://www.codota.com/code/javascript/functions/leaflet/DomUtil
     var clusterSpots = L.markerClusterGroup();
         // - Variable for search source(kitespots) - //
     var searchSpots = L.geoJson(kitespots, {
@@ -68,7 +86,6 @@
     map.addLayer(clusterSpots);
 
 
-
                     // - STYLE MARKERS - //
          // Refrence: https://leafletjs.com/examples/geojson/           
     var markerStyle = {
@@ -94,6 +111,7 @@
                 + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
         }
     }).addTo(map);
+
    
                        // - POLYGONS LAYERS - //
     // Reference: https://gis.stackexchange.com/a/385670/175494 - Falke Design
@@ -101,39 +119,33 @@
                 //fetch json data..
         fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22")
             .then(response => response.json())
-            .then(data =>{
+            .then(data  => {
                 // ..under 'records'..
                 data.records.forEach((d)=>{
                 //... 'fields.geo_shape' where coordinate data is.
                 var polyJson = d.fields.geo_shape;
                 //view data in console
                 console.log(polyJson);
-                var layer = L.GeoJSON.geometryToLayer(polyJson);
+                var layer = L.GeoJSON.geometryToLayer(polyJson,{
+                    radius: 6,
+                    color: "#20B2AA		",
+                    weight: 1,
+                    opacity: 0.7                    
+                });
                 polyRegions.addLayer(layer);
 
                 //Create circleMarker for popup of region name
                 var regionPoint = L.GeoJSON.coordsToLatLng(d.geometry.coordinates);
                 var circle = L.circleMarker(regionPoint,{
-                    radius:6,
-                    opacity: 0.8
+                    radius:4,
+                    color: "#30BFBF",
+                    weight: 7,
+                    opacity: 0.4                   
                 }).bindPopup("<p><b> " + d.fields.lan_namn + "</b></p>");
                 polyRegions.addLayer(circle);
             });
-        })
+        });
 
-                   // - KITESPOT LAYERS - //
-
-        // - Cluster and popups to kitespots All kitespots - //
-    var allspotsCluster = new L.markerClusterGroup();
-    var allspots = L.geoJson(kitespots, {
-        pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {
-                radius: 6,
-                opacity: 0.9
-            })
-            .bindPopup("<p><b> "+feature.properties.name + "</b><br/>" + "Wind Direction: " + feature.properties.windDirection + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>"); 
-        },
-    });
 
                 // - CONTROL LAYERS - //
 
@@ -145,15 +157,16 @@
     }; 
     var overlays = {
         'Counties': polyRegions,
-        'Cities': city,
+        'Cities': city
         //'Counties': polyRegions,
         //'draw': sweMap,
-        'All': allspots
+        //'All': allspots
     };
   
     
         // - Add it all to the map - //
     L.control.layers(basemapLayers, overlays).addTo(map);
 
-    var attribution = L.control.attribution({prefix: '<span class="AttributionClass"></span>'}).addTo(map);
+    //var attribution = L.control.attribution({prefix: '<span class="AttributionClass"></span>'}).addTo(map);
+
 
