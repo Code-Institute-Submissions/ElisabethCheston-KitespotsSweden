@@ -8,39 +8,23 @@ html, body, #map {
     margin: 0px;
 }
 
-/* MARKER & CLUSTER STYLE */
-
-leaflet-markers {
-    color: green;
-}
-clusterGroup {
-    color: rgba(rgb(205, 66, 218), 0.7)
-} 
 
 
-/* CONTROL STYLE */
-   
-.leaflet-bar, .leaflet-control{
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
-    border-radius: 4px;
-    margin-top: 10px;
-}
-div.leaflet-control-zoom.leaflet-bar.leaflet-control{
+            /* ZOOM */
+.leaflet-control-zoom.leaflet-bar.leaflet-control{
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
     border-radius: 4px;
     margin-top: 10px;
 }
 
-.leaflet-control-zoom-in, .leaflet-control-zoom-out {
-    display: transparent;
-}
-div.list-group-item.leaflet-control {
+
+.list-group-item.leaflet-control {
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
     border-radius: 4px;
     margin-top: 10px;
 }
 .select#selectSpot {
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    background-color: rgba(138, 56, 87, 0.9);
     border-radius: 4px;
     margin-top: 10px;
 }
@@ -51,21 +35,19 @@ div.list-group-item.leaflet-control {
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
 }
 .leaflet-control-layers-separator {
-    color: grey;
+    color: rgb(236, 233, 233);
     size: 3px;
 }
 
-div.leaflet-control-scale.leaflet-control  {
-    box-shadow: 0 3px 14px rgba(0,0,0,0.8);
-    border-radius: 4px; 
-}
 
-div.leaflet-bottom.leaflet-left {
-    background-origin: padding-box;
-}
+        /* SCALE */
 
-div.leaflet-bottom.leaflet-right {
-    background-origin: padding-box;
-    box-shadow: 0 3px 14px rgba(0,0,0,0.8);
-    border-radius: 4px; 
+.leaflet-control-scale.leaflet-control {
+    margin-bottom: 20px;
+} 
+
+.leaflet-control-scale-line {
+    color: rgba(8, 8, 8, 0.9);
+    background-color: rgba(255, 253, 253, 0.8);
+
 }
