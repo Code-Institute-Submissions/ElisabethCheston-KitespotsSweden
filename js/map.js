@@ -89,11 +89,11 @@
                     // - STYLE MARKERS - //
          // Refrence: https://leafletjs.com/examples/geojson/           
     var markerStyle = {
-        radius: 3,
-        fillColor: "#E4007C",
-        color: "#E2062C",
-        weight: 1,
-        opacity: 0.9,
+        radius: 4,
+        weight: 3,
+        color: "#C71585",
+        opacity: 0.8,
+        fillColor: "#FFD700",
         fillOpacity: 0.7
     };
 
@@ -110,12 +110,13 @@
                 + "Population: " + features.properties.population + "</p>" 
                 + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
         }
-    }).addTo(map);
+    });
+    
 
    
                        // - POLYGONS LAYERS - //
     // Reference: https://gis.stackexchange.com/a/385670/175494 - Falke Design
-    var polyRegions = L.featureGroup().addTo(map);
+    var polyRegions = L.featureGroup();
                 //fetch json data..
         fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22")
             .then(response => response.json())
@@ -128,19 +129,24 @@
                 console.log(polyJson);
                 var layer = L.GeoJSON.geometryToLayer(polyJson,{
                     radius: 6,
-                    color: "#20B2AA		",
-                    weight: 1,
-                    opacity: 0.7                    
+                    color: "#20B2AA",
+                    opacity: 0.8,
+                    fillColor: "#F8DE7E",
+                    fillOpacity: 0.2,               
+                    weight: 1
                 });
                 polyRegions.addLayer(layer);
 
                 //Create circleMarker for popup of region name
                 var regionPoint = L.GeoJSON.coordsToLatLng(d.geometry.coordinates);
                 var circle = L.circleMarker(regionPoint,{
-                    radius:4,
+                    radius:5,
+                    weight: 5,
                     color: "#30BFBF",
-                    weight: 7,
-                    opacity: 0.4                   
+                    opacity: 0.7,
+                    fillColor: "#F8DE7E",
+                    fillOpacity: 0.7               
+
                 }).bindPopup("<p><b> " + d.fields.lan_namn + "</b></p>");
                 polyRegions.addLayer(circle);
             });
@@ -156,8 +162,8 @@
         "DarkGray": darkGray
     }; 
     var overlays = {
-        'Counties': polyRegions,
-        'Cities': city
+        'Cities': city,
+        'Counties': polyRegions 
         //'Counties': polyRegions,
         //'draw': sweMap,
         //'All': allspots
