@@ -1,4 +1,5 @@
-// jshint esversion:6
+// jshint esversion:6 
+
                 // - MAPS - //
 
         // - Basemaps variables - //
@@ -15,7 +16,7 @@
     L.esri.basemapLayer('ImageryClarity').addTo(map);
 
 
-        // - GEOLOCATOR - //
+                // - GEOLOCATOR - //
 // Reference - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
     $(document).ready(function() {
         if ("geolocation" in navigator) {
@@ -86,7 +87,7 @@
     map.addLayer(clusterSpots);
 
 
-                    // - STYLE MARKERS - //
+                // - STYLE CITY MARKERS - //
          // Refrence: https://leafletjs.com/examples/geojson/           
     var markerStyle = {
         radius: 4,
@@ -97,24 +98,18 @@
         fillOpacity: 0.7
     };
 
-                   // - CITIES LAYERS - //
+                // - CITIES LAYERS - //
 
     var city = L.geoJson(cities, {
     pointToLayer: function (features, latlng) {
         return L.circleMarker(latlng, markerStyle)
-                .bindPopup("<center><img src='images/cityPic/" 
-                + features.properties.cityPic 
-                + "' style='width:200px;height:300x;'></center>" 
-                + "<p><b> "+features.properties.city + "</b><br/>" 
-                + "County: " + features.properties.admin_name + "<br/>" 
-                + "Population: " + features.properties.population + "</p>" 
-                + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
+                .bindPopup("<center><img src='images/cityPic/" + features.properties.cityPic + "' style='width:200px;height:300x;'></center>" + "<p><b> "+features.properties.city + "</b><br/>" + "County: " + features.properties.admin_name + "<br/>" + "Population: " + features.properties.population + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
         }
     });
     
 
    
-                       // - POLYGONS LAYERS - //
+                    // - POLYGONS LAYERS - //
     // Reference: https://gis.stackexchange.com/a/385670/175494 - Falke Design
     var polyRegions = L.featureGroup();
                 //fetch json data..
@@ -168,11 +163,7 @@
         //'draw': sweMap,
         //'All': allspots
     };
-  
-    
         // - Add it all to the map - //
     L.control.layers(basemapLayers, overlays).addTo(map);
-
-    //var attribution = L.control.attribution({prefix: '<span class="AttributionClass"></span>'}).addTo(map);
 
 
