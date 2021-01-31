@@ -44,7 +44,7 @@
         onEachFeature: function(feature, layer) {
             var popup = '';
             if (feature.properties.name) {
-                popup += '<img src="images/kitesurf1.png" style="width:50px;height:50px;"> <p><b> ' + feature.properties.name + '</b><br/>' + "Wind Direction: " + feature.properties.windDirection + '<br/>' + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
+                popup += '<center><img src="images/kitesurf1.png"style="width:80px;height:200x;"/></center>' + '<p><b> ' + feature.properties.name + '</b><br/>' + "Wind Direction: " + feature.properties.windDirection + '<br/>' + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
             }
             layer.bindPopup(popup);
         }
@@ -103,7 +103,7 @@
     var city = L.geoJson(cities, {
     pointToLayer: function (features, latlng) {
         return L.circleMarker(latlng, markerStyle)
-                .bindPopup("<center><img src='images/cityPic/" + features.properties.cityPic + "' style='width:200px;height:300x;'></center>" + "<p><b> "+features.properties.city + "</b><br/>" + "County: " + features.properties.admin_name + "<br/>" + "Population: " + features.properties.population + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
+                .bindPopup("<center><img src='images/cityPic/" + features.properties.cityPic + "' style='width:200px;height:300x;'/></center>" + "<p><b> "+features.properties.city + "</b><br/>" + "County: " + features.properties.admin_name + "<br/>" + "Population: " + features.properties.population + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
         }
     });
     
