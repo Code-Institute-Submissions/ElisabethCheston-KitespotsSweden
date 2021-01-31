@@ -31,41 +31,41 @@ PDF files for;
 
 
 ### Features
-In this section, you should go over the different parts of your project and describe each in a sentence or so.
+Feature functions in the project:
 
 #### Existing Features
 
-* **Zooms** In the top left corner user can zoom in and out of the map window to better research the area.
+* **Zooms** - In the top left corner user can zoom in and out of the map window to better research the area.
 
 * **Search Control** – A dropdown list (in the top right corner) that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easer to search for the name instead of a control user have to write in the names.
 
-* **Zoom in to selected spots** Upon selected spot the maps zooms in to the position and the marker popsup with information.
+* **Zoom in to selected spots** - Upon selected spot the maps zooms in to the position and the marker popsup with information.
  
-* **Cluster spots** When user first load the page the first thing they can see on the map is cluster spots of all the kitespots. It groups the spots together in groups depending on the projection to make the map less 'messy' or cluttery'. When clicked on the or zoomed in to the cluser divides up to smaller groups until the accual markers shows.
+* **Cluster spots** - When user first load the page the first thing they can see on the map is cluster spots of all the kitespots. It groups the spots together in groups depending on the projection to make the map less 'messy' or cluttery'. When clicked on the or zoomed in to the cluser divides up to smaller groups until the accual markers shows.
 
 * **Control Layer Toggler** – That contains all the baselayer and overlayers. Upon hovering the icon opens and layers can be selected.
 
-* **Baselayers** gives the users the option to choose different maps to view the kitespots in. Only one map can be displayed at a time.
+* **Baselayers** - Gives the users the option to choose different maps to view the kitespots in. Only one map can be displayed at a time.
 
-* **Overlayer** Gives the user the option to see cities and regions on map. Here both layers can be selected simultaneously.
+* **Overlayer** - Gives the user the option to see cities and regions on map. Here both layers can be selected simultaneously.
 
-* **City popups** Shows the users the the position of swedish cities. The markers do not have cluster on map. Popup include text, picute and link to google.
+* **City popups** - Shows the users the the position of swedish cities. The markers do not have cluster on map. Popup include text, picute and link to google.
 
-* **Region popups** Shows the users the the position of swedish regions as popygons. In the middle of the regions is a popup with region name.
+* **Region popups** - Shows the users the the position of swedish regions as popygons. In the middle of the regions is a popup with region name.
 
-* **Geolocator** shows users popsition on map if user have given promission to it in browser.
+* **Geolocator** - Shows users popsition on map if user have given promission to it in browser.
 
-* **Scale** In the bottom left corner user can see the scale that changes value depending on the zoom level.
+* **Scale** - In the bottom left corner user can see the scale that changes value depending on the zoom level.
 
-* **Attribution** In the bottom right corner user can see the attribution from map providers and other integraded systems used.
+* **Attribution** - In the bottom right corner user can see the attribution from map providers and other integraded systems used.
 
 
 #### Features Left to Implement
-* Weather prognose – I would like to implement current and future weather info for each kitespot. Also marker that changes color once its location works with the wind direction and the parameters showing good enough wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature. To get accurate information you need to use backend programs as well as payed services.
+* **Weather prognose** – I would like to implement current and future weather info for each kitespot. Also marker that changes color once its location works with the wind direction and the parameters showing good enough wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature. To get accurate information you need to use backend programs as well as payed services.
 
-* Kitespot information – Like to implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception). To get accurate information you need to use backend programs as well as payed services.
+* **Kitespot information** – Like to implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception). To get accurate information you need to use backend programs as well as payed services.
 
-* Spot direction – Implement traveling directions from current location to spot destination. For this you need to use a payed service in ESRI.
+* **Spot direction** – Implement traveling directions from current location to spot destination. For this you need to use a payed service in ESRI.
 
 
 ### Technologies Used
@@ -74,7 +74,6 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 
 [Leflet](http://leaflet.com) - Open-source JavaScript library for interactive maps. Works on all major desktops and mobile platforms.
-
 
 [ESRI](http://esri.com) -	Maps and map tools to work with Leaflet.
 
@@ -109,9 +108,9 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 Since I work 99% of the time with the Google Chrome Development tools am constantly checking the console for any error everytime a do even a minor change to the page my page.
 
-#### Jasmin test files
+#### Jasmine test files
 
---------
+Jasmine dont 
 
 #### Manual testing
 
