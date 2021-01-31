@@ -6,10 +6,10 @@ A map to locate all the current kitesurfing spots in Sweden.
 The core focus for this MS2 project was to create functional Javascript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. I first had a map idea to display all Swedish kitespots with features for each of them and implement weather or route direction functions. But with weather and route directions it became complicated, so had a game idea that I tried, then got stuck. So, went back to do a simpler version of the first idea, kitespots in Sweden. 
 
 ## UX
-This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current spots in Sweden you can surf from. Important to provide maps so user can see the conditions of lounging area, sea depth, which way the spot faces and what the optimal wind direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in to the selected kitespot. 
+This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current  functional spots in Sweden where you can surf. Important to provide maps so user can see the conditions of lounging area, sea depth, which way the spot faces and what the optimal wind direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in to the selected kitespot. 
 
 ### Research
-Since there are no updated list of all current kitespots that are functional, I’ve researched old once. Checked their locations and created a new geojson file for them in geojson.io. I also checked potential spots places and added them. Spots that was not functional was for reasons like private property, unfunctional launching area, rocky watersurface.
+Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then I created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky watersurface, etc.
 
 ### User Stories
 *	As a user, I would like to get easy access to all the spots
@@ -25,29 +25,39 @@ Since there are no updated list of all current kitespots that are functional, I�
 
 ### Wireframes
 PDF files for;
-* [Desktop](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/MS2%20wireframe%20Desktop.pdf)
-* [Tablet](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/MS2%20wireframe%20Tablet.pdf)
-* [Smartphone](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/MS2%20wireframe%20Smartphone.pdf)
+* [Desktop](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Balsamiq%20Wireframes/MS2%20desktop.pdf)
+* [Tablet](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Balsamiq%20Wireframes/MS2%20Ipad.pdf)
+* [Smartphone](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Balsamiq%20Wireframes/MS2%20Smartphone.pdf)
 
 
 ### Features
 In this section, you should go over the different parts of your project and describe each in a sentence or so.
 
 #### Existing Features
-**Search Control** – A dropdown list that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easer to search for the name instead of a control user have to write in the names.  
 
-* **Sorted** list by region latitude. Before each spotname shows a region (north/south/..). I’ve selected them in these groups determined by distance (if you are in an area you should be able to reach the other spots by car). 
+* **Zooms** In the top left corner user can zoom in and out of the map window to better research the area.
 
-* **Zooms** to the spot the user has chosen to click on, so user can easier research the area.
+* **Search Control** – A dropdown list (in the top right corner) that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easer to search for the name instead of a control user have to write in the names.
 
-* **Popup** opens with information about the kitespot.
+* **Zoom in to selected spots** Upon selected spot the maps zooms in to the position and the marker popsup with information.
+ 
+* **Cluster spots** When user first load the page the first thing they can see on the map is cluster spots of all the kitespots. It groups the spots together in groups depending on the projection to make the map less 'messy' or cluttery'. When clicked on the or zoomed in to the cluser divides up to smaller groups until the accual markers shows.
 
+* **Control Layer Toggler** – That contains all the baselayer and overlayers. Upon hovering the icon opens and layers can be selected.
 
-**Control Layer Toggler** – That contains all the baselayer and overlayers.
+* **Baselayers** gives the users the option to choose different maps to view the kitespots in. Only one map can be displayed at a time.
 
-* **Baselayers** gives the users the option to choose different maps to view the kitespots in. This is important, to check out the surrounding to determine if for example the launching area is in a condition that meets the users need, level of experience in combination with weather conditions. 
+* **Overlayer** Gives the user the option to see cities and regions on map. Here both layers can be selected simultaneously.
 
-* **Overlayer** gives the user the option to check out spots in a surtain area. For example, if a kitesurfer plans a trip to Gotland (Swedish island south east of Stocholm), they can study the different spot areas.  
+* **City popups** Shows the users the the position of swedish cities. The markers do not have cluster on map. Popup include text, picute and link to google.
+
+* **Region popups** Shows the users the the position of swedish regions as popygons. In the middle of the regions is a popup with region name.
+
+* **Geolocator** shows users popsition on map if user have given promission to it in browser.
+
+* **Scale** In the bottom left corner user can see the scale that changes value depending on the zoom level.
+
+* **Attribution** In the bottom right corner user can see the attribution from map providers and other integraded systems used.
 
 
 #### Features Left to Implement
@@ -95,76 +105,76 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 ### Testing
 
-#### Automate testing
-
-I’ve ran the Jasmine test towards the end of the project though I had a hard time understanding it, do to that this is all new to me. I’ve used the Jasmine boilerplate to test following code.
-
-
-#### Jasmin test files
-
-
 #### Responsive testing
 
 Since I work 99% of the time with the Google Chrome Development tools am constantly checking the console for any error everytime a do even a minor change to the page my page.
 
+#### Jasmin test files
+
+--------
 
 #### Manual testing
 
 * User stories test
-* Validation - for HTML, CSS and GeoJson
-* Jigsaw - To validate CSS and HTML.
-* Validator W3C - To validate JS.
-* GeoJSONLint - For validation of GeoJson data.
+
+[* Jigsaw](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
+
+[* JSON Formatter](https://jsonformatter.curiousconcept.com/) - To validate JavaScript.
+
+[* JSHint](https://jshint.com/) - To help to detect errors and potential problems in JavaScript. 
+
+[* JSONLint](https://jsonlint.com/) - For validation of GeoJson data.
+
 
 #### Describe use on different browsers
 
-- Desktop
 
-| Tables                   |  Firefox  |  Explorer |  Safari  |  Chrome |
-|--------------------------|-----------|-----------|----------|---------|
-*Keeps layout proportions* |     x     |      x    |     x    |    x    |
-*Cities overlay works*     |     x     |      x    |     x    |    x    |
-*Region overlay works*     |     x     |      x    |     x    |    x    |
-*List dropdown*            |     x     |      x    |     x    |    x    |
-*Select obj. in list*      |     x     |      x    |     x    |    x    |
-*Control layers works*     |     x     |      x    |     x    |    x    |
-*Kitespots popups*         |     x     |      x    |     x    |    x    |
-*Cities popup*.            |     x     |      x    |     x    |    x    |
-*Kitespot popup & link*    |     x     |      x    |     x    |    x    |
-*Cities popup & link*      |     x     |      x    |     x    |    x    |   
-*Image display*            |     x     |      x    |     x    |    x    |
 
-- Tablet
+| **Desktop**              | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|--------------------------|-------------|--------------|------------|------------|
+*Keeps layout proportions* |     x       |      x       |     x      |    x       |
+*Cities overlay works*     |     x       |      x       |     x      |    x       |
+*Region overlay works*     |     x       |      x       |     x      |    x       |
+*List dropdown*            |     x       |      x       |     x      |    x       |
+*Select obj. in list*      |     x       |      x       |     x      |    x       |
+*Control layers works*     |     x       |      x       |     x      |    x       |
+*Kitespots popups*         |     x       |      x       |     x      |    x       |
+*Cities popup*.            |     x       |      x       |     x      |    x       |
+*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
+*Cities popup & link*      |     x       |      x       |     x      |    x       |   
+*Image display*            |     x       |      x       |     x      |    x       |
 
-| Tables                   |  Firefox  |  Explorer |  Safari  |  Chrome |
-|--------------------------|-----------|-----------|----------|---------|
-*Keeps layout proportions* |     x     |      x    |     x    |    x    |
-*Cities overlay works*     |     x     |      x    |     x    |    x    |
-*Region overlay works*     |     x     |      x    |     x    |    x    |
-*List dropdown*            |     x     |      x    |     x    |    x    |
-*Select obj. in list*      |     x     |      x    |     x    |    x    |
-*Control layers works*     |     x     |      x    |     x    |    x    |
-*Kitespots popups*         |     x     |      x    |     x    |    x    |
-*Cities popup*.            |     x     |      x    |     x    |    x    |
-*Kitespot popup & link*    |     x     |      x    |     x    |    x    |
-*Cities popup & link*      |     x     |      x    |     x    |    x    |   
-*Image display*            |     x     |      x    |     x    |    x    |
 
-- Smartphone
 
-| Tables                   |  Firefox  |  Explorer |  Safari  |  Chrome |
-|--------------------------|-----------|-----------|----------|---------|
-*Keeps layout proportions* |     x     |      x    |     x    |    x    |
-*Cities overlay works*     |     x     |      x    |     x    |    x    |
-*Region overlay works*     |     x     |      x    |     x    |    x    |
-*List dropdown*            |     x     |      x    |     x    |    x    |
-*Select obj. in list*      |     x     |      x    |     x    |    x    |
-*Control layers works*     |     x     |      x    |     x    |    x    |
-*Kitespots popups*         |     x     |      x    |     x    |    x    |
-*Cities popup*.            |     x     |      x    |     x    |    x    |
-*Kitespot popup & link*    |     x     |      x    |     x    |    x    |
-*Cities popup & link*      |     x     |      x    |     x    |    x    |   
-*Image display*            |     x     |      x    |     x    |    x    |
+| **Tablet**               | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|--------------------------|-------------|--------------|------------|------------|
+*Keeps layout proportions* |     x       |      x       |     x      |    x       |
+*Cities overlay works*     |     x       |      x       |     x      |    x       |
+*Region overlay works*     |     x       |      x       |     x      |    x       |
+*List dropdown*            |     x       |      x       |     x      |    x       |
+*Select obj. in list*      |     x       |      x       |     x      |    x       |
+*Control layers works*     |     x       |      x       |     x      |    x       |
+*Kitespots popups*         |     x       |      x       |     x      |    x       |
+*Cities popup*.            |     x       |      x       |     x      |    x       |
+*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
+*Cities popup & link*      |     x       |      x       |     x      |    x       |   
+*Image display*            |     x       |      x       |     x      |    x       |
+
+
+
+| **Smartphone**           | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|--------------------------|-------------|--------------|------------|------------|
+*Keeps layout proportions* |     x       |      x       |     x      |    x       |
+*Cities overlay works*     |     x       |      x       |     x      |    x       |
+*Region overlay works*     |     x       |      x       |     x      |    x       |
+*List dropdown*            |     x       |      x       |     x      |    x       |
+*Select obj. in list*      |     x       |      x       |     x      |    x       |
+*Control layers works*     |     x       |      x       |     x      |    x       |
+*Kitespots popups*         |     x       |      x       |     x      |    x       |
+*Cities popup*.            |     x       |      x       |     x      |    x       |
+*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
+*Cities popup & link*      |     x       |      x       |     x      |    x       |   
+*Image display*            |     x       |      x       |     x      |    x       |
 
 
 #### Bugs or problems
@@ -173,8 +183,11 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 - "Unchecked runtime.lastError: The message port closed before a response was received."
 
-Apperently, as to my undersanding, its some type of bug for the <!DOCTYPE html>. I do not know hoow to solve the issue. Tutors said its a bug.
+Apperently, as to my undersanding, its some type of bug for the <!DOCTYPE html>. I do not know how to solve the issue. Tutors said its a bug.
 
+- Since JSHint react on => in leaflet, I get an error message "(=>) only available in ES6 (use 'esversion: 6')" So I have to add "// jshint esversion:6" in the JavaScript files.
+
+- Also the letter "L" used for Leaflet, throught a warning of "undefined".
 
 ### Deployment
 
@@ -247,13 +260,8 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
     
 **Media**
-- Markers from;
-
-[Font Awesome](https://fontawesome.com/) & [Flaticon](https://www.flaticon.com/)
 
 -Logo pictures:
-
-[bluekite](https://spng.subpng.com/20190120/xut/kisspng-kitesurfing-power-kite-t-shirt-kite-surfing-windsu-5c444dbfb5b2e2.6383020615479802237443.jpg)
 
 [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 
@@ -358,16 +366,11 @@ https://elisabethcheston.github.io/KitespotsSweden/
 [Hjärup](https://i.pinimg.com/originals/27/8b/97/278b97b1378e83b899716eabb12b4ce8.jpg)
 
 
-
-
-
-
 **Acknowledgements**
-Inspiration for this project from;
 
+Inspiration for this project from;
 - Windy.com
 - Kitesurfing friend
-
 
 
 ### LINKS:
