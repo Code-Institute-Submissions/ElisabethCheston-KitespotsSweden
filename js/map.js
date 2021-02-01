@@ -1,4 +1,4 @@
-// jshint esversion:6 
+// jshint esversion:6
 
 // - MAPS - //
 
@@ -17,8 +17,8 @@ L.esri.basemapLayer('Topographic').addTo(map);
 
 
 
-
 // - GEOLOCATOR - //
+
 // Reference - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
 $(document).ready(function () {
     if ("geolocation" in navigator) {
@@ -38,7 +38,10 @@ $(document).ready(function () {
     }
 });
 
-// - DROPDOWNLIST - KITESPOTS - //
+
+
+// - KITESPOTS DROPDOWNLIST - //
+
 // Reference - https://www.codota.com/code/javascript/functions/leaflet/DomUtil
 var clusterSpots = L.markerClusterGroup();
 // - Variable for search source(kitespots) - //
@@ -76,7 +79,7 @@ var selectSpot = L.DomUtil.get("selectSpot");
 L.DomEvent.addListener(selectSpot, 'click', function (e) {
     L.DomEvent.stopPropagation(e);
 });
-// - ChangeHandler zooms in on choosen spot with popup.""
+// - ChangeHandler zooms in on choosen spot with popup. //
 L.DomEvent.addListener(selectSpot, 'change', changeHandler);
 function changeHandler(e) {
     var selected = searchSpots.getLayer(e.target.value);
@@ -87,23 +90,7 @@ function changeHandler(e) {
 clusterSpots.addLayer(searchSpots);
 map.addLayer(clusterSpots);
 
-/*
-// - SEARCH CONTROL - KITESPOTS  - //
-//Create another search control for typing specific kitespots
-// Selecting the searchSpots variable from dropdownlist
-    var searchControl = new L.Control.Search({layer: json/cities.json , propertyName: 'name', circleLocation:false});
-searchControl.on('search_locationfound', function(e) {
-    e.layer.setStyle({fillColor: 'white', color: 'white', fillOpacity: 0.5});
-    //map.fitBounds(e.layer.getBounds());
-    if(e.layer._popup)
-        e.layer.openPopup();
-}).on('search_collapsed', function(e) {
-    cities.eachLayer(function(layer) {
-        cities.resetStyle(layer);
-    });
-});
-map.addControl( searchControl );
-*/
+
 
 // - STYLE CITY MARKERS - //
 // Refrence: https://leafletjs.com/examples/geojson/           
@@ -114,8 +101,9 @@ var markerStyle = {
     opacity: 0.6,
     fillColor: "#A50B5E",
     fillOpacity: 0.8,
-
 };
+
+
 
 // - CITIES LAYER - //
 
@@ -125,6 +113,8 @@ var city = L.geoJson(cities, {
             .bindPopup("<center><img src='images/cityPic/" + features.properties.cityPic + "' style='width:200px;height:300x;'/></center>" + "<p><b> " + features.properties.city + "</b><br/>" + "County: " + features.properties.admin_name + "<br/>" + "Population: " + features.properties.population + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
     }
 });
+
+
 
 // - CITY POPUP TO FIT ON MAP - //
 
@@ -142,6 +132,7 @@ document.querySelector(".leaflet-popup-pane").addEventListener("load", function 
 
 
 // - POLYGONS LAYER - //
+
 // Reference - https://gis.stackexchange.com/a/385670/175494 - Falke Design
 var polyRegions = L.featureGroup();
 //fetch json data..
@@ -180,11 +171,13 @@ fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-l
     });
 
 
-// - BRING CITY OVERLAY ON TOP ON CLICK - //
+
+// - BRING OVERLAY TO FRONT - //
 
 map.on('click', function () {
     city.bringToFront();
 });
+
 
 
 // - CONTROL LAYERS - //
@@ -198,9 +191,7 @@ var basemapLayers = {
 var overlays = {
     'Cities': city,
     'County': polyRegions
-    
+
 };
 // - Add it all to the map - //
 L.control.layers(basemapLayers, overlays).addTo(map);
-
-

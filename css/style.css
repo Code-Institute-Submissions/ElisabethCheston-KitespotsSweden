@@ -1,4 +1,4 @@
-/* Map */
+/* MAP */
   
 html, body, #map {
     height: 100vh;
@@ -10,63 +10,53 @@ html, body, #map {
 
 
 
-            /* ZOOM */
+/* ZOOM */
+
 .leaflet-control-zoom.leaflet-bar.leaflet-control{
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
     border-radius: 4px;
     margin-top: 10px;
 }
 
+/* DROPDOWN LIST */
 
 .list-group-item.leaflet-control {
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
     border-radius: 4px;
     margin-top: 10px;
 }
-.select#selectSpot {
-    background-color: rgba(138, 56, 87, 0.9);
-    border-radius: 4px;
-    margin-top: 10px;
-}
+
+/* LAYER CONTAINER */
 
 .leaflet-control-layers-toggle {
     border-radius: 5px;
     background-origin: padding-box;
     box-shadow: 0 1px 20px rgba(0,0,0,0.8);
 }
-.leaflet-control-layers-separator {
-    color: rgb(236, 233, 233);
-    size: 3px;
-}
 
-.leaflet-interactive {
-    z-index: 1200;
-}
 
-        /* POPUPS */
 
-/*.leaflet-popup, .leaflet-zoom-animated .leaflet-popup-content-wrappe, .leaflet-popup-content,  .leaflet-popup-tip-container, .leaflet-popup-tip, .leaflet-popup-close-button {
-    z-index: 30;
-    background-color: rgba(165, 44, 91, 0.8);
+/* CLUSTER */
+
+.marker-cluster {
+    background-color: rgba(255, 154, 191, 0.9);
+    fill: rgba(248, 230, 237, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
 }
-*/
-.cities {
-    z-index: 2343;
-}
-    /* KITE POPUP */
-.leaflet-pane, .leaflet-marker-pane, .leaflet-marker-icon, .leaflet-zoom-animated, .leaflet-interactive, .leaflet-marker-icon, .leaflet-zoom-animated, .leaflet-interactive, .leaflet-marker-icon, .marker-cluster, .marker-cluster-small, .leaflet-zoom-animated, .leaflet-interactive {
-    z-index: 1000;
-}       
 
         /* SCALE */
 
 .leaflet-control-scale.leaflet-control {
     margin-bottom: 20px;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    background-color: rgba(255, 253, 253, 0.8);
 } 
 
 .leaflet-control-scale-line {
-    color: rgba(8, 8, 8, 0.9);
     background-color: rgba(255, 253, 253, 0.8);
-    border-radius: 2px;
+    border-radius: 3px;
+    border: 2px ;
+    margin: 4px;
 
 }
