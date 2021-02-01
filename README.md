@@ -83,7 +83,7 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 [ESRI](http://esri.com) -	Maps and map tools to work with Leaflet.
 
-[GeoJson](http://geojson.io/) -	For making all kitespots in Sweden.
+[GeoJson](http://geojson.io/) -	For creating all kitespots in Sweden.
 
 [GeoJSONLint](https://geojsonlint.com/) -	For validation of geoJson data.
 
@@ -99,7 +99,7 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 [Jigsaw](https://jigsaw.w3.org/css-validator/) -	To validate CSS and HTML.
 
-[Validator W3C](https://validator.w3.org/) -	To validate JS.
+[JSHint](https://jshint.com/) - To validate JavaScript.
 
 [GitPod](http://gitpod.com) -	An open-source platform used to create the project with code related programs. Making commit documentation and push them to GitHub.
 
@@ -116,11 +116,15 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 #### Manual testing
 
-[ **User stories test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
+[ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf)
+
+[**CSS Validation**](/workspace/KitespotsSweden/Responsive Testing/cssValidation.png)
+
+[**HTML Validation**](/workspace/KitespotsSweden/Responsive Testing/htmlValidation.png)
 
 [**Jigsaw**](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
 
-[**JSON Formatter**](https://jsonformatter.curiousconcept.com/) - To validate JavaScript.
+[**JSHint Test Result**](https://jsonformatter.curiousconcept.com/) 
 
 * Report on **map.js:** 
 
