@@ -39,6 +39,20 @@ html, body, #map {
     size: 3px;
 }
 
+        /* POPUPS */
+
+/*.leaflet-popup, .leaflet-zoom-animated .leaflet-popup-content-wrappe, .leaflet-popup-content,  .leaflet-popup-tip-container, .leaflet-popup-tip, .leaflet-popup-close-button {
+    z-index: 30;
+    background-color: rgba(165, 44, 91, 0.8);
+}
+*/
+.cities {
+    z-index: 2343;
+}
+    /* KITE POPUP */
+.leaflet-pane, .leaflet-marker-pane, .leaflet-marker-icon, .leaflet-zoom-animated, .leaflet-interactive, .leaflet-marker-icon, .leaflet-zoom-animated, .leaflet-interactive, .leaflet-marker-icon, .marker-cluster, .marker-cluster-small, .leaflet-zoom-animated, .leaflet-interactive {
+    z-index: 1000;
+}       
 
         /* SCALE */
 
@@ -49,5 +63,6 @@ html, body, #map {
 .leaflet-control-scale-line {
     color: rgba(8, 8, 8, 0.9);
     background-color: rgba(255, 253, 253, 0.8);
+    border-radius: 2px;
 
 }
