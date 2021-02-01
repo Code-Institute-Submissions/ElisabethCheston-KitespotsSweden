@@ -1,3 +1,3 @@
-        // - SCALE - //
+// - SCALE - //
 
-    L.control.scale().addTo(map);
+L.control.scale().addTo(map);
