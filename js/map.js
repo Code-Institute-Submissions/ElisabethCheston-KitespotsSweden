@@ -108,11 +108,11 @@ map.addControl( searchControl );
 // - STYLE CITY MARKERS - //
 // Refrence: https://leafletjs.com/examples/geojson/           
 var markerStyle = {
-    radius: 6,
-    weight: 5,
-    color: "#fcf75e",
-    opacity: 0.4,
-    fillColor: "#880085	",
+    radius: 4,
+    weight: 3,
+    color: "#F0E891",
+    opacity: 0.6,
+    fillColor: "#A50B5E",
     fillOpacity: 0.8,
 
 };
