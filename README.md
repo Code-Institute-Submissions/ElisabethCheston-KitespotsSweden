@@ -49,7 +49,9 @@ Feature functions in the project:
 
 * **Overlayer** - Gives the user the option to see cities and regions on map. Here both layers can be selected simultaneously.
 
-* **City popups** - Shows the users the the position of swedish cities. The markers do not have cluster on map. Popup include text, picute and link to google.
+* **Kitespot popups with image and link** - Popup opens automatic upon selected.
+
+* **City popups with image and link** - Shows the users the the position of swedish cities. The markers do not have cluster on map. Popup include text, picute and link to google.
 
 * **Region popups** - Shows the users the the position of swedish regions as popygons. In the middle of the regions is a popup with region name.
 
@@ -116,38 +118,32 @@ Jasmine dont
 
 [* User stories test](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
 
-[* Jigsaw](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
+[**Jigsaw**](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
 
-[* JSON Formatter](https://jsonformatter.curiousconcept.com/) - To validate JavaScript.
+[**JSON Formatter**](https://jsonformatter.curiousconcept.com/) - To validate JavaScript.
 
-[* JSHint](https://jshint.com/) - To help to detect errors and potential problems in JavaScript. 
+* Report on **map.js:** 
 
-[* JSONLint](https://jsonlint.com/) - For validation of GeoJson data.
+- There are 12 functions in this file.
+
+- Function with the largest signature take 2 arguments, while the median is 1.
+
+- Largest function has 7 statements in it, while the median is 2.
+
+- The most complex function has a cyclomatic complexity value of 2 while the median is 1.
+
+
+[**JSHint**](https://jshint.com/) - To help to detect errors and potential problems in JavaScript. 
+
+[**JSONLint**](https://jsonlint.com/) - For validation of GeoJson data.
 
 
 #### Describe use on different browsers
 
-- Desktop
 
+**Desktop**
 
-| **Desktop**              | **Firefox** | **Explorer** | **Safari** | **Chrome** |
-|--------------------------|-------------|--------------|------------|------------|
-*Keeps layout proportions* |     x       |      x       |     x      |    x       |
-*Cities overlay works*     |     x       |      x       |     x      |    x       |
-*Region overlay works*     |     x       |      x       |     x      |    x       |
-*List dropdown*            |     x       |      x       |     x      |    x       |
-*Select obj. in list*      |     x       |      x       |     x      |    x       |
-*Control layers works*     |     x       |      x       |     x      |    x       |
-*Kitespots popups*         |     x       |      x       |     x      |    x       |
-*Cities popup*.            |     x       |      x       |     x      |    x       |
-*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       |   
-*Image display*            |     x       |      x       |     x      |    x       |
-
--Tablet
-
-
-| **Tablet**               | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|                          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
 |--------------------------|-------------|--------------|------------|------------|
 *Keeps layout proportions* |     x       |      x       |     x      |    x       |
 *Cities overlay works*     |     x       |      x       |     x      |    x       |
@@ -162,10 +158,27 @@ Jasmine dont
 *Image display*            |     x       |      x       |     x      |    x       |
 
 
-- Smartphone
+**Tablet**
+
+|                          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|--------------------------|-------------|--------------|------------|------------|
+*Keeps layout proportions* |     x       |      x       |     x      |    x       |
+*Cities overlay works*     |     x       |      x       |     x      |    x       |
+*Region overlay works*     |     x       |      x       |     x      |    x       |
+*List dropdown*            |     x       |      x       |     x      |    x       |
+*Select obj. in list*      |     x       |      x       |     x      |    x       |
+*Control layers works*     |     x       |      x       |     x      |    x       |
+*Kitespots popups*         |     x       |      x       |     x      |    x       |
+*Cities popup*.            |     x       |      x       |     x      |    x       |
+*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
+*Cities popup & link*      |     x       |      x       |     x      |    x       |   
+*Image display*            |     x       |      x       |     x      |    x       |
 
 
-| **Smartphone**           | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+
+**Smartphone**
+
+|                          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
 |--------------------------|-------------|--------------|------------|------------|
 *Keeps layout proportions* |     x       |      x       |     x      |    x       |
 *Cities overlay works*     |     x       |      x       |     x      |    x       |
@@ -186,7 +199,7 @@ Jasmine dont
 
 * Error message ( "=> only available in ES6 (use 'esversion: 6')" ) in JSHint when => is used in Leaflet, I have to add "// jshint esversion:6" in the JavaScript files for JSHint to ignore the error.
 
-- Also the letter "L" used for Leaflet, throught a warning of "undefined".
+* Also the letter "L" used for Leaflet, throught a warning of "undefined".
 
 ### Deployment
 
