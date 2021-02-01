@@ -195,11 +195,14 @@ Jasmine dont
 
 #### Bugs or problems
 
-* Error in console for (index):1 with message ("Unchecked runtime.lastError: The message port closed before a response was received.")  -In conversations with tutors, they said it's some type of bug for the <!DOCTYPE html> that can't be solved.
+* **Error message for (index):1** - In console error message "Unchecked runtime.lastError: The message port closed before a response was received.". In conversations with tutors, they said it's some type of bug for the <!DOCTYPE html> that can't be solved.
 
-* Error message ( "=> only available in ES6 (use 'esversion: 6')" ) in JSHint when => is used in Leaflet, I have to add "// jshint esversion:6" in the JavaScript files for JSHint to ignore the error.
+* **Error message** ( "=> only available in ES6 (use 'esversion: 6')" ) in JSHint when => is used in Leaflet. Solved with "// jshint esversion:6" in the JavaScript files for JSHint to ignore the error.
 
-* Also the letter "L" used for Leaflet, throught a warning of "undefined".
+* **Letter "L"** for Leaflet, throught a warning of "undefined" in JSHint.
+
+* **Json files** - In JSHint sees geojson files as undefined.
+
 
 ### Deployment
 
@@ -214,9 +217,9 @@ To deploy my project on GitHub from Git Pod:
 7.	Run ‘python3 -m http.server‘ to connect to server.
 8.	Initialized Git with writing git init command in the terminal.
 9.	Create the project and commit often files/folders to GitHub by;
-* git add .
-* git commit -m "Initial commit"
-* git push -u
+- git add .
+- git commit -m "Initial commit"
+- git push -u
 10.	Deployment on GitHub Pages;
 11.	Go to “Settings” of the project in GitHub.
 12.	Scroll down to GitHub Pages.
@@ -232,20 +235,20 @@ https://elisabethcheston.github.io/KitespotsSweden/
 
 #### Run project locally
 
-*	Go to https://github.com/ElisabethCheston/
-*	Click on Repositories in top menu.
-*	Find the project you like to open and click on it.
-*	In the menu above the project folders/files you have a button called “Code”, click on it.
-*	Dropdown menu shows options “Clone”, “Open with GitHub Desktop” and “Download ZIP”.
-*	Clone;
-* *	Choose the HTTPS option under the Clone icon.
-* *	Click on the copy icon to the right of the linkaddress.
-* * Open the directory in your workstation where you like to store the cloned project.
-* * In the terminal window write; “git clone” + clone url.
-* *	Push enter.
-*	Download ZIP;
-* *	Open the zipped file.
-* *	Move the files to the directory of choice in your workstation project.
+1.	Go to https://github.com/ElisabethCheston/
+2.	Click on Repositories in top menu.
+3.	Find the project you like to open and click on it.
+4.	In the menu above the project folders/files you have a button called “Code”, click on it.
+5.	Dropdown menu shows options “Clone”, “Open with GitHub Desktop” and “Download ZIP”.
+6.Clone;
+ -	Choose the HTTPS option under the Clone icon.
+ -	Click on the copy icon to the right of the linkaddress.
+ - Open the directory in your workstation where you like to store the cloned project.
+ - In the terminal window write; “git clone” + clone url.
+ -	Push enter.
+7.	Download ZIP;
+-	Open the zipped file.
+-	Move the files to the directory of choice in your workstation project.
 
 
 #### Run project live
@@ -267,7 +270,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Example of editing](https://leafletjs.com/reference-1.7.1.html#geojson)
 - [Add markers to control](https://leafletjs.com/examples/layers-control/)
 - [Modify the markers in the layer control](https://esri.github.io/esri-leaflet/examples/layers-control.html)
-- [Add custom markers:](https://leafletjs.com/examples/custom-icons/)
+- [Add custom markers](https://leafletjs.com/examples/custom-icons/)
 - [Polygon overlay](https://gis.stackexchange.com/a/385670/175494) from [Falke Design](http://falke-design.bplaced.net/)
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
     
