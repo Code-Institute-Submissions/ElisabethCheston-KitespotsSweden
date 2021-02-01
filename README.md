@@ -59,6 +59,8 @@ Feature functions in the project:
 
 * **Scale** - In the bottom left corner user can see the scale that changes value depending on the zoom level.
 
+* **Image popup fit screen** - In order fro the popup not to get cut upon open.
+
 * **Attribution** - In the bottom right corner user can see the attribution from map providers and other integraded systems used.
 
 
@@ -67,7 +69,7 @@ Feature functions in the project:
 
 * **Kitespot information** – Like to implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception). To get accurate information you need to use backend programs as well as payed services.
 
-* **Spot direction** – Implement traveling directions from current location to spot destination. For this you need to use a payed service in ESRI.
+* **Travel direction** – Implement traveling directions from current location to spot destination. For this you need to use a payed service in ESRI.
 
 
 ### Technologies Used
@@ -102,6 +104,7 @@ These are the different languages, frameworks, libraries, and any other tools th
 [GitPod](http://gitpod.com) -	An open source platform used to create the project with code related programs. Making commit documentation and push them to GitHub.
 
 [GitHub](http://github.com) -	For creating and storing the repository as well as deploying the project live.
+
 
 
 ### Testing
@@ -273,6 +276,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Add custom markers](https://leafletjs.com/examples/custom-icons/)
 - [Polygon overlay](https://gis.stackexchange.com/a/385670/175494) from [Falke Design](http://falke-design.bplaced.net/)
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
+- [Fit popup image on map](https://jsfiddle.net/09pe8ko6/)
     
 **Media**
 
