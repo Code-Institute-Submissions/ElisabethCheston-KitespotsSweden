@@ -39,6 +39,10 @@ html, body, #map {
     size: 3px;
 }
 
+.leaflet-interactive {
+    z-index: 1200;
+}
+
         /* POPUPS */
 
 /*.leaflet-popup, .leaflet-zoom-animated .leaflet-popup-content-wrappe, .leaflet-popup-content,  .leaflet-popup-tip-container, .leaflet-popup-tip, .leaflet-popup-close-button {
