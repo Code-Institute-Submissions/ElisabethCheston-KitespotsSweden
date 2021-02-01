@@ -3,13 +3,13 @@
 A map to locate all the current kitesurfing spots in Sweden.
 
 ### Background 
-The core focus for this MS2 project was to create functional Javascript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. I first had a map idea to display all Swedish kitespots with features for each of them and implement weather or route direction functions. But with weather and route directions it became complicated, so had a game idea that I tried, then got stuck. So, went back to do a simpler version of the first idea, kitespots in Sweden. 
+The core focus for this MS2 project was to create functional JavaScript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. I first had a map idea to display all Swedish kitespots with features for each of them and implement weather or route direction functions. But with weather and route directions it became complicated, so had a game idea that I tried, then got stuck. So, went back to do a simpler version of the first idea, kitespots in Sweden. 
 
 ## UX
 This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current  functional spots in Sweden where you can surf. Important to provide maps so user can see the conditions of lounging area, sea depth, which way the spot faces and what the optimal wind direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in to the selected kitespot. 
 
 ### Research
-Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then I created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky watersurface, etc.
+Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then I created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky water surface, etc.
 
 ### User Stories
 *	As a user, I would like to get easy access to all the spots
@@ -20,7 +20,7 @@ Since there is no updated list of all current functional kitespots, I’ve resea
 *	As a user, I would like to see a bar that shows distance, to determined how far it would be to get there.
 *	As a user, I would like to be able to zoom in on the spot to see the surrounding, to determine if launching area works for me.
 *	As a user, I would like to see the kitespots on different maps, to plan trip.
-*	As a user, I would like to know the nearest city, if am not from the area and need to look up commondations.
+*	As a user, I would like to know the nearest city, if am not from the area and need to look up commendations.
 
 
 ### Wireframes
@@ -37,35 +37,37 @@ Feature functions in the project:
 
 * **Zooms** - In the top left corner user can zoom in and out of the map window to better research the area.
 
-* **Search Control** – A dropdown list (in the top right corner) that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easer to search for the name instead of a control user have to write in the names.
+* **Search Control** – A dropdown list (in the top right corner) that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easier to search for the name instead of a control user have to write in the names.
 
-* **Zoom in to selected spots** - Upon selected spot the maps zooms in to the position and the marker popsup with information.
+* **Zoom in to selected spots** - Upon selected spot the maps zooms in to the position and the marker popups with information.
  
-* **Cluster spots** - When user first load the page the first thing they can see on the map is cluster spots of all the kitespots. It groups the spots together in groups depending on the projection to make the map less 'messy' or cluttery'. When clicked on the or zoomed in to the cluser divides up to smaller groups until the accual markers shows.
+* **Cluster spots** - When user first load the page the first thing they can see on the map is cluster spots of all the kitespots. It groups the spots together in groups depending on the projection to make the map less 'messy' or cluttery'. When clicked on the or zoomed in to the cluster divides up to smaller groups until the actual markers shows.
 
-* **Control Layer Toggler** – That contains all the baselayer and overlayers. Upon hovering the icon opens and layers can be selected.
+* **Control Layer Toggler** – That contains all the base layer and overlayers. Upon hovering the icon opens and layers can be selected.
 
-* **Baselayers** - Gives the users the option to choose different maps to view the kitespots in. Only one map can be displayed at a time.
+* **Base layers** - Gives the users the option to choose different maps to view the kitespots in. Only one map can be displayed at a time.
 
 * **Overlayer** - Gives the user the option to see cities and regions on map. Here both layers can be selected simultaneously.
 
 * **Kitespot popups with image and link** - Popup opens automatic upon selected.
 
-* **City popups with image and link** - Shows the users the the position of swedish cities. The markers do not have cluster on map. Popup include text, picute and link to google.
+* **City popups with image and link** - Shows the users the position of Swedish cities. The markers do not have cluster on map. Popup include text, picture and link to google.
 
-* **Region popups** - Shows the users the the position of swedish regions as popygons. In the middle of the regions is a popup with region name.
+* **Region popups** - Shows the users the position of Swedish regions as polygons. In the middle of the regions is a popup with region name.
 
-* **Geolocator** - Shows users popsition on map if user have given promission to it in browser.
+* **Geolocator** - Shows users position on map if user have given permission to it in browser.
 
 * **Scale** - In the bottom left corner user can see the scale that changes value depending on the zoom level.
 
-* **Image popup fit screen** - In order fro the popup not to get cut upon open.
+* **Image popup fit screen** - In order for the popup not to get cut upon open.
 
-* **Attribution** - In the bottom right corner user can see the attribution from map providers and other integraded systems used.
+* **bringToFront function** - In order to put the city markers on top of polygon layer to make them selectable.
+
+* **Attribution** - In the bottom right corner user can see the attribution from map providers and other integrated systems used.
 
 
 #### Features Left to Implement
-* **Weather prognose** – I would like to implement current and future weather info for each kitespot. Also marker that changes color once its location works with the wind direction and the parameters showing good enough wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature. To get accurate information you need to use backend programs as well as payed services.
+* **Weather prognose** – I would like to implement current and future weather info for each kitespot. Also, marker that changes color once its location works with the wind direction and the parameters showing good enough wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature. To get accurate information you need to use backend programs as well as payed services.
 
 * **Kitespot information** – Like to implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception). To get accurate information you need to use backend programs as well as payed services.
 
@@ -77,7 +79,7 @@ Feature functions in the project:
 These are the different languages, frameworks, libraries, and any other tools that you have used to construct this project.
 
 
-[Leflet](http://leaflet.com) - Open-source JavaScript library for interactive maps. Works on all major desktops and mobile platforms.
+[Leaflet](http://leaflet.com) - Open-source JavaScript library for interactive maps. Works on all major desktops and mobile platforms.
 
 [ESRI](http://esri.com) -	Maps and map tools to work with Leaflet.
 
@@ -89,17 +91,17 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 [JavaScript](https://www.javascript.com/) -	Used to create functions, elements, controls, run json, etc. Tight all the project parts (JS files, geoJson, images, etc.) together in map.js and channel it for viewing with help of map div in HTML page.
 
-[jQuery](http://jquery.com) -	The project uses jQuery to simplify DOM manipulation. Also to make some functions easier to call.
+[jQuery](http://jquery.com) -	The project uses jQuery to simplify DOM manipulation. Also, to make some functions easier to call.
 
 [CSS](https://sv.wikipedia.org/wiki/Cascading_Style_Sheets) -	To custom style the maps and controller’s size, fonts, color and etc.
 
-[Balsamiq](https://balsamiq.com/) -	To structure and plan the webpage, and to present it  a wireframe for desktops and mobile devices.
+[Balsamiq](https://balsamiq.com/) -	To structure and plan the webpage, and to present it a wireframe for desktops and mobile devices.
 
 [Jigsaw](https://jigsaw.w3.org/css-validator/) -	To validate CSS and HTML.
 
 [Validator W3C](https://validator.w3.org/) -	To validate JS.
 
-[GitPod](http://gitpod.com) -	An open source platform used to create the project with code related programs. Making commit documentation and push them to GitHub.
+[GitPod](http://gitpod.com) -	An open-source platform used to create the project with code related programs. Making commit documentation and push them to GitHub.
 
 [GitHub](http://github.com) -	For creating and storing the repository as well as deploying the project live.
 
@@ -109,12 +111,12 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Responsive testing
 
-Since I work 99% of the time with the Google Chrome Development tools am constantly checking the console for any error everytime a do even a minor change to the page my page.
+Since I work 99% of the time with the Google Chrome Development tools am constantly checking the console for any error every time a do even a minor change to the page my page.
 
 
 #### Manual testing
 
-[* **User stories test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
+[ **User stories test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
 
 [**Jigsaw**](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
 
@@ -122,14 +124,13 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 * Report on **map.js:** 
 
-- There are 12 functions in this file.
+- There are 14 functions in this file.
 
 - Function with the largest signature take 2 arguments, while the median is 1.
 
 - Largest function has 7 statements in it, while the median is 2.
 
-- The most complex function has a cyclomatic complexity value of 2 while the median is 1.
-
+- The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
 [**JSHint**](https://jshint.com/) - To help to detect errors and potential problems in JavaScript. 
 
@@ -200,6 +201,10 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 * **Json files** - In JSHint sees geojson files as undefined.
 
+* **GeoJson files** - Labeled cities and kitespots files as ".json", but got error messages. Mentor told me, just to assign them as ".js" files to avoid error.
+
+* **HTML Validation** When validating index.html I get error messages for "<!DOCTYPE html>" and "</html>" that tutors said was a bug.
+
 
 ### Deployment
 
@@ -239,7 +244,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 5.	Dropdown menu shows options “Clone”, “Open with GitHub Desktop” and “Download ZIP”.
 6.Clone;
 -	Choose the HTTPS option under the Clone icon.
--	Click on the copy icon to the right of the linkaddress.
+-	Click on the copy icon to the right of the link address.
 - Open the directory in your workstation where you like to store the cloned project.
 - In the terminal window write; “git clone” + clone url.
 -	Push enter.
@@ -251,7 +256,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 #### Run project live
 
 1.	Go to “Settings” of my project in Git Hub.
-2.	Scoll down to Git Pages wher you see the message “Your site is published…. “
+2.	Scroll down to Git Pages where you see the message “Your site is published…. “
 3.	Click on the url or copy and paste it in your browser. 
 
 
@@ -279,7 +284,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 
 
-* Picturces used for cities:
+* Pictures used for cities:
 
 [Stockholm](https://www.umultirank.org/export/sites/default/.galleries/generic-images/Others/Winter-Calendar/stockholm-3897532_1280.jpg_2040981648.jpg)
 
@@ -389,7 +394,7 @@ Inspiration for this project from;
 
 ### LINKS:
 
-[Example of README.md](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) -As a guidline to write README file.
+[Example of README.md](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) -As a guideline to write README file.
 
 [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/) -For reference
 
@@ -397,6 +402,6 @@ Inspiration for this project from;
 
 [Geographic Information Systems](https://gis.stackexchange.com/) -For tips on features.
 
-[Google](https://google.com/) -To search for pictures and relevante data.
+[Google](https://google.com/) -To search for pictures and relevant data.
 
 
