@@ -99,8 +99,6 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 [Validator W3C](https://validator.w3.org/) -	To validate JS.
 
-[Jasmine](https://github.com/TravelTimN/ci-ifd-lead/blob/main/week5-jasmine/jasmine.md) -	To help with the code testing for JavaScrip.
-
 [GitPod](http://gitpod.com) -	An open source platform used to create the project with code related programs. Making commit documentation and push them to GitHub.
 
 [GitHub](http://github.com) -	For creating and storing the repository as well as deploying the project live.
@@ -240,11 +238,11 @@ https://elisabethcheston.github.io/KitespotsSweden/
 4.	In the menu above the project folders/files you have a button called “Code”, click on it.
 5.	Dropdown menu shows options “Clone”, “Open with GitHub Desktop” and “Download ZIP”.
 6.Clone;
- -	Choose the HTTPS option under the Clone icon.
- -	Click on the copy icon to the right of the linkaddress.
- - Open the directory in your workstation where you like to store the cloned project.
- - In the terminal window write; “git clone” + clone url.
- -	Push enter.
+-	Choose the HTTPS option under the Clone icon.
+-	Click on the copy icon to the right of the linkaddress.
+- Open the directory in your workstation where you like to store the cloned project.
+- In the terminal window write; “git clone” + clone url.
+-	Push enter.
 7.	Download ZIP;
 -	Open the zipped file.
 -	Move the files to the directory of choice in your workstation project.
@@ -276,12 +274,12 @@ https://elisabethcheston.github.io/KitespotsSweden/
     
 **Media**
 
--Logo pictures:
+* Logo pictures:
 
 [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 
 
-- Picturces used for cities:
+* Picturces used for cities:
 
 [Stockholm](https://www.umultirank.org/export/sites/default/.galleries/generic-images/Others/Winter-Calendar/stockholm-3897532_1280.jpg_2040981648.jpg)
 
@@ -384,8 +382,9 @@ https://elisabethcheston.github.io/KitespotsSweden/
 **Acknowledgements**
 
 Inspiration for this project from;
-[- Windy.com](https://www.windy.com/?59.327,18.065,5,i:pressure)
-- Kitesurfing friend
+
+* [Windy.com](https://www.windy.com/?59.327,18.065,5,i:pressure)
+* Kitesurfing friend
 
 
 ### LINKS:
