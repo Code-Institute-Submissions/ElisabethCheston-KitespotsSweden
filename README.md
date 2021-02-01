@@ -113,13 +113,10 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 Since I work 99% of the time with the Google Chrome Development tools am constantly checking the console for any error everytime a do even a minor change to the page my page.
 
-#### Jasmine test files
-
-Jasmine dont 
 
 #### Manual testing
 
-[* User stories test](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
+[* **User stories test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf) - Test of user stories.
 
 [**Jigsaw**](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
 
@@ -144,9 +141,8 @@ Jasmine dont
 #### Describe use on different browsers
 
 
-**Desktop**
 
-|                          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|      **Desktop**         | **Firefox** | **Explorer** | **Safari** | **Chrome** |
 |--------------------------|-------------|--------------|------------|------------|
 *Keeps layout proportions* |     x       |      x       |     x      |    x       |
 *Cities overlay works*     |     x       |      x       |     x      |    x       |
@@ -157,31 +153,13 @@ Jasmine dont
 *Kitespots popups*         |     x       |      x       |     x      |    x       |
 *Cities popup*.            |     x       |      x       |     x      |    x       |
 *Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       |   
-*Image display*            |     x       |      x       |     x      |    x       |
-
-
-**Tablet**
-
-|                          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
-|--------------------------|-------------|--------------|------------|------------|
-*Keeps layout proportions* |     x       |      x       |     x      |    x       |
-*Cities overlay works*     |     x       |      x       |     x      |    x       |
-*Region overlay works*     |     x       |      x       |     x      |    x       |
-*List dropdown*            |     x       |      x       |     x      |    x       |
-*Select obj. in list*      |     x       |      x       |     x      |    x       |
-*Control layers works*     |     x       |      x       |     x      |    x       |
-*Kitespots popups*         |     x       |      x       |     x      |    x       |
-*Cities popup*.            |     x       |      x       |     x      |    x       |
-*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       |   
+*Cities popup & link*      |     x       |      x       |     x      |    x       | 
 *Image display*            |     x       |      x       |     x      |    x       |
 
 
 
-**Smartphone**
 
-|                          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|      **Tablet**          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
 |--------------------------|-------------|--------------|------------|------------|
 *Keeps layout proportions* |     x       |      x       |     x      |    x       |
 *Cities overlay works*     |     x       |      x       |     x      |    x       |
@@ -192,7 +170,25 @@ Jasmine dont
 *Kitespots popups*         |     x       |      x       |     x      |    x       |
 *Cities popup*.            |     x       |      x       |     x      |    x       |
 *Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       |   
+*Cities popup & link*      |     x       |      x       |     x      |    x       | 
+*Image display*            |     x       |      x       |     x      |    x       |
+
+
+
+
+
+|      **Smartphone**      | **Firefox** | **Explorer** | **Safari** | **Chrome** |
+|--------------------------|-------------|--------------|------------|------------|
+*Keeps layout proportions* |     x       |      x       |     x      |    x       |
+*Cities overlay works*     |     x       |      x       |     x      |    x       |
+*Region overlay works*     |     x       |      x       |     x      |    x       |
+*List dropdown*            |     x       |      x       |     x      |    x       |
+*Select obj. in list*      |     x       |      x       |     x      |    x       |
+*Control layers works*     |     x       |      x       |     x      |    x       |
+*Kitespots popups*         |     x       |      x       |     x      |    x       |
+*Cities popup*.            |     x       |      x       |     x      |    x       |
+*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
+*Cities popup & link*      |     x       |      x       |     x      |    x       | 
 *Image display*            |     x       |      x       |     x      |    x       |
 
 
@@ -388,7 +384,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 **Acknowledgements**
 
 Inspiration for this project from;
-- Windy.com
+[- Windy.com](https://www.windy.com/?59.327,18.065,5,i:pressure)
 - Kitesurfing friend
 
 
