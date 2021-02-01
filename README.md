@@ -118,11 +118,11 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 [ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/User%20Stories.pdf)
 
-[**CSS Validation**](/workspace/KitespotsSweden/Responsive Testing/cssValidation.png)
+[**Chrome Dev Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/%20Chrome%20Dev%20Tools.pdf)
 
-[**HTML Validation**](/workspace/KitespotsSweden/Responsive Testing/htmlValidation.png)
+[**Jigsaw CSS Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/cssValidation.png)
 
-[**Jigsaw**](https://jigsaw.w3.org/css-validator/) - To validate CSS and HTML.
+[**Jigsaw HTML Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/htmlValidation.png)
 
 [**JSHint Test Result**](https://jsonformatter.curiousconcept.com/) 
 
