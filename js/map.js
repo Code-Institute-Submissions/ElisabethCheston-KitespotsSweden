@@ -1,4 +1,4 @@
-// jshint esversion:6
+
 
 // - MAPS - //
 
@@ -190,7 +190,7 @@ var basemapLayers = {
 };
 var overlays = {
     'Cities': city,
-    'County': polyRegions
+    'Regions': polyRegions
 
 };
 // - Add it all to the map - //
