@@ -16,7 +16,7 @@ var map = new L.map('map', {
 });
 L.esri.basemapLayer('Topographic').addTo(map);
 
-L.control.attribution({position: 'bottomleft', }).addTo(map);
+L.control.attribution({showAttribution: true, position: 'bottomright' }).addTo(map);
 
 
 // - GEOLOCATOR - //

@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
         integrity="sha512-RLEjtaFGdC4iQMJDbMzim/dOvAu+8Qp9sw7QE4wIMYcg2goVoivzwgSZq9CsIxp4xKAZPKh5J2f2lOko2Ze6FQ=="
         crossorigin="">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -50,37 +52,38 @@
 </head>
 
 <body>
-    <!--  START MOUDLE - INFO OF THE PAGE-->
-    <!-- <div class="info-modal" id="info-container">
-        <div class="content">
-            <h2>This page shows all current functional Kitespots in Sweden. Use the diffrent maps to analyse the spot
-                conditions. Options to see the Regions and cities in Sweden.</h2>
-        </div>
-        <a href="#">Info</a>
-    </div> -->
+
 
     <!-- CONTAINERS -->
-        <header class="row nav" id="header">
-                <h2>Kitespots Sweden</h2>
+    <header class="row nav" id="header">
+        <h2>Kitespots Sweden</h2>
 
-                <button class="btn" id="info-button">Info</button>
-                <div class="modal active" id="modal">
-                    <div class="modal-header">
-                        <div class="title">Information</div>
-                        <button class="close-button">&times;</button>
+        <button class="btn icon-info btn-sep" id="infoButton">Information</button>
+        <!-- The Modal -->
+        <div id="infoModal" class="modal">
 
-                    </div>
-                    <div class="modal-body">
-                        This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current
-                        functional spots in Sweden where you can surf. Important to provide maps so user can see the
-                        conditions of lounging area, sea depth, which way the spot faces and what the optimal wind
-                        direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in
-                        to the selected kitespot.
-                    </div>
+            <!-- Modal content -->
+            <div class="modalBox">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <h4><strong>This webpage will show the location of ALL current 
+                        functional kitespots in Sweden!</strong></h4>
+                 
+                    <p>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden,
+                    this site will provide you with all the current functional kitespots thats open to public in Sweden.</p><br/>
+                    <h4><strong>"CHOOSE A KITESPOT"</strong></h4>
+                    <p>By selecting a spot you like to research and the page will zoom in to its position.</p><br />
+                    <h4><strong>LAYER CONTROL</strong></h4>
+                    <p>In the Layer Control you have the option to view the spot selected
+                        in different map views to easier analyze launging area/water dept spot and analyze its condition
+                        with different map
+                        options.</p>
                 </div>
-                <div class="active" id="overlay">
-                </div>
-            </header>
+            </div>
+        </div>
+
+
+    </header>
 
     <!-- MAP -->
     <div id="map"></div>
@@ -95,6 +98,7 @@
 
 
     <script src="js/cities.js"></script>
+    <script src="js/headerModal.js"></script>
     <script src="js/kitespots.js"></script>
     <script src="js/map.js"></script>
     <script src="js/scale.js"></script>
