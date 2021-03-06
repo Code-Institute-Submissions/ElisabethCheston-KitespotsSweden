@@ -11,10 +11,12 @@ var darkGray = L.esri.basemapLayer('DarkGray');
 // - Create an on load ESRI basemap - //
 var map = new L.map('map', {
     center: [62.45, 17.45],
-    zoom: 5
+    zoom: 5,
+    attributionControl: false
 });
 L.esri.basemapLayer('Topographic').addTo(map);
 
+L.control.attribution({position: 'bottomleft', }).addTo(map);
 
 
 // - GEOLOCATOR - //
@@ -62,7 +64,7 @@ var selector = L.control({
 });
 selector.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'list-group-item');
-    div.innerHTML = '<select id = "selectSpot"><option value = "init">KITESPOTS</option></select>';
+    div.innerHTML = '<select id = "selectSpot"><option value = "init">CHOOSE A KITESPOTS</option></select>';
     return div;
 };
 selector.addTo(map);

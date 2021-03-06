@@ -50,10 +50,50 @@
 </head>
 
 <body>
+    <!--  START MOUDLE - INFO OF THE PAGE-->
+    <!-- <div class="info-modal" id="info-container">
+        <div class="content">
+            <h2>This page shows all current functional Kitespots in Sweden. Use the diffrent maps to analyse the spot
+                conditions. Options to see the Regions and cities in Sweden.</h2>
+        </div>
+        <a href="#">Info</a>
+    </div> -->
 
-    <div id="map">
+    <!-- CONTAINERS -->
+        <header class="row nav" id="header">
+                <h2>Kitespots Sweden</h2>
+
+                <button class="btn" id="info-button">Info</button>
+                <div class="modal active" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Information</div>
+                        <button class="close-button">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                        This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current
+                        functional spots in Sweden where you can surf. Important to provide maps so user can see the
+                        conditions of lounging area, sea depth, which way the spot faces and what the optimal wind
+                        direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in
+                        to the selected kitespot.
+                    </div>
+                </div>
+                <div class="active" id="overlay">
+                </div>
+            </header>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div id="attribution">
+
+        </div>
 
     </div>
+
+
     <script src="js/cities.js"></script>
     <script src="js/kitespots.js"></script>
     <script src="js/map.js"></script>
