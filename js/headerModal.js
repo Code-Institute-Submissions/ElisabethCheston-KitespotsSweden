@@ -1,64 +1,44 @@
+// - HEADER MODAL - //
 
-// Get the modal
-var modal = document.getElementById("infoModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("infoButton");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+// Get the modalInfo
+var modalInfo = document.getElementById("modalInfo");
+// Get the button that opens the modalInfo
+var btnInfo = document.getElementById("infoButton");
+// Get the <span> element that closes the modalInfo
+var spanInfo = document.getElementsByClassName("closeInfo")[0];
+// When the user clicks on the button, open the modalInfo
+btnInfo.onclick = function() {
+  modalInfo.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+// When the user clicks on <span> (x), close the modalInfo
+spanInfo.onclick = function() {
+  modalInfo.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the modalInfo, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalInfo) {
+    modalInfo.style.display = "none";
   }
 }
 
-// - HEADER MODAL - //
-/*
-const openModalButtons = document.querySelectorAll('[js-modal-target]')
-const closeModalButtons = document.querySelectorAll('[js-close-button]')
-const overlaybox = document.getElementById('overlaybox')
-
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
-
-closeModalButtons.forEach(button => {
-    button.addEventListerner('click', () => {
-        const modal = button.closest('.modal')
-        openModalButtons(modal)
-    })
-})
-overlaybox.addEventListener('click', () => {
-    constModals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal => {
-        closeModal(modal)
-    })
-})
-
-function openModal(modal) {
-    if (modal == null) return
-    modal.classList.add('active')
-    overlaybox.classList.remove('active')
+// - ATTRIBUTE MODAL - //
+// Get the modalAttribute
+var modalAttribute = document.getElementById("modalAttribute");
+// Get the button that opens the modalAttribute
+var btnAttribute = document.getElementById("attributeBtn");
+// Get the <span> element that closes the modalAttribute
+var spanAttribute = document.getElementsByClassName("closeAttribute")[0];
+// When the user clicks on the button, open the modalAttribute
+btnAttribute.onclick = function() {
+  modalAttribute.style.display = "block";
 }
-
-function closeModal(modal) {
-    modal.classList.remove('active')
-    overlaybox.classList.remove('active')
+// When the user clicks on <span> (x), close the modalAttribute
+spanAttribute.onclick = function() {
+  modalAttribute.style.display = "none";
 }
-*/
+// When the user clicks anywhere outside of the modalAttribute, close it
+window.onclick = function(event) {
+  if (event.target == modalAttribute) {
+    modalAttribute.style.display = "none";
+  }
+}

@@ -16,7 +16,14 @@ var map = new L.map('map', {
 });
 L.esri.basemapLayer('Topographic').addTo(map);
 
-L.control.attribution({showAttribution: true, position: 'bottomright' }).addTo(map);
+
+// - ATTRIBUTION - //
+
+var pageAttribution = new L.control.attribution({
+    showAttribution: true, 
+    position: 'center' 
+});
+
 
 
 // - GEOLOCATOR - //
@@ -197,3 +204,4 @@ var overlays = {
 };
 // - Add it all to the map - //
 L.control.layers(basemapLayers, overlays).addTo(map);
+

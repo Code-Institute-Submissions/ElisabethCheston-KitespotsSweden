@@ -46,8 +46,46 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-request@3.0.0/dist/umd/request.umd.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-routing@3.0.0/dist/umd/routing.umd.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-auth@3.0.0/dist/umd/auth.umd.js"></script>
 
     <title>KitespotsSweden</title>
+
+    <style>
+      
+
+  .esri-attribution {
+    line-height: 16px;
+    color: rgba(247, 231, 197, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .esri-attribution__sources {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    align-self: flex-start;
+    flex: 1 0;
+  }
+
+  .esri-attribution__sources[role="button"] {
+    font-size: 12px;
+  }
+
+  .esri-attribution__powered-by {
+    padding: 0 5px;
+    text-align: right;
+    white-space: nowrap;
+    align-self: flex-end;
+  }
+
+    </style>
 
 </head>
 
@@ -56,45 +94,93 @@
 
     <!-- CONTAINERS -->
     <header class="row nav" id="header">
-        <h2>Kitespots Sweden</h2>
+        <div class="col-6">
+        <a class="nav-link" href="index.html">Kitespots Sweden<span class="sr-only"></span></a>
+        </div>
 
-        <button class="btn icon-info btn-sep" id="infoButton">Information</button>
-        <!-- The Modal -->
-        <div id="infoModal" class="modal">
+        <div class="btn-group" role="group">
+            <button class="btnInfo modal-buttons icon-info" id="infoButton"> Informatiton  </button>
+        
+            <!-- The Infomation Modal -->
+            <div id="modalInfo" class="modalInfo">
 
             <!-- Modal content -->
-            <div class="modalBox">
-                <span class="close">&times;</span>
+                <div class="infoBox">
+                <span class="closeInfo">&times;</span>
                 <div class="modal-body">
-                    <h4><strong>This webpage will show the location of ALL current 
-                        functional kitespots in Sweden!</strong></h4>
-                 
+                    <h4><strong>This webpage will show ALL current
+                            functional kitespots locations in Sweden!</strong></h4>
+
                     <p>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden,
-                    this site will provide you with all the current functional kitespots thats open to public in Sweden.</p><br/>
+                        this site will provide you with all the current functional kitespots thats open to public in
+                        Sweden?</p>
                     <h4><strong>"CHOOSE A KITESPOT"</strong></h4>
-                    <p>By selecting a spot you like to research and the page will zoom in to its position.</p><br />
+                    <p>By selecting a spot you like to research and the page will zoom in to its position.</p>
                     <h4><strong>LAYER CONTROL</strong></h4>
-                    <p>In the Layer Control you have the option to view the spot selected
-                        in different map views to easier analyze launging area/water dept spot and analyze its condition
-                        with different map
+                    <p>In the Layer Control (right under "CHOOSE A KITESPOT") you can view the selected spot in different
+                        map views to easier analyze launging area/surrounding/water dept/etc.
                         options.</p>
                 </div>
             </div>
         </div>
 
+    <!-- ATTRIBUTES -->
+
+            <button class="btnAttribute modal-buttons icon-attribute" id="attributeBtn"> Attribute  </button>
+            
+            <!-- The Attribution Modal -->
+            <div id="modalAttribute" class="attributeModal">
+
+            <!-- Modal content -->
+                <div class="attributionBox">
+                    <span class="closeAttribute">&times;</span>
+                    <div class="attribution-body">
+                        <h4><strong>Attribution for this page!</strong></h4>
+
+                        <div id="attribution"></div>
+
+                        <p>Attribution information from ESRI and Leaflet</p>
+
+                        <div class="footer-attributes">
+                            Website by Liah Cheston &copy; 2021
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </header>
+
+    <!-- DIRECTIONS -->
+    <div id="dir"></div>
 
     <!-- MAP -->
     <div id="map"></div>
 
+
+    <script>
+        /*
+                require([
+                    "esri/map",
+                    "esri/dijit/Directions",
+                    "dojo/parser",
+                    "dijit/layout/BorderContainer", "dijit/layout/ContentPane"
+                ], function (Map, Directions, parser) {
+                    // code goes here
+                });
+        
+                const apiKey = "AAPK7f27203c6ed54e09a379e8d065daecceZyyX8U6J7ov9AX-XwEWu-GTm2a9TQ8QFaP-zdknpG_hFQ4_A8gOfu_y9IIN-ZTJj";
+        */
+    </script>
+
     <!-- FOOTER -->
-    <div id="footer">
-        <div id="attribution">
+    
+    <footer id="footer">
 
-        </div>
+    
 
-    </div>
+    </footer>
 
 
     <script src="js/cities.js"></script>

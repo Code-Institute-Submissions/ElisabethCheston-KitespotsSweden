@@ -1,123 +1,103 @@
 /* MAP */
-  
 html, body, #map {
-    height: 90vh;
+    height: 88vh;
     width: 100%;
     position: relative;
     padding: 0px;
     margin: 0px;
 }
-
-/* HEADER FOOTER */
-
 #header {
     height: 6vh;
-    color: rgba(253, 253, 253, 0.9);
+    background-color: rgba(0,0,0,0.7);
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#footer {
+    height: 6vh;
     background-color: rgba(0,0,0,0.7);
     justify-content: space-between;
     align-items: center;
-    display: flex;
-    padding-left: 20px;
-    padding-right: 0px;
+    display: flex;    
 }
 
-#footer {
-    height: 4vh;
-    color: rgba(248, 230, 237, 0.9);
-    background-color: rgba(0,0,0,0.7);
-}
-h2 {
-    font-family: 'Lato';
+
+/* HEADER LINK */
+.nav-link {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 50vw;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: rgba(247, 231, 197, 0.8);
-    font-size: 16px;
+    justify-content: left;
+    padding-right: 10px;
+    font-size: 18px;
     font-weight: 700;
     outline: none;
-    padding-bottom: 6px;
-    font-weight: 400;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 10px;
+    text-underline-position: none;
+    padding-bottom: 1px;
+    margin-bottom: 4px;
 }
-/* INFO BUTTON */
-.btn {
+
+/* HEADER BUTTON */
+.btn-group {
+    width: 50vw;
+    background: rgba(0,0,0,0.01);
+}
+.modal-buttons {
+    float: right;
     font-family: 'Lato';
-    background: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.01);
     color: inherit;
     cursor: pointer;
     border: none;
-    padding: 30px 15px;
-    display: inline-block;
-    margin: 15px 0px;
+    align-items: center;
+    justify-content: right;
+    padding: 4px, 6px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: rgba(247, 231, 197, 0.8);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     outline: none;
-    position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.btn:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+    transition: all 0.3s;    
 }
 
-.btn:before {
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
+/* FONT */
+
+h4 {
+    font-family: Lato;
+    font-size: 16px;     
+}
+p {
+    font-family: 'Lato';
+    font-size: 12px; 
+}
+/* INFO BUTTON */
+
+.btnInfo:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 .icon-info:before {
-  content: "\f05a";
+    content: "\f05a";
+}
+.btnInfo:hover {
+    background:rgba(44, 44, 44, 0.6);
+    color: rgba(235, 206, 145, 0.8);
 }
 
-.btn-sep {
-    padding: 18px 20px 25px 50px;}
-
-.btn-sep:before {
-  background: rgba(49, 43, 43, 0.07);
-}
-
-.btn:hover {
-  background:rgba(36, 32, 26, 0.7);
-}
-
-.btn:active {
-  background: rgba(0,0,0,0.7);
-  top: 2px;
-}
-
-.btn:before {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 60px;
-}
-h3 {
-    padding-bottom: 6px;
-    font-weight: 400;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 10px;
-    color: rgba(99, 95, 88, 0.795);
-}
-
-/* MODAL */
-.modal {
+/* INFO MODAL */
+.modalInfo {
     display: none; 
     position: fixed; 
     z-index: 900;
@@ -131,32 +111,28 @@ h3 {
     border-radius: 10px; 
     background-color: rgba(0,0,0,0.4); 
 }
-
-.modalBox {
-    background-color: #fefefe;
+.infoBox {
+    background-color: rgba(250, 237, 210, 0.9);
     margin: 35% auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 70%;
     border-radius: 4px;
     background-origin: padding-box;
     box-shadow: 0 1px 20px rgba(0,0,0,0.5);
 }
-
-.close {
+.closeInfo {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.closeInfo:hover,
+.closeInfo:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
-
 .modal-body {
     padding: 10px 15px;
     color: rgba(0,0,0,0.8);
@@ -164,34 +140,121 @@ h3 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* ZOOM */
+/* ATTRIBUTION BUTTON */
 
-.leaflet-control-zoom.leaflet-bar.leaflet-control{
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+.btnAttribute:after {
+    content: '';
+    position: relative;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btnAttribute:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+.icon-attribute:before {
+    content: "\f004";
+}
+.btnAttribute:hover {
+    background:rgba(44, 44, 44, 0.6);
+    color: rgba(235, 206, 145, 0.8);
+
+}
+
+/* ATTRIBUTE MODAL */
+.attributeModal {   
+    display: none;
+    position: fixed; 
+    z-index: 900;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    transition: 400ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.attributionBox {
+    background-color: rgba(250, 237, 210, 0.9);
+    margin: 35% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 70%;
     border-radius: 4px;
-    margin-top: 10px;
+    background-origin: padding-box;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+}
+.closeAttribute {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeAttribute:hover,
+.closeAttribute:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.attribution-body {
+    padding: 10px 15px;
+    color: rgba(0,0,0,0.8);
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* LEAFLET CONTROLS */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-bar, 
+.leaflet-control {
+    background-color: rgba(114, 113, 113, 0.9) !important;
+    box-shadow: 0 1px 20px rgba(211, 210, 210, 0.3);
+    border-radius: 4px;
 }
 
 /* DROPDOWN LIST */
-
-.list-group-item.leaflet-control {
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
-    border-radius: 4px;
-    margin-top: 10px;
+#selectSpot {
+    background-color: rgba(114, 113, 113, 0.8) !important;
+    color: rgba(247, 231, 197, 0.9);
+}
+.leaflet-control-layers-list {
+    color: rgba(247, 231, 197, 0.9);
+    font-size: small;
 }
 
 /* LAYER CONTAINER */
-
+.leaflet-control-scale,
 .leaflet-control-layers-toggle {
-    border-radius: 5px;
+    border-radius: 3px;
+    color: rgba(247, 231, 197, 0.9);
+    font-size: small;
     background-origin: padding-box;
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+.leaflet-control-scale {
+    border: 2px;
+    border-color: rgba(250, 250, 250, 0.89);
+}
+.leaflet-control-scale-line {
+    color: rgba(247, 231, 197, 0.9);
+    font-size: small;
+    height: 15px;
+    background-color: rgba(114, 113, 113, 0.1) !important;
+    margin: 5px;
 }
 
-
-
 /* CLUSTER */
-
 .marker-cluster {
     background-color: rgba(255, 154, 191, 0.9);
     fill: rgba(248, 230, 237, 0.9);
@@ -199,22 +262,69 @@ h3 {
     font-size: medium;
 }
 
-        /* SCALE */
-
-.leaflet-control-scale.leaflet-control {
-    width: 100px;
-    position: center;
-    margin-bottom: 15px;
-    z-index: 800;
-    box-shadow: 0 1px 20px rgba(0,0,0,0.8);
-    background-color: rgba(255, 253, 253, 0.8);
-    border-radius: 4px;
-    border: 2px;
+/* FOOTER */
+.btn-footer {
+    font-family: 'Lato';
+    background: rgba(0,0,0,0.1);
+    width: 100vw;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(247, 231, 197, 0.8);
+    font-size: 12px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-footer:hover {
+  background:rgba(44, 44, 44, 0.6);
+}
+.btn-footer:active {
+  background: rgba(65, 64, 64, 0.6);
+  top: 2px;
+}
+.btn-footer:before {
+    font-family: 'FontAwesome';
+    font-size: 140%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 3;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 
-.leaflet-control-scale-line {
-    height: 15px;
-    background-color: rgba(255, 253, 253, 0.1);
-    position: center;
-    margin: 6px;
+/* LINKS AND ICONS */
+a:link {
+    text-decoration: none;
+    color: rgba(247, 231, 197, 0.9);
+}
+a:visited {
+    text-decoration: none;
+    color: rgba(231, 217, 186, 0.9);
+}
+a:hover {
+    text-decoration: none;
+    color: rgba(235, 206, 145, 0.9);
+}
+a:active {
+    text-decoration: none;
+    color: rgba(247, 231, 197, 0.9);
+}
+.icon-github:before {
+    content: "\f092";
+}
+.icon-contact:before {
+    content: "\f0e0";
+}
+.icon-linkedin:before {
+    content: "\f08c";
 }
