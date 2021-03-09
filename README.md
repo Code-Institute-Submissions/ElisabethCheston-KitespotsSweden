@@ -12,15 +12,14 @@ This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all
 Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then I created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky water surface, etc.
 
 ### User Stories
-*	As a user, I would like to get easy access to all the spots
-*	As a user, I want the spots to be usable, so I won’t waist a lot of time going there.
-*	As a user, I would like to get information of the kitespots wind direction, to determine its usability for current weather.
-*	As a user, I want to easily access all the spots for a current wind direction, to know which kitespots are usable at the moment.
-*	As a user, I would like to be able to search for specific spots by name, to easily find it.
-*	As a user, I would like to see a bar that shows distance, to determined how far it would be to get there.
-*	As a user, I would like to be able to zoom in on the spot to see the surrounding, to determine if launching area works for me.
-*	As a user, I would like to see the kitespots on different maps, to plan trip.
-*	As a user, I would like to know the nearest city, if am not from the area and need to look up commendations.
+*	As a kitesurfer, I would like have easy access to all spots, to know its position on map.
+*	As a kitesurfer, I want to be able to analyze the spots surrounding, to determine if it fits my needs.
+*	As a kitesurfer, I would like to get a comfirmation of the direction the beach is facing, to know if its an option for the weather.
+*	As a kitesurfer, I would like to be able to search for specific spots by name, to easily find it.
+*	As a kitesurfer, I would like to see a scale that shows distance, to the propoortions of the map.
+*	As a kitesurfer, I would like to be able to zoom in more on the spot to see the surrounding, to determine if launching area works for me.
+*	As a kitesurfer, I would like to see the kitespots on different maps, to plan trip.
+*	As a kitesurfer, I would like to know the nearest city, if am not from the area and need to look up commendations.
 
 
 ### Wireframes
@@ -119,9 +118,9 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 [ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/Responsive%20Testing%20-%20User%20stories.pdf) - Tests of user stories
 
 
-[**Jigsaw CSS Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/cssValidation.png) - Validating the css for project.
+[**Jigsaw CSS Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/cssValidation.png) - Validation of the css for project.
 
-[**Jigsaw HTML Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/htmlValidation.png) - Validating the html for project.
+[**Jigsaw HTML Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/htmlValidation.png) - Validation of the html for project.
 
 [**JSHint Test Result**](https://jsonformatter.curiousconcept.com/) 
 
@@ -135,9 +134,6 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
-[**JSHint**](https://jshint.com/) - To help to detect errors and potential problems in JavaScript. 
-
-[**JSONLint**](https://jsonlint.com/) - For validation of GeoJson data.
 
 
 #### Describe use on different browsers
