@@ -1,5 +1,4 @@
 
-
 // - MAPS - //
 
 // - Basemaps variables - //
@@ -204,4 +203,3 @@ var overlays = {
 };
 // - Add it all to the map - //
 L.control.layers(basemapLayers, overlays).addTo(map);
-
