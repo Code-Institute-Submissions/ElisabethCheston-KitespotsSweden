@@ -63,6 +63,8 @@ Feature functions in the project:
 * **bringToFront function** - In order to put the city markers on top of polygon layer to make them selectable.
 
 * **Attribution** - In the bottom right corner user can see the attribution from map providers and other integrated systems used.
+* 
+* **Start Modal popup** - A presentation popup of the page that shows when page is loaded.
 
 
 #### Features Left to Implement
@@ -275,6 +277,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Polygon overlay](https://gis.stackexchange.com/a/385670/175494) from [Falke Design](http://falke-design.bplaced.net/)
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
 - [Fit popup image on map](https://jsfiddle.net/09pe8ko6/)
+- [Information modal] (https://www.w3schools.com/howto/howto_css_modals.asp)
     
 **Media**
 
