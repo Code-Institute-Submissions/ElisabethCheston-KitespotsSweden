@@ -34,6 +34,8 @@ Feature functions in the project:
 
 #### Existing Features
 
+* **Popup Start Modal** - The first time user visit the site, a popup window appears with information about the site.
+
 * **Zooms** - In the top left corner user can zoom in and out of the map window to better research the area.
 
 * **Search Control** – A dropdown list (in the top right corner) that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easier to search for the name instead of a control user have to write in the names.
@@ -62,9 +64,9 @@ Feature functions in the project:
 
 * **bringToFront function** - In order to put the city markers on top of polygon layer to make them selectable.
 
-* **Attribution** - In the bottom right corner user can see the attribution from map providers and other integrated systems used.
-* 
-* **Start Modal popup** - A presentation popup of the page that shows when page is loaded.
+* **Information Modal** - A popup modal providing the user with information of how to use the page.
+
+* **Attribution Modal** - A popup modal where user can see the attribution for the website..
 
 
 #### Features Left to Implement
@@ -277,12 +279,14 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Polygon overlay](https://gis.stackexchange.com/a/385670/175494) from [Falke Design](http://falke-design.bplaced.net/)
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
 - [Fit popup image on map](https://jsfiddle.net/09pe8ko6/)
-- [Information modal] (https://www.w3schools.com/howto/howto_css_modals.asp)
+- [The popup Start modal] (https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+- [Information & Attribution modal] (https://www.w3schools.com/howto/howto_css_modals.asp)
     
 **Media**
 
 * Logo pictures:
-
+[Surfskolan] (https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
+[Surfzone] (https://www.surfzone.se/forums/forum/kitesurfing/)
 [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 
 
@@ -391,6 +395,8 @@ https://elisabethcheston.github.io/KitespotsSweden/
 Inspiration for this project from;
 
 * [Windy.com](https://www.windy.com/?59.327,18.065,5,i:pressure)
+* [Surfzone] (https://www.surfzone.se/forums/forum/kitesurfing/)
+* [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 * Kitesurfing friend
 
 
