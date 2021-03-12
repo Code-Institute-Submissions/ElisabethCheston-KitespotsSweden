@@ -60,19 +60,24 @@
             <div class="modal-header" id="startView">
                 <button id="pagename" type="button" class="close" data-dismiss="modal"
                     aria-hidden="true">&times;</button>
-                <h2 class="modal-title">
+                <h1 class="modal-title">
                     <center>Kitespots Sweden</center>
-                </h2>
+                </h1>
             </div>
             <div class="modal-body">
                 <h5><strong>
                         <center>This webpage will show ALL current
                             functional kitespots located in Sweden!
-                    </center></strong></h5>
+                        </center>
+                    </strong></h5>
 
-                <p><center>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?</center></p>
-                <p><center>This site will provide you with all the current functional kitespots in
-                    Sweden, open to the public.</center></p>
+                <p>
+                    <center>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?</center>
+                </p>
+                <p>
+                    <center>This site will provide you with all the current functional kitespots in
+                        Sweden, open to the public.</center>
+                </p>
             </div>
             <div class="modal-footer">
                 <!-- <button type="button" class="btn-primary">Understood</button> -->
@@ -81,14 +86,11 @@
     </div>
 
     <!-- CONTAINERS -->
-    <header class="row nav" id="header">
-        <div>
-            <a class="nav-link" id="navlink" href="index.html">Kitespots Sweden<span class="sr-only"></span></a>
-        </div>
+    <header class="nav" id="header">
 
-        <div class="btn-group text-right" role="group">
+        <div class="nav-container">
 
-            <button class="btnInfo modal-buttons icon-info" id="infoButton"> Informatiton </button>
+            <button class="btnInfo modal-buttons headerlinks" id="infoButton"> Informatiton </button>
             <!-- The Infomation Modal -->
             <div id="modalInfo" class="modalInfo">
 
@@ -96,7 +98,7 @@
                 <div class="infoBox">
                     <span class="closeInfo">&times;</span>
                     <div class="info-body">
-                        <h3><strong>Information!</strong></h3>
+                        <h2><strong>Information!</strong></h2>
                         <ul>
 
                             <li>
@@ -131,10 +133,11 @@
                     </div>
                 </div>
             </div>
-
+            <div class="nav-link">
+                <a class="logoname" id="navlink" href="index.html">Kitespots Sweden<span class="sr-only"></span></a>
+            </div>
             <!-- ATTRIBUTES -->
-
-            <button class="btnAttribute modal-buttons icon-attribute" id="attributeBtn"> Attribute </button>
+            <button class="btnAttribute modal-buttons headerlinks" id="attributeBtn"> Attribution </button>
             <!-- The Attribution Modal -->
             <div id="modalAttribute" class="attributeModal">
 
@@ -152,7 +155,8 @@
                             style="max-width: 573px;">
                             <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>
                             | Powered by <a href="https://www.esri.com">Esri</a> | <span
-                                class="esri-dynamic-attribution" style="max-width: 573px;">Esri, HERE, Garmin, FAO,
+                                class="esri-dynamic-attribution" style="max-width: 573px;">Esri, HERE, Garmin,
+                                FAO,
                                 NOAA, USGS</span>
                         </div>
                         <br />
@@ -180,68 +184,27 @@
     <!-- FOOTER -->
 
     <footer id="footer">
-        <!--
-        <div class="linkbuttons">
-            <div class="buttons">
 
-                <button class="kiteswed-button icon-front">
-                    <img src="images/surfskolan.png" aria-hidden="true">
-                    <a class="link" target="_blank" href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw"></a>
-                </button>
-                <div class="kiteswed-button name-back">Surfskolan
-                </div>
+        <!-- Link to Surfskolans youtube channel -->
 
-            </div>
-        </div>
-
-        <div class="linkbuttons">
-            <div class="buttons">
-
-                <button class="kiteswed-button icon-front">
-                    <img src="images/surfzone.png" aria-hidden="true">
-                    <a class="link" target="_blank" href="https://www.surfzone.se/forums/forum/kitesurfing/"></a>
-                </button>
-                <div class="kiteswed-button name-back">Surfzone
-                </div>
-
-            </div>
-        </div>
-
-        <div class="linkbuttons">
-            <div class="buttons">
-
-                <button class="kiteswed-button icon-front">
-                    <img src="images/kiteboardcenter.svg" aria-hidden="true">
-                    <a class="link" target="_blank" href="https://kiteboardcenter.se/"></a>
-                </button>
-                <div class="kiteswed-button name-back">kiteboardcenter
-                </div>
-
-            </div>
-        </div>
-
-        <a class="btn btn-primary" href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">Link</a>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
-
-    -->
-
-
-
-        <a class="btn-footer kiteswed-button" id="surfskolan-button" href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">
-
+        <a class="btn-footer kiteswed-button" id="surfskolan-button"
+            href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">
             <img src="images/surfskolan.png" aria-hidden="true">
-</a>
-                    <a class="btn-footer kiteswed-button" id="surfzone-button" href="https://www.surfzone.se/forums/forum/kitesurfing/" role="button">
+        </a>
 
+
+        <!-- Link to Surfzone -->
+
+        <a class="btn-footer kiteswed-button" id="surfzone-button"
+            href="https://www.surfzone.se/forums/forum/kitesurfing/" role="button">
             <img src="images/surfzone.png" aria-hidden="true">
-</a>
-                <a class="btn-footer kiteswed-button" id="kiteswed-button" href="https://kiteboardcenter.se/" role="button">
+        </a>
 
+        <!-- Link to Kiteboardcenter -->
+
+        <a class="btn-footer kiteswed-button" id="kiteswed-button" href="https://kiteboardcenter.se/" role="button">
             <img src="images/kiteboardcenter.svg" aria-hidden="true">
-</a>
+        </a>
 
 
     </footer>
