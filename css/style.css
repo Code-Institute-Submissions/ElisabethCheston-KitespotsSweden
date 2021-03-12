@@ -1,119 +1,112 @@
 /* MAP */
 html, body, #map {
-    height: 88vh;
+    height: 86vh;
     width: 100%;
     position: relative;
     padding: 0px;
     margin: 0px;
 }
 #header {
-    height: 6vh;
-    background-color: rgba(0,0,0,0.7);
+    height: 7vh;
+    background: linear-gradient(to bottom, rgba(66, 66, 66, 0.5), rgba(214, 210, 205, 0.7), rgba(247, 245, 245, 0.7), rgba(54, 54, 54, 0.5));
     align-items: center;
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
 }
 #footer {
-    height: 6vh;
-    background-color: rgba(0,0,0,0.7);
-    justify-content: space-between;
+    height: 7vh;
     align-items: center;
-    display: flex;    
+    display: flex;
+    padding: 0px;
+    margin: 0px;        
 }
 
-#max-height {
-    height: 60vw;
-}
+/* FONT & LINK STYLES */
 
-/* HEADER LINK */
-.nav-link {
+h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 50vw;
+    text-transform: uppercase;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Lato';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h5 {
+    font-family: 'Lato';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(112, 76, 35, 0.8);
+}
+p {
+    font-family: 'Lato';
+    font-size: 14px; 
+}
+a {
+    color: rgba(71, 70, 69, 0.8);
+}
+a:link,
+.leaflet-control-attribution a {
+    color: rgba(184, 96, 8, 0.8) !important;
+}
+
+/* HEADER  */
+/* Link left side */
+.nav-link {
+    font-family: 'Lato';
+    color: rgba(71, 64, 57, 0.8);
+    width: 40vw;
+    font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgba(247, 231, 197, 0.8);
-    justify-content: left;
     padding-right: 10px;
     font-size: 18px;
-    font-weight: 700;
-    outline: none;
-    text-underline-position: none;
-    padding-bottom: 1px;
-    margin-bottom: 4px;
+    -webkit-text-stroke: 2px rgba(71, 50, 27, 0.3);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;     
+}
+#navlink:hover {
+    color: rgba(192, 125, 70, 0.99);
+    font-size: 20px;
+    -webkit-text-stroke: 2px rgba(95, 63, 29, 0.3);    
 }
 
-/* HEADER BUTTON */
+
+/*  Buttons right side */
 .btn-group {
-    width: 50vw;
-    background: rgba(0,0,0,0.01);
+    width: 70vw;
+    justify-content: space-between;
+    float: right;
 }
 .modal-buttons {
-    float: right;
     font-family: 'Lato';
-    background-color: rgba(0,0,0,0.01);
-    color: inherit;
+    height: 3vh;
+    background-color: rgba(65, 64, 64, 0.01);
+    color: rgba(90, 69, 31, 0.8);
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;       
     cursor: pointer;
     border: none;
-    align-items: center;
-    justify-content: right;
-    padding: 4px, 6px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: rgba(247, 231, 197, 0.8);
-    font-size: 11px;
-    font-weight: 700;
-    outline: none;
+    float: right;
+    outline-style: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;    
 }
 
-/* FONT */
+/* Information & Attribution Buttons */
 
-h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
-}
-h3, h4, h5, h6 {
-    font-family: 'Lato';
-    font-weight: bold;
-    text-transform: uppercase;
-}
-p {
-    font-family: 'Lato';
-    font-size: 13px; 
-}
-/* INFO BUTTON */
-
-.btnInfo:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-}
-.icon-info:before {
-    content: "\f05a";
-}
-.btnInfo:hover {
-    background:rgba(44, 44, 44, 0.6);
-    color: rgba(235, 206, 145, 0.8);
-}
-
-/* ATTRIBUTION BUTTON */
-
+.btnInfo:after,
 .btnAttribute:after {
     content: '';
-    position: relative;
     z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+
 }
+.btnInfo:before,
 .btnAttribute:before {
     font-family: 'FontAwesome';
     font-style: normal;
@@ -121,118 +114,143 @@ p {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    position: relative;
     -webkit-font-smoothing: antialiased;
+}
+
+.btnInfo:hover,
+.btnAttribute:hover {
+    color: rgba(165, 122, 69, 0.99);
+    font-size: 13px;
+}
+
+/* Button icons */
+
+.icon-info:before {
+    content: "\f05a";
 }
 .icon-attribute:before {
     content: "\f004";
 }
-.btnAttribute:hover {
-    background:rgba(44, 44, 44, 0.6);
-    color: rgba(235, 206, 145, 0.8);
 
-}
-
-/* HEADER MODAL */
-
-
+/* HEADER & START MODAL */
 
 .modalInfo,
 .attributeModal,
 .startModal {   
     display: none;
-    position: fixed; 
-    z-index: 900;
-    left: 0;
-    top: 0;
+    position: absolute; 
+    z-index: 1100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 100%; 
-    height: 100vh;
+    height: 140%;
     overflow: auto;
     transition: 400ms ease-in-out;
-    background-color: rgba(0,0,0,0.5); 
+    background-color: rgba(0,0,0,0.7); 
+    
 }
 .infoBox,
 .attributionBox,
 .modal-content {
-    background-color: rgba(250, 237, 210, 0.9);
-    margin: 45% auto;
-    padding: 15px;
+    background: linear-gradient(to bottom, rgba(214, 210, 210, 0.8), rgba(250, 240, 229, 0.8), rgba(255, 242, 225, 0.8), rgba(179, 177, 177, 0.8));
+    margin: 35% auto;
+    padding: 18px;
     border: 1px solid #888;
     width: 70%;
     border-radius: 4px;
     background-origin: padding-box;
     box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;     
 }
 .closeInfo,
 .closeAttribute,
 .close {
     color: rgba(114, 113, 113, 0.8);
-    float: right;
     font-size: 28px;
     font-weight: bold;
 }
 .close {
     border: none;
     background-color: rgba(250, 237, 210, 0.1);
+
 }
+.close:hover,
+.close:focus,
 .closeInfo:hover,
 .closeInfo:focus,
 .closeAttribute:hover,
 .closeAttribute:focus {
-    color: black;
+    color: rgba(0,0,0,0.8);
     text-decoration: none;
     cursor: pointer;
 }
-.info-body,
-.attribution-body {
-    padding: 10px 15px;
-    color: rgba(0,0,0,0.8);
-    font-size: 12px;
-    font-family: 'Lato';
-}
 
 /* LEAFLET CONTROLS */
-.leaflet-control-zoom-in,
-.leaflet-control-zoom-out,
-.leaflet-bar, 
-.leaflet-control {
-    background-color: rgba(114, 113, 113, 0.9) !important;
-    box-shadow: 0 1px 20px rgba(211, 210, 210, 0.3);
-    border-radius: 4px;
-    z-index: 900;
 
-}
-
-/* DROPDOWN LIST */
+/* Dropdown list */
+.list-group-item,
 #selectSpot {
-    background-color: rgba(114, 113, 113, 0.8) !important;
-    color: rgba(247, 231, 197, 0.9);
+    height: 25px;
+    background-color: rgba(65, 64, 64, 0.02);
+    color: rgba(80, 64, 35, 0.8);
+    background: linear-gradient(to bottom, rgba(160, 160, 160, 0.5), rgba(240, 239, 238, 0.7),  rgba(163, 163, 163, 0.5));
+    border-radius: 4px;
+    z-index: 900; 
 }
-.leaflet-control-layers-list {
-    color: rgba(247, 231, 197, 0.9);
-    font-size: small;
+.leaflet-control-layers {
+    font-family: 'Lato';
+    font-size: medium;
+    background: linear-gradient(to bottom, rgba(129, 128, 128, 0.5), rgba(243, 241, 237, 0.7), rgba(247, 245, 245, 0.7), rgba(78, 76, 76, 0.5));
+    color: rgba(71, 71, 69, 0.8);
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;     
 }
 
-/* LAYER CONTAINER */
-.leaflet-control-scale,
-.leaflet-control-layers-toggle {
-    border-radius: 3px;
-    color: rgba(247, 231, 197, 0.9);
-    font-size: small;
-    background-origin: padding-box;
-    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+/* Zoom Control */
+a.leaflet-control-zoom-in,
+a.leaflet-control-zoom-out {
+    color: rgba(71, 70, 69, 0.8);
 }
+.leaflet-control-zoom-in {
+    background: linear-gradient(to bottom, rgba(88, 88, 88, 0.5), rgba(240, 238, 238, 0.7));
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    color: rgba(71, 70, 69, 0.8);
+    -webkit-text-stroke: 2px rgba(75, 62, 47, 0.4)
+}
+.leaflet-control-zoom-out {
+    background: linear-gradient(to bottom,  rgba(214, 213, 213, 0.7), rgba(37, 37, 37, 0.5));
+    color: rgba(66, 66, 64, 0.8);
+    -webkit-text-stroke: 2px rgba(58, 46, 33, 0.6)    
+
+    /*    -webkit-text-stroke: 1px rgba(245, 202, 150, 0.4); */ 
+}
+.leaflet-control-zoom-in:hover {
+    -webkit-text-stroke: 1px rgba(252, 206, 151, 0.4);
+}
+.leaflet-control-zoom-out:hover {
+    -webkit-text-stroke: 1px rgba(247, 166, 67, 0.4);
+}
+
+
+/* Scale Control */
 .leaflet-control-scale {
-    border: 2px;
-    border-color: rgba(250, 250, 250, 0.89);
+    float: right;
 }
 .leaflet-control-scale-line {
-    color: rgba(247, 231, 197, 0.9);
+    color: rgba(88, 71, 38, 0.8);
     font-size: small;
     height: 15px;
-    background-color: rgba(114, 113, 113, 0.1) !important;
-    margin: 5px;
+    background: linear-gradient(to bottom, rgba(134, 134, 134, 0.5), rgba(247, 247, 247, 0.7), rgba(128, 127, 127, 0.5));
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
+
 
 /* CLUSTER */
 .marker-cluster {
@@ -243,31 +261,29 @@ p {
 }
 
 /* FOOTER */
-.btn-footer {
+
+/* Button links */
+.kiteswed-button {
     font-family: 'Lato';
-    background: rgba(0,0,0,0.1);
     width: 100vw;
-    color: inherit;
+    height: 7vh;
     cursor: pointer;
     border: none;
     display: inline-block;
     margin: 15px 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgba(247, 231, 197, 0.8);
-    font-size: 12px;
-    font-weight: 700;
     outline: none;
     position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: all 0.3s;     
+    background: linear-gradient(to bottom, rgba(94, 77, 69, 0.5), rgba(247, 240, 230, 0.7), rgba(250, 241, 241, 0.7), rgba(94, 89, 86, 0.5));
 }
 .btn-footer:hover {
-  background:rgba(44, 44, 44, 0.6);
+    background: linear-gradient(to bottom, rgba(70, 62, 62, 0.5), rgba(212, 208, 203, 0.7), rgba(219, 219, 219, 0.7), rgba(41, 38, 38, 0.5));  
 }
 .btn-footer:active {
-  background: rgba(65, 64, 64, 0.6);
   top: 2px;
 }
 .btn-footer:before {
@@ -280,31 +296,23 @@ p {
     line-height: 3;
     position: relative;
     -webkit-font-smoothing: antialiased;
+
+
 }
 
-/* LINKS AND ICONS */
-a:link {
-    text-decoration: none;
-    color: rgba(247, 231, 197, 0.9);
+/* Logos */
+img{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
 }
-a:visited {
-    text-decoration: none;
-    color: rgba(231, 217, 186, 0.9);
-}
-a:hover {
-    text-decoration: none;
-    color: rgba(235, 206, 145, 0.9);
-}
-a:active {
-    text-decoration: none;
-    color: rgba(247, 231, 197, 0.9);
-}
-.icon-github:before {
-    content: "\f092";
-}
-.icon-contact:before {
-    content: "\f0e0";
-}
-.icon-linkedin:before {
-    content: "\f08c";
+img:hover {
+    height: 44px;
+    width: 78px;
+
 }

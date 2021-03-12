@@ -7,22 +7,19 @@ var topographic = L.esri.basemapLayer('Topographic');
 var streets = L.esri.basemapLayer('Streets');
 var darkGray = L.esri.basemapLayer('DarkGray');
 
+
 // - Create an on load ESRI basemap - //
 var map = new L.map('map', {
     center: [62.45, 17.45],
     zoom: 5,
+    zoomControl: false,
     attributionControl: false
+
 });
 L.esri.basemapLayer('Topographic').addTo(map);
 
 
-// - ATTRIBUTION - //
-
-var pageAttribution = new L.control.attribution({
-    showAttribution: true, 
-    position: 'center' 
-});
-
+// map.attributionControl.setPosition(...)
 
 
 // - GEOLOCATOR - //

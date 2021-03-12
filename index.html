@@ -7,10 +7,17 @@
 
     <!-- ** CDN - CSS ** -->
     <!-- Leaflet, ESRI -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <!-- ESRI cluster css cdn incl. default -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" integrity="sha512-BBToHPBStgMiw0lD4AtkRIZmdndhB6aQbXpX7omcrXeG2PauGBl2lzq2xUZTxaLxYz5IDHlmneCZ1IJ+P3kYtQ==" crossorigin="">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" integrity="sha512-RLEjtaFGdC4iQMJDbMzim/dOvAu+8Qp9sw7QE4wIMYcg2goVoivzwgSZq9CsIxp4xKAZPKh5J2f2lOko2Ze6FQ==" crossorigin="">
+    <link rel="stylesheet" type="text/css"
+        href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+        integrity="sha512-BBToHPBStgMiw0lD4AtkRIZmdndhB6aQbXpX7omcrXeG2PauGBl2lzq2xUZTxaLxYz5IDHlmneCZ1IJ+P3kYtQ=="
+        crossorigin="">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
+        integrity="sha512-RLEjtaFGdC4iQMJDbMzim/dOvAu+8Qp9sw7QE4wIMYcg2goVoivzwgSZq9CsIxp4xKAZPKh5J2f2lOko2Ze6FQ=="
+        crossorigin="">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
@@ -18,11 +25,18 @@
 
     <!-- ** CDN - JS ** -->
     <!-- Leaflet, ESRI -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script src="https://unpkg.com/esri-leaflet@2.5.3/dist/esri-leaflet.js" integrity="sha512-K0Vddb4QdnVOAuPJBHkgrua+/A9Moyv8AQEWi0xndQ+fqbRfAFd47z4A9u1AW/spLO0gEaiE1z98PK1gl5mC5Q==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.5.3/dist/esri-leaflet.js"
+        integrity="sha512-K0Vddb4QdnVOAuPJBHkgrua+/A9Moyv8AQEWi0xndQ+fqbRfAFd47z4A9u1AW/spLO0gEaiE1z98PK1gl5mC5Q=="
+        crossorigin=""></script>
     <!-- Leaflet cluster js cdn for different verions incl layersupport -->
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js" integrity="sha512-MQlyPV+ol2lp4KodaU/Xmrn+txc1TP15pOBF/2Sfre7MRsA/pB4Vy58bEqe9u7a7DczMLtU5wT8n7OblJepKbg==" crossorigin=""></script>
-    <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"
+        integrity="sha512-MQlyPV+ol2lp4KodaU/Xmrn+txc1TP15pOBF/2Sfre7MRsA/pB4Vy58bEqe9u7a7DczMLtU5wT8n7OblJepKbg=="
+        crossorigin=""></script>
+    <script
+        src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.0.4/dist/leaflet.markercluster.js"></script>
     <!-- ESRI cluster -->
     <script src="https://unpkg.com/esri-leaflet-cluster@2.1.0/dist/esri-leaflet-cluster.js"
@@ -42,119 +56,202 @@
 
     <!-- POPUP START MODAL -->
     <div id="startModal" class="startModal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h2 class="modal-title"><center>Kitespots Sweden</center></h2>
-                </div>
-                <div class="modal-body">
-                    <h5><strong><center>This webpage will show ALL current
-                    functional kitespots locations in Sweden!</center></strong></h5>
-
-                    <p>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?</p>
-                    <p>This site will provide you with all the current functional kitespots in
-                    Sweden, thats open to the public.</p>
-                </div>
-                <div class="modal-footer">
-               <!-- <button type="button" class="btn-primary">Understood</button> -->
-                </div>
+        <div class="modal-content">
+            <div class="modal-header" id="startView">
+                <button id="pagename" type="button" class="close" data-dismiss="modal"
+                    aria-hidden="true">&times;</button>
+                <h2 class="modal-title">
+                    <center>Kitespots Sweden</center>
+                </h2>
             </div>
+            <div class="modal-body">
+                <h5><strong>
+                        <center>This webpage will show ALL current
+                            functional kitespots located in Sweden!
+                    </center></strong></h5>
+
+                <p><center>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?</center></p>
+                <p><center>This site will provide you with all the current functional kitespots in
+                    Sweden, open to the public.</center></p>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn-primary">Understood</button> -->
+            </div>
+        </div>
     </div>
 
     <!-- CONTAINERS -->
     <header class="row nav" id="header">
-        <div class="col-6">
-        <a class="nav-link" href="index.html">Kitespots Sweden<span class="sr-only"></span></a>
+        <div>
+            <a class="nav-link" id="navlink" href="index.html">Kitespots Sweden<span class="sr-only"></span></a>
         </div>
 
-        <div class="btn-group" role="group">
-            <button class="btnInfo modal-buttons icon-info" id="infoButton"> Informatiton  </button>
-        
+        <div class="btn-group text-right" role="group">
+
+            <button class="btnInfo modal-buttons icon-info" id="infoButton"> Informatiton </button>
             <!-- The Infomation Modal -->
             <div id="modalInfo" class="modalInfo">
 
-            <!-- Modal content -->
+                <!-- Modal content -->
                 <div class="infoBox">
-                <span class="closeInfo">&times;</span>
-                <div class="info-body">
-                    <h2><strong>Information!</strong></h2>
+                    <span class="closeInfo">&times;</span>
+                    <div class="info-body">
+                        <h3><strong>Information!</strong></h3>
+                        <ul>
 
-                    <h4><strong>"CHOOSE A KITESPOT"</strong></h4>
-                    <p>By selecting a spot you like to research and the page will zoom in to its position.</p>
+                            <li>
+                                <h5><strong>"Research A KITESPOT"</strong></h5>
+                                <p>Select your spot in the "CHOOSE A KITESPOT" window.
+                                    The page will zoom in to the spot and you can research the surrounding.
+                                </p>
 
-                    <h4><strong>LAYER CONTROL</strong></h4>
-                    <p>In the Layer Control (right under "CHOOSE A KITESPOT") you can view the selected spot in different
-                        map views to easier analyze launging area/surrounding/water dept/etc.
-                        options.</p>
+                            </li>
+
+                            <li>
+                                <h5><strong>LAYER CONTROL</strong></h5>
+                                <p>The Layer Control (right under "CHOOSE A KITESPOT") has different map view
+                                    to easier analyze launging area/surrounding/water dept/etc.<br />
+                                    You can also see layers for the regions the spots are locaded in and the
+                                    cities in them.
+                                </p>
+                            </li>
+                            <li>
+                                <h5><strong>Links & Communities in Sweden</strong></h5>
+                                <p>There are many communities and business for kitesurfing in Sweden.
+                                    At the bottom of the page you find links to three that will help
+                                    you get in contact with fellow surfers.
+                                </p>
+
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-    <!-- ATTRIBUTES -->
+            <!-- ATTRIBUTES -->
 
-            <button class="btnAttribute modal-buttons icon-attribute" id="attributeBtn"> Attribute  </button>
-            
+            <button class="btnAttribute modal-buttons icon-attribute" id="attributeBtn"> Attribute </button>
             <!-- The Attribution Modal -->
             <div id="modalAttribute" class="attributeModal">
 
-            <!-- Modal content -->
+                <!-- Modal content -->
                 <div class="attributionBox">
                     <span class="closeAttribute">&times;</span>
                     <div class="attribution-body">
-                        <h4><strong>Attribution for this page!</strong></h4>
+                        <h2><strong>Attribution for this page!</strong></h2>
 
-                        <div id="attribution"></div>
+                        <div id="attribution" class="pageAttributes"></div>
 
                         <p>Attribution information from ESRI and Leaflet</p>
 
-                        <div class="footer-attributes">
-                            Website by Liah Cheston &copy; 2021
+                        <div class="leaflet-control-attribution leaflet-control esri-truncated-attribution:hover esri-truncated-attribution"
+                            style="max-width: 573px;">
+                            <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>
+                            | Powered by <a href="https://www.esri.com">Esri</a> | <span
+                                class="esri-dynamic-attribution" style="max-width: 573px;">Esri, HERE, Garmin, FAO,
+                                NOAA, USGS</span>
+                        </div>
+                        <br />
+                        <br />
+
+                        <div>
+                            <p>
+                                Website by Liah Cheston &copy; 2021
+                            </p>
                         </div>
 
                     </div>
                 </div>
             </div>
+
         </div>
 
     </header>
 
-
-    <!-- DIRECTIONS -->
-    <div id="dir"></div>
 
     <!-- MAP -->
     <div id="map"></div>
 
 
     <!-- FOOTER -->
-    
-    <footer id="footer">
 
-        <button class="btn-footer icon-github" id="github">
-            <a class="link" target="_blank" id="link" href="https://github.com/ElisabethCheston/"> GitHub
-                <span class="sr-only">
-                </span>
-            </a>
-        </button>
-        <button class="btn-footer icon-contact" id="contact">
-            <a href="mailto:lab.cyphers@gmail.com" class="text"> CONTACT
-                <span class="sr-only">
-                </span>
-            </a>
-        </button>
-        <button class="btn-footer icon-linkedin" id="linkedin">
-            <a class="link" target="_blank" href="https://www.linkedin.com/in/LiahCheston/"> LinkedIn
-                <span class="sr-only">
-                </span>
-            </a>
-        </button>
+    <footer id="footer">
+        <!--
+        <div class="linkbuttons">
+            <div class="buttons">
+
+                <button class="kiteswed-button icon-front">
+                    <img src="images/surfskolan.png" aria-hidden="true">
+                    <a class="link" target="_blank" href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw"></a>
+                </button>
+                <div class="kiteswed-button name-back">Surfskolan
+                </div>
+
+            </div>
+        </div>
+
+        <div class="linkbuttons">
+            <div class="buttons">
+
+                <button class="kiteswed-button icon-front">
+                    <img src="images/surfzone.png" aria-hidden="true">
+                    <a class="link" target="_blank" href="https://www.surfzone.se/forums/forum/kitesurfing/"></a>
+                </button>
+                <div class="kiteswed-button name-back">Surfzone
+                </div>
+
+            </div>
+        </div>
+
+        <div class="linkbuttons">
+            <div class="buttons">
+
+                <button class="kiteswed-button icon-front">
+                    <img src="images/kiteboardcenter.svg" aria-hidden="true">
+                    <a class="link" target="_blank" href="https://kiteboardcenter.se/"></a>
+                </button>
+                <div class="kiteswed-button name-back">kiteboardcenter
+                </div>
+
+            </div>
+        </div>
+
+        <a class="btn btn-primary" href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+    -->
+
+
+
+        <a class="btn-footer kiteswed-button" id="surfskolan-button" href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">
+
+            <img src="images/surfskolan.png" aria-hidden="true">
+</a>
+                    <a class="btn-footer kiteswed-button" id="surfzone-button" href="https://www.surfzone.se/forums/forum/kitesurfing/" role="button">
+
+            <img src="images/surfzone.png" aria-hidden="true">
+</a>
+                <a class="btn-footer kiteswed-button" id="kiteswed-button" href="https://kiteboardcenter.se/" role="button">
+
+            <img src="images/kiteboardcenter.svg" aria-hidden="true">
+</a>
+
 
     </footer>
 
-        <!-- JQuery to ensure safety on that third-party -->
+    <!-- JQuery to ensure safety on that third-party -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 
     <script src="js/cities.js"></script>
