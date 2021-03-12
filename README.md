@@ -37,7 +37,7 @@ Feature functions in the project:
 
 * **Popup Start Modal** - The first time user visit the site, a popup window appears with information about the site.
 
-* **Zooms** - In the top left corner user can zoom in and out of the map window to better research the area.
+* **Zooms** - On the maps right side user can zoom in and out of the map window to better research the area.
 
 * **Search Control** – A dropdown list (in the top right corner) that presents all kitespots. Since it can be hard to know the spelling of some places and user could have heard it by word of mouth, a dropdown list is easier to search for the name instead of a control user have to write in the names.
 
@@ -59,23 +59,31 @@ Feature functions in the project:
 
 * **Geolocator** - Shows users position on map if user have given permission to it in browser.
 
-* **Scale** - In the bottom left corner user can see the scale that changes value depending on the zoom level.
+* **Scale** - In the bottom right corner user can see the scale that changes value depending on the zoom level.
 
 * **Image popup fit screen** - In order for the popup not to get cut upon open.
 
 * **bringToFront function** - In order to put the city markers on top of polygon layer to make them selectable.
 
-* **Information Modal** - A popup modal providing the user with information of how to use the page.
+* **Information Button & Modal** - A button in top left header that opens a popup modal providing the user with information of how to use the page.
 
-* **Attribution Modal** - A popup modal where user can see the attribution for the website..
+* **Home function** - A link in the website name that brings you back to the original view.
+
+* **Attribution Button & Modal** - A button in the top right header that opens a popup modal where user can see the attribution for the website.
+
+* **Link to Surfskolan** - Link at bottom left footer to Surfskolans youtube.
+ 
+* **Link to Surfzone** - Link at bottom center footer to Surfskolans youtube.
+ 
+* **Link to Kiteboardcenter** - Link at bottom right footer to Surfskolans youtube.
+
 
 
 #### Features Left to Implement
-* **Weather prognose** – I would like to implement current and future weather info for each kitespot. Also, marker that changes color once its location works with the wind direction and the parameters showing good enough wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature. To get accurate information you need to use backend programs as well as payed services.
+* **Weather prognose** – Some type of weather prognoses would be nice to implement. Current or future weather information like wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature preferbly for each kitespot. To get accurate information you need to use backend programs as well as payed services.
 
-* **Kitespot information** – Like to implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception). To get accurate information you need to use backend programs as well as payed services.
+* **Kitespot information** – Implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception).
 
-* **Travel direction** – Implement traveling directions from current location to spot destination. For this you need to use a payed service in ESRI.
 
 
 ### Technologies Used
