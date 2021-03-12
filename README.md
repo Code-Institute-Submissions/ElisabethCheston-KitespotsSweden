@@ -9,17 +9,18 @@ The core focus for this MS2 project was to create functional JavaScript features
 This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current  functional spots in Sweden where you can surf. Important to provide maps so user can see the conditions of lounging area, sea depth, which way the spot faces and what the optimal wind direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in to the selected kitespot. 
 
 ### Research
-Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then I created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky water surface, etc.
+Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky water surface, etc.
 
 ### User Stories
-*	As a kitesurfer, I would like have easy access to all spots, to know its position on map.
+*	As a user, I would like have some basic information of the site, to know how to use it.
+*	As a kitesurfer, I would like have easy access to search among all spots, to know its position on map.
 *	As a kitesurfer, I want to be able to analyze the spots surrounding, to determine if it fits my needs.
-*	As a kitesurfer, I would like to get a comfirmation of the direction the beach is facing, to know if its an option for the weather.
+*	As a kitesurfer, I would like to get a comfirmation of that direction the beach is facing, to know if its an option for the weather.
 *	As a kitesurfer, I would like to be able to search for specific spots by name, to easily find it.
-*	As a kitesurfer, I would like to see a scale that shows distance, to the propoortions of the map.
-*	As a kitesurfer, I would like to be able to zoom in more on the spot to see the surrounding, to determine if launching area works for me.
-*	As a kitesurfer, I would like to see the kitespots on different maps, to plan trip.
-*	As a kitesurfer, I would like to know the nearest city, if am not from the area and need to look up commendations.
+*	As a kitesurfer, I would like to see a scale on maps, to know the proportions of the beach surroundings.
+*	As a kitesurfer, I would like to know of some surfing comunities, to check in and come in contact with other surfers.
+*	As a user, I would like to see some credit or attribution of the map, to know who made it.
+*	As a kitesurfer, I would be nice to see multiple layers of regions and cities on maps, to get to know areas for planing meetups.
 
 
 ### Wireframes
