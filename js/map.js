@@ -23,7 +23,7 @@ L.esri.basemapLayer('Topographic').addTo(map);
 
 
 // - GEOLOCATOR - //
-
+/*
 // Reference - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
 $(document).ready(function () {
     if ("geolocation" in navigator) {
@@ -43,7 +43,7 @@ $(document).ready(function () {
     }
 });
 
-
+*/
 
 // - KITESPOTS DROPDOWNLIST - //
 
@@ -54,7 +54,7 @@ var searchSpots = L.geoJson(kitespots, {
     onEachFeature: function (feature, layer) {
         var popup = '';
         if (feature.properties.name) {
-            popup += '<center><img src="images/kitesurf1.png"style="width:80px;height:200x;"/></center>' + '<p><b> ' + feature.properties.name + '</b><br/>' + "Wind Direction: " + feature.properties.windDirection + '<br/>' + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
+            popup += /*'<center><img src="images/kitesurf1.png"style="width:80px;height:200x;"/></center>' + */'<p><b> ' + feature.properties.name + '</b><br/>' + "Wind Direction: " + feature.properties.windDirection + '<br/>' + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
         }
         layer.bindPopup(popup);
     }
@@ -65,7 +65,7 @@ var selector = L.control({
     opacity: 0.8,
     size: 10
 });
-selector.onAdd = function (map) {
+selector.onAdd = function () {
     var div = L.DomUtil.create('div', 'list-group-item');
     div.innerHTML = '<select id = "selectSpot"><option value = "init">CHOOSE A KITESPOTS</option></select>';
     return div;

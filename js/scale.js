@@ -1,9 +1,10 @@
+
 // - SCALE - //
 
-L.control.scale( {
-    position:'bottomright'
+L.control.scale({
+    position: 'bottomright'
 }).addTo(map);
 
 L.control.zoom({
-     position:'topright'
+    position: 'topright'
 }).addTo(map);

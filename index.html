@@ -20,6 +20,7 @@
         crossorigin="">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.css">
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -43,13 +44,10 @@
         integrity="sha512-fEdNFHisleVtEYdLhW4Z2RsR7TN6hLutE/+O4D+skfTNY2rlHm8HOZARPWkdrFFy/+i2KjFxcZAKTUWaVfbV0g=="
         crossorigin=""></script>
 
-    <!-- ESRI route -->
-    <script src="https://unpkg.com/@esri/arcgis-rest-request@3.0.0/dist/umd/request.umd.js"></script>
-    <script src="https://unpkg.com/@esri/arcgis-rest-routing@3.0.0/dist/umd/routing.umd.js"></script>
-    <script src="https://unpkg.com/@esri/arcgis-rest-auth@3.0.0/dist/umd/auth.umd.js"></script>
+    <!-- Aeris weather  -->
+    <script defer src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
 
-    <title>KitespotsSweden</title>
-
+    <title>Kitespots Sweden</title>
 </head>
 
 <body>
@@ -61,22 +59,20 @@
                 <button id="pagename" type="button" class="close" data-dismiss="modal"
                     aria-hidden="true">&times;</button>
                 <h1 class="modal-title">
-                    <center>Kitespots Sweden</center>
+                    Kitespots Sweden
                 </h1>
             </div>
             <div class="modal-body">
-                <h5><strong>
-                        <center>This webpage will show ALL current
-                            functional kitespots located in Sweden!
-                        </center>
-                    </strong></h5>
+                <h5>
+                    This webpage will show ALL current functional kitespots located in Sweden!
+                </h5>
 
                 <p>
-                    <center>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?</center>
+                    Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?
                 </p>
                 <p>
-                    <center>This site will provide you with all the current functional kitespots in
-                        Sweden, open to the public.</center>
+                    This site will provide you with all the current functional kitespots in
+                    Sweden, open to the public.
                 </p>
             </div>
             <div class="modal-footer">
@@ -84,6 +80,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- CONTAINERS -->
     <header class="nav" id="header">
@@ -98,19 +95,18 @@
                 <div class="infoBox">
                     <span class="closeInfo">&times;</span>
                     <div class="info-body">
-                        <h2><strong>Information!</strong></h2>
+                        <h2>Information!</h2>
                         <ul>
 
                             <li>
-                                <h5><strong>"Research A KITESPOT"</strong></h5>
+                                <h5>"Research A KITESPOT"</h5>
                                 <p>Select your spot in the "CHOOSE A KITESPOT" window.
                                     The page will zoom in to the spot and you can research the surrounding.
                                 </p>
-
                             </li>
 
                             <li>
-                                <h5><strong>LAYER CONTROL</strong></h5>
+                                <h5>LAYER CONTROL</h5>
                                 <p>The Layer Control (right under "CHOOSE A KITESPOT") has different map view
                                     to easier analyze launging area/surrounding/water dept/etc.<br />
                                     You can also see layers for the regions the spots are locaded in and the
@@ -118,12 +114,11 @@
                                 </p>
                             </li>
                             <li>
-                                <h5><strong>Links & Communities in Sweden</strong></h5>
+                                <h5>Links & Communities in Sweden</h5>
                                 <p>There are many communities and business for kitesurfing in Sweden.
                                     At the bottom of the page you find links to three that will help
                                     you get in contact with fellow surfers.
                                 </p>
-
                             </li>
                         </ul>
 
@@ -145,7 +140,7 @@
                 <div class="attributionBox">
                     <span class="closeAttribute">&times;</span>
                     <div class="attribution-body">
-                        <h2><strong>Attribution for this page!</strong></h2>
+                        <h2>Attribution for this page!</h2>
 
                         <div id="attribution" class="pageAttributes"></div>
 
@@ -176,7 +171,6 @@
 
     </header>
 
-
     <!-- MAP -->
     <div id="map"></div>
 
@@ -189,7 +183,7 @@
 
         <a class="btn-footer kiteswed-button" id="surfskolan-button"
             href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">
-            <img src="images/surfskolan.png" aria-hidden="true">
+            <img src="images/surfskolan.png" aria-hidden="true" alt="Surfskolan | Sweden">
         </a>
 
 
@@ -197,13 +191,13 @@
 
         <a class="btn-footer kiteswed-button" id="surfzone-button"
             href="https://www.surfzone.se/forums/forum/kitesurfing/" role="button">
-            <img src="images/surfzone.png" aria-hidden="true">
+            <img src="images/surfzone.png" aria-hidden="true" alt="Surfzone | Sweden">
         </a>
 
         <!-- Link to Kiteboardcenter -->
 
         <a class="btn-footer kiteswed-button" id="kiteswed-button" href="https://kiteboardcenter.se/" role="button">
-            <img src="images/kiteboardcenter.svg" aria-hidden="true">
+            <img src="images/kiteboardcenter.svg" aria-hidden="true" alt="Kiteboardcenter | Sweden">
         </a>
 
 
@@ -223,6 +217,7 @@
     <script src="js/map.js"></script>
     <script src="js/scale.js"></script>
     <script src="js/startmodal.js"></script>
+    <script src="js/aeriskeys.js"></script>
 
 
 </body>
