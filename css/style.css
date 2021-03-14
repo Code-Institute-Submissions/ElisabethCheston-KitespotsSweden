@@ -53,9 +53,6 @@ p {
     font-family: 'Lato';
 }
 
-a {
-    color: rgba(71, 70, 69, 0.8);
-}
 
 a:link,
 .leaflet-control-attribution a {
