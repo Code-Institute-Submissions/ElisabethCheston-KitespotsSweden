@@ -304,8 +304,8 @@ https://elisabethcheston.github.io/KitespotsSweden/
 [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 
 * Videos:
-[Video: Kitesurfing - Gotland, Sweden (Youtub channel: David Sahlberg)] (https://www.youtube.com/watch?v=w_CF4NYWq-8)
-[Video: Sweden Snowkite heaven (Youtub channel: Surfskolan)] (https://www.youtube.com/watch?v=q1GcZsnPOhk)
+[Video: Kitesurfing - Gotland, Sweden Youtub channel: David Sahlberg] (https://www.youtube.com/watch?v=w_CF4NYWq-8)
+[Video: Sweden Snowkite heaven Youtub channel: Surfskolan] (https://www.youtube.com/watch?v=q1GcZsnPOhk)
 
 
 * Pictures used for cities:
