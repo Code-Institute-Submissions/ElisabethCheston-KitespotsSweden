@@ -9,6 +9,7 @@ Added features;
 * Information button of how to use the site.
 * Attribution button.
 * 3 buttons to external kitesurfing communities in Sweden.
+* 2 videos on start popup of kitesurfing and snowkiting.
 
 ## UX
 This webpage should provide all kitesurfers (and windsurfer/surfer) easy access to all the current  functional spots in Sweden where you can surf. Provide maps so user can analyze the conditions of for example lounging area, sea depth, which direction the beach is facing. Also provide regions and cities to give the user a sense of the areas. 
@@ -38,7 +39,7 @@ Feature functions in the project:
 
 #### Existing Features
 
-* **Popup Start Modal** - The first time user visit the site, a popup window appears with information about the site.
+* **Popup Start Modal** - The first time user visit the site, a popup window appears with information about the site. Includes 2 videos to play in the popup window.
 
 * **Zooms** - On the maps right side user can zoom in and out of the map window to better research the area.
 
@@ -293,6 +294,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Fit popup image on map](https://jsfiddle.net/09pe8ko6/)
 - [The popup Start modal] (https://www.w3schools.com/jsref/prop_win_localstorage.asp)
 - [Information & Attribution modal] (https://www.w3schools.com/howto/howto_css_modals.asp)
+- [Video playing in start modal](https://leafletjs.com/examples/video-overlay/)
     
 **Media**
 
@@ -300,6 +302,10 @@ https://elisabethcheston.github.io/KitespotsSweden/
 [Surfskolan] (https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
 [Surfzone] (https://www.surfzone.se/forums/forum/kitesurfing/)
 [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
+
+* Videos:
+[Video: Kitesurfing - Gotland, Sweden (Youtub channel: David Sahlberg)] (https://www.youtube.com/watch?v=w_CF4NYWq-8)
+[Video: Sweden Snowkite heaven (Youtub channel: Surfskolan)] (https://www.youtube.com/watch?v=q1GcZsnPOhk)
 
 
 * Pictures used for cities:
@@ -406,9 +412,8 @@ https://elisabethcheston.github.io/KitespotsSweden/
 
 Inspiration for this project from;
 
-* [Windy.com](https://www.windy.com/?59.327,18.065,5,i:pressure)
+* [Kiteboardcenter](http://kiteboardcenter.se/)
 * [Surfzone] (https://www.surfzone.se/forums/forum/kitesurfing/)
-* [Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
 * Kitesurfing friend
 
 
