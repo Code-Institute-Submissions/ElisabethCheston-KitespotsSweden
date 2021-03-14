@@ -15,12 +15,19 @@ var spanInfo = document.getElementsByClassName("closeInfo")[0];
 // When the user clicks on the button, open the modalInfo
 btnInfo.onclick = function () {
     modalInfo.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modalInfo
 spanInfo.onclick = function () {
     modalInfo.style.display = "none";
-}
+};
+
+// When the user clicks anywhere outside of the modalInfo, close it
+window.addEventListener("click", function(event) {
+    if (event.target == modalInfo) {
+        modalInfo.style.display = "none";
+    }
+}); 
 
 
 // - ATTRIBUTE MODAL - //
@@ -36,12 +43,12 @@ var spanAttribute = document.getElementsByClassName("closeAttribute")[0];
 // When the user clicks on the button, open the modalAttribute
 btnAttribute.onclick = function () {
     modalAttribute.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modalAttribute
 spanAttribute.onclick = function () {
     modalAttribute.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modalAttribute, close it
 window.addEventListener("click", function(event) {
@@ -49,10 +56,3 @@ window.addEventListener("click", function(event) {
         modalAttribute.style.display = "none";
     }
 });
-
-// When the user clicks anywhere outside of the modalInfo, close it
-window.addEventListener("click", function(event) {
-    if (event.target == modalInfo) {
-        modalInfo.style.display = "none";
-    }
-}); 

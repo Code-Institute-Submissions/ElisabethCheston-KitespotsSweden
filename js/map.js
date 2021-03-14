@@ -1,10 +1,10 @@
+
 // - MAPS - //
 // - Basemaps variables - //
 var hybrid = L.esri.basemapLayer('ImageryClarity');
 var topographic = L.esri.basemapLayer('Topographic');
 var streets = L.esri.basemapLayer('Streets');
 var darkGray = L.esri.basemapLayer('DarkGray');
-
 
 // - Create an on load ESRI basemap - //
 var map = new L.map('map', {
@@ -34,7 +34,8 @@ $(document).ready(function () {
             }).addTo(map);
         });
     } else {
-        console.log("Geolocation missing"); // geolocation is not available
+        // - geolocation is not available - //
+        console.log("Geolocation missing");
     }
 });
 
@@ -44,8 +45,8 @@ $(document).ready(function () {
 
 // Reference - https://www.codota.com/code/javascript/functions/leaflet/DomUtil
 // References - http://www.java2s.com/example/javascript/leaflet/searching-markers-with-leafletcontrolsearch-from-drop-down-list.html
+// - Variable for cluster and search source(kitespots). - //
 var clusterSpots = L.markerClusterGroup();
-// - Variable for search source(kitespots) - //
 var searchSpots = L.geoJson(kitespots, {
     onEachFeature: function (feature, layer) {
         var popup = '';
@@ -55,7 +56,7 @@ var searchSpots = L.geoJson(kitespots, {
         layer.bindPopup(popup);
     }
 });
-// - Create search engine and place it on map - //
+// - Create search engine and place it on map. - //
 var selector = L.control({
     position: 'topright',
     opacity: 0.8,
@@ -67,20 +68,24 @@ selector.onAdd = function () {
     return div;
 };
 selector.addTo(map);
-// - Function to browse and choose spots - //
+
+// - Function to browse and choose spots. - //
 searchSpots.eachLayer(function (layer) {
     var spotChoice = document.createElement("option");
     spotChoice.innerHTML = layer.feature.properties.label + " - " + layer.feature.properties.name;
     spotChoice.value = layer._leaflet_id;
     L.DomUtil.get("selectSpot").appendChild(spotChoice);
 });
+
 // - The selectSpot variable for the DomEvent listener. - //
 var selectSpot = L.DomUtil.get("selectSpot");
-// - Select kitespot on click - //
+
+// - Select kitespot on click. - //
 L.DomEvent.addListener(selectSpot, 'click', function (e) {
     L.DomEvent.stopPropagation(e);
 });
-// - ChangeHandler zooms in on choosen spot with popup. //
+
+// - ChangeHandler zooms in on choosen spot with popup. - //
 L.DomEvent.addListener(selectSpot, 'change', changeHandler);
 function changeHandler(e) {
     var selected = searchSpots.getLayer(e.target.value);
@@ -93,8 +98,16 @@ map.addLayer(clusterSpots);
 
 
 
-// - STYLE CITY MARKERS - //
+// - CITIES LAYER - //
 
+// - Json cities to map. - //
+var city = L.geoJson(cities, {
+    pointToLayer: function (features, latlng) {
+        return L.circleMarker(latlng, markerStyle)
+            .bindPopup("<img src='images/cityPic/" + features.properties.cityPic + "'style='width:300px;height:420x;'/><h2>" + features.properties.city + "</h2><h4>County: " + features.properties.admin_name + "<br/>Population: " + features.properties.population + "</h4>");
+    }
+});
+// - Style city markers. - //
 // Refrence: https://leafletjs.com/examples/geojson/           
 var markerStyle = {
     radius: 4,
@@ -105,46 +118,36 @@ var markerStyle = {
     fillOpacity: 0.8,
 };
 
-
-
-// - CITIES LAYER - //
-
-var city = L.geoJson(cities, {
-    pointToLayer: function (features, latlng) {
-        return L.circleMarker(latlng, markerStyle)
-            .bindPopup("<img src='images/cityPic/" + features.properties.cityPic + "'style='width:300px;height:420x;'/><h2>" + features.properties.city + "</h2><h4>County: " + features.properties.admin_name + "<br/>Population: " + features.properties.population + "</h4>");
-    }
-});
-
-
-// - CITY POPUP TO FIT ON MAP - //
-
+// - City popups to fit map. - //
 // Reference - https://jsfiddle.net/09pe8ko6/
 document.querySelector(".leaflet-popup-pane").addEventListener("load", function (event) {
     var target = event.target,
         tagName = target.tagName,
         popup = map._popup;
-    //console.log("got load event from " + tagName);
+
+    // - console.log("got load event from " + tagName); - //
     if (tagName === "IMG" && popup) {
         popup.update();
     }
-}, true); // Capture the load event, because it does not bubble.
+    // - Capture the load event. - //
+}, true);
 
 
 
 // - POLYGONS LAYER - //
 
+// - Creat variable and fetch json data. - //
 // Reference - https://gis.stackexchange.com/a/385670/175494 - Falke Design
 var polyRegions = L.featureGroup();
-//fetch json data..
 fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-lan-counties-of-sweden&q=&rows=22")
     .then(response => response.json())
     .then(data => {
-        // ..under 'records'..
+        // - ..under 'records'.. - //
         data.records.forEach((d) => {
-            //... 'fields.geo_shape' where coordinate data is.
+            // - ... 'fields.geo_shape' where coordinate data is. - //
             var polyJson = d.fields.geo_shape;
-            //view data in console
+
+            // - View data in console - //
             console.log(polyJson);
             var layer = L.GeoJSON.geometryToLayer(polyJson, {
                 radius: 6,
@@ -156,7 +159,7 @@ fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-l
             });
             polyRegions.addLayer(layer);
 
-            //Create circleMarker for popup of region name
+            // - Create circleMarker for popup of region name. - //
             var regionPoint = L.GeoJSON.coordsToLatLng(d.geometry.coordinates);
             var circle = L.circleMarker(regionPoint, {
                 radius: 5,
@@ -172,13 +175,11 @@ fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-l
     });
 
 
-
 // - BRING OVERLAY TO FRONT - //
 
 map.on('click', function () {
     city.bringToFront();
 });
-
 
 
 // - CONTROL LAYERS - //
@@ -192,7 +193,6 @@ var basemapLayers = {
 var overlays = {
     'Cities': city,
     'Regions': polyRegions
-
 };
 // - Add it all to the map - //
 L.control.layers(basemapLayers, overlays).addTo(map);
