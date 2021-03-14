@@ -3,11 +3,10 @@
 A map to locate all the current kitesurfing spots in Sweden.
 
 ### Background 
-The core focus for this MS2 project was to create functional JavaScript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. This is a resubmisson, improving the clearity of the the page and its use. 
-Added features;
-* Starting popup window with purpose of website..
-* Information button of how to use the site.
-* Attribution button.
+The core focus for this MS2 project was to create functional JavaScript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. This is a resubmission, improving the clarity of the page and its use. Added features;  
+* Starting popup window with purpose of website.
+* Information button of how to use the site in the header.
+* Attribution button in the header.
 * 3 buttons to external kitesurfing communities in Sweden.
 * 2 videos on start popup of kitesurfing and snowkiting.
 
@@ -53,7 +52,7 @@ Feature functions in the project:
 
 * **Base layers** - Gives the users the option to choose different maps to view the kitespots in. Only one map can be displayed at a time.
 
-* **Overlayer** - Gives the user the option to see cities and regions on map. Here both layers can be selected simultaneously.
+* **Overlayer** - Gives the user the option to see cities and regions on map. Both layers can be selected simultaneously and popups work.
 
 * **Kitespot popups with image and link** - Popup opens automatic upon selected.
 
@@ -77,14 +76,14 @@ Feature functions in the project:
 
 * **Link to Surfskolan** - Link at bottom left footer to Surfskolans youtube.
  
-* **Link to Surfzone** - Link at bottom center footer to Surfskolans youtube.
+* **Link to Surfzone** - Link at bottom center footer to Surfzone youtube.
  
-* **Link to Kiteboardcenter** - Link at bottom right footer to Surfskolans youtube.
+* **Link to Kiteboardcenter** - Link at bottom right footer to Kiteboardcenter youtube.
 
 
 
 #### Features Left to Implement
-* **Weather prognose** – Some type of weather prognoses would be nice to implement. Current or future weather information like wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature preferbly for each kitespot. To get accurate information you need to use backend programs as well as payed services.
+* **Weather prognose** – Some type of weather prognoses would be nice to implement. Current or future weather information like wind speed for kitesurfing, as well as information on weather conditions, water temperature, air temperature preferably for each kitespot. To get accurate information you need to use backend programs as well as payed services.
 
 * **Kitespot information** – Implement information on the different spots like launching size, beach condition (gras, sand, rocks..), water dept, as well as parking, GPS connection (a lot of areas don’t have a good reception).
 
@@ -301,15 +300,15 @@ https://elisabethcheston.github.io/KitespotsSweden/
 * Logo pictures:
 - [Surfskolan](https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
 - [Surfzone](https://www.surfzone.se/forums/forum/kitesurfing/)
-- [Kiteboard Center](https://kiteboardcenter.se/wp-content/uploads/2019/12/logokiteboardcenter.svg)
+- [Kiteboardcenter](https://kiteboardcenter.se/wp-content/uploads/2019/12/logokiteboardcenter.svg)
 
 
 * Videos:
-- ["Kitesurfing - Gotland, Sweden" David Sahlberg] (https://www.youtube.com/watch?v=w_CF4NYWq-8)
-- ["Sweden Snowkite heaven" Surfskolan] (https://www.youtube.com/watch?v=q1GcZsnPOhk)
+- [Kitesurfing - Gotland, Sweden by David Sahlberg](https://www.youtube.com/watch?v=w_CF4NYWq-8)
+- [Sweden Snowkite heaven by Surfskolan](https://www.youtube.com/watch?v=q1GcZsnPOhk)
 
 
-* Pictures used for cities:
+* City pictures:
 
 [Stockholm](https://www.umultirank.org/export/sites/default/.galleries/generic-images/Others/Winter-Calendar/stockholm-3897532_1280.jpg_2040981648.jpg)
 
