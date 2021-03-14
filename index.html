@@ -43,9 +43,7 @@
         integrity="sha512-fEdNFHisleVtEYdLhW4Z2RsR7TN6hLutE/+O4D+skfTNY2rlHm8HOZARPWkdrFFy/+i2KjFxcZAKTUWaVfbV0g=="
         crossorigin=""></script>
 
-
     <title>Kitespots Sweden</title>
-
 
 </head>
 
@@ -62,23 +60,18 @@
                 </h1>
             </div>
             <div class="modal-body">
-                <h5>
-                    This webpage will show ALL current functional kitespots located in Sweden!
-                </h5>
+                <h5>This webpage will show ALL current functional kitespots located in Sweden!</h5>
 
-                <p>
-                    Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?
-                </p>
-                <p>
-                    This site will provide you with all the current functional kitespots in
-                    Sweden, open to the public. Also present a couple of kitesurfing communities.
-                </p><br />
+                <p>Are you a kitesurfers (or windsurfer/surfer) traveling to/or live in Sweden?</p>
+
+                <p>This site will provide you with all the current functional kitespots in Sweden,
+                    open to the public. Also present a couple of kitesurfing communities.</p><br />
             </div>
 
-                        <div>
+            <!-- Video links that plays in start modal -->
+            <div>
                 <p>
                 <h2><a id="play-kite" href="#">What is kitesurfing?</a><br></h2>
-
                 <iframe src="https://www.youtube.com/embed/w_CF4NYWq-8" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -90,20 +83,17 @@
                     allowfullscreen></iframe>
                 </p>
             </div>
-
-            <div class="modal-footer">
-                <!-- <button type="button" class="btn-primary">Understood</button> -->
-            </div>
         </div>
     </div>
 
 
-    <!-- CONTAINERS -->
+    <!-- HEADER -->
     <header class="nav" id="header">
-
         <div class="nav-container">
 
+            <!-- The Infomation Button -->
             <button class="btnInfo modal-buttons headerlinks" id="infoButton"> Informatiton </button>
+
             <!-- The Infomation Modal -->
             <div id="modalInfo" class="modalInfo">
 
@@ -113,118 +103,104 @@
                     <div class="info-body">
                         <h2>Information!</h2>
 
-
-
                         <h5>"Research A KITESPOT"</h5>
                         <p>Select your spot in the "CHOOSE A KITESPOT" window.
-                            The page will zoom in to the spot and you can research the surrounding.
-                        </p>
+                            The page will zoom in to the spot and you can research the surrounding.</p>
 
                         <h5>LAYER CONTROL</h5>
                         <p>The Layer Control (right under "CHOOSE A KITESPOT") has different map view
                             to easier analyze launging area/surrounding/water dept/etc.<br />
                             You can also see layers for the regions the spots are locaded in and the
-                            cities in them.
-                        </p>
+                            cities in them.</p>
 
                         <h5>Links & Communities in Sweden</h5>
                         <p>There are many communities and business for kitesurfing in Sweden.
                             At the bottom of the page you find links to three that will help
-                            you get in contact with fellow surfers.
-                        </p>
+                            you get in contact with fellow surfers.</p>
 
-
-
-
-
+                        <h5>(Hidden Home Button)</h5>
+                        <p>If you like to get back to the original view or see the start popup modal
+                            with videos again, you can push the linked website name "Kitespot Sweden"
+                            in the top middle of the page.</p>
 
                     </div>
                 </div>
             </div>
+
+            <!-- Website name with hidden Home Button -->
             <div class="nav-link">
                 <a class="logoname" id="navlink" href="index.html">Kitespots Sweden<span class="sr-only"></span></a>
             </div>
-            <!-- ATTRIBUTES -->
+
+            <!-- Attribution Button -->
             <button class="btnAttribute modal-buttons headerlinks" id="attributeBtn"> Attribution </button>
-            <!-- The Attribution Modal -->
+
+            <!-- Attribution Modal -->
             <div id="modalAttribute" class="attributeModal">
 
                 <!-- Modal content -->
                 <div class="attributionBox">
                     <span class="closeAttribute">&times;</span>
                     <div class="attribution-body">
-                        <h2>Attribution for this page!</h2>
 
+                        <h2>Attribution for this page!</h2>
                         <div id="attribution" class="pageAttributes"></div>
 
                         <p>Attribution information from ESRI and Leaflet</p>
-
                         <div class="leaflet-control-attribution leaflet-control esri-truncated-attribution:hover esri-truncated-attribution"
                             style="max-width: 573px;">
-                            <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>
-                            | Powered by <a href="https://www.esri.com">Esri</a> | <span
-                                class="esri-dynamic-attribution" style="max-width: 573px;">Esri, HERE, Garmin,
-                                FAO,
-                                NOAA, USGS</span>
+                            <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> |
+                            Powered by <a href="https://www.esri.com">Esri</a> | <span class="esri-dynamic-attribution"
+                                style="max-width: 573px;">Esri, HERE, Garmin, FAO, NOAA, USGS</span>
                         </div>
                         <br />
                         <br />
-
                         <div>
-                            <p>
-                                Website by Liah Cheston &copy; 2021
-                            </p>
+                            <p>Website by Liah Cheston &copy; 2021</p>
                         </div>
-
                     </div>
                 </div>
+
             </div>
-
         </div>
-
     </header>
 
 
     <!-- MAP -->
     <div id="map"></div>
 
-    <!-- FOOTER -->
 
+    <!-- FOOTER -->
     <footer id="footer">
 
         <!-- Link to Surfskolans youtube channel -->
-
         <a class="btn-footer kiteswed-button" id="surfskolan-button"
             href="https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw" role="button">
             <img src="images/surfskolan.png" id="surfskolan-img" aria-hidden="true" alt="Surfskolan | Sweden">
         </a>
 
-
         <!-- Link to Surfzone -->
-
         <a class="btn-footer kiteswed-button" id="surfzone-button"
             href="https://www.surfzone.se/forums/forum/kitesurfing/" role="button">
             <img src="images/surfzone.png" id="surfzone-img" aria-hidden="true" alt="Surfzone | Sweden">
         </a>
 
         <!-- Link to Kiteboardcenter -->
-
         <a class="btn-footer kiteswed-button" id="kiteswed-button" href="https://kiteboardcenter.se/" role="button">
             <img src="images/kiteboardcenter.svg" id="kiteboardcenter-img" aria-hidden="true"
                 alt="Kiteboardcenter | Sweden">
         </a>
 
-
     </footer>
 
 
     <!-- JQuery to ensure safety on that third-party -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+    <!-- Bootstraps CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-
 
     <script src="js/cities.js"></script>
     <script src="js/headerModal.js"></script>
@@ -232,7 +208,6 @@
     <script src="js/map.js"></script>
     <script src="js/scale.js"></script>
     <script src="js/startmodal.js"></script>
-
 
 </body>
 

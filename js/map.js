@@ -43,6 +43,7 @@ $(document).ready(function () {
 // - KITESPOTS DROPDOWNLIST - //
 
 // Reference - https://www.codota.com/code/javascript/functions/leaflet/DomUtil
+// References - http://www.java2s.com/example/javascript/leaflet/searching-markers-with-leafletcontrolsearch-from-drop-down-list.html
 var clusterSpots = L.markerClusterGroup();
 // - Variable for search source(kitespots) - //
 var searchSpots = L.geoJson(kitespots, {
