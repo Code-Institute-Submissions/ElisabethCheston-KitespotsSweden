@@ -292,20 +292,21 @@ https://elisabethcheston.github.io/KitespotsSweden/
 - [Polygon overlay](https://gis.stackexchange.com/a/385670/175494) from [Falke Design](http://falke-design.bplaced.net/)
 - [Basemaps in ESRI](https://www.arcgis.com/apps/Cascade/index.html?appid=c777765671c44a21885ff957c6dc2357)
 - [Fit popup image on map](https://jsfiddle.net/09pe8ko6/)
-- [The popup Start modal] (https://www.w3schools.com/jsref/prop_win_localstorage.asp)
-- [Information & Attribution modal] (https://www.w3schools.com/howto/howto_css_modals.asp)
+- [The popup Start modal](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+- [Information & Attribution modal](https://www.w3schools.com/howto/howto_css_modals.asp)
 - [Video playing in start modal](https://leafletjs.com/examples/video-overlay/)
     
 **Media**
 
 * Logo pictures:
-[Surfskolan] (https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
-[Surfzone] (https://www.surfzone.se/forums/forum/kitesurfing/)
-[Kitespots image in popup](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp2lXExvUESoDBDw1g59RUYgIXFhkti4Ibw&usqp=CAU)
+- [Surfskolan](https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
+- [Surfzone](https://www.surfzone.se/forums/forum/kitesurfing/)
+- [Kiteboard Center](https://kiteboardcenter.se/wp-content/uploads/2019/12/logokiteboardcenter.svg)
+
 
 * Videos:
-[Video: Kitesurfing - Gotland, Sweden Youtub channel: David Sahlberg] (https://www.youtube.com/watch?v=w_CF4NYWq-8)
-[Video: Sweden Snowkite heaven Youtub channel: Surfskolan] (https://www.youtube.com/watch?v=q1GcZsnPOhk)
+- [Video: Kitesurfing - Gotland, Sweden Youtub channel: David Sahlberg] (https://www.youtube.com/watch?v=w_CF4NYWq-8)
+- [Video: Sweden Snowkite heaven Youtub channel: Surfskolan] (https://www.youtube.com/watch?v=q1GcZsnPOhk)
 
 
 * Pictures used for cities:
