@@ -3,30 +3,33 @@
 A map to locate all the current kitesurfing spots in Sweden.
 
 ### Background 
-The core focus for this MS2 project was to create functional JavaScript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. I first had a map idea to display all Swedish kitespots with features for each of them and implement weather or route direction functions. But with weather and route directions it became complicated, so had a game idea that I tried, then got stuck. So, went back to do a simpler version of the first idea, kitespots in Sweden. 
+The core focus for this MS2 project was to create functional JavaScript features for user to interact with. Since JavaScript was totally new to me, I wanted to keep it simple and focus on understanding the coding process. This is a resubmisson, improving the clearity of the the page and its use. 
+Added features;
+* Starting popup window with purpose of website..
+* Information button of how to use the site.
+* Attribution button.
+* 3 buttons to external kitesurfing communities in Sweden.
 
 ## UX
-This webpage is for all kitesurfers (and windsurfer/surfer) who want to know all the current  functional spots in Sweden where you can surf. Important to provide maps so user can see the conditions of lounging area, sea depth, which way the spot faces and what the optimal wind direction would be. The idea is to provide a dropdown list with all the spots that easy zooms in to the selected kitespot. 
+This webpage should provide all kitesurfers (and windsurfer/surfer) easy access to all the current  functional spots in Sweden where you can surf. Provide maps so user can analyze the conditions of for example lounging area, sea depth, which direction the beach is facing. Also provide regions and cities to give the user a sense of the areas. 
 
 ### Research
 Since there is no updated list of all current functional kitespots, I’ve researched old once as well as new once from word of mouth. Then created a new geojson file for all usable kitespots in geojson.io. Spots that has been excluded are for reasons like private property, unfunctional launching area, rocky water surface, etc.
 
 ### User Stories
-*	As a user, I would like have some basic information of the site, to know how to use it.
-*	As a kitesurfer, I would like have easy access to search among all spots, to know its position on map.
+*	As a user, I would like have some basic information on the site, to know how to use it and what its purpose is.
+*	As a kitesurfer, I want to be presented with an over view of all spots on the map, to get a sense of how they are distributed over the country.
+*	As a kitesurfer, I want to be able to search for specific spots by name, to easily find it on the map.
 *	As a kitesurfer, I want to be able to analyze the spots surrounding, to determine if it fits my needs.
-*	As a kitesurfer, I would like to get a comfirmation of that direction the beach is facing, to know if its an option for the weather.
-*	As a kitesurfer, I would like to be able to search for specific spots by name, to easily find it.
-*	As a kitesurfer, I would like to see a scale on maps, to know the proportions of the beach surroundings.
-*	As a kitesurfer, I would like to know of some surfing comunities, to check in and come in contact with other surfers.
-*	As a user, I would like to see some credit or attribution of the map, to know who made it.
-*	As a kitesurfer, I would be nice to see multiple layers of regions and cities on maps, to get to know areas for planing meetups.
+*	As a kitesurfer, I want to see a scale on maps, to know the proportions of the beach surroundings.
+*	As a kitesurfer, I would like to know of some surfing communities, to check in and get in contact with other surfers.
+*	As a kitesurfer, I would like to know what regions the kitespots are locaded in, to get a sense of the areas.
 
 
 ### Wireframes
 PDF files for;
-* [Desktop](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Balsamiq%20Wireframes/MS2%20desktop.pdf)
-* [Tablet](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Balsamiq%20Wireframes/MS2%20Ipad.pdf)
+* [Desktop]()
+* [Tablet]()
 * [Smartphone](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Balsamiq%20Wireframes/MS2%20Smartphone.pdf)
 
 
