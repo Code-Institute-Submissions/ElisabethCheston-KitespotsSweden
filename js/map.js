@@ -1,6 +1,4 @@
-
 // - MAPS - //
-
 // - Basemaps variables - //
 var hybrid = L.esri.basemapLayer('ImageryClarity');
 var topographic = L.esri.basemapLayer('Topographic');
@@ -14,16 +12,13 @@ var map = new L.map('map', {
     zoom: 5,
     zoomControl: false,
     attributionControl: false
-
 });
 L.esri.basemapLayer('Topographic').addTo(map);
 
 
-// map.attributionControl.setPosition(...)
-
 
 // - GEOLOCATOR - //
-/*
+
 // Reference - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
 $(document).ready(function () {
     if ("geolocation" in navigator) {
@@ -43,7 +38,7 @@ $(document).ready(function () {
     }
 });
 
-*/
+
 
 // - KITESPOTS DROPDOWNLIST - //
 
@@ -54,7 +49,7 @@ var searchSpots = L.geoJson(kitespots, {
     onEachFeature: function (feature, layer) {
         var popup = '';
         if (feature.properties.name) {
-            popup += /*'<center><img src="images/kitesurf1.png"style="width:80px;height:200x;"/></center>' + */'<p><b> ' + feature.properties.name + '</b><br/>' + "Wind Direction: " + feature.properties.windDirection + '<br/>' + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>";
+            popup += '<h2>' + feature.properties.name + '</h2>' + '<h4> Beach facing : ' + feature.properties.windDirection + '</h4>';
         }
         layer.bindPopup(popup);
     }
@@ -98,6 +93,7 @@ map.addLayer(clusterSpots);
 
 
 // - STYLE CITY MARKERS - //
+
 // Refrence: https://leafletjs.com/examples/geojson/           
 var markerStyle = {
     radius: 4,
@@ -115,10 +111,9 @@ var markerStyle = {
 var city = L.geoJson(cities, {
     pointToLayer: function (features, latlng) {
         return L.circleMarker(latlng, markerStyle)
-            .bindPopup("<center><img src='images/cityPic/" + features.properties.cityPic + "' style='width:200px;height:300x;'/></center>" + "<p><b> " + features.properties.city + "</b><br/>" + "County: " + features.properties.admin_name + "<br/>" + "Population: " + features.properties.population + "</p>" + "<a href ='https://www.google.se/maps/@59.3036556,17.9778991,14z'><b> GET HERE </b></a>");
+            .bindPopup("<img src='images/cityPic/" + features.properties.cityPic + "'style='width:300px;height:420x;'/><h2>" + features.properties.city + "</h2><h4>County: " + features.properties.admin_name + "<br/>Population: " + features.properties.population + "</h4>");
     }
 });
-
 
 
 // - CITY POPUP TO FIT ON MAP - //
@@ -170,7 +165,7 @@ fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=sverige-l
                 fillColor: "#30BfBf",
                 fillOpacity: 0.7
 
-            }).bindPopup("<p><b> " + d.fields.lan_namn + "</b></p>");
+            }).bindPopup("<h2><b> " + d.fields.lan_namn + "</b></h2>");
             polyRegions.addLayer(circle);
         });
     });

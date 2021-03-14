@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Indie+Flower&family=Oregano&family=Patrick+Hand+SC&family=Rock+Salt&display=swap');
 
 /* MAP */
+
 html, body, #map {
     height: 86vh;
     width: 100%;
@@ -16,8 +17,7 @@ html, body, #map {
     background: linear-gradient(to bottom, rgba(66, 66, 66, 0.5), rgba(214, 210, 205, 0.7), rgba(247, 245, 245, 0.7), rgba(54, 54, 54, 0.5));
     align-items: center;
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;      
+    
 }
 
 /* FONT & LINK STYLES */
@@ -25,6 +25,8 @@ html, body, #map {
 h1,h2 {
     font-family: 'Gochi Hand';
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
 }
 h3, h4, h6 {
     font-family: 'Lato';
@@ -35,6 +37,7 @@ h5 {
     font-weight: bold;
     text-transform: uppercase;
     color: rgba(112, 76, 35, 0.8);
+    text-align: center;
 }
 p {
     font-family: 'Lato';
@@ -148,15 +151,6 @@ a:link,
     font-size: 13px;
 }
 
-/* Button icons */
-/*
-.icon-info:before {
-    content: "\f05a";
-}
-.icon-attribute:before {
-    content: "\f004";
-}
-*/
 
 /* HEADER & START MODAL */
 
@@ -164,8 +158,8 @@ a:link,
 .attributeModal,
 .startModal {   
     display: none;
-    position: absolute; 
-    z-index: 1100;
+    position: absolute;
+    z-index: 5100;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -176,12 +170,13 @@ a:link,
     background-color: rgba(0,0,0,0.7); 
     
 }
+
 .infoBox,
 .attributionBox,
 .modal-content {
     background: linear-gradient(to bottom, rgba(214, 210, 210, 0.8), rgba(250, 240, 229, 0.8), rgba(255, 242, 225, 0.8), rgba(179, 177, 177, 0.8));
     margin: 35% auto;
-    padding: 18px;
+    padding: 25px;
     border: 1px solid #888;
     width: 70%;
     border-radius: 4px;
@@ -190,6 +185,11 @@ a:link,
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;     
+}
+iframe {
+    align-items: center;    
+    height: 40vh;
+    width: 100%;
 }
 .closeInfo,
 .closeAttribute,
@@ -212,6 +212,9 @@ a:link,
     color: rgba(0,0,0,0.8);
     text-decoration: none;
     cursor: pointer;
+}
+.modal-content p h5 {
+    text-align: center;
 }
 
 /* LEAFLET CONTROLS */
@@ -280,10 +283,11 @@ a.leaflet-control-zoom-out {
 
 /* CLUSTER */
 .marker-cluster {
-    background-color: rgba(255, 154, 191, 0.9);
-    fill: rgba(248, 230, 237, 0.9);
-    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgba(94, 77, 69, 0.5), rgba(247, 240, 230, 0.5), rgba(250, 241, 241, 0.5), rgba(94, 89, 86, 0.5));
+    fill: rgba(252, 121, 171, 0.8);
+    font-family: 'Lato';
     font-size: medium;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
 }
 
 /* FOOTER */
@@ -323,7 +327,9 @@ a.leaflet-control-zoom-out {
 }
 
 /* Logos */
-img{
+#surfskolan-img,
+#surfzone-img,
+#kiteboardcenter-img {
     width: 70px;
     height: 40px;
     position: absolute;
@@ -333,8 +339,9 @@ img{
     -ms-transform: translate(-50%, -50%);
     
 }
-img:hover {
+#surfskolan-img:hover,
+#surfzone-img:hover,
+#kiteboardcenter-img:hover {
     height: 44px;
     width: 78px;
-
 }
