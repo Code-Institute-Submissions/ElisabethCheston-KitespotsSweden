@@ -2,36 +2,45 @@
 
 /* MAP */
 
-html, body, #map {
+html,
+body,
+#map {
     height: 86vh;
     width: 100%;
     position: relative;
     padding: 0px;
     margin: 0px;
 }
+
 #header {
     background: linear-gradient(to bottom, rgba(66, 66, 66, 0.5), rgba(214, 210, 205, 0.7), rgba(247, 245, 245, 0.7), rgba(54, 54, 54, 0.5));
 }
+
 #footer {
     height: 7vh;
     background: linear-gradient(to bottom, rgba(66, 66, 66, 0.5), rgba(214, 210, 205, 0.7), rgba(247, 245, 245, 0.7), rgba(54, 54, 54, 0.5));
     align-items: center;
     display: flex;
-    
 }
+
 
 /* FONT & LINK STYLES */
 
-h1,h2 {
+h1,
+h2 {
     font-family: 'Gochi Hand';
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
 }
-h3, h4, h6 {
+
+h3,
+h4,
+h6 {
     font-family: 'Lato';
     font-weight: bold;
 }
+
 h5 {
     font-family: 'Lato';
     font-weight: bold;
@@ -39,6 +48,7 @@ h5 {
     color: rgba(112, 76, 35, 0.8);
     text-align: center;
 }
+
 p {
     font-family: 'Lato';
 }
@@ -46,10 +56,12 @@ p {
 a {
     color: rgba(71, 70, 69, 0.8);
 }
+
 a:link,
 .leaflet-control-attribution a {
     color: rgba(199, 113, 28, 0.8) !important;
 }
+
 
 /* HEADER  */
 
@@ -64,6 +76,7 @@ a:link,
     transition: all 0.3s;      
     background: linear-gradient(to bottom, rgba(94, 77, 69, 0.5), rgba(247, 240, 230, 0.7), rgba(250, 241, 241, 0.7), rgba(94, 89, 86, 0.5));
 }
+
 .nav-link,
 .headerlinks {
     text-align: center;
