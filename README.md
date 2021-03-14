@@ -134,22 +134,17 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 [ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/Responsive%20Testing%20-%20User%20stories.pdf) - Tests of user stories
 
 
-[**Jigsaw CSS Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/cssValidation.png) - Validation of the css for project.
+[**Jigsaw CSS Validation Result - Kitespots Sweden**](/workspace/KitespotsSweden/Validations/CSS jigsaw W3C validation.png) - Validation of the css for project.
 
-[**Jigsaw HTML Validation Result**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/htmlValidation.png) - Validation of the html for project.
+[**Jigsaw HTML Validation Result - Kitespots Sweden**](/workspace/KitespotsSweden/Validations/HTML jigsaw validation.png) - [Warnings](/workspace/KitespotsSweden/Validations/HTML jigsaw W3C validation warnings.png)
 
-[**JSHint Test Result**](https://jsonformatter.curiousconcept.com/) 
-
-* Report on **map.js:** 
-
-- There are 14 functions in this file.
-
-- Function with the largest signature take 2 arguments, while the median is 1.
-
-- Largest function has 7 statements in it, while the median is 2.
-
-- The most complex function has a cyclomatic complexity value of 3 while the median is 1.
-
+**JSHint Reports**
+[**JSHint Test Result - map.js**](/workspace/KitespotsSweden/Validations/Map - jshint.png) 
+[**JSHint Test Result - kitespots.js**](/workspace/KitespotsSweden/Validations/Kitespots - jshint.png) 
+[**JSHint Test Result - cities.js**](/workspace/KitespotsSweden/Validations/Cities - jshint.png) 
+[**JSHint Test Result - scale.js**](/workspace/KitespotsSweden/Validations/Scale - jshint.png) 
+[**JSHint Test Result - headerModal.js**](/workspace/KitespotsSweden/Validations/Header modals - jshint.png) 
+[**JSHint Test Result - startmodal.js**](/workspace/KitespotsSweden/Validations/Start Modal and Home Button - jshint.png) 
 
 
 #### Describe use on different browsers
