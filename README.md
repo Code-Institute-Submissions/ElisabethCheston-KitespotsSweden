@@ -41,7 +41,7 @@ Feature functions in the project:
 
 #### Existing Features
 
-* **Popup Start Modal** - The first time user visit the site, a popup window appears with information about the site. Includes 2 videos to play in the popup window.
+* **Popup Start Modal** - The first time user visit the site, a popup window appears with information about the site. Includes 2 youtube videos to play in the popup window.
 
 * **Zooms** - On the maps right side user can zoom in and out of the map window to better research the area.
 
@@ -136,11 +136,11 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Manual testing
 
-[ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/userstories.pdf) - Tests of user stories.
+[ **UX Tests**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/userstories.pdf) - Tests of user stories.
 
 [**Jigsaw CSS Validation Result for Kitespots Sweden.**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawCSS.png)  
 
-[**Jigsaw HTML Validation Result for Kitespots Sweden**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawHTML.png) - And the HTML [Warnings.](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawHTMLwarnings.png)  
+[**Jigsaw HTML Validation Result for Kitespots Sweden.**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawHTML.png) - And the HTML [Warnings.](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawHTMLwarnings.png)  
 
 
 **JSHint Reports**  
@@ -164,6 +164,8 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Bugs or problems
 
+* [Deprecation for 'window.webStoreageInfo'](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/videoStoage.png) - In reguards to the videos showing in start modal. Videos work fine to my knowledge and according to tutors I should just write it up as a bug.  
+* 
 * **Error message for (index):1** - In console error message "Unchecked runtime.lastError: The message port closed before a response was received.". In conversations with tutors, they said it's some type of bug for the <!DOCTYPE html> that can't be solved.
 
 * **Error message** ( "=> only available in ES6 (use 'esversion: 6')" ) in JSHint when => is used in Leaflet. Solved with "// jshint esversion:6" in the JavaScript files for JSHint to ignore the error.
@@ -175,6 +177,7 @@ These are the different languages, frameworks, libraries, and any other tools th
 * **GeoJson files** - Labeled cities and kitespots files as ".json", but got error messages. Mentor told me, just to assign them as ".js" files to avoid error.
 
 * **HTML Validation** When validating index.html I get error messages for "<!DOCTYPE html>" and "</html>" that tutors said was a bug.
+* 
 * **Zoom in to Hybrid/Satellite layer** The dev tools through multiple error (as I understod it) due to a bug that wont stop calling on zoom in. Maybe ESRI should have written an 'if' statment once the map reached its max zoom level..but what do I know.
 
 
