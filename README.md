@@ -129,38 +129,35 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Responsive testing
 
-Since I work 99% of the time with the Google Chrome Development tools am constantly checking the console for any error every time a do even a minor change to the page my page.
+![**Errors in Dev Tool Console.**](/workspace/KitespotsSweden/responsiveTesting/errorDevTools.pdf)  
 
 
 #### Manual testing
 
-[ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/Responsive%20Testing%20-%20User%20stories.pdf) - Tests of user stories
+![ **UX Test**](/workspace/KitespotsSweden/responsiveTesting/userstories.pdf) - Tests of user stories
 
+![**Jigsaw CSS Validation Result for Kitespots Sweden.**](/workspace/KitespotsSweden/validation/jigsawCSS.png)  
 
-[**Jigsaw CSS Validation Result for Kitespots Sweden.**](/workspace/KitespotsSweden/validation/jigsawCSS.png)  
-
-[**Jigsaw HTML Validation Result for Kitespots Sweden**](/workspace/KitespotsSweden/validation/jigsawHTML.png) - And the HTML [Warnings.](/workspace/KitespotsSweden/validation/jigsawHTMLwarnings.png)  
+![**Jigsaw HTML Validation Result for Kitespots Sweden**](/workspace/KitespotsSweden/validation/jigsawHTML.png) - And the HTML [Warnings.](/workspace/KitespotsSweden/validation/jigsawHTMLwarnings.png)  
 
 
 **JSHint Reports**  
 
-[**JSHint Test Result for map.js**](/workspace/KitespotsSweden/validation/jshintMap.png)  
+![**JSHint Test Result for map.js**](/workspace/KitespotsSweden/validation/jshintMap.png)  
 
-[**JSHint Test Result for kitespots.js**](/workspace/KitespotsSweden/validation/jshintKitespots.png)  
+![**JSHint Test Result for kitespots.js**](/workspace/KitespotsSweden/validation/jshintKitespots.png)  
 
-[**JSHint Test Result for cities.js**](/workspace/KitespotsSweden/validation/jshintCities.png)  
+![**JSHint Test Result for cities.js**](/workspace/KitespotsSweden/validation/jshintCities.png)  
 
-[**JSHint Test Result for scale.js**](/workspace/KitespotsSweden/validation/jshintScale.png)  
+![**JSHint Test Result for scale.js**](/workspace/KitespotsSweden/validation/jshintScale.png)  
 
-[**JSHint Test Result for headerModal.js**](/workspace/KitespotsSweden/validation/jshintHeader.png)  
+![**JSHint Test Result for headerModal.js**](/workspace/KitespotsSweden/validation/jshintHeader.png)  
 
-[**JSHint Test Result for startmodal.js**](/workspace/KitespotsSweden/validation/jshintStart.png)  
-
-
+![**JSHint Test Result for startmodal.js**](/workspace/KitespotsSweden/validation/jshintStart.png)  
 
 #### Describe use on different browsers
 
-
+![Browsers and sizes](/workspace/KitespotsSweden/responsiveTesting/testingRespons.pdf)
 
 
 #### Bugs or problems
