@@ -129,35 +129,37 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Responsive testing
 
-![**Errors in Dev Tool Console.**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/errorDevTools.pdf)  
+[**Errors in Dev Tool Console.pdf**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/errorDevTools.pdf)   
+
+[**Errors in Dev Tool Console.png**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/errorDevTool.png)
 
 
 #### Manual testing
 
-![ **UX Test**](/workspace/KitespotsSweden/responsiveTesting/userstories.pdf) - Tests of user stories
+[ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/userstories.pdf) - Tests of user stories.
 
-![**Jigsaw CSS Validation Result for Kitespots Sweden.**](/workspace/KitespotsSweden/validation/jigsawCSS.png)  
+[**Jigsaw CSS Validation Result for Kitespots Sweden.**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawCSS.png)  
 
-![**Jigsaw HTML Validation Result for Kitespots Sweden**](/workspace/KitespotsSweden/validation/jigsawHTML.png) - And the HTML [Warnings.](/workspace/KitespotsSweden/validation/jigsawHTMLwarnings.png)  
+[**Jigsaw HTML Validation Result for Kitespots Sweden**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawHTML.png) - And the HTML [Warnings.](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jigsawHTMLwarnings.png)  
 
 
 **JSHint Reports**  
 
-![**JSHint Test Result for map.js**](/workspace/KitespotsSweden/validation/jshintMap.png)  
+[**JSHint Test Result for map.js**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jshintMap.png)  
 
-![**JSHint Test Result for kitespots.js**](/workspace/KitespotsSweden/validation/jshintKitespots.png)  
+[**JSHint Test Result for kitespots.js**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jshintKitespots.png)  
 
-![**JSHint Test Result for cities.js**](/workspace/KitespotsSweden/validation/jshintCities.png)  
+[**JSHint Test Result for cities.js**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jshintCities.png)  
 
-![**JSHint Test Result for scale.js**](/workspace/KitespotsSweden/validation/jshintScale.png)  
+[**JSHint Test Result for scale.js**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jshintScale.png)  
 
-![**JSHint Test Result for headerModal.js**](/workspace/KitespotsSweden/validation/jshintHeader.png)  
+[**JSHint Test Result for headerModal.js**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jshintHeader.png)  
 
-![**JSHint Test Result for startmodal.js**](/workspace/KitespotsSweden/validation/jshintStart.png)  
+[**JSHint Test Result for startmodal.js**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/validation/jshintStart.png)  
 
 #### Describe use on different browsers
 
-![Browsers and sizes](/workspace/KitespotsSweden/responsiveTesting/testingRespons.pdf)
+[**Browsers and sizes**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/testingRespons.pdf)
 
 
 #### Bugs or problems
