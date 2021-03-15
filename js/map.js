@@ -100,13 +100,6 @@ map.addLayer(clusterSpots);
 
 // - CITIES LAYER - //
 
-// - Json cities to map. - //
-var city = L.geoJson(cities, {
-    pointToLayer: function (features, latlng) {
-        return L.circleMarker(latlng, markerStyle)
-            .bindPopup("<img src='images/cityPic/" + features.properties.cityPic + "'style='width:300px;height:420x;'/><h2>" + features.properties.city + "</h2><h4>County: " + features.properties.admin_name + "<br/>Population: " + features.properties.population + "</h4>");
-    }
-});
 // - Style city markers. - //
 // Refrence: https://leafletjs.com/examples/geojson/           
 var markerStyle = {
@@ -117,6 +110,14 @@ var markerStyle = {
     fillColor: "#A50B5E",
     fillOpacity: 0.8,
 };
+// - Json cities to map. - //
+var city = L.geoJson(cities, {
+    pointToLayer: function (features, latlng) {
+        return L.circleMarker(latlng, markerStyle)
+            .bindPopup("<img src='images/cityPic/" + features.properties.cityPic + "'style='width:300px;height:420x;'/><h2>" + features.properties.city + "</h2><h4>County: " + features.properties.admin_name + "<br/>Population: " + features.properties.population + "</h4>");
+    }
+});
+
 
 // - City popups to fit map. - //
 // Reference - https://jsfiddle.net/09pe8ko6/
