@@ -137,9 +137,9 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 [ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/Responsive%20Testing%20-%20User%20stories.pdf) - Tests of user stories
 
 
-[**Jigsaw CSS Validation Result for Kitespots Sweden.**](/workspace/KitespotsSweden/Validations/jigsawCSS.png)  
+[**Jigsaw CSS Validation Result for Kitespots Sweden.**](https://tomato-shrew-auzmll07.ws-eu03.gitpod.io/files/download/?id=ad4ca2ce-c9e8-4701-b4d1-6b5a0d0fa1a4)  
 
-[**Jigsaw HTML Validation Result for Kitespots Sweden**](Validations/jigsawHTML.png) - And the HTML [Warnings.](Validations/htmlwarnings.png)  
+[**Jigsaw HTML Validation Result for Kitespots Sweden**](https://tomato-shrew-auzmll07.ws-eu03.gitpod.io/files/download/?id=ecab98b1-02b8-477c-990c-bfd4696ed841) - And the HTML [Warnings.](https://tomato-shrew-auzmll07.ws-eu03.gitpod.io/files/download/?id=f37d423d-6ab6-4412-8a4b-e827a3ca85ae)  
 
 
 **JSHint Reports**  
