@@ -28,8 +28,8 @@ Since there is no updated list of all current functional kitespots, I’ve resea
 
 ### Wireframes
 PDF files for;
-* [Desktop Start Modal](/KitespotsSweden/balsamiqWireframes/MS2wireframeDesktopStartView.pdf) 
-* [Desktop](/KitespotsSweden/balsamiqWireframes/MS2wireframeDesktop.pdf)
+* [Desktop Start Modal](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Desktop%20Start%20View.pdf) 
+* [Desktop](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Desktop.pdf)
 * [Ipad Start Modal](/KitespotsSweden/balsamiqWireframes/MS2wireframeIpadStartView.pdf) 
 * [Ipad](/KitespotsSweden/balsamiqWireframes/MS2wireframeIpad.pdf)
 * [Smartphone Start Modal](/KitespotsSweden/balsamiqWireframes/MS2wireframeSmartphoneStartView.pdf) 
