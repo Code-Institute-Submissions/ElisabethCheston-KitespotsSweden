@@ -28,11 +28,11 @@ Since there is no updated list of all current functional kitespots, I’ve resea
 
 ### Wireframes
 PDF files for;
-* [Desktop Start Modal](Balsamiq Wireframes/MS2 wireframe Desktop Start View.pdf) 
-* [Desktop](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Desktop.pdf)
-* [Ipad Start Modal](Balsamiq Wireframes/MS2 wireframe Ipad Start View.pdf) 
-* [Ipad](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Ipad.pdf)
-* [Smartphone Start Modal](Balsamiq Wireframes/MS2 wireframe Smartphone Start View.pdf) 
+* [Desktop Start Modal](/workspace/KitespotsSweden/balsamiqWireframes/MS2 wireframe Desktop Start View.pdf) 
+* [Desktop](/workspace/KitespotsSweden/balsamiqWireframes/MS2 wireframe Desktop.pdf)
+* [Ipad Start Modal](/workspace/KitespotsSweden/balsamiqWireframes/MS2 wireframe Ipad Start View.pdf) 
+* [Ipad](/workspace/KitespotsSweden/balsamiqWireframes/MS2 wireframe Ipad.pdf)
+* [Smartphone Start Modal](/workspace/KitespotsSweden/balsamiqWireframes/MS2 wireframe Smartphone Start View.pdf) 
 * [Smartphone](Balsamiq Wireframes/MS2 wireframe Smartphone.pdf)
 
 
@@ -137,79 +137,30 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 [ **UX Test**](https://github.com/ElisabethCheston/KitespotsSweden/blob/master/Responsive%20Testing/Responsive%20Testing%20-%20User%20stories.pdf) - Tests of user stories
 
 
-[**Jigsaw CSS Validation Result for Kitespots Sweden.**](https://tomato-shrew-auzmll07.ws-eu03.gitpod.io/files/download/?id=ad4ca2ce-c9e8-4701-b4d1-6b5a0d0fa1a4)  
+[**Jigsaw CSS Validation Result for Kitespots Sweden.**](/workspace/KitespotsSweden/validation/jigsawCSS.png)  
 
-[**Jigsaw HTML Validation Result for Kitespots Sweden**](https://tomato-shrew-auzmll07.ws-eu03.gitpod.io/files/download/?id=ecab98b1-02b8-477c-990c-bfd4696ed841) - And the HTML [Warnings.](https://tomato-shrew-auzmll07.ws-eu03.gitpod.io/files/download/?id=f37d423d-6ab6-4412-8a4b-e827a3ca85ae)  
+[**Jigsaw HTML Validation Result for Kitespots Sweden**](/workspace/KitespotsSweden/validation/jigsawHTML.png) - And the HTML [Warnings.](/workspace/KitespotsSweden/validation/jigsawHTMLwarnings.png)  
 
 
 **JSHint Reports**  
 
-[**JSHint Test Result for map.js**](Validations/jshintMap.png)  
+[**JSHint Test Result for map.js**](/workspace/KitespotsSweden/validation/jshintMap.png)  
 
-[**JSHint Test Result for kitespots.js**](Validations/jshintKitespots.png)  
+[**JSHint Test Result for kitespots.js**](/workspace/KitespotsSweden/validation/jshintKitespots.png)  
 
-[**JSHint Test Result for cities.js**](jshintCities.png)  
+[**JSHint Test Result for cities.js**](/workspace/KitespotsSweden/validation/jshintCities.png)  
 
-[**JSHint Test Result for scale.js**](Validations/jshintScale.png)  
+[**JSHint Test Result for scale.js**](/workspace/KitespotsSweden/validation/jshintScale.png)  
 
-[**JSHint Test Result for headerModal.js**](Validations/jshintHeader.png)  
+[**JSHint Test Result for headerModal.js**](/workspace/KitespotsSweden/validation/jshintHeader.png)  
 
-[**JSHint Test Result for startmodal.js**](Validations/jshintStartModal.png)  
+[**JSHint Test Result for startmodal.js**](/workspace/KitespotsSweden/validation/jshintStart.png)  
 
 
 
 #### Describe use on different browsers
 
 
-
-|      **Desktop**         | **Firefox** | **Explorer** | **Safari** | **Chrome** |
-|--------------------------|-------------|--------------|------------|------------|
-*Keeps layout proportions* |     x       |      x       |     x      |    x       |
-*Cities overlay works*     |     x       |      x       |     x      |    x       |
-*Region overlay works*     |     x       |      x       |     x      |    x       |
-*List dropdown*            |     x       |      x       |     x      |    x       |
-*Select obj. in list*      |     x       |      x       |     x      |    x       |
-*Control layers works*     |     x       |      x       |     x      |    x       |
-*Kitespots popups*         |     x       |      x       |     x      |    x       |
-*Cities popup*.            |     x       |      x       |     x      |    x       |
-*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       | 
-*Image display*            |     x       |      x       |     x      |    x       |
-
-
-
-
-|      **Tablet**          | **Firefox** | **Explorer** | **Safari** | **Chrome** |
-|--------------------------|-------------|--------------|------------|------------|
-*Keeps layout proportions* |     x       |      x       |     x      |    x       |
-*Cities overlay works*     |     x       |      x       |     x      |    x       |
-*Region overlay works*     |     x       |      x       |     x      |    x       |
-*List dropdown*            |     x       |      x       |     x      |    x       |
-*Select obj. in list*      |     x       |      x       |     x      |    x       |
-*Control layers works*     |     x       |      x       |     x      |    x       |
-*Kitespots popups*         |     x       |      x       |     x      |    x       |
-*Cities popup*.            |     x       |      x       |     x      |    x       |
-*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       | 
-*Image display*            |     x       |      x       |     x      |    x       |
-
-
-
-
-
-|      **Smartphone**      | **Firefox** | **Explorer** | **Safari** | **Chrome** |
-|--------------------------|-------------|--------------|------------|------------|
-*Keeps layout proportions* |     x       |      x       |     x      |    x       |
-*Cities overlay works*     |     x       |      x       |     x      |    x       |
-*Region overlay works*     |     x       |      x       |     x      |    x       |
-*List dropdown*            |     x       |      x       |     x      |    x       |
-*Select obj. in list*      |     x       |      x       |     x      |    x       |
-*Control layers works*     |     x       |      x       |     x      |    x       |
-*Kitespots popups*         |     x       |      x       |     x      |    x       |
-*Cities popup*.            |     x       |      x       |     x      |    x       |
-*Kitespot popup & link*    |     x       |      x       |     x      |    x       |
-*Cities popup & link*      |     x       |      x       |     x      |    x       | 
-*Image display*            |     x       |      x       |     x      |    x       |
 
 
 #### Bugs or problems
