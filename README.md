@@ -28,9 +28,12 @@ Since there is no updated list of all current functional kitespots, I’ve resea
 
 ### Wireframes
 PDF files for;
-* [Desktop Start Modal](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Desktop Start View.pdf) [Desktop](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Desktop.pdf)
-* [Ipad Start Modal](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Ipad Start View.pdf) [Ipad](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Ipad.pdf)
-* [Smartphone Start Modal](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Smartphone Start View.pdf) [Smartphone](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Smartphone.pdf)
+* [Desktop Start Modal](Balsamiq Wireframes/MS2 wireframe Desktop Start View.pdf) 
+* [Desktop](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Desktop.pdf)
+* [Ipad Start Modal](Balsamiq Wireframes/MS2 wireframe Ipad Start View.pdf) 
+* [Ipad](/workspace/KitespotsSweden/Balsamiq Wireframes/MS2 wireframe Ipad.pdf)
+* [Smartphone Start Modal](Balsamiq Wireframes/MS2 wireframe Smartphone Start View.pdf) 
+* [Smartphone](Balsamiq Wireframes/MS2 wireframe Smartphone.pdf)
 
 
 ### Features
@@ -136,22 +139,22 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 
 [**Jigsaw CSS Validation Result for Kitespots Sweden.**](/workspace/KitespotsSweden/Validations/jigsawCSS.png)  
 
-[**Jigsaw HTML Validation Result for Kitespots Sweden**](/workspace/KitespotsSweden/Validations/jigsawHTML.png) - And the HTML [Warnings.](/workspace/KitespotsSweden/Validations/jigsawwarningsHTML.png)  
+[**Jigsaw HTML Validation Result for Kitespots Sweden**](Validations/jigsawHTML.png) - And the HTML [Warnings.](Validations/htmlwarnings.png)  
 
 
 **JSHint Reports**  
 
-[**JSHint Test Result for map.js**](/workspace/KitespotsSweden/Validations/jshintMap.png)  
+[**JSHint Test Result for map.js**](Validations/jshintMap.png)  
 
-[**JSHint Test Result for kitespots.js**](/workspace/KitespotsSweden/Validations/jshintKitespots.png)  
+[**JSHint Test Result for kitespots.js**](Validations/jshintKitespots.png)  
 
-[**JSHint Test Result for cities.js**](/workspace/KitespotsSweden/Validations/jshintCities.png)  
+[**JSHint Test Result for cities.js**](jshintCities.png)  
 
-[**JSHint Test Result for scale.js**](/workspace/KitespotsSweden/Validations/jshintScale.png)  
+[**JSHint Test Result for scale.js**](Validations/jshintScale.png)  
 
-[**JSHint Test Result for headerModal.js**](/workspace/KitespotsSweden/Validations/jshintHeader.png)  
+[**JSHint Test Result for headerModal.js**](Validations/jshintHeader.png)  
 
-[**JSHint Test Result for startmodal.js**](/workspace/KitespotsSweden/Validations/jshintStartModal.png)  
+[**JSHint Test Result for startmodal.js**](Validations/jshintStartModal.png)  
 
 
 
@@ -222,6 +225,7 @@ Since I work 99% of the time with the Google Chrome Development tools am constan
 * **GeoJson files** - Labeled cities and kitespots files as ".json", but got error messages. Mentor told me, just to assign them as ".js" files to avoid error.
 
 * **HTML Validation** When validating index.html I get error messages for "<!DOCTYPE html>" and "</html>" that tutors said was a bug.
+* **Zoom in to Hybrid/Satellite layer** The dev tools through multiple error (as I understod it) due to a bug that wont stop calling on zoom in. Maybe ESRI should have written an 'if' statment once the map reached its max zoom level..but what do I know.
 
 
 ### Deployment
@@ -301,14 +305,14 @@ https://elisabethcheston.github.io/KitespotsSweden/
 **Media**
 
 * Logo pictures:
-- [Surfskolan](https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
+- [Surfskolan Crew](https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
 - [Surfzone](https://www.surfzone.se/forums/forum/kitesurfing/)
 - [Kiteboardcenter](https://kiteboardcenter.se/wp-content/uploads/2019/12/logokiteboardcenter.svg)
 
 
 * Videos:
 - [Kitesurfing - Gotland, Sweden by David Sahlberg](https://www.youtube.com/watch?v=w_CF4NYWq-8)
-- [Sweden Snowkite heaven by Surfskolan](https://www.youtube.com/watch?v=q1GcZsnPOhk)
+- [Sweden Snowkite heaven by Surfskolan Crew](https://www.youtube.com/watch?v=q1GcZsnPOhk)
 
 
 * City pictures:
@@ -416,7 +420,7 @@ https://elisabethcheston.github.io/KitespotsSweden/
 Inspiration for this project from;
 
 * [Kiteboardcenter](http://kiteboardcenter.se/)
-* [Surfzone] (https://www.surfzone.se/forums/forum/kitesurfing/)
+* [Surfzone](https://www.surfzone.se/forums/forum/kitesurfing/)
 * Kitesurfing friend
 
 
