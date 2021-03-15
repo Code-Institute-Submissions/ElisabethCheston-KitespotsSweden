@@ -259,9 +259,9 @@ https://elisabethcheston.github.io/KitespotsSweden/
 **Media**
 
 * Logo pictures:
-- [Surfskolan Crew](https://www.youtube.com/channel/UCep3ikvKlW6CouLTbhe2Jzw)
-- [Surfzone](https://www.surfzone.se/forums/forum/kitesurfing/)
-- [Kiteboardcenter](https://kiteboardcenter.se/wp-content/uploads/2019/12/logokiteboardcenter.svg)
+- [Surfskolan Crew](https://github.com/ElisabethCheston/KitespotsSweden/blob/2cf3f47bca1f22db1c5fee6984cf43a8e539d65e/images/surfzone.png)
+- [Surfzone](https://github.com/ElisabethCheston/KitespotsSweden/blob/2cf3f47bca1f22db1c5fee6984cf43a8e539d65e/images/surfskolan.png)
+- [Kiteboardcenter](https://github.com/ElisabethCheston/KitespotsSweden/blob/2cf3f47bca1f22db1c5fee6984cf43a8e539d65e/images/kiteboardcenter.svg)
 
 
 * Videos:
