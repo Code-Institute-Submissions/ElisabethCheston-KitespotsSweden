@@ -30,10 +30,10 @@ Since there is no updated list of all current functional kitespots, I’ve resea
 PDF files for;
 * [Desktop Start Modal](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Desktop%20Start%20View.pdf) 
 * [Desktop](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Desktop.pdf)
-* [Ipad Start Modal](/KitespotsSweden/balsamiqWireframes/MS2wireframeIpadStartView.pdf) 
-* [Ipad](/KitespotsSweden/balsamiqWireframes/MS2wireframeIpad.pdf)
-* [Smartphone Start Modal](/KitespotsSweden/balsamiqWireframes/MS2wireframeSmartphoneStartView.pdf) 
-* [Smartphone](/KitespotsSweden/balsamiqWireframes/MS2wireframeSmartphone.pdf)
+* [Ipad Start Modal](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Ipad%20Start%20View.pdf) 
+* [Ipad](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Ipad.pdf)
+* [Smartphone Start Modal](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Smartphone%20Start%20View.pdf) 
+* [Smartphone](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/balsamiqWireframes/MS2%20wireframe%20Smartphone.pdf)
 
 
 ### Features
@@ -129,7 +129,7 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Responsive testing
 
-![**Errors in Dev Tool Console.**](/workspace/KitespotsSweden/responsiveTesting/errorDevTools.pdf)  
+![**Errors in Dev Tool Console.**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/errorDevTools.pdf)  
 
 
 #### Manual testing
