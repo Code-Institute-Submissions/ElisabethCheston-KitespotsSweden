@@ -164,9 +164,9 @@ These are the different languages, frameworks, libraries, and any other tools th
 
 #### Bugs or problems
 
-* [**Deprecation for 'window.webStoreageInfo'**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/videoStoage.png) - In reguards to the videos showing in start modal. Videos work fine to my knowledge and according to tutors I should just write it up as a bug.  
+* [**Deprecation for 'window.webStoreageInfo'**](https://github.com/ElisabethCheston/KitespotsSweden/blob/2cf3f47bca1f22db1c5fee6984cf43a8e539d65e/responsiveTesting/videoStoage.png) - In reguards to the videos showing in start modal. Videos work fine to my knowledge and according to tutors I should just write it up as a bug.  
 
-* [**Zoom in to Hybrid/Satellite layer**](https://github.com/ElisabethCheston/KitespotsSweden/blob/8f8a2fd8f4aaac6963aa374dcecf937b641cd26d/responsiveTesting/zoomError.png) - The dev tools through multiple error (as I understod it) due to a bug that wont stop calling on zoom in.
+* [**Zoom in to Hybrid/Satellite layer**](https://github.com/ElisabethCheston/KitespotsSweden/blob/2cf3f47bca1f22db1c5fee6984cf43a8e539d65e/responsiveTesting/zoomError.png) - The dev tools through multiple error (as I understod it) due to a bug that wont stop calling on zoom in.
 
 * **Error message for (index):1** - In console error message "Unchecked runtime.lastError: The message port closed before a response was received.". In conversations with tutors, they said it's some type of bug for the <!DOCTYPE html> that can't be solved.
 
